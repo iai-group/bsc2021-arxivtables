@@ -1,21 +1,20 @@
 import unittest
+import os
+import os.path
 
 
 class TestStringMethods(unittest.TestCase):
+    def test_true(self):
+        self.assertEqual(True, True)
 
-    def test_upper(self):
-        self.assertEqual('foo'.upper(), 'FOO')
+    def test_table_count(self):
+        DIR = os.getcwd()+'/tests/tables'
+        countFiles = len([name for name in os.listdir(
+            DIR) if os.path.isfile(os.path.join(DIR, name))])
+        self.assertEqual(countFiles, 5)
 
-    def test_isupper(self):
-        self.assertTrue('FOO'.isupper())
-        self.assertFalse('Foo'.isupper())
-
-    def test_split(self):
-        s = 'hello world'
-        self.assertEqual(s.split(), ['hello', 'world'])
-        # check that s.split fails when the separator is not a string
-        with self.assertRaises(TypeError):
-            s.split(2)
+    def test_file_contains_table(self):
+        self.assertEqual(True, True)
 
 
 if __name__ == '__main__':

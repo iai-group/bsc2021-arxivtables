@@ -1,516 +1,488 @@
-{
-  "feed": {
-    "@xmlns": "http://www.w3.org/2005/Atom",
-    "link": {
-      "@href": "http://arxiv.org/api/query?search_query%3Dcomputer%26id_list%3D%26start%3D0%26max_results%3D10",
-      "@rel": "self",
-      "@type": "application/atom+xml"
+[
+  {
+    "id": "http://arxiv.org/abs/1310.7911v2",
+    "updated": "2013-12-09T21:56:24Z",
+    "published": "2013-10-29T18:29:13Z",
+    "title": "Compact manifolds with computable boundaries",
+    "summary": "We investigate conditions under which a co-computably enumerable closed set\nin a computable metric space is computable and prove that in each locally\ncomputable computable metric space each co-computably enumerable compact\nmanifold with computable boundary is computable. In fact, we examine the notion\nof a semi-computable compact set and we prove a more general result: in any\ncomputable metric space each semi-computable compact manifold with computable\nboundary is computable. In particular, each semi-computable compact\n(boundaryless) manifold is computable.",
+    "author": {
+      "name": "Zvonko Iljazovic",
+      "arxiv:affiliation": {
+        "@xmlns:arxiv": "http://arxiv.org/schemas/atom",
+        "#text": "University of Zagreb"
+      }
     },
-    "title": {
-      "@type": "html",
-      "#text": "ArXiv Query: search_query=computer&id_list=&start=0&max_results=10"
+    "arxiv:doi": {
+      "@xmlns:arxiv": "http://arxiv.org/schemas/atom",
+      "#text": "10.2168/LMCS-9(4:19)2013"
     },
-    "id": "http://arxiv.org/api/8Lj6eqaREql0hMVaIqjQNEBbqEY",
-    "updated": "2021-01-22T00:00:00-05:00",
-    "opensearch:totalResults": {
-      "@xmlns:opensearch": "http://a9.com/-/spec/opensearch/1.1/",
-      "#text": "339370"
+    "link": [
+      {
+        "@title": "doi",
+        "@href": "http://dx.doi.org/10.2168/LMCS-9(4:19)2013",
+        "@rel": "related"
+      },
+      {
+        "@href": "http://arxiv.org/abs/1310.7911v2",
+        "@rel": "alternate",
+        "@type": "text/html"
+      },
+      {
+        "@title": "pdf",
+        "@href": "http://arxiv.org/pdf/1310.7911v2",
+        "@rel": "related",
+        "@type": "application/pdf"
+      }
+    ],
+    "arxiv:journal_ref": {
+      "@xmlns:arxiv": "http://arxiv.org/schemas/atom",
+      "#text": "Logical Methods in Computer Science, Volume 9, Issue 4 (December\n  11, 2013) lmcs:891"
     },
-    "opensearch:startIndex": {
-      "@xmlns:opensearch": "http://a9.com/-/spec/opensearch/1.1/",
-      "#text": "0"
+    "arxiv:primary_category": {
+      "@xmlns:arxiv": "http://arxiv.org/schemas/atom",
+      "@term": "cs.LO",
+      "@scheme": "http://arxiv.org/schemas/atom"
     },
-    "opensearch:itemsPerPage": {
-      "@xmlns:opensearch": "http://a9.com/-/spec/opensearch/1.1/",
-      "#text": "10"
-    },
-    "entry": [
+    "category": [
       {
-        "id": "http://arxiv.org/abs/1310.7911v2",
-        "updated": "2013-12-09T21:56:24Z",
-        "published": "2013-10-29T18:29:13Z",
-        "title": "Compact manifolds with computable boundaries",
-        "summary": "We investigate conditions under which a co-computably enumerable closed set\nin a computable metric space is computable and prove that in each locally\ncomputable computable metric space each co-computably enumerable compact\nmanifold with computable boundary is computable. In fact, we examine the notion\nof a semi-computable compact set and we prove a more general result: in any\ncomputable metric space each semi-computable compact manifold with computable\nboundary is computable. In particular, each semi-computable compact\n(boundaryless) manifold is computable.",
-        "author": {
-          "name": "Zvonko Iljazovic",
-          "arxiv:affiliation": {
-            "@xmlns:arxiv": "http://arxiv.org/schemas/atom",
-            "#text": "University of Zagreb"
-          }
-        },
-        "arxiv:doi": {
-          "@xmlns:arxiv": "http://arxiv.org/schemas/atom",
-          "#text": "10.2168/LMCS-9(4:19)2013"
-        },
-        "link": [
-          {
-            "@title": "doi",
-            "@href": "http://dx.doi.org/10.2168/LMCS-9(4:19)2013",
-            "@rel": "related"
-          },
-          {
-            "@href": "http://arxiv.org/abs/1310.7911v2",
-            "@rel": "alternate",
-            "@type": "text/html"
-          },
-          {
-            "@title": "pdf",
-            "@href": "http://arxiv.org/pdf/1310.7911v2",
-            "@rel": "related",
-            "@type": "application/pdf"
-          }
-        ],
-        "arxiv:journal_ref": {
-          "@xmlns:arxiv": "http://arxiv.org/schemas/atom",
-          "#text": "Logical Methods in Computer Science, Volume 9, Issue 4 (December\n  11, 2013) lmcs:891"
-        },
-        "arxiv:primary_category": {
-          "@xmlns:arxiv": "http://arxiv.org/schemas/atom",
-          "@term": "cs.LO",
-          "@scheme": "http://arxiv.org/schemas/atom"
-        },
-        "category": [
-          {
-            "@term": "cs.LO",
-            "@scheme": "http://arxiv.org/schemas/atom"
-          },
-          {
-            "@term": "math.LO",
-            "@scheme": "http://arxiv.org/schemas/atom"
-          }
-        ]
+        "@term": "cs.LO",
+        "@scheme": "http://arxiv.org/schemas/atom"
       },
       {
-        "id": "http://arxiv.org/abs/math/9711204v1",
-        "updated": "1997-11-25T00:00:00Z",
-        "published": "1997-11-25T00:00:00Z",
-        "title": "Aspects of Computability in Physics",
-        "summary": "This paper reviews connections between physics and computation, and explores\ntheir implications. The main topics are computational \"hardness\" of physical\nsystems, computational status of fundamental theories, quantum computation, and\nthe Universe as a computer.",
-        "author": {
-          "name": "Joseph Shipman"
-        },
-        "link": [
-          {
-            "@href": "http://arxiv.org/abs/math/9711204v1",
-            "@rel": "alternate",
-            "@type": "text/html"
-          },
-          {
-            "@title": "pdf",
-            "@href": "http://arxiv.org/pdf/math/9711204v1",
-            "@rel": "related",
-            "@type": "application/pdf"
-          }
-        ],
-        "arxiv:primary_category": {
-          "@xmlns:arxiv": "http://arxiv.org/schemas/atom",
-          "@term": "math.LO",
-          "@scheme": "http://arxiv.org/schemas/atom"
-        },
-        "category": {
-          "@term": "math.LO",
-          "@scheme": "http://arxiv.org/schemas/atom"
-        }
-      },
-      {
-        "id": "http://arxiv.org/abs/quant-ph/0003151v1",
-        "updated": "2000-03-31T22:07:23Z",
-        "published": "2000-03-31T22:07:23Z",
-        "title": "Unconventional Quantum Computing Devices",
-        "summary": "This paper investigates a variety of unconventional quantum computation\ndevices, including fermionic quantum computers and computers that exploit\nnonlinear quantum mechanics. It is shown that unconventional quantum computing\ndevices can in principle compute some quantities more rapidly than\n`conventional' quantum computers.",
-        "author": {
-          "name": "Seth Lloyd",
-          "arxiv:affiliation": {
-            "@xmlns:arxiv": "http://arxiv.org/schemas/atom",
-            "#text": "MIT Mechanical Engineering"
-          }
-        },
-        "arxiv:comment": {
-          "@xmlns:arxiv": "http://arxiv.org/schemas/atom",
-          "#text": "9 pages, plain TeX, article from 1998 conference proceedings\n  proposing fermionic quantum computers"
-        },
-        "arxiv:journal_ref": {
-          "@xmlns:arxiv": "http://arxiv.org/schemas/atom",
-          "#text": "in `Unconventional Models of Computation,' C.S. Calude, J. Casti,\n  M.J. Dinneen, eds., Springer, Singapore, 1998"
-        },
-        "link": [
-          {
-            "@href": "http://arxiv.org/abs/quant-ph/0003151v1",
-            "@rel": "alternate",
-            "@type": "text/html"
-          },
-          {
-            "@title": "pdf",
-            "@href": "http://arxiv.org/pdf/quant-ph/0003151v1",
-            "@rel": "related",
-            "@type": "application/pdf"
-          }
-        ],
-        "arxiv:primary_category": {
-          "@xmlns:arxiv": "http://arxiv.org/schemas/atom",
-          "@term": "quant-ph",
-          "@scheme": "http://arxiv.org/schemas/atom"
-        },
-        "category": {
-          "@term": "quant-ph",
-          "@scheme": "http://arxiv.org/schemas/atom"
-        }
-      },
-      {
-        "id": "http://arxiv.org/abs/1308.1806v1",
-        "updated": "2013-08-08T10:23:09Z",
-        "published": "2013-08-08T10:23:09Z",
-        "title": "A Survey of Current Trends in Distributed, Grid and Cloud Computing",
-        "summary": "Through the 1990s to 2012 the internet changed the world of computing\ndrastically. It started its journey with parallel computing after it advanced\nto distributed computing and further to grid computing. And in present scenario\nit creates a new world which is pronounced as a Cloud Computing [1]. These all\nthree terms have different meanings. Cloud computing is based on backward\ncomputing schemes like cluster computing, distributed computing, grid computing\nand utility computing. The basic concept of cloud computing is virtualization.\nIt provides virtual hardware and software resources to various requesting\nprograms. This paper gives a detailed description about cluster computing, grid\ncomputing and cloud computing and gives an insight of some implementations of\nthe same. We try to list the inspirations for the advent of all these\ntechnologies. We also account for some present scenario faults of grid\ncomputing and also discuss new cloud computing projects which are being managed\nby the Government of India for learning. The paper also reviews the existing\nwork and covers (analytically), to some extent, some innovative ideas that can\nbe implemented.",
-        "author": [
-          {
-            "name": "Gaurav Mittal"
-          },
-          {
-            "name": "Dr. Nishtha Kesswani"
-          },
-          {
-            "name": "Kuldeep Goswami"
-          }
-        ],
-        "arxiv:comment": {
-          "@xmlns:arxiv": "http://arxiv.org/schemas/atom",
-          "#text": "6 pages"
-        },
-        "arxiv:journal_ref": {
-          "@xmlns:arxiv": "http://arxiv.org/schemas/atom",
-          "#text": "International Journal of Advanced Studies in Computers, Science &\n  Engineering (IJASCSE Vol 2, Issue 3, 2013)"
-        },
-        "link": [
-          {
-            "@href": "http://arxiv.org/abs/1308.1806v1",
-            "@rel": "alternate",
-            "@type": "text/html"
-          },
-          {
-            "@title": "pdf",
-            "@href": "http://arxiv.org/pdf/1308.1806v1",
-            "@rel": "related",
-            "@type": "application/pdf"
-          }
-        ],
-        "arxiv:primary_category": {
-          "@xmlns:arxiv": "http://arxiv.org/schemas/atom",
-          "@term": "cs.DC",
-          "@scheme": "http://arxiv.org/schemas/atom"
-        },
-        "category": {
-          "@term": "cs.DC",
-          "@scheme": "http://arxiv.org/schemas/atom"
-        }
-      },
-      {
-        "id": "http://arxiv.org/abs/2002.06400v1",
-        "updated": "2020-02-15T15:45:07Z",
-        "published": "2020-02-15T15:45:07Z",
-        "title": "Analysis on Computation-Intensive Status Update in Mobile Edge Computing",
-        "summary": "In status update scenarios, the freshness of information is measured in terms\nof age-of-information (AoI), which essentially reflects the timeliness for\nreal-time applications to transmit status update messages to a remote\ncontroller. For some applications, computational expensive and time consuming\ndata processing is inevitable for status information of messages to be\ndisplayed. Mobile edge servers are equipped with adequate computation resources\nand they are placed close to users. Thus, mobile edge computing (MEC) can be a\npromising technology to reduce AoI for computation-intensive messages. In this\npaper, we study the AoI for computation-intensive messages with MEC, and\nconsider three computing schemes: local computing, remote computing at the MEC\nserver, and partial computing, i.e., some part of computing tasks are performed\nlocally, and the rest is executed at the MEC server. Zero-wait policy is\nadopted in all three schemes. Specifically, in local computing, a new message\nis generated immediately after the previous one is revealed by computing. While\nin remote computing and partial computing, a new message is generated once the\nprevious one is received by the remote MEC server. With infinite queue size and\nexponentially distributed transmission time, closed-form average AoI for\nexponentially distributed computing time is derived for the three computing\nschemes. For deterministic computing time, the average AoI is analyzed\nnumerically. Simulation results show that by carefully partitioning the\ncomputing tasks, the average AoI in partial computing is the smallest compared\nto local computing and remote computing. The results also indicate numerically\nthe conditions on which remote computing attains smaller average AoI compared\nwith local computing.",
-        "author": [
-          {
-            "name": "Qiaobin Kuang"
-          },
-          {
-            "name": "Jie Gong"
-          },
-          {
-            "name": "Xiang Chen"
-          },
-          {
-            "name": "Xiao Ma"
-          }
-        ],
-        "arxiv:comment": {
-          "@xmlns:arxiv": "http://arxiv.org/schemas/atom",
-          "#text": "13 pages"
-        },
-        "link": [
-          {
-            "@href": "http://arxiv.org/abs/2002.06400v1",
-            "@rel": "alternate",
-            "@type": "text/html"
-          },
-          {
-            "@title": "pdf",
-            "@href": "http://arxiv.org/pdf/2002.06400v1",
-            "@rel": "related",
-            "@type": "application/pdf"
-          }
-        ],
-        "arxiv:primary_category": {
-          "@xmlns:arxiv": "http://arxiv.org/schemas/atom",
-          "@term": "cs.IT",
-          "@scheme": "http://arxiv.org/schemas/atom"
-        },
-        "category": [
-          {
-            "@term": "cs.IT",
-            "@scheme": "http://arxiv.org/schemas/atom"
-          },
-          {
-            "@term": "eess.SP",
-            "@scheme": "http://arxiv.org/schemas/atom"
-          },
-          {
-            "@term": "math.IT",
-            "@scheme": "http://arxiv.org/schemas/atom"
-          },
-          {
-            "@term": "Primary",
-            "@scheme": "http://arxiv.org/schemas/atom"
-          },
-          {
-            "@term": "F.2.2",
-            "@scheme": "http://arxiv.org/schemas/atom"
-          }
-        ]
-      },
-      {
-        "id": "http://arxiv.org/abs/1703.04075v2",
-        "updated": "2017-03-14T23:30:06Z",
-        "published": "2017-03-12T06:14:21Z",
-        "title": "Computable structures on topological manifolds",
-        "summary": "We propose a definition of computable manifold by introducing computability\nas a structure that we impose to a given topological manifold, just in the same\nway as differentiability or piecewise linearity are defined for smooth and PL\nmanifolds respectively. Using the framework of computable topology and Type-2\ntheory of effectivity, we develop computable versions of all the basic concepts\nneeded to define manifolds, like computable atlases and (computably) compatible\ncomputable atlases. We prove that given a computable atlas $\\Phi$ defined on a\nset $M$, we can construct a computable topological space $(M, \\tau_\\Phi,\n\\beta_\\Phi, \\nu_\\Phi)$, where $\\tau_\\Phi$ is the topology on $M$ induced by\n$\\Phi$ and that the equivalence class of this computable space characterizes\nthe computable structure determined by $\\Phi$. The concept of computable\nsubmanifold is also investigated. We show that any compact computable manifold\nwhich satisfies a computable version of the $T_2$-separation axiom, can be\nembedded as a computable submanifold of some euclidean space $\\mathbb{R}^{q}$,\nwith a computable embedding, where $\\mathbb{R}^{q}$ is equipped with its usual\ntopology and some canonical computable encoding of all open rational balls.",
-        "author": [
-          {
-            "name": "Marcelo A. Aguilar"
-          },
-          {
-            "name": "Rodolfo Conde"
-          }
-        ],
-        "arxiv:comment": {
-          "@xmlns:arxiv": "http://arxiv.org/schemas/atom",
-          "#text": "41 pages. Preliminary version submitted to a Journal"
-        },
-        "link": [
-          {
-            "@href": "http://arxiv.org/abs/1703.04075v2",
-            "@rel": "alternate",
-            "@type": "text/html"
-          },
-          {
-            "@title": "pdf",
-            "@href": "http://arxiv.org/pdf/1703.04075v2",
-            "@rel": "related",
-            "@type": "application/pdf"
-          }
-        ],
-        "arxiv:primary_category": {
-          "@xmlns:arxiv": "http://arxiv.org/schemas/atom",
-          "@term": "cs.LO",
-          "@scheme": "http://arxiv.org/schemas/atom"
-        },
-        "category": [
-          {
-            "@term": "cs.LO",
-            "@scheme": "http://arxiv.org/schemas/atom"
-          },
-          {
-            "@term": "math.GN",
-            "@scheme": "http://arxiv.org/schemas/atom"
-          },
-          {
-            "@term": "03D60, 03D78",
-            "@scheme": "http://arxiv.org/schemas/atom"
-          }
-        ]
-      },
-      {
-        "id": "http://arxiv.org/abs/0901.0131v1",
-        "updated": "2008-12-31T19:13:05Z",
-        "published": "2008-12-31T19:13:05Z",
-        "title": "Cloud Computing and Grid Computing 360-Degree Compared",
-        "summary": "Cloud Computing has become another buzzword after Web 2.0. However, there are\ndozens of different definitions for Cloud Computing and there seems to be no\nconsensus on what a Cloud is. On the other hand, Cloud Computing is not a\ncompletely new concept; it has intricate connection to the relatively new but\nthirteen-year established Grid Computing paradigm, and other relevant\ntechnologies such as utility computing, cluster computing, and distributed\nsystems in general. This paper strives to compare and contrast Cloud Computing\nwith Grid Computing from various angles and give insights into the essential\ncharacteristics of both.",
-        "author": [
-          {
-            "name": "Ian Foster"
-          },
-          {
-            "name": "Yong Zhao"
-          },
-          {
-            "name": "Ioan Raicu"
-          },
-          {
-            "name": "Shiyong Lu"
-          }
-        ],
-        "arxiv:doi": {
-          "@xmlns:arxiv": "http://arxiv.org/schemas/atom",
-          "#text": "10.1109/GCE.2008.4738445"
-        },
-        "link": [
-          {
-            "@title": "doi",
-            "@href": "http://dx.doi.org/10.1109/GCE.2008.4738445",
-            "@rel": "related"
-          },
-          {
-            "@href": "http://arxiv.org/abs/0901.0131v1",
-            "@rel": "alternate",
-            "@type": "text/html"
-          },
-          {
-            "@title": "pdf",
-            "@href": "http://arxiv.org/pdf/0901.0131v1",
-            "@rel": "related",
-            "@type": "application/pdf"
-          }
-        ],
-        "arxiv:comment": {
-          "@xmlns:arxiv": "http://arxiv.org/schemas/atom",
-          "#text": "IEEE Grid Computing Environments (GCE08) 2008"
-        },
-        "arxiv:primary_category": {
-          "@xmlns:arxiv": "http://arxiv.org/schemas/atom",
-          "@term": "cs.DC",
-          "@scheme": "http://arxiv.org/schemas/atom"
-        },
-        "category": [
-          {
-            "@term": "cs.DC",
-            "@scheme": "http://arxiv.org/schemas/atom"
-          },
-          {
-            "@term": "C.2.4; A.1",
-            "@scheme": "http://arxiv.org/schemas/atom"
-          }
-        ]
-      },
-      {
-        "id": "http://arxiv.org/abs/1711.04184v3",
-        "updated": "2018-04-12T18:55:09Z",
-        "published": "2017-11-11T19:25:36Z",
-        "title": "Real-number Computability from the Perspective of Computer Assisted\n  Proofs in Analysis",
-        "summary": "Inspired by computer assisted proofs in analysis, we present an interval\napproach to real-number computations.",
-        "author": [
-          {
-            "name": "Ma\u0142gorzata Moczurad"
-          },
-          {
-            "name": "Piotr Zgliczy\u0144ski"
-          }
-        ],
-        "link": [
-          {
-            "@href": "http://arxiv.org/abs/1711.04184v3",
-            "@rel": "alternate",
-            "@type": "text/html"
-          },
-          {
-            "@title": "pdf",
-            "@href": "http://arxiv.org/pdf/1711.04184v3",
-            "@rel": "related",
-            "@type": "application/pdf"
-          }
-        ],
-        "arxiv:primary_category": {
-          "@xmlns:arxiv": "http://arxiv.org/schemas/atom",
-          "@term": "cs.LO",
-          "@scheme": "http://arxiv.org/schemas/atom"
-        },
-        "category": [
-          {
-            "@term": "cs.LO",
-            "@scheme": "http://arxiv.org/schemas/atom"
-          },
-          {
-            "@term": "cs.CC",
-            "@scheme": "http://arxiv.org/schemas/atom"
-          }
-        ]
-      },
-      {
-        "id": "http://arxiv.org/abs/1203.4667v2",
-        "updated": "2016-01-20T17:49:53Z",
-        "published": "2012-03-21T07:48:23Z",
-        "title": "Turing machines can be efficiently simulated by the General Purpose\n  Analog Computer",
-        "summary": "The Church-Turing thesis states that any sufficiently powerful computational\nmodel which captures the notion of algorithm is computationally equivalent to\nthe Turing machine. This equivalence usually holds both at a computability\nlevel and at a computational complexity level modulo polynomial reductions.\nHowever, the situation is less clear in what concerns models of computation\nusing real numbers, and no analog of the Church-Turing thesis exists for this\ncase. Recently it was shown that some models of computation with real numbers\nwere equivalent from a computability perspective. In particular it was shown\nthat Shannon's General Purpose Analog Computer (GPAC) is equivalent to\nComputable Analysis. However, little is known about what happens at a\ncomputational complexity level. In this paper we shed some light on the\nconnections between this two models, from a computational complexity level, by\nshowing that, modulo polynomial reductions, computations of Turing machines can\nbe simulated by GPACs, without the need of using more (space) resources than\nthose used in the original Turing computation, as long as we are talking about\nbounded computations. In other words, computations done by the GPAC are as\nspace-efficient as computations done in the context of Computable Analysis.",
-        "author": [
-          {
-            "name": "Amaury Pouly"
-          },
-          {
-            "name": "Olivier Bournez"
-          },
-          {
-            "name": "Daniel S. Gra\u00e7a"
-          }
-        ],
-        "arxiv:doi": {
-          "@xmlns:arxiv": "http://arxiv.org/schemas/atom",
-          "#text": "10.1007/978-3-642-38236-9_16"
-        },
-        "link": [
-          {
-            "@title": "doi",
-            "@href": "http://dx.doi.org/10.1007/978-3-642-38236-9_16",
-            "@rel": "related"
-          },
-          {
-            "@href": "http://arxiv.org/abs/1203.4667v2",
-            "@rel": "alternate",
-            "@type": "text/html"
-          },
-          {
-            "@title": "pdf",
-            "@href": "http://arxiv.org/pdf/1203.4667v2",
-            "@rel": "related",
-            "@type": "application/pdf"
-          }
-        ],
-        "arxiv:primary_category": {
-          "@xmlns:arxiv": "http://arxiv.org/schemas/atom",
-          "@term": "cs.CC",
-          "@scheme": "http://arxiv.org/schemas/atom"
-        },
-        "category": {
-          "@term": "cs.CC",
-          "@scheme": "http://arxiv.org/schemas/atom"
-        }
-      },
-      {
-        "id": "http://arxiv.org/abs/1312.2447v1",
-        "updated": "2013-12-09T14:35:08Z",
-        "published": "2013-12-09T14:35:08Z",
-        "title": "Typologies of Computation and Computational Models",
-        "summary": "We need much better understanding of information processing and computation\nas its primary form. Future progress of new computational devices capable of\ndealing with problems of big data, internet of things, semantic web, cognitive\nrobotics and neuroinformatics depends on the adequate models of computation. In\nthis article we first present the current state of the art through\nsystematization of existing models and mechanisms, and outline basic structural\nframework of computation. We argue that defining computation as information\nprocessing, and given that there is no information without (physical)\nrepresentation, the dynamics of information on the fundamental level is\nphysical/ intrinsic/ natural computation. As a special case, intrinsic\ncomputation is used for designed computation in computing machinery. Intrinsic\nnatural computation occurs on variety of levels of physical processes,\ncontaining the levels of computation of living organisms (including highly\nintelligent animals) as well as designed computational devices. The present\narticle offers a typology of current models of computation and indicates future\npaths for the advancement of the field; both by the development of new\ncomputational models and by learning from nature how to better compute using\ndifferent mechanisms of intrinsic computation.",
-        "author": [
-          {
-            "name": "Mark Burgin"
-          },
-          {
-            "name": "Gordana Dodig-Crnkovic"
-          }
-        ],
-        "link": [
-          {
-            "@href": "http://arxiv.org/abs/1312.2447v1",
-            "@rel": "alternate",
-            "@type": "text/html"
-          },
-          {
-            "@title": "pdf",
-            "@href": "http://arxiv.org/pdf/1312.2447v1",
-            "@rel": "related",
-            "@type": "application/pdf"
-          }
-        ],
-        "arxiv:primary_category": {
-          "@xmlns:arxiv": "http://arxiv.org/schemas/atom",
-          "@term": "cs.GL",
-          "@scheme": "http://arxiv.org/schemas/atom"
-        },
-        "category": {
-          "@term": "cs.GL",
-          "@scheme": "http://arxiv.org/schemas/atom"
-        }
+        "@term": "math.LO",
+        "@scheme": "http://arxiv.org/schemas/atom"
       }
     ]
+  },
+  {
+    "id": "http://arxiv.org/abs/math/9711204v1",
+    "updated": "1997-11-25T00:00:00Z",
+    "published": "1997-11-25T00:00:00Z",
+    "title": "Aspects of Computability in Physics",
+    "summary": "This paper reviews connections between physics and computation, and explores\ntheir implications. The main topics are computational \"hardness\" of physical\nsystems, computational status of fundamental theories, quantum computation, and\nthe Universe as a computer.",
+    "author": {
+      "name": "Joseph Shipman"
+    },
+    "link": [
+      {
+        "@href": "http://arxiv.org/abs/math/9711204v1",
+        "@rel": "alternate",
+        "@type": "text/html"
+      },
+      {
+        "@title": "pdf",
+        "@href": "http://arxiv.org/pdf/math/9711204v1",
+        "@rel": "related",
+        "@type": "application/pdf"
+      }
+    ],
+    "arxiv:primary_category": {
+      "@xmlns:arxiv": "http://arxiv.org/schemas/atom",
+      "@term": "math.LO",
+      "@scheme": "http://arxiv.org/schemas/atom"
+    },
+    "category": {
+      "@term": "math.LO",
+      "@scheme": "http://arxiv.org/schemas/atom"
+    }
+  },
+  {
+    "id": "http://arxiv.org/abs/quant-ph/0003151v1",
+    "updated": "2000-03-31T22:07:23Z",
+    "published": "2000-03-31T22:07:23Z",
+    "title": "Unconventional Quantum Computing Devices",
+    "summary": "This paper investigates a variety of unconventional quantum computation\ndevices, including fermionic quantum computers and computers that exploit\nnonlinear quantum mechanics. It is shown that unconventional quantum computing\ndevices can in principle compute some quantities more rapidly than\n`conventional' quantum computers.",
+    "author": {
+      "name": "Seth Lloyd",
+      "arxiv:affiliation": {
+        "@xmlns:arxiv": "http://arxiv.org/schemas/atom",
+        "#text": "MIT Mechanical Engineering"
+      }
+    },
+    "arxiv:comment": {
+      "@xmlns:arxiv": "http://arxiv.org/schemas/atom",
+      "#text": "9 pages, plain TeX, article from 1998 conference proceedings\n  proposing fermionic quantum computers"
+    },
+    "arxiv:journal_ref": {
+      "@xmlns:arxiv": "http://arxiv.org/schemas/atom",
+      "#text": "in `Unconventional Models of Computation,' C.S. Calude, J. Casti,\n  M.J. Dinneen, eds., Springer, Singapore, 1998"
+    },
+    "link": [
+      {
+        "@href": "http://arxiv.org/abs/quant-ph/0003151v1",
+        "@rel": "alternate",
+        "@type": "text/html"
+      },
+      {
+        "@title": "pdf",
+        "@href": "http://arxiv.org/pdf/quant-ph/0003151v1",
+        "@rel": "related",
+        "@type": "application/pdf"
+      }
+    ],
+    "arxiv:primary_category": {
+      "@xmlns:arxiv": "http://arxiv.org/schemas/atom",
+      "@term": "quant-ph",
+      "@scheme": "http://arxiv.org/schemas/atom"
+    },
+    "category": {
+      "@term": "quant-ph",
+      "@scheme": "http://arxiv.org/schemas/atom"
+    }
+  },
+  {
+    "id": "http://arxiv.org/abs/1308.1806v1",
+    "updated": "2013-08-08T10:23:09Z",
+    "published": "2013-08-08T10:23:09Z",
+    "title": "A Survey of Current Trends in Distributed, Grid and Cloud Computing",
+    "summary": "Through the 1990s to 2012 the internet changed the world of computing\ndrastically. It started its journey with parallel computing after it advanced\nto distributed computing and further to grid computing. And in present scenario\nit creates a new world which is pronounced as a Cloud Computing [1]. These all\nthree terms have different meanings. Cloud computing is based on backward\ncomputing schemes like cluster computing, distributed computing, grid computing\nand utility computing. The basic concept of cloud computing is virtualization.\nIt provides virtual hardware and software resources to various requesting\nprograms. This paper gives a detailed description about cluster computing, grid\ncomputing and cloud computing and gives an insight of some implementations of\nthe same. We try to list the inspirations for the advent of all these\ntechnologies. We also account for some present scenario faults of grid\ncomputing and also discuss new cloud computing projects which are being managed\nby the Government of India for learning. The paper also reviews the existing\nwork and covers (analytically), to some extent, some innovative ideas that can\nbe implemented.",
+    "author": [
+      {
+        "name": "Gaurav Mittal"
+      },
+      {
+        "name": "Dr. Nishtha Kesswani"
+      },
+      {
+        "name": "Kuldeep Goswami"
+      }
+    ],
+    "arxiv:comment": {
+      "@xmlns:arxiv": "http://arxiv.org/schemas/atom",
+      "#text": "6 pages"
+    },
+    "arxiv:journal_ref": {
+      "@xmlns:arxiv": "http://arxiv.org/schemas/atom",
+      "#text": "International Journal of Advanced Studies in Computers, Science &\n  Engineering (IJASCSE Vol 2, Issue 3, 2013)"
+    },
+    "link": [
+      {
+        "@href": "http://arxiv.org/abs/1308.1806v1",
+        "@rel": "alternate",
+        "@type": "text/html"
+      },
+      {
+        "@title": "pdf",
+        "@href": "http://arxiv.org/pdf/1308.1806v1",
+        "@rel": "related",
+        "@type": "application/pdf"
+      }
+    ],
+    "arxiv:primary_category": {
+      "@xmlns:arxiv": "http://arxiv.org/schemas/atom",
+      "@term": "cs.DC",
+      "@scheme": "http://arxiv.org/schemas/atom"
+    },
+    "category": {
+      "@term": "cs.DC",
+      "@scheme": "http://arxiv.org/schemas/atom"
+    }
+  },
+  {
+    "id": "http://arxiv.org/abs/2002.06400v1",
+    "updated": "2020-02-15T15:45:07Z",
+    "published": "2020-02-15T15:45:07Z",
+    "title": "Analysis on Computation-Intensive Status Update in Mobile Edge Computing",
+    "summary": "In status update scenarios, the freshness of information is measured in terms\nof age-of-information (AoI), which essentially reflects the timeliness for\nreal-time applications to transmit status update messages to a remote\ncontroller. For some applications, computational expensive and time consuming\ndata processing is inevitable for status information of messages to be\ndisplayed. Mobile edge servers are equipped with adequate computation resources\nand they are placed close to users. Thus, mobile edge computing (MEC) can be a\npromising technology to reduce AoI for computation-intensive messages. In this\npaper, we study the AoI for computation-intensive messages with MEC, and\nconsider three computing schemes: local computing, remote computing at the MEC\nserver, and partial computing, i.e., some part of computing tasks are performed\nlocally, and the rest is executed at the MEC server. Zero-wait policy is\nadopted in all three schemes. Specifically, in local computing, a new message\nis generated immediately after the previous one is revealed by computing. While\nin remote computing and partial computing, a new message is generated once the\nprevious one is received by the remote MEC server. With infinite queue size and\nexponentially distributed transmission time, closed-form average AoI for\nexponentially distributed computing time is derived for the three computing\nschemes. For deterministic computing time, the average AoI is analyzed\nnumerically. Simulation results show that by carefully partitioning the\ncomputing tasks, the average AoI in partial computing is the smallest compared\nto local computing and remote computing. The results also indicate numerically\nthe conditions on which remote computing attains smaller average AoI compared\nwith local computing.",
+    "author": [
+      {
+        "name": "Qiaobin Kuang"
+      },
+      {
+        "name": "Jie Gong"
+      },
+      {
+        "name": "Xiang Chen"
+      },
+      {
+        "name": "Xiao Ma"
+      }
+    ],
+    "arxiv:comment": {
+      "@xmlns:arxiv": "http://arxiv.org/schemas/atom",
+      "#text": "13 pages"
+    },
+    "link": [
+      {
+        "@href": "http://arxiv.org/abs/2002.06400v1",
+        "@rel": "alternate",
+        "@type": "text/html"
+      },
+      {
+        "@title": "pdf",
+        "@href": "http://arxiv.org/pdf/2002.06400v1",
+        "@rel": "related",
+        "@type": "application/pdf"
+      }
+    ],
+    "arxiv:primary_category": {
+      "@xmlns:arxiv": "http://arxiv.org/schemas/atom",
+      "@term": "cs.IT",
+      "@scheme": "http://arxiv.org/schemas/atom"
+    },
+    "category": [
+      {
+        "@term": "cs.IT",
+        "@scheme": "http://arxiv.org/schemas/atom"
+      },
+      {
+        "@term": "eess.SP",
+        "@scheme": "http://arxiv.org/schemas/atom"
+      },
+      {
+        "@term": "math.IT",
+        "@scheme": "http://arxiv.org/schemas/atom"
+      },
+      {
+        "@term": "Primary",
+        "@scheme": "http://arxiv.org/schemas/atom"
+      },
+      {
+        "@term": "F.2.2",
+        "@scheme": "http://arxiv.org/schemas/atom"
+      }
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/1703.04075v2",
+    "updated": "2017-03-14T23:30:06Z",
+    "published": "2017-03-12T06:14:21Z",
+    "title": "Computable structures on topological manifolds",
+    "summary": "We propose a definition of computable manifold by introducing computability\nas a structure that we impose to a given topological manifold, just in the same\nway as differentiability or piecewise linearity are defined for smooth and PL\nmanifolds respectively. Using the framework of computable topology and Type-2\ntheory of effectivity, we develop computable versions of all the basic concepts\nneeded to define manifolds, like computable atlases and (computably) compatible\ncomputable atlases. We prove that given a computable atlas $\\Phi$ defined on a\nset $M$, we can construct a computable topological space $(M, \\tau_\\Phi,\n\\beta_\\Phi, \\nu_\\Phi)$, where $\\tau_\\Phi$ is the topology on $M$ induced by\n$\\Phi$ and that the equivalence class of this computable space characterizes\nthe computable structure determined by $\\Phi$. The concept of computable\nsubmanifold is also investigated. We show that any compact computable manifold\nwhich satisfies a computable version of the $T_2$-separation axiom, can be\nembedded as a computable submanifold of some euclidean space $\\mathbb{R}^{q}$,\nwith a computable embedding, where $\\mathbb{R}^{q}$ is equipped with its usual\ntopology and some canonical computable encoding of all open rational balls.",
+    "author": [
+      {
+        "name": "Marcelo A. Aguilar"
+      },
+      {
+        "name": "Rodolfo Conde"
+      }
+    ],
+    "arxiv:comment": {
+      "@xmlns:arxiv": "http://arxiv.org/schemas/atom",
+      "#text": "41 pages. Preliminary version submitted to a Journal"
+    },
+    "link": [
+      {
+        "@href": "http://arxiv.org/abs/1703.04075v2",
+        "@rel": "alternate",
+        "@type": "text/html"
+      },
+      {
+        "@title": "pdf",
+        "@href": "http://arxiv.org/pdf/1703.04075v2",
+        "@rel": "related",
+        "@type": "application/pdf"
+      }
+    ],
+    "arxiv:primary_category": {
+      "@xmlns:arxiv": "http://arxiv.org/schemas/atom",
+      "@term": "cs.LO",
+      "@scheme": "http://arxiv.org/schemas/atom"
+    },
+    "category": [
+      {
+        "@term": "cs.LO",
+        "@scheme": "http://arxiv.org/schemas/atom"
+      },
+      {
+        "@term": "math.GN",
+        "@scheme": "http://arxiv.org/schemas/atom"
+      },
+      {
+        "@term": "03D60, 03D78",
+        "@scheme": "http://arxiv.org/schemas/atom"
+      }
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/0901.0131v1",
+    "updated": "2008-12-31T19:13:05Z",
+    "published": "2008-12-31T19:13:05Z",
+    "title": "Cloud Computing and Grid Computing 360-Degree Compared",
+    "summary": "Cloud Computing has become another buzzword after Web 2.0. However, there are\ndozens of different definitions for Cloud Computing and there seems to be no\nconsensus on what a Cloud is. On the other hand, Cloud Computing is not a\ncompletely new concept; it has intricate connection to the relatively new but\nthirteen-year established Grid Computing paradigm, and other relevant\ntechnologies such as utility computing, cluster computing, and distributed\nsystems in general. This paper strives to compare and contrast Cloud Computing\nwith Grid Computing from various angles and give insights into the essential\ncharacteristics of both.",
+    "author": [
+      {
+        "name": "Ian Foster"
+      },
+      {
+        "name": "Yong Zhao"
+      },
+      {
+        "name": "Ioan Raicu"
+      },
+      {
+        "name": "Shiyong Lu"
+      }
+    ],
+    "arxiv:doi": {
+      "@xmlns:arxiv": "http://arxiv.org/schemas/atom",
+      "#text": "10.1109/GCE.2008.4738445"
+    },
+    "link": [
+      {
+        "@title": "doi",
+        "@href": "http://dx.doi.org/10.1109/GCE.2008.4738445",
+        "@rel": "related"
+      },
+      {
+        "@href": "http://arxiv.org/abs/0901.0131v1",
+        "@rel": "alternate",
+        "@type": "text/html"
+      },
+      {
+        "@title": "pdf",
+        "@href": "http://arxiv.org/pdf/0901.0131v1",
+        "@rel": "related",
+        "@type": "application/pdf"
+      }
+    ],
+    "arxiv:comment": {
+      "@xmlns:arxiv": "http://arxiv.org/schemas/atom",
+      "#text": "IEEE Grid Computing Environments (GCE08) 2008"
+    },
+    "arxiv:primary_category": {
+      "@xmlns:arxiv": "http://arxiv.org/schemas/atom",
+      "@term": "cs.DC",
+      "@scheme": "http://arxiv.org/schemas/atom"
+    },
+    "category": [
+      {
+        "@term": "cs.DC",
+        "@scheme": "http://arxiv.org/schemas/atom"
+      },
+      {
+        "@term": "C.2.4; A.1",
+        "@scheme": "http://arxiv.org/schemas/atom"
+      }
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/1711.04184v3",
+    "updated": "2018-04-12T18:55:09Z",
+    "published": "2017-11-11T19:25:36Z",
+    "title": "Real-number Computability from the Perspective of Computer Assisted\n  Proofs in Analysis",
+    "summary": "Inspired by computer assisted proofs in analysis, we present an interval\napproach to real-number computations.",
+    "author": [
+      {
+        "name": "Ma\u0142gorzata Moczurad"
+      },
+      {
+        "name": "Piotr Zgliczy\u0144ski"
+      }
+    ],
+    "link": [
+      {
+        "@href": "http://arxiv.org/abs/1711.04184v3",
+        "@rel": "alternate",
+        "@type": "text/html"
+      },
+      {
+        "@title": "pdf",
+        "@href": "http://arxiv.org/pdf/1711.04184v3",
+        "@rel": "related",
+        "@type": "application/pdf"
+      }
+    ],
+    "arxiv:primary_category": {
+      "@xmlns:arxiv": "http://arxiv.org/schemas/atom",
+      "@term": "cs.LO",
+      "@scheme": "http://arxiv.org/schemas/atom"
+    },
+    "category": [
+      {
+        "@term": "cs.LO",
+        "@scheme": "http://arxiv.org/schemas/atom"
+      },
+      {
+        "@term": "cs.CC",
+        "@scheme": "http://arxiv.org/schemas/atom"
+      }
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/1203.4667v2",
+    "updated": "2016-01-20T17:49:53Z",
+    "published": "2012-03-21T07:48:23Z",
+    "title": "Turing machines can be efficiently simulated by the General Purpose\n  Analog Computer",
+    "summary": "The Church-Turing thesis states that any sufficiently powerful computational\nmodel which captures the notion of algorithm is computationally equivalent to\nthe Turing machine. This equivalence usually holds both at a computability\nlevel and at a computational complexity level modulo polynomial reductions.\nHowever, the situation is less clear in what concerns models of computation\nusing real numbers, and no analog of the Church-Turing thesis exists for this\ncase. Recently it was shown that some models of computation with real numbers\nwere equivalent from a computability perspective. In particular it was shown\nthat Shannon's General Purpose Analog Computer (GPAC) is equivalent to\nComputable Analysis. However, little is known about what happens at a\ncomputational complexity level. In this paper we shed some light on the\nconnections between this two models, from a computational complexity level, by\nshowing that, modulo polynomial reductions, computations of Turing machines can\nbe simulated by GPACs, without the need of using more (space) resources than\nthose used in the original Turing computation, as long as we are talking about\nbounded computations. In other words, computations done by the GPAC are as\nspace-efficient as computations done in the context of Computable Analysis.",
+    "author": [
+      {
+        "name": "Amaury Pouly"
+      },
+      {
+        "name": "Olivier Bournez"
+      },
+      {
+        "name": "Daniel S. Gra\u00e7a"
+      }
+    ],
+    "arxiv:doi": {
+      "@xmlns:arxiv": "http://arxiv.org/schemas/atom",
+      "#text": "10.1007/978-3-642-38236-9_16"
+    },
+    "link": [
+      {
+        "@title": "doi",
+        "@href": "http://dx.doi.org/10.1007/978-3-642-38236-9_16",
+        "@rel": "related"
+      },
+      {
+        "@href": "http://arxiv.org/abs/1203.4667v2",
+        "@rel": "alternate",
+        "@type": "text/html"
+      },
+      {
+        "@title": "pdf",
+        "@href": "http://arxiv.org/pdf/1203.4667v2",
+        "@rel": "related",
+        "@type": "application/pdf"
+      }
+    ],
+    "arxiv:primary_category": {
+      "@xmlns:arxiv": "http://arxiv.org/schemas/atom",
+      "@term": "cs.CC",
+      "@scheme": "http://arxiv.org/schemas/atom"
+    },
+    "category": {
+      "@term": "cs.CC",
+      "@scheme": "http://arxiv.org/schemas/atom"
+    }
+  },
+  {
+    "id": "http://arxiv.org/abs/1312.2447v1",
+    "updated": "2013-12-09T14:35:08Z",
+    "published": "2013-12-09T14:35:08Z",
+    "title": "Typologies of Computation and Computational Models",
+    "summary": "We need much better understanding of information processing and computation\nas its primary form. Future progress of new computational devices capable of\ndealing with problems of big data, internet of things, semantic web, cognitive\nrobotics and neuroinformatics depends on the adequate models of computation. In\nthis article we first present the current state of the art through\nsystematization of existing models and mechanisms, and outline basic structural\nframework of computation. We argue that defining computation as information\nprocessing, and given that there is no information without (physical)\nrepresentation, the dynamics of information on the fundamental level is\nphysical/ intrinsic/ natural computation. As a special case, intrinsic\ncomputation is used for designed computation in computing machinery. Intrinsic\nnatural computation occurs on variety of levels of physical processes,\ncontaining the levels of computation of living organisms (including highly\nintelligent animals) as well as designed computational devices. The present\narticle offers a typology of current models of computation and indicates future\npaths for the advancement of the field; both by the development of new\ncomputational models and by learning from nature how to better compute using\ndifferent mechanisms of intrinsic computation.",
+    "author": [
+      {
+        "name": "Mark Burgin"
+      },
+      {
+        "name": "Gordana Dodig-Crnkovic"
+      }
+    ],
+    "link": [
+      {
+        "@href": "http://arxiv.org/abs/1312.2447v1",
+        "@rel": "alternate",
+        "@type": "text/html"
+      },
+      {
+        "@title": "pdf",
+        "@href": "http://arxiv.org/pdf/1312.2447v1",
+        "@rel": "related",
+        "@type": "application/pdf"
+      }
+    ],
+    "arxiv:primary_category": {
+      "@xmlns:arxiv": "http://arxiv.org/schemas/atom",
+      "@term": "cs.GL",
+      "@scheme": "http://arxiv.org/schemas/atom"
+    },
+    "category": {
+      "@term": "cs.GL",
+      "@scheme": "http://arxiv.org/schemas/atom"
+    }
   }
-}
+]
