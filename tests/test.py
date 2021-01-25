@@ -16,7 +16,7 @@ class TestStringMethods(unittest.TestCase):
             self.DIR) if os.path.isfile(os.path.join(self.DIR, filename))])
         self.assertEqual(countFiles, 5)
 
-    def test_file_contains_table(self):
+    def file_contains_table(self):
         tables = sorted([self.DIR + filename for filename in os.listdir(
             self.DIR) if os.path.isfile(os.path.join(self.DIR, filename))])
         data = []
@@ -31,12 +31,6 @@ class TestStringMethods(unittest.TestCase):
                     continue
                 t.close()
                 data.append(tData)
-
-        self.assertTrue(len(data[0]) > 5)
-        self.assertTrue(len(data[1]) > 5)
-        self.assertTrue(len(data[2]) > 5)
-        self.assertTrue(len(data[3]) > 5)
-        self.assertTrue(len(data[4]) > 5)
 
 
 if __name__ == '__main__':
