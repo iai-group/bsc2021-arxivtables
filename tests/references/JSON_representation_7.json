@@ -1,0 +1,20 @@
+{
+  "metadata": {
+    "caption": "Most frequent patterns based of POS-tagger.\n  NN is noun singular, IN is preposition/subbordinating conjunction, CD is cardinal digit, JJ is adjective, NNP is proper noun, NNS is noun plural, and VBN is past participle taken.  (acc=95\\%, errors lie at e.g. Greek (both adj and noun))",
+
+  },
+  "headings": ["Pattern ", "Occurrence", "Example"],
+  "data": [
+    ["NNS IN NNP" , "47167", "Writers from Toronto"],
+    ["CD NNS IN NNP "," 33858",  "1929 establishments in California" ],
+    ["JJ NNS "," 31482", " Spanish films"],
+    ["NNP NNP NNS",  "31294" ,"``Ancient Greek mathematicians'' " ],
+    [" CD IN NNP",  "27484", "1959 in Antarctica" ],
+    ["NN "," 23434", " Agriculture"],
+    ["NNS IN NNP NNP"," 22996",  "Compositions by George Gershwin" ],
+    ["NNP NNS ","19262 ", "Vowel letters "],
+    ["JJ NNS IN NNP "," 18615", " Duty-free zones of Europe"],
+    ["NNP NNP"," 17558",  "Nobel Prize" ],
+    ["NNS VBN IN NNP NNP ","15286 ", "Organizations based in Los Angeles "]
+  ]
+}
