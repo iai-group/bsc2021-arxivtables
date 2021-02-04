@@ -3,6 +3,9 @@ import os
 import os.path
 import astropy
 from astropy.table import Table
+from arxivtables.table_extractor.table_extractor import TableExtractor
+import pandas as pd
+from tex2py import tex2py
 
 
 class TestStringMethods(unittest.TestCase):
@@ -74,6 +77,31 @@ class TestStringMethods(unittest.TestCase):
         
         self.assertEqual(ok, True)
 
+
+    def test_if_there_is_an_input_and_an_output_directory(self):
+        files = os.listdir()
+        self.assertEqual("tables" in files and "references" in files, True)
+
+
+
+    def test_extracted_tables_against_JSON_reference(self):
+        extractor = TableExtractor()
+        files = os.listdir(self.DIR)
+
+        with open(self.DIR + "table_6.tex") as f:
+            # content = f.read()
+            json = dict()
+            content = tex2py(f)
+            print(content.source)
+            for line in f.readlines():
+
+                line_str = line.decode("utf-8")
+
+                if "caption{" in line_str :
+                    json["caption"] = line_str[line_str.find("{") + 1: len(line_str) - 2]
+
+        print(json)
+        self.assertEqual(True, True)
 
 
 
