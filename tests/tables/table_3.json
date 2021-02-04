@@ -1,0 +1,42 @@
+{
+    "<documentId>": {
+        "<tableId>": {
+            "name": "",
+            "date": "",
+            "authors": {
+                "name": "",
+                "otherInfo": "..."
+            },
+            "href": "",
+            "publicationDate": "",
+            "table": {
+                "title": "",
+                "footer": "",
+                "comments": "",
+                "caption": "The effect on $x$ after a closing parenthesis was inserted at position $p$. The effects depend on the effect on the children $y_1$ and $y_2$ of $x$: for example, an entry '$(0,-1) \to (+1,0)$' in the column '$p$ is in $\str(y_1)$' means that if the change operation has effect $(0,-1)$ on $y_1$ then the change operation has effect $(+1,0)$ on $x$.",
+                "headers": [
+                    "", "$p$ is in $\str(y_1)$", "$p$ is in $\str(y_2)$"
+                ],
+                "rows": [
+                    "$r(y_1) \leq \ell(y_2)$ & $\begin{array}{c}(+1,0) \to (+1,0) \\ (0,-1) \to (+1,0)\end{array}$   & $\begin{array}{c}(+1,0) \to (+1,0) \\ (0,-1) \to (0,-1)\end{array}$ \\ 
+            \hline
+            $r(y_1) > \ell(y_2)$ & $\begin{array
+                    }{c
+                    }(+1,
+                    0) \to (+1,
+                    0) \\ (0,
+                    -1) \to (0,
+                    -1)\end{array
+                    }$   & $\begin{array
+                    }{c
+                    }(+1,
+                    0) \to (0,
+                    -1) \\ (0,
+                    -1) \to (0,
+                    -1)\end{array
+                    }$"
+                ]
+            }
+        }
+    }
+}

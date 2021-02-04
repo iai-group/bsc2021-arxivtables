@@ -1,19 +1,40 @@
 {
-    "<tableId>": {
-        "name": "",
-        "date": "",
-        "authors": {
+    "<documentId>": {
+        "<tableId>": {
             "name": "",
-            "otherInfo": "..."
+            "date": "",
+            "authors": {
+                "name": "",
+                "otherInfo": "..."
+            },
+            "href": "",
+            "publicationDate": "",
+            "table": {
+                "title": "",
+                "footer": "",
+                "comments": "",
+                "caption": "",
+                "headers": [],
+                "rows": []
+            }
         },
-        "href": "",
-        "publicationDate": "",
-        "table": {
-            "title": "",
-            "footer": "",
-            "comments": "",
-            "headers": [],
-            "rows": []
+        "<table2Id>": {
+            "name": "",
+            "date": "",
+            "authors": {
+                "name": "",
+                "otherInfo": "..."
+            },
+            "href": "",
+            "publicationDate": "",
+            "table": {
+                "title": "",
+                "footer": "",
+                "comments": "",
+                "caption": "",
+                "headers": [],
+                "rows": []
+            }
         }
     }
 }
