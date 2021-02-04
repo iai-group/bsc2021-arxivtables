@@ -1,0 +1,11 @@
+{
+  "metadata": {
+    "caption": "Simulation approaches used in our experiments. All use the same state transition modeling, NLU, and NLG."
+  },
+  "headings": ["Method", "Interaction Model", "Preference Model"],
+  "data": [
+    ["QRFA-Single" , "QRFA (\\S\\ref{sec:modeling:qrfa})","Single item  (\\S\\ref{sec:modeling:single})"],
+    ["CIR6-Single",  "CIR6 (\\S\\ref{sec:modeling:cir6})", "Single item  (\\S\\ref{sec:modeling:single})" ],
+    ["CIR6-PKG", " CIR6 (\\S\\ref{sec:modeling:cir6})", "PKG (\\S\\ref{sec:modeling:pkg})"]
+  ]
+}

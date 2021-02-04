@@ -1,0 +1,12 @@
+{
+  "metadata": {
+    "caption": "Mapping the action set used in this paper to high-level QRFA categories."
+  },
+  "headings": ["Category", "Actions"],
+  "data": [
+    ["Query" , "Reveal, Disclose, Non-disclose, Revise, Refine, Expand, Inquire, List, Compare, Subset, Similar, Navigate, Repeat, Interrupt, Interrogate"],
+    ["Request",  "Inquire, Elicit, Clarify, Suggest" ],
+    ["Feedback", " Back, More, Note, Complete"],
+    ["Answer",  "Show, List, Similar, Subset, Repeat, Back, More, Record, End" ]
+  ]
+}

@@ -1,0 +1,19 @@
+{
+    "<tableId>": {
+        "name": "",
+        "date": "",
+        "authors": {
+            "name": "",
+            "otherInfo": "..."
+        },
+        "href": "",
+        "publicationDate": "",
+        "table": {
+            "title": "",
+            "footer": "",
+            "comments": "",
+            "headers": [],
+            "rows": []
+        }
+    }
+}

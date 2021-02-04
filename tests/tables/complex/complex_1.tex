@@ -1,0 +1,27 @@
+\begin{table*}[t]
+  \centering
+% +MRR
+% TOP 3 BLOKS - KEEP 1000
+% DROP 	last 2
+% k or greedy
+  \caption{Parent category identification results. Statistical significance of the bottom block is tested against the top block ($^\dag$/$^\ddag$) and columns two and three against column one (using $^{\scriptscriptstyle\lozenge}$/$^{\scriptscriptstyle\blacklozenge}$ to denote significance at the 0.05 and 0.01 level, respectively).}
+%   \vspace*{-0.5\baselineskip}
+  \begin{tabular}{lllllllll}
+    \toprule
+    \textbf{Method} & \multicolumn{2}{c}{\textbf{BM25}} && \multicolumn{2}{c}{\textbf{Hierarchy-based}} && \multicolumn{2}{c}{\textbf{Combined}} \\
+    \cline{2-3}  \cline{5-6} \cline{8-9}
+      & \textbf{MAP@k} & \textbf{MRR@k} && \textbf{MAP@k} & \textbf{MRR@k} && \textbf{MAP@k} & \textbf{MRR@k}  \\
+
+    \midrule
+	 Without query expansion ($k=10$)  & 0.0714 & 0.1423 && 0.1110$^{\scriptscriptstyle\blacklozenge}$ & 0.2342$^{\scriptscriptstyle\blacklozenge}$ && 0.1115 & 0.2348 \\
+	 Without query expansion ($k=1000$)  & 0.0839 &0.1536&& 0.2153$^{\ddag\scriptscriptstyle\blacklozenge}$ &0.3639$^{\ddag\scriptscriptstyle\blacklozenge}$ && \textbf{0.2627}$^{\ddag\scriptscriptstyle\blacklozenge}$ & \textbf{0.4476}$^{\ddag\scriptscriptstyle\blacklozenge}$ \\
+%	\midrule
+%	(B) \citet{Lawrie:2001:FTW}+BM25 (k=2,top 10) & 0.3474 & 0.1736$\ddag$ &0.3133$\ddag$&& 0.1863$\ddag$ &0.3351$\ddag$&& 0.1965$\ddag$& 0.3539$\ddag$ \\
+%	(B) \citet{Lawrie:2001:FTW}+BM25 (k=2,top 1000) & \textbf{0.7045} & 0.1884$\ddag$ &0.3212$\ddag$&& 0.1195 &0.2247&& 0.1783 & 0.3195 \\
+	\midrule % thres=0.5
+	 With query expansion ($k=10$)  & 0.1901$^\ddag$ &0.3347$^\ddag$&& 0.1920$^\ddag$ &0.3302$^\ddag$&& 0.2015$^\ddag$ &0.3492$^\ddag$ \\
+	 With query expansion ($k=1000$) & \textbf{0.2036$^\ddag$} & \textbf{0.3414$^\ddag$} && 0.1160 &0.2210&& 0.1777 & 0.3178 \\
+    \bottomrule
+  \end{tabular}
+  \label{tbl:cgi}
+\end{table*}
