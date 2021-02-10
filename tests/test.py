@@ -9,7 +9,7 @@ from tex2py import tex2py
 
 
 class TestStringMethods(unittest.TestCase):
-    DIR = os.getcwd()+'/tables/'
+    DIR = os.path.dirname(os.path.realpath(__file__))+'/tables/'
 
     def test_true(self):
         self.assertEqual(True, True)
@@ -18,7 +18,6 @@ class TestStringMethods(unittest.TestCase):
         countFiles = len([filename for filename in os.listdir(
             self.DIR) if os.path.isfile(os.path.join(self.DIR, filename))])
         self.assertEqual(countFiles, 10)
-
 
     def file_contains_table(self):
         tables = sorted([self.DIR + filename for filename in os.listdir(
@@ -36,8 +35,6 @@ class TestStringMethods(unittest.TestCase):
                 t.close()
                 data.append(tData)
 
-
-
     def test_files_has_tex_extension(self):
         files = os.listdir(self.DIR)
         hasADifferentExtensionThanTex = False
@@ -48,7 +45,6 @@ class TestStringMethods(unittest.TestCase):
                 break
 
         self.assertEqual(hasADifferentExtensionThanTex, False)
-        
 
     def test_check_if_every_table_has_a_begin_table_instruction(self):
         files = os.listdir(self.DIR)
@@ -65,7 +61,6 @@ class TestStringMethods(unittest.TestCase):
                     if 'begin{table' not in content.decode("utf-8"):
                         hasBeginTable = False
 
-                        
                     f.close()
                 except Exception as e:
                     print(e)
@@ -74,15 +69,12 @@ class TestStringMethods(unittest.TestCase):
             if not hasBeginTable:
                 ok = False
                 break
-        
-        self.assertEqual(ok, True)
 
+        self.assertEqual(ok, True)
 
     def test_if_there_is_an_input_and_an_output_directory(self):
         files = os.listdir()
         self.assertEqual("tables" in files and "references" in files, True)
-
-
 
     def test_extracted_tables_against_JSON_reference(self):
         extractor = TableExtractor()
@@ -97,14 +89,12 @@ class TestStringMethods(unittest.TestCase):
 
                 line_str = line.decode("utf-8")
 
-                if "caption{" in line_str :
-                    json["caption"] = line_str[line_str.find("{") + 1: len(line_str) - 2]
+                if "caption{" in line_str:
+                    json["caption"] = line_str[line_str.find(
+                        "{") + 1: len(line_str) - 2]
 
         print(json)
         self.assertEqual(True, True)
-
-
-
 
 
 if __name__ == '__main__':
