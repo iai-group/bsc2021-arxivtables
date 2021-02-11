@@ -1,9 +1,13 @@
+import json
 import unittest
 import os
 import os.path
 from astropy.table import Table
 from arxivtables.table_extractor.table_extractor import TableExtractor
 from tex2py import tex2py
+
+from arxivtables.table_extractor.table_parser import TableParser
+
 
 
 class TestStringMethods(unittest.TestCase):
@@ -80,20 +84,89 @@ class TestStringMethods(unittest.TestCase):
 
         with open(self.DIR + "table_6.tex") as f:
             # content = f.read()
+            # text=extractor.table_to_text(content.decode("utf-8"))
+            # print(text)
             json = dict()
             content = tex2py(f)
-            print(content.source)
-            for line in f.readlines():
+            caption_str = str(content.source.find("caption"))  #.find("caption")
+            json["caption"] = caption_str[caption_str.find("{") + 1: len(caption_str) - 2]
 
+<<<<<<< HEAD
                 line_str = line.decode("utf-8")
 
                 if "caption{" in line_str:
                     json["caption"] = line_str[line_str.find(
                         "{") + 1: len(line_str) - 2]
+=======
+            #for line in f.readlines():
+            #
+            #    line_str = line.decode("utf-8")
+            #
+            #    if "caption{" in line_str :
+            #        json["caption"] = line_str[line_str.find("{") + 1: len(line_str) - 2]
+>>>>>>> main
 
         print(json)
         self.assertEqual(True, True)
 
+    def test_caption(self):
+        for table_index in range(6, 11):
+            f = open("tables/table_" + str(table_index) + ".tex")
+            latex_code = "".join(f.readlines())
+            f.close()
 
+            te = TableExtractor()
+            tp = TableParser()
+
+            tables = te.extract_tables(latex_code)
+            parsed_table = tp.parse(tables[0])
+
+            f = open("references/JSON_representation_" + str(table_index) + ".json")
+            reference = json.load(f)
+            f.close()
+
+            self.assertEqual(reference["metadata"]["caption"], parsed_table.caption)
+
+
+    def test_headings(self):
+        for table_index in range(6, 11):
+            f = open("tables/table_" + str(table_index) + ".tex")
+            latex_code = "".join(f.readlines())
+            f.close()
+
+            te = TableExtractor()
+            tp = TableParser()
+
+            tables = te.extract_tables(latex_code)
+            parsed_table = tp.parse(tables[0])
+
+            f = open("references/JSON_representation_" + str(table_index) + ".json")
+            reference = json.load(f)
+            f.close()
+
+            self.assertEqual(reference["headings"], parsed_table.headings)
+
+
+    def test_data(self):
+        for table_index in range(6, 11):
+            f = open("tables/table_" + str(table_index) + ".tex")
+            latex_code = "".join(f.readlines())
+            f.close()
+
+            te = TableExtractor()
+            tp = TableParser()
+
+<<<<<<< HEAD
+=======
+            tables = te.extract_tables(latex_code)
+            parsed_table = tp.parse(tables[0])
+
+            f = open("references/JSON_representation_" + str(table_index) + ".json")
+            reference = json.load(f)
+            f.close()
+
+            self.assertEqual(reference["data"], parsed_table.data)
+
+>>>>>>> main
 if __name__ == '__main__':
     unittest.main()
