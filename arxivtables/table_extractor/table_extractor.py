@@ -1,6 +1,6 @@
 class TableExtractor:
     def __init__(self, input_file):
-        self.name = 'TableExtractor for {}'.format(input_file)
+        self.name = 'Table Extractor for {}'.format(input_file.split('/')[-1])
         self.input_file = input_file
         self.begin_table_indices = []
         self.end_table_indices = []
@@ -26,8 +26,9 @@ class TableExtractor:
                 print(e)
                 raise Exception(e)
 
-    def extractTables(self):
+    def extractTables(self, saveLocation='/'):
         assert self.check_if_valid() == True
+        print('Running {}'.format(self.name))
         tableIndicies = self.find_all_table_indices()
         with open(self.input_file) as f:
             for x in range(0, len(tableIndicies[0])):
@@ -35,6 +36,6 @@ class TableExtractor:
                 for position, line in enumerate(f):
                     if position in range(tableIndicies[0][x], tableIndicies[1][x]):
                         lines.append(line)
-                with open('/home/david/repos/school/bsc2021-arxivtables/output/' + self.input_file.split('.')[0].split('/')[-1] + '.txt', 'w') as t:
+                with open(saveLocation + self.input_file.split('.')[0].split('/')[-1] + '.txt', 'w') as t:
                     for line in lines:
                         t.write('%s\n' % line)

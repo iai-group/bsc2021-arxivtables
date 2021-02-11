@@ -1,10 +1,8 @@
 import unittest
 import os
 import os.path
-import astropy
 from astropy.table import Table
 from arxivtables.table_extractor.table_extractor import TableExtractor
-import pandas as pd
 from tex2py import tex2py
 
 
