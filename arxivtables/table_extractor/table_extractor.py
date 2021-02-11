@@ -1,6 +1,3 @@
-from pylatexenc.latex2text import LatexNodes2Text
-
-
 class TableExtractor:
     def __init__(self, input_file):
         self.name = 'TableExtractor for {}'.format(input_file)
@@ -8,27 +5,20 @@ class TableExtractor:
         self.begin_table_indices = []
         self.end_table_indices = []
 
-    def check_if_valid(self):
-        if self.input_file.endswith('.tex'):
-            return True
-        else:
-            raise ValueError('"{}" is not a .tex file'.format(self.input_file))
+    def extract_tables(self, latex_code : str):
+        start_pos = 0
 
-    def find_all_table_indices(self):
-        lines = []
-        if self.check_if_valid():
-            with open(self.input_file) as f:
-                lines = f.readlines()
-            try:
-                self.begin_table_indices = [lines.index(
-                    l) for l in lines if '\\begin{table' in l]
-                self.end_table_indices = [lines.index(l) + 1
-                                          for l in lines if '\\end{table' in l]
-                return [self.begin_table_indices, self.end_table_indices]
-            except Exception as e:
-                print(e)
-                raise Exception(e)
+        tables = []
+        while start_pos >= 0:
+            start_pos = latex_code.find("\\begin{table", start_pos)
+            if start_pos == -1:
+                break
 
-    def extractTables(self):
+            end_pos = latex_code.find("\\end{table", start_pos)
 
-        return 0
+            close_bracket_pos = latex_code.find("}", end_pos)
+
+            tables.append(latex_code[start_pos:end_pos+(close_bracket_pos-end_pos+1)])
+            start_pos = end_pos
+
+        return tables

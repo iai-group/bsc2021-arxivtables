@@ -4,8 +4,8 @@
   },
   "headings": ["Method", "Interaction Model", "Preference Model"],
   "data": [
-    ["QRFA-Single" , "QRFA (\\S\\ref{sec:modeling:qrfa})","Single item  (\\S\\ref{sec:modeling:single})"],
-    ["CIR6-Single",  "CIR6 (\\S\\ref{sec:modeling:cir6})", "Single item  (\\S\\ref{sec:modeling:single})" ],
-    ["CIR6-PKG", " CIR6 (\\S\\ref{sec:modeling:cir6})", "PKG (\\S\\ref{sec:modeling:pkg})"]
+    ["QRFA-Single" , "QRFA (<ref>)","Single item  (<ref>)"],
+    ["CIR6-Single",  "CIR6 (<ref>)", "Single item  (<ref>)" ],
+    ["CIR6-PKG", "CIR6 (<ref>)", "PKG (<ref>)"]
   ]
 }
