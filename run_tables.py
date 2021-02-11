@@ -3,11 +3,15 @@ from arxivtables.table_extractor.table_extractor import TableExtractor
 import os
 
 
-DIR = os.getcwd()+'/tests/tables/'
+DIR = os.path.dirname(os.path.realpath(__file__))+'/tests/tables/'
+
+if not os.path.exists(os.path.dirname(os.path.realpath(__file__)) + '/output/'):
+    os.makedirs(os.path.dirname(os.path.realpath(__file__)) + '/output/')
 
 tables = sorted([DIR + filename for filename in os.listdir(
     DIR) if os.path.isfile(os.path.join(DIR, filename))])
 
 for table in tables:
     extractor = TableExtractor(table)
-    print(extractor.find_all_table_indices())
+    extractor.extractTables(
+        os.path.dirname(os.path.realpath(__file__)) + '/output/')
