@@ -1,7 +1,9 @@
 class TableExtractor:
-    def __init__(self):
-        self.name = 'TableExtractor'
-
+    def __init__(self, input_file):
+        self.name = 'TableExtractor for {}'.format(input_file)
+        self.input_file = input_file
+        self.begin_table_indices = []
+        self.end_table_indices = []
 
     def extract_tables(self, latex_code : str):
         start_pos = 0
