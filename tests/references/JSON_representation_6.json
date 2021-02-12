@@ -1,12 +1,27 @@
 {
-  "metadata": {
-    "caption": "Mapping the action set used in this paper to high-level QRFA categories."
-  },
-  "headings": ["Category", "Actions"],
-  "data": [
-    ["Query" , "Reveal, Disclose, Non-disclose, Revise, Rene, Expand, Inquire, List, Compare, Subset, Similar, Navigate, Repeat, Interrupt, Interrogate"],
-    ["Request",  "Inquire, Elicit, Clarify, Suggest" ],
-    ["Feedback", "Back, More, Note, Complete"],
-    ["Answer",  "Show, List, Similar, Subset, Repeat, Back, More, Record, End" ]
-  ]
+  "<documentId>": {
+    "<tableId>": {
+      "name": "",
+      "date": "",
+      "authors": {
+        "name": "",
+        "otherInfo": "..."
+      },
+      "href": "",
+      "publicationDate": "",
+      "table": {
+        "title": "",
+        "footer": "",
+        "comments": "",
+        "caption": "Mapping the action set used in this paper to high-level QRFA categories.",
+        "headers": ["Category", "Actions"],
+        "rows": [
+          ["Query" , "Reveal, Disclose, Non-disclose, Revise, Rene, Expand, Inquire, List, Compare, Subset, Similar, Navigate, Repeat, Interrupt, Interrogate"],
+          ["Request",  "Inquire, Elicit, Clarify, Suggest" ],
+          ["Feedback", "Back, More, Note, Complete"],
+          ["Answer",  "Show, List, Similar, Subset, Repeat, Back, More, Record, End" ]
+        ]
+      }
+    }
+  }
 }

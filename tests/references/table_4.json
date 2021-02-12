@@ -31,12 +31,11 @@
                     [
                         "Stream Lenght (Zeus)", "$18\cdot10^9$"
                     ],
-                    ["User $\alpha$",
-                        "$0.001$"
+                    [
+                        "User $\alpha$", "$0.001$"
                     ],
                     [
-                        "Number of buckets",
-                        "$512$"
+                        "Number of buckets", "$512$"
                     ]
                 ]
             }

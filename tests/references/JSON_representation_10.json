@@ -1,11 +1,36 @@
 {
-  "metadata": {
-    "caption": "Simulation approaches used in our experiments. All use the same state transition modeling, NLU, and NLG."
-  },
-  "headings": ["Method", "Interaction Model", "Preference Model"],
-  "data": [
-    ["QRFA-Single" , "QRFA (<ref>)","Single item  (<ref>)"],
-    ["CIR6-Single",  "CIR6 (<ref>)", "Single item  (<ref>)" ],
-    ["CIR6-PKG", "CIR6 (<ref>)", "PKG (<ref>)"]
-  ]
+  "<documentId>": {
+    "<tableId>": {
+      "name": "",
+      "date": "",
+      "authors": {
+        "name": "",
+        "otherInfo": "..."
+      },
+      "href": "",
+      "publicationDate": "",
+      "table": {
+        "title": "",
+        "footer": "",
+        "comments": "",
+        "caption": "Simulation approaches used in our experiments. All use the same state transition modeling, NLU, and NLG.",
+        "headers": [
+          "Method",
+          "Interaction Model",
+          "Preference Model"
+        ],
+        "rows": [
+          [
+            "QRFA-Single", "QRFA (<ref>)", "Single item  (<ref>)"
+          ],
+          [
+            "CIR6-Single", "CIR6 (<ref>)", "Single item  (<ref>)"
+          ],
+          [
+            "CIR6-PKG", "CIR6 (<ref>)", "PKG (<ref>)"
+          ]
+        ]
+      }
+    }
+  }
 }

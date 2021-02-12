@@ -19,80 +19,65 @@
                     "Value"
                 ],
                 "rows": [
-                    ["Discount $\gamma$",
-                        "$.99$"
-                    ],
-                    ["GAE parameter $\lambda$",
-                        "$0.95$"
-                    ],
-                    ["PPO clipping parameter $\epsilon$",
-                        "$0.2$"
+                    [
+                        "Discount $\gamma$", "$.99$"
                     ],
                     [
-                        "Policy epochs",
-                        "$4$"
+                        "GAE parameter $\lambda$", "$0.95$"
                     ],
                     [
-                        "Batch size",
-                        "$512$"
+                        "PPO clipping parameter $\epsilon$", "$0.2$"
                     ],
                     [
-                        "Entropy coefficient",
-                        "$0.01$"
+                        "Policy epochs", "$4$"
                     ],
                     [
-                        "Reward normalization",
-                        "Yes"
+                        "Batch size", "$512$"
                     ],
                     [
-                        "Reward clipping",
-                        "$[-10, 10]$"
+                        "Entropy coefficient", "$0.01$"
                     ],
                     [
-                        "Observation normalization",
-                        "Yes"
+                        "Reward normalization", "Yes"
                     ],
                     [
-                        "Observation clipping",
-                        "$[-10, 10]$"
+                        "Reward clipping", "$[-10, 10]$"
                     ],
                     [
-                        "Timesteps per rollout",
-                        "$128$"
-                    ],
-                    ["\# Workers",
-                        "$4$"
-                    ],
-                    ["\# Environments",
-                        "$32$"
+                        "Observation normalization", "Yes"
                     ],
                     [
-                        "Total timesteps",
-                        "$5 \times 10^6$"
+                        "Observation clipping", "$[-10, 10]$"
                     ],
                     [
-                        "Optimizer",
-                        "Adam"
+                        "Timesteps per rollout", "$128$"
                     ],
                     [
-                        "Initial learning rate",
-                        "$0.0003$"
+                        "\# Workers", "$4$"
                     ],
                     [
-                        "Learning rate schedule",
-                        "Linear decay"
+                        "\# Environments", "$32$"
                     ],
                     [
-                        "Gradient clipping ($l_2$ norm)",
-                        "$0.5$"
+                        "Total timesteps", "$5 \times 10^6$"
                     ],
                     [
-                        "Clipped value function",
-                        "Yes"
+                        "Optimizer", "Adam"
                     ],
                     [
-                        "Value loss coefficient",
-                        "$0.5$"
+                        "Initial learning rate", "$0.0003$"
+                    ],
+                    [
+                        "Learning rate schedule", "Linear decay"
+                    ],
+                    [
+                        "Gradient clipping ($l_2$ norm)", "$0.5$"
+                    ],
+                    [
+                        "Clipped value function", "Yes"
+                    ],
+                    [
+                        "Value loss coefficient", "$0.5$"
                     ]
                 ]
             }
