@@ -1,3 +1,7 @@
+__author__ = "David Ramsay"
+__maintainer__ = "Rebeca Pop, David Ramsay"
+__version__ = "0.1.0"
+
 class TableExtractor:
     def __init__(self, input_file):
         self.name = 'Table Extractor for {}'.format(input_file.split('/')[-1])
