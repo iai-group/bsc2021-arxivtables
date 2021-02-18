@@ -91,20 +91,12 @@ class TestStringMethods(unittest.TestCase):
             caption_str = str(content.source.find("caption"))  #.find("caption")
             json["caption"] = caption_str[caption_str.find("{") + 1: len(caption_str) - 2]
 
-<<<<<<< HEAD
-                line_str = line.decode("utf-8")
-
-                if "caption{" in line_str:
-                    json["caption"] = line_str[line_str.find(
-                        "{") + 1: len(line_str) - 2]
-=======
             #for line in f.readlines():
             #
             #    line_str = line.decode("utf-8")
             #
             #    if "caption{" in line_str :
             #        json["caption"] = line_str[line_str.find("{") + 1: len(line_str) - 2]
->>>>>>> main
 
         print(json)
         self.assertEqual(True, True)
@@ -127,7 +119,6 @@ class TestStringMethods(unittest.TestCase):
 
             self.assertEqual(reference["metadata"]["caption"], parsed_table.caption)
 
-
     def test_headings(self):
         for table_index in range(6, 11):
             f = open("tables/table_" + str(table_index) + ".tex")
@@ -146,27 +137,27 @@ class TestStringMethods(unittest.TestCase):
 
             self.assertEqual(reference["headings"], parsed_table.headings)
 
-
     def test_data(self):
         for table_index in range(6, 11):
             f = open("tables/table_" + str(table_index) + ".tex")
             latex_code = "".join(f.readlines())
             f.close()
 
-            te = TableExtractor()
+            te = TableExtractor("tables/table_" + str(table_index) + ".tex")
             tp = TableParser()
 
-<<<<<<< HEAD
-=======
             tables = te.extract_tables(latex_code)
             parsed_table = tp.parse(tables[0])
 
-            f = open("references/JSON_representation_" + str(table_index) + ".json")
+            if table_index < 6:
+                f = open("references/table_" + str(table_index) + ".json")
+            else:
+                f = open("references/JSON_representation_" + str(table_index) + ".json")
             reference = json.load(f)
             f.close()
 
             self.assertEqual(reference["data"], parsed_table.data)
 
->>>>>>> main
+
 if __name__ == '__main__':
     unittest.main()

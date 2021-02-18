@@ -20,13 +20,13 @@
                 ],
                 "rows": [
                     [
-                        "Discount $\gamma$", "$.99$"
+                        "Discount $\\gamma$", "$.99$"
                     ],
                     [
-                        "GAE parameter $\lambda$", "$0.95$"
+                        "GAE parameter $\\lambda$", "$0.95$"
                     ],
                     [
-                        "PPO clipping parameter $\epsilon$", "$0.2$"
+                        "PPO clipping parameter $\\epsilon$", "$0.2$"
                     ],
                     [
                         "Policy epochs", "$4$"
@@ -53,10 +53,10 @@
                         "Timesteps per rollout", "$128$"
                     ],
                     [
-                        "\# Workers", "$4$"
+                        "\\# Workers", "$4$"
                     ],
                     [
-                        "\# Environments", "$32$"
+                        "\\# Environments", "$32$"
                     ],
                     [
                         "Total timesteps", "$5 \times 10^6$"
