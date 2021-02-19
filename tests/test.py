@@ -1,3 +1,7 @@
+__author__ = "Rebeca Pop"
+__maintainer__ = "Rebeca Pop, David Ramsay"
+__version__ = "0.1.0"
+
 import json
 import unittest
 import os

@@ -1,3 +1,8 @@
+__author__ = "Rebeca Pop"
+__maintainer__ = "Rebeca Pop, David Ramsay"
+__version__ = "0.1.0"
+
+
 from arxivtables.table_extractor.parsed_table import ParsedTable
 from astropy.io import ascii
 from tex2py import tex2py
