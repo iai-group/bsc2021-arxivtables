@@ -1,33 +1,33 @@
 \begin{table}
     \begin{center}
-    \begin{tabular}{lr}
-    \toprule
-    \textbf{Hyperparameter} & \textbf{Value}  \\
-    \midrule
-    Discount $\gamma$ & $.99$ \\
-    GAE parameter $\lambda$ & $0.95$ \\
-    PPO clipping parameter $\epsilon$ & $0.2$ \\
-    Policy epochs & $4$ \\
-    Batch size & $512$ \\
-    Entropy coefficient & $0.01$ \\
-    Reward normalization & Yes \\
-    Reward clipping & $[-10, 10]$ \\
-    Observation normalization & Yes \\
-    Observation clipping & $[-10, 10]$ \\
-    Timesteps per rollout & $128$\\
-    \# Workers & $4$\\
-    \# Environments & $32$\\
-    Total timesteps & $5 \times 10^6$\\
-    Optimizer    & Adam  \\ 
-    Initial learning rate & $0.0003$ \\
-    Learning rate schedule & Linear decay \\
-    Gradient clipping ($l_2$ norm) & $0.5$ \\
-    Clipped value function & Yes \\
-    Value loss coefficient & $0.5$ \\
-    \bottomrule
-    \end{tabular}
-    \caption{\textbf{PPO hyperparameters.}}
-    \label{table:ppo_hyper}
+        \begin{tabular}{lr}
+            \toprule
+            \textbf{Hyperparameter}           & \textbf{Value}  \\
+            \midrule
+            Discount $\gamma$                 & $.99$           \\
+            GAE parameter $\lambda$           & $0.95$          \\
+            PPO clipping parameter $\epsilon$ & $0.2$           \\
+            Policy epochs                     & $4$             \\
+            Batch size                        & $512$           \\
+            Entropy coefficient               & $0.01$          \\
+            Reward normalization              & Yes             \\
+            Reward clipping                   & $[-10, 10]$     \\
+            Observation normalization         & Yes             \\
+            Observation clipping              & $[-10, 10]$     \\
+            Timesteps per rollout             & $128$           \\
+            \# Workers                        & $4$             \\
+            \# Environments                   & $32$            \\
+            Total timesteps                   & $5 \times 10^6$ \\
+            Optimizer                         & Adam            \\
+            Initial learning rate             & $0.0003$        \\
+            Learning rate schedule            & Linear decay    \\
+            Gradient clipping ($l_2$ norm)    & $0.5$           \\
+            Clipped value function            & Yes             \\
+            Value loss coefficient            & $0.5$           \\
+            \bottomrule
+        \end{tabular}
+        \caption{\textbf{PPO hyperparameters.}}
+        \label{table:ppo_hyper}
     \end{center}
     \vspace{-8mm}
-    \end{table}
+\end{table}
