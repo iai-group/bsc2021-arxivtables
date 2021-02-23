@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1de5e25f-3a40-4f4d-8181-4ef8be3a070d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/arxivtables/arxiv_getter/arxiv_getter.py" beforeDir="false" afterPath="$PROJECT_DIR$/arxivtables/arxiv_getter/arxiv_getter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/arxivtables/table_extractor/parsed_table.py" beforeDir="false" afterPath="$PROJECT_DIR$/arxivtables/table_extractor/parsed_table.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/arxivtables/table_extractor/table_extractor.py" beforeDir="false" afterPath="$PROJECT_DIR$/arxivtables/table_extractor/table_extractor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/arxivtables/table_extractor/table_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/arxivtables/table_extractor/table_parser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/arxivtables/table_extractor/test_multiple_tables.py" beforeDir="false" afterPath="$PROJECT_DIR$/arxivtables/table_extractor/test_multiple_tables.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/table_6.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output/table_6.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run_tables.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_tables.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/references/JSON_representation_10.json" beforeDir="false" afterPath="$PROJECT_DIR$/tests/references/table_10.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/references/JSON_representation_6.json" beforeDir="false" afterPath="$PROJECT_DIR$/tests/references/table_6.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/references/JSON_representation_7.json" beforeDir="false" afterPath="$PROJECT_DIR$/tests/references/table_7.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/references/JSON_representation_8.json" beforeDir="false" afterPath="$PROJECT_DIR$/tests/references/table_8.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/references/JSON_representation_9.json" beforeDir="false" afterPath="$PROJECT_DIR$/tests/references/table_9.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/arxivtables/arxiv_getter/arxiv_getter.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tests/test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1605">
+              <caret line="107" lean-forward="true" selection-start-line="107" selection-end-line="107" />
+              <folding>
+                <element signature="e#93#104#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>feed</find>
+      <find>table</find>
+      <find>multi</find>
+      <find>{table</find>
+      <find>multicolu</find>
+      <find>\</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>\\</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/arxivtables/arxiv_getter/arxiv_getter.py" />
+        <option value="$USER_HOME$/Downloads/2006 (1).08732" />
+        <option value="$PROJECT_DIR$/tests/tables/table_10.tex" />
+        <option value="$PROJECT_DIR$/tests/tables/complex/complex_1.tex" />
+        <option value="$PROJECT_DIR$/table_representation_2.json" />
+        <option value="$PROJECT_DIR$/references/JSON_representation_5.json" />
+        <option value="$PROJECT_DIR$/references/JSON_representation_6.json" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/arxivtables/table_extractor/table_extractor..py" />
+        <option value="$PROJECT_DIR$/arxivtables/table_extractor/__init__.py" />
+        <option value="$PROJECT_DIR$/tests/tables/table_7.tex" />
+        <option value="$PROJECT_DIR$/arxivtables/table_extractor/tables.tex" />
+        <option value="$PROJECT_DIR$/tests/tables/table_9.tex" />
+        <option value="$PROJECT_DIR$/tests/tables/table_8.tex" />
+        <option value="$PROJECT_DIR$/tests/references/JSON_representation_6.json" />
+        <option value="$PROJECT_DIR$/tests/references/JSON_representation_7.json" />
+        <option value="$PROJECT_DIR$/tests/references/JSON_representation_9.json" />
+        <option value="$PROJECT_DIR$/tests/references/JSON_representation_10.json" />
+        <option value="$PROJECT_DIR$/tests/references/JSON_representation_8.json" />
+        <option value="$PROJECT_DIR$/tests/references/table_2.json" />
+        <option value="$PROJECT_DIR$/tests/references/table_3.json" />
+        <option value="$PROJECT_DIR$/tests/references/table_4.json" />
+        <option value="$PROJECT_DIR$/tests/references/table_5.json" />
+        <option value="$PROJECT_DIR$/tests/tables/table_6.tex" />
+        <option value="$PROJECT_DIR$/tests/references/table_1.json" />
+        <option value="$PROJECT_DIR$/astropy_examples.py" />
+        <option value="$PROJECT_DIR$/output/table_2.txt" />
+        <option value="$PROJECT_DIR$/arxivtables/table_extractor/parsed_table.py" />
+        <option value="$PROJECT_DIR$/arxivtables/table_extractor/table_extractor.py" />
+        <option value="$PROJECT_DIR$/arxivtables/table_extractor/table_parser.py" />
+        <option value="$PROJECT_DIR$/arxivtables/table_extractor/test_multiple_tables.py" />
+        <option value="$PROJECT_DIR$/tests/tables/multiple_tables.tex" />
+        <option value="$PROJECT_DIR$/output/table_6.txt" />
+        <option value="$PROJECT_DIR$/tests/test.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="168" />
+    <option name="y" value="74" />
+    <option name="width" value="1101" />
+    <option name="height" value="821" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="bsc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bsc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bsc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bsc" type="462c0819:PsiDirectoryNode" />
+              <item name="output" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bsc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bsc" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bsc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bsc" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="tables" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tests" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python tests.Unittests for test.TestStringMethods.test_headings">
+    <configuration name="Unittests for test.TestStringMethods.test_caption" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="bsc" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test.TestStringMethods.test_caption&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for test.TestStringMethods.test_check_if_every_table_has_a_begin_table_instruction" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="bsc" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test.TestStringMethods.test_check_if_every_table_has_a_begin_table_instruction&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for test.TestStringMethods.test_files_has_tex_extension" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="bsc" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test.TestStringMethods.test_files_has_tex_extension&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for test.TestStringMethods.test_headings" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="bsc" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test.TestStringMethods.test_headings&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for test.TestStringMethods.test_table_count" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="bsc" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test.TestStringMethods.test_table_count&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Unittests for test.TestStringMethods.test_headings" />
+        <item itemvalue="Python tests.Unittests for test.TestStringMethods.test_caption" />
+        <item itemvalue="Python tests.Unittests for test.TestStringMethods.test_table_count" />
+        <item itemvalue="Python tests.Unittests for test.TestStringMethods.test_files_has_tex_extension" />
+        <item itemvalue="Python tests.Unittests for test.TestStringMethods.test_check_if_every_table_has_a_begin_table_instruction" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1de5e25f-3a40-4f4d-8181-4ef8be3a070d" name="Default Changelist" comment="" />
+      <created>1611604351872</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1611604351872</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="Unittests_for_test_TestStringMethods_test_check_if_every_table_has_a_begin_table_instruction - 2021.02.23 at 19h 03m 59s.xml">
+      <configuration name="Unittests for test.TestStringMethods.test_check_if_every_table_has_a_begin_table_instruction" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_TestStringMethods_test_check_if_every_table_has_a_begin_table_instruction - 2021.02.23 at 19h 04m 18s.xml">
+      <configuration name="Unittests for test.TestStringMethods.test_check_if_every_table_has_a_begin_table_instruction" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_TestStringMethods_test_check_if_every_table_has_a_begin_table_instruction - 2021.02.23 at 19h 04m 54s.xml">
+      <configuration name="Unittests for test.TestStringMethods.test_check_if_every_table_has_a_begin_table_instruction" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_TestStringMethods_test_check_if_every_table_has_a_begin_table_instruction - 2021.02.23 at 19h 05m 00s.xml">
+      <configuration name="Unittests for test.TestStringMethods.test_check_if_every_table_has_a_begin_table_instruction" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_TestStringMethods_test_files_has_tex_extension - 2021.02.23 at 19h 05m 05s.xml">
+      <configuration name="Unittests for test.TestStringMethods.test_files_has_tex_extension" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_TestStringMethods_test_files_has_tex_extension - 2021.02.23 at 19h 05m 55s.xml">
+      <configuration name="Unittests for test.TestStringMethods.test_files_has_tex_extension" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_TestStringMethods_test_table_count - 2021.02.23 at 19h 06m 07s.xml">
+      <configuration name="Unittests for test.TestStringMethods.test_table_count" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_TestStringMethods_test_table_count - 2021.02.23 at 19h 06m 21s.xml">
+      <configuration name="Unittests for test.TestStringMethods.test_table_count" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_TestStringMethods_test_caption - 2021.02.23 at 19h 07m 21s.xml">
+      <configuration name="Unittests for test.TestStringMethods.test_caption" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_TestStringMethods_test_headings - 2021.02.23 at 19h 30m 00s.xml">
+      <configuration name="Unittests for test.TestStringMethods.test_headings" configurationId="tests" />
+    </history-entry>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="168" y="74" width="1101" height="821" extended-state="1" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.5514223" visible="true" weight="0.20648149" />
+      <window_info id="Structure" order="2" sideWeight="0.44857767" side_tool="true" weight="0.20718816" />
+      <window_info anchor="bottom" id="Terminal" order="0" weight="0.32409638" />
+      <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="2" />
+      <window_info anchor="bottom" id="Message" order="3" />
+      <window_info anchor="bottom" id="Find" order="4" weight="0.32784638" />
+      <window_info anchor="bottom" id="Version Control" order="5" weight="0.32916668" />
+      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.37311384" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharmCE2018.3/python_stubs/-1199943126/pandas/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharmCE2018.3/python_stubs/-1199943126/pandas/_libs/tslibs/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharmCE2018.3/python_stubs/-1199943126/pandas/_libs/tslibs/base.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharmCE2018.3/python_stubs/-1199943126/pandas/io/sas/_sas.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="9" lean-forward="true" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/arxivtables/table_extractor/tables.tex">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/tables/table_10.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/table_9.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/table_10.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/tables/complex/complex_1.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="34" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/references/JSON_representation_8.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/references/JSON_representation_9.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/tables/table_3.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/arxivtables/table_extractor/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/astropy_examples.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/tables/table_9.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/references/table_2.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-50">
+          <caret line="3" column="23" lean-forward="true" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/references/table_4.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/references/table_5.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/references/JSON_representation_10.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/references/JSON_representation_7.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="8" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/references/JSON_representation_6.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/tables/table_7.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/references/table_8.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/tables/table_8.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/multiple_tables.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/table_3.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/table_2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" selection-start-line="14" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/references/table_9.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/tables/table_2.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="37" selection-start-line="28" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run_tables.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="20" column="63" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.vscode/settings.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/arxivtables/table_extractor/parsed_table.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/arxivtables/table_extractor/table_extractor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="41" column="30" lean-forward="true" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/arxivtables/table_extractor/table_parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="69" column="60" selection-start-line="69" selection-start-column="60" selection-end-line="69" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/arxivtables/table_extractor/test_multiple_tables.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="e#93#163#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/table_1.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/references/table_6.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/references/table_3.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/references/table_1.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/tables/table_1.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="6" lean-forward="true" selection-start-column="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/arxivtables/arxiv_getter/arxiv_getter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/tables/multiple_tables.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/tables/table_5.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="12" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/tables/table_6.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="15" lean-forward="true" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/table_6.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/table_8.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/table_7.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1605">
+          <caret line="107" lean-forward="true" selection-start-line="107" selection-end-line="107" />
+          <folding>
+            <element signature="e#93#104#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

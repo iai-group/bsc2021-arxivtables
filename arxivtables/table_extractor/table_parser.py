@@ -1,3 +1,8 @@
+__author__ = "Rebeca Pop"
+__maintainer__ = "Rebeca Pop, David Ramsay"
+__version__ = "0.1.0"
+
+
 from arxivtables.table_extractor.parsed_table import ParsedTable
 from astropy.io import ascii
 from tex2py import tex2py
@@ -9,27 +14,35 @@ class TableParser:
         self.name = 'TableParser'
 
     def parse(self, latex_source : str) -> ParsedTable:
-        latex_source = self.sanitize_table_lines(latex_source)
+        latex_source = self.__sanitize_table_lines(latex_source)
 
         content = tex2py(latex_source)
-        caption_str = str(content.source.find("caption"))
 
-        table_dict = dict()
-        table_dict["caption"] = caption_str[caption_str.find("{") + 1: len(caption_str) - 1]
+        caption_source = content.source.find("caption")
+        if not caption_source:
+            caption = ""
+        else:
+            caption_str = str(caption_source)
+            caption = caption_str[caption_str.find("{") + 1: len(caption_str) - 1]
 
         astro_table = ascii.read(latex_source, format="latex")
 
-        table_dict["headings"] = self.sanitize_latex_text_list(list(astro_table.columns))
-        table_dict["data"] = []
+        headings = self.__sanitize_latex_text_list(list(astro_table.columns))
+        data = []
 
         for row in astro_table:
-            table_dict["data"].append(self.sanitize_latex_text_list(list(row)))
+            data.append(self.__sanitize_latex_text_list(list(row)))
 
-        return ParsedTable(table_dict)
+        return ParsedTable(caption, headings, data)
 
+    def __sanitize_table_lines(self, latex_source : str) -> str:
+        lines = latex_source.split("\n")
+        new_source = ""
+        for l in lines:
+            if l.strip():
+                new_source += l + "\n"
+        latex_source = new_source
 
-
-    def sanitize_table_lines(self, latex_source : str) -> str:
         toprule_pos = latex_source.find("\\toprule")
         midrule_pos = latex_source.find("\\midrule")
         botrule_pos = latex_source.find("\\bottomrule")
@@ -40,18 +53,18 @@ class TableParser:
         old_heading = latex_source[toprule_pos + len("\\toprule") + 1:midrule_pos - 2]
         heading = old_heading.replace("&\n", "&")
 
+
+
         old_rows = latex_source[midrule_pos + len("\\midrule") + 1:botrule_pos - 2]
         rows = old_rows.replace("&\n", "&")
 
         return latex_source.replace(old_heading, heading).replace(old_rows, rows)
 
-
-
-    def sanitize_latex_text_list(self, strlist : list):
+    def __sanitize_latex_text_list(self, strlist : list):
         result_list = []
         for x in strlist:
-            result_list.append(self.sanitize_latex_text(str(x)))
+            result_list.append(self.__sanitize_latex_text(str(x)))
         return result_list
 
-    def sanitize_latex_text(self, latex_source : str) -> str:
+    def __sanitize_latex_text(self, latex_source : str) -> str:
         return LatexNodes2Text().latex_to_text(latex_source)

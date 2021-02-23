@@ -1,3 +1,7 @@
+__author__ = "David Ramsay"
+__maintainer__ = "Rebeca Pop, David Ramsay"
+__version__ = "0.1.0"
+
 class TableExtractor:
     def __init__(self, input_file):
         self.name = 'Table Extractor for {}'.format(input_file.split('/')[-1])
@@ -25,21 +29,19 @@ class TableExtractor:
 
     def find_all_table_indices(self):
         lines = []
-        #if self.check_if_valid():
         with open(self.input_file) as f:
             lines = f.readlines()
         try:
             self.begin_table_indices = [lines.index(
                 l) for l in lines if '\\begin{tabular' in l]
             self.end_table_indices = [lines.index(l) + 1
-                                      for l in lines if '\\end{tabular' in l]
+                                        for l in lines if '\\end{tabular' in l]
             return [self.begin_table_indices, self.end_table_indices]
         except Exception as e:
             print(e)
             raise Exception(e)
 
     def extractTables(self, saveLocation='/'):
-        #assert self.check_if_valid() == True
         print('Running {}'.format(self.name))
         tableIndicies = self.find_all_table_indices()
         with open(self.input_file) as f:

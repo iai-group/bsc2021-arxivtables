@@ -1,3 +1,7 @@
+__author__ = "Rebeca Pop"
+__maintainer__ = "Rebeca Pop, David Ramsay"
+__version__ = "0.1.0"
+
 import json
 import unittest
 import os
@@ -19,7 +23,7 @@ class TestStringMethods(unittest.TestCase):
     def test_table_count(self):
         countFiles = len([filename for filename in os.listdir(
             self.DIR) if os.path.isfile(os.path.join(self.DIR, filename))])
-        self.assertEqual(countFiles, 10)
+        self.assertEqual(countFiles, 11)
 
     def file_contains_table(self):
         tables = sorted([self.DIR + filename for filename in os.listdir(
@@ -42,7 +46,7 @@ class TestStringMethods(unittest.TestCase):
         hasADifferentExtensionThanTex = False
 
         for file in files:
-            if not file.endswith('.tex'):
+            if os.path.isfile(self.DIR + file) and not file.endswith('.tex'):
                 hasADifferentExtensionThanTex = True
                 break
 
@@ -54,6 +58,9 @@ class TestStringMethods(unittest.TestCase):
         ok = True
 
         for file in files:
+            if os.path.isdir(self.DIR + file):
+                continue
+
             hasBeginTable = True
 
             with open(self.DIR + file, 'rb') as f:
@@ -98,65 +105,57 @@ class TestStringMethods(unittest.TestCase):
             #    if "caption{" in line_str :
             #        json["caption"] = line_str[line_str.find("{") + 1: len(line_str) - 2]
 
+
         print(json)
         self.assertEqual(True, True)
 
     def test_caption(self):
         for table_index in range(6, 11):
-            f = open("tables/table_" + str(table_index) + ".tex")
+            f = open("../output/table_" + str(table_index) + ".txt")
             latex_code = "".join(f.readlines())
             f.close()
 
-            te = TableExtractor()
             tp = TableParser()
 
-            tables = te.extract_tables(latex_code)
-            parsed_table = tp.parse(tables[0])
+            parsed_table = tp.parse(latex_code)
 
-            f = open("references/JSON_representation_" + str(table_index) + ".json")
+            f = open("references/table_" + str(table_index) + ".json")
             reference = json.load(f)
             f.close()
 
-            self.assertEqual(reference["metadata"]["caption"], parsed_table.caption)
+            self.assertEqual(reference["<documentId>"]["<tableId>"]["table"]["caption"], parsed_table.caption)
 
     def test_headings(self):
         for table_index in range(6, 11):
-            f = open("tables/table_" + str(table_index) + ".tex")
+            f = open("../output/table_" + str(table_index) + ".txt")
             latex_code = "".join(f.readlines())
             f.close()
 
-            te = TableExtractor()
             tp = TableParser()
 
-            tables = te.extract_tables(latex_code)
-            parsed_table = tp.parse(tables[0])
+            parsed_table = tp.parse(latex_code)
 
-            f = open("references/JSON_representation_" + str(table_index) + ".json")
+            f = open("references/table_" + str(table_index) + ".json")
             reference = json.load(f)
             f.close()
 
-            self.assertEqual(reference["headings"], parsed_table.headings)
+            self.assertEqual(reference["<documentId>"]["<tableId>"]["table"]["headers"], parsed_table.headings)
 
     def test_data(self):
         for table_index in range(6, 11):
-            f = open("tables/table_" + str(table_index) + ".tex")
+            f = open("../output/table_" + str(table_index) + ".txt")
             latex_code = "".join(f.readlines())
             f.close()
 
-            te = TableExtractor("tables/table_" + str(table_index) + ".tex")
             tp = TableParser()
 
-            tables = te.extract_tables(latex_code)
-            parsed_table = tp.parse(tables[0])
+            parsed_table = tp.parse(latex_code)
 
-            if table_index < 6:
-                f = open("references/table_" + str(table_index) + ".json")
-            else:
-                f = open("references/JSON_representation_" + str(table_index) + ".json")
+            f = open("references/table_" + str(table_index) + ".json")
             reference = json.load(f)
             f.close()
 
-            self.assertEqual(reference["data"], parsed_table.data)
+            self.assertEqual(reference["<documentId>"]["<tableId>"]["table"]["rows"], parsed_table.data)
 
 
 if __name__ == '__main__':
