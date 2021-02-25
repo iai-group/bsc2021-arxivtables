@@ -110,13 +110,14 @@ class TestStringMethods(unittest.TestCase):
 
     def test_caption(self):
         for table_index in range(6, 11):
-            f = open("../output/table_" + str(table_index) + ".txt")
-            latex_code = "".join(f.readlines())
-            f.close()
-
+            te = TableExtractor("tables/table_" + str(table_index) + ".tex")
             tp = TableParser()
 
-            parsed_table = tp.parse(latex_code)
+            tables = te.extract_tables()
+            if not tables:
+                continue
+            #self.assertTrue(len(tables) > 0)
+            parsed_table = tp.parse(tables[0])
 
             f = open("references/table_" + str(table_index) + ".json")
             reference = json.load(f)
@@ -126,13 +127,14 @@ class TestStringMethods(unittest.TestCase):
 
     def test_headings(self):
         for table_index in range(6, 11):
-            f = open("../output/table_" + str(table_index) + ".txt")
-            latex_code = "".join(f.readlines())
-            f.close()
-
+            te = TableExtractor("tables/table_" + str(table_index) + ".tex")
             tp = TableParser()
 
-            parsed_table = tp.parse(latex_code)
+            tables = te.extract_tables()
+            if not tables:
+                continue
+            #self.assertTrue(len(tables) > 0)
+            parsed_table = tp.parse(tables[0])
 
             f = open("references/table_" + str(table_index) + ".json")
             reference = json.load(f)
@@ -142,13 +144,14 @@ class TestStringMethods(unittest.TestCase):
 
     def test_data(self):
         for table_index in range(6, 11):
-            f = open("../output/table_" + str(table_index) + ".txt")
-            latex_code = "".join(f.readlines())
-            f.close()
-
+            te = TableExtractor("tables/table_" + str(table_index) + ".tex")
             tp = TableParser()
 
-            parsed_table = tp.parse(latex_code)
+            tables = te.extract_tables()
+            if not tables:
+                continue
+            #self.assertTrue(len(tables) > 0)
+            parsed_table = tp.parse(tables[0])
 
             f = open("references/table_" + str(table_index) + ".json")
             reference = json.load(f)

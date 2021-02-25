@@ -66,5 +66,6 @@ class TableParser:
             result_list.append(self.__sanitize_latex_text(str(x)))
         return result_list
 
+
     def __sanitize_latex_text(self, latex_source : str) -> str:
         return LatexNodes2Text().latex_to_text(latex_source)
