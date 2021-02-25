@@ -6,10 +6,9 @@ import json
 import unittest
 import os
 import os.path
+from tex2py import tex2py
 from astropy.table import Table
 from arxivtables.table_extractor.table_extractor import TableExtractor
-from tex2py import tex2py
-
 from arxivtables.table_extractor.table_parser import TableParser
 
 
@@ -160,6 +159,21 @@ class TestStringMethods(unittest.TestCase):
             f.close()
 
             self.assertEqual(reference["data"], parsed_table.data)
+
+class TestTableExtraction(unittest.TestCase):
+    DIR = os.path.dirname(os.path.realpath(__file__))+'/tables/'
+    def test_table_extraction(self):
+        tables = sorted([self.DIR + filename for filename in os.listdir(self.DIR) if os.path.isfile(os.path.join(self.DIR, filename))])
+        outputDIR = os.path.dirname(os.path.realpath(__file__))+'/output/'
+        output = sorted([outputDIR + filename for filename in os.listdir(outputDIR) if os.path.isfile(os.path.join(outputDIR, filename))])
+        extractor = TableExtractor(tables[0])
+        with open(output[0]) as output:
+            outputText = output.read()
+        inputText = extractor.extract_tables()[0]
+        print(inputText)
+        print(outputText)
+        self.assertEqual(inputText, outputText)
+
 
 if __name__ == '__main__':
     unittest.main()
