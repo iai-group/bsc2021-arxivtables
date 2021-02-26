@@ -15,3 +15,4 @@ class TableExtractor:
         tables = list(soup.find_all('table'))
         strTables = [str(table) for table in tables]
         return strTables
+
