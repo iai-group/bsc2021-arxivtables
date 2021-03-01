@@ -11,5 +11,5 @@ python3 -m pip install -r requirements.txt
 ## Running tests
 
 <pre>
-python3 -m unittest tests/test.py -v
+python3 -m unittest tests.test -v
 </pre>
