@@ -13,9 +13,8 @@ class TableParser:
     def __init__(self):
         self.name = 'TableParser'
 
-    def parse(self, latex_source : str) -> ParsedTable:
+    def parse(self, latex_source : str, is_raw : bool = False) -> ParsedTable:
         latex_source = self.__sanitize_table_lines(latex_source)
-
         content = tex2py(latex_source)
 
         caption_source = content.source.find("caption")
@@ -25,13 +24,21 @@ class TableParser:
             caption_str = str(caption_source)
             caption = caption_str[caption_str.find("{") + 1: len(caption_str) - 1]
 
+            if not is_raw:
+                caption = self.__sanitize_latex_text(caption).strip()
+
         astro_table = ascii.read(latex_source, format="latex")
 
-        headings = self.__sanitize_latex_text_list(list(astro_table.columns))
-        data = []
+        headings = list(map(str, list(astro_table.columns)))
+        if not is_raw:
+            headings = self.__sanitize_latex_text_list(headings)
 
+        data = []
         for row in astro_table:
-            data.append(self.__sanitize_latex_text_list(list(row)))
+            row_items = list(map(str, list(row)))
+            if not is_raw:
+                row_items = self.__sanitize_latex_text_list(row_items)
+            data.append(row_items)
 
         return ParsedTable(caption, headings, data)
 

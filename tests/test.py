@@ -109,7 +109,8 @@ class TestStringMethods(unittest.TestCase):
         self.assertEqual(True, True)
 
     def test_caption(self):
-        for table_index in range(6, 11):
+        for table_index in range(1, 11):
+            if table_index == 5: continue
             te = TableExtractor("tables/table_" + str(table_index) + ".tex")
             tp = TableParser()
 
@@ -119,14 +120,15 @@ class TestStringMethods(unittest.TestCase):
             #self.assertTrue(len(tables) > 0)
             parsed_table = tp.parse(tables[0])
 
-            f = open("references/table_" + str(table_index) + ".json")
+            f = open("references/cleaned_tables/table_" + str(table_index) + ".json")
             reference = json.load(f)
             f.close()
 
             self.assertEqual(reference["<documentId>"]["<tableId>"]["table"]["caption"], parsed_table.caption)
 
     def test_headings(self):
-        for table_index in range(6, 11):
+        for table_index in range(1, 11):
+            if table_index == 5: continue
             te = TableExtractor("tables/table_" + str(table_index) + ".tex")
             tp = TableParser()
 
@@ -136,14 +138,15 @@ class TestStringMethods(unittest.TestCase):
             #self.assertTrue(len(tables) > 0)
             parsed_table = tp.parse(tables[0])
 
-            f = open("references/table_" + str(table_index) + ".json")
+            f = open("references/cleaned_tables/table_" + str(table_index) + ".json")
             reference = json.load(f)
             f.close()
 
             self.assertEqual(reference["<documentId>"]["<tableId>"]["table"]["headers"], parsed_table.headings)
 
     def test_data(self):
-        for table_index in range(6, 11):
+        for table_index in range(1, 11):
+            if table_index == 5: continue
             te = TableExtractor("tables/table_" + str(table_index) + ".tex")
             tp = TableParser()
 
@@ -153,7 +156,25 @@ class TestStringMethods(unittest.TestCase):
             #self.assertTrue(len(tables) > 0)
             parsed_table = tp.parse(tables[0])
 
-            f = open("references/table_" + str(table_index) + ".json")
+            f = open("references/cleaned_tables/table_" + str(table_index) + ".json")
+            reference = json.load(f)
+            f.close()
+
+            self.assertEqual(reference["<documentId>"]["<tableId>"]["table"]["rows"], parsed_table.data)
+
+    def test_raw_data(self):
+        for table_index in range(1, 11):
+            if table_index == 5: continue
+            te = TableExtractor("tables/table_" + str(table_index) + ".tex")
+            tp = TableParser()
+
+            tables = te.extract_tables()
+            if not tables:
+                continue
+            #self.assertTrue(len(tables) > 0)
+            parsed_table = tp.parse(tables[0], True)
+
+            f = open("references/raw_tables/table_" + str(table_index) + ".json")
             reference = json.load(f)
             f.close()
 

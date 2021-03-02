@@ -1,0 +1,77 @@
+{
+    "<documentId>": {
+        "<tableId>": {
+            "name": "",
+            "date": "",
+            "authors": {
+                "name": "",
+                "otherInfo": "..."
+            },
+            "href": "",
+            "publicationDate": "",
+            "table": {
+                "title": "",
+                "footer": "",
+                "comments": "",
+                "caption": "Most frequent patterns based of POS-tagger.\n  NN is noun singular, IN is preposition/subbordinating conjunction, CD is cardinal digit, JJ is adjective, NNP is proper noun, NNS is noun plural, and VBN is past participle taken.  (acc=95\\%, errors lie at e.g. Greek (both adj and noun))",
+                "headers": [
+                    "Pattern",
+                    "Occurrence",
+                    "Example"
+                ],
+                "rows": [
+                    [
+                        "NNS IN NNP",
+                        "47167",
+                        "\\emph{Writers from Toronto}"
+                    ],
+                    [
+                        "CD NNS IN NNP",
+                        "33858",
+                        "\\emph{1929 establishments in California}"
+                    ],
+                    [
+                        "JJ NNS",
+                        "31482",
+                        "\\emph{Spanish films}"
+                    ],
+                    [
+                        "CD IN NNP",
+                        "27484",
+                        "\\emph{1959 in Antarctica}"
+                    ],
+                    [
+                        "NN",
+                        "23434",
+                        "\\emph{Agriculture}"
+                    ],
+                    [
+                        "NNS IN NNP NNP",
+                        "22996",
+                        "\\emph{Compositions by George Gershwin}"
+                    ],
+                    [
+                        "NNP NNS",
+                        "19262",
+                        "\\emph{Vowel letters}"
+                    ],
+                    [
+                        "JJ NNS IN NNP",
+                        "18615",
+                        "\\emph{Duty-free zones of Europe}"
+                    ],
+                    [
+                        "NNP NNP",
+                        "17558",
+                        "\\emph{Nobel Prize}"
+                    ],
+                    [
+                        "NNS VBN IN NNP NNP",
+                        "15286",
+                        "\\emph{Organizations based in Los Angeles}"
+                    ]
+                ]
+            }
+        }
+    }
+}

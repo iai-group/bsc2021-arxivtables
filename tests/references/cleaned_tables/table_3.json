@@ -1,0 +1,37 @@
+{
+    "<documentId>": {
+        "<tableId>": {
+            "name": "",
+            "date": "",
+            "authors": {
+                "name": "",
+                "otherInfo": "..."
+            },
+            "href": "",
+            "publicationDate": "",
+            "table": {
+                "title": "",
+                "footer": "",
+                "comments": "",
+                "caption": "The effect on x after a closing parenthesis was inserted at position p.\n        The effects depend on the effect on the children y_1 and y_2 of x:\n        for example, an entry '(0,-1) → (+1,0)' in the column 'p is in (y_1)' means that\n        if the change operation has effect (0,-1) on y_1 then the change operation has effect (+1,0) on x.",
+                "headers": [
+                    "col0",
+                    "p is in (y_1)",
+                    "p is in (y_2) \n "
+                ],
+                "rows": [
+                    [
+                        "r(y_1) ≤ℓ(y_2)",
+                        "[ (+1,0) → (+1,0); (0,-1) → (+1,0) ]",
+                        "[ (+1,0) → (+1,0); (0,-1) → (0,-1) ]"
+                    ],
+                    [
+                        "r(y_1) > ℓ(y_2)",
+                        "[ (+1,0) → (+1,0); (0,-1) → (0,-1) ]",
+                        "[ (+1,0) → (0,-1); (0,-1) → (0,-1) ]"
+                    ]
+                ]
+            }
+        }
+    }
+}

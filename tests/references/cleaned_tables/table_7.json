@@ -13,7 +13,7 @@
         "title": "",
         "footer": "",
         "comments": "",
-        "caption": "Most frequent patterns based of POS-tagger.\n  NN is noun singular, IN is preposition/subbordinating conjunction, CD is cardinal digit, JJ is adjective, NNP is proper noun, NNS is noun plural, and VBN is past participle taken.  (acc=95\\%, errors lie at e.g. Greek (both adj and noun))",
+        "caption": "Most frequent patterns based of POS-tagger.\n  NN is noun singular, IN is preposition/subbordinating conjunction, CD is cardinal digit, JJ is adjective, NNP is proper noun, NNS is noun plural, and VBN is past participle taken.  (acc=95%, errors lie at e.g. Greek (both adj and noun))",
         "headers": ["Pattern", "Occurrence", "Example"],
         "rows": [
           ["NNS IN NNP" , "47167", "Writers from Toronto"],
