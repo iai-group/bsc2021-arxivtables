@@ -15,7 +15,6 @@ if not os.path.exists(os.path.dirname(os.path.realpath(__file__)) + '/output/'):
 tables = sorted([DIR + filename for filename in os.listdir(
     DIR) if os.path.isfile(os.path.join(DIR, filename))])
 
-for table in tables:
-    extractor = TableExtractor(table)
-    extractor.extractTables(
-        os.path.dirname(os.path.realpath(__file__)) + '/output/')
+
+extractor = TableExtractor(tables[0])
+print(extractor.extract_tables())

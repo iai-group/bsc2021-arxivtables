@@ -12,21 +12,17 @@ from arxivtables.table_extractor.table_extractor import TableExtractor
 from arxivtables.table_extractor.table_parser import TableParser
 
 
+DIR = os.path.dirname(os.path.realpath(__file__))
 
-class TestStringMethods(unittest.TestCase):
-    DIR = os.path.dirname(os.path.realpath(__file__))+'/tables/'
-
-    def test_true(self):
-        self.assertEqual(True, True)
-
+class TestBase(unittest.TestCase):
     def test_table_count(self):
         countFiles = len([filename for filename in os.listdir(
-            self.DIR) if os.path.isfile(os.path.join(self.DIR, filename))])
-        self.assertEqual(countFiles, 11)
+            DIR+'/tables/') if os.path.isfile(os.path.join(DIR+'/tables/', filename))])
+        self.assertEqual(countFiles, 10)
 
     def file_contains_table(self):
-        tables = sorted([self.DIR + filename for filename in os.listdir(
-            self.DIR) if os.path.isfile(os.path.join(self.DIR, filename))])
+        tables = sorted([DIR+'/tables/' + filename for filename in os.listdir(
+            DIR+'/tables/') if os.path.isfile(os.path.join(DIR+'/tables/', filename))])
         data = []
         print(tables)
         for table in tables:
@@ -39,30 +35,30 @@ class TestStringMethods(unittest.TestCase):
                     continue
                 t.close()
                 data.append(tData)
-
+    
     def test_files_has_tex_extension(self):
-        files = os.listdir(self.DIR)
+        files = os.listdir(DIR)
         hasADifferentExtensionThanTex = False
 
         for file in files:
-            if os.path.isfile(self.DIR + file) and not file.endswith('.tex'):
+            if os.path.isfile(DIR+'/tables/' + file) and not file.endswith('.tex'):
                 hasADifferentExtensionThanTex = True
                 break
 
         self.assertEqual(hasADifferentExtensionThanTex, False)
 
     def test_check_if_every_table_has_a_begin_table_instruction(self):
-        files = os.listdir(self.DIR)
+        files = os.listdir(DIR+'/tables/')
 
         ok = True
 
         for file in files:
-            if os.path.isdir(self.DIR + file):
+            if os.path.isdir(DIR+'/tables/' + file):
                 continue
 
             hasBeginTable = True
 
-            with open(self.DIR + file, 'rb') as f:
+            with open(DIR+'/tables/' + file, 'rb') as f:
                 try:
                     content = f.read()
 
@@ -80,38 +76,18 @@ class TestStringMethods(unittest.TestCase):
 
         self.assertEqual(ok, True)
 
+    
     def test_if_there_is_an_input_and_an_output_directory(self):
-        files = os.listdir()
+        files = os.listdir(DIR)
+        print(DIR)
+        print(files)
         self.assertEqual("tables" in files and "references" in files, True)
 
-    def test_extracted_tables_against_JSON_reference(self):
-        extractor = TableExtractor()
-        files = os.listdir(self.DIR)
 
-        with open(self.DIR + "table_6.tex") as f:
-            # content = f.read()
-            # text=extractor.table_to_text(content.decode("utf-8"))
-            # print(text)
-            json = dict()
-            content = tex2py(f)
-            caption_str = str(content.source.find("caption"))  #.find("caption")
-            json["caption"] = caption_str[caption_str.find("{") + 1: len(caption_str) - 2]
-
-            #for line in f.readlines():
-            #
-            #    line_str = line.decode("utf-8")
-            #
-            #    if "caption{" in line_str :
-            #        json["caption"] = line_str[line_str.find("{") + 1: len(line_str) - 2]
-
-
-        print(json)
-        self.assertEqual(True, True)
-
+class TestCleaned(unittest.TestCase):
     def test_caption(self):
-        for table_index in range(1, 11):
-            if table_index == 5: continue
-            te = TableExtractor("tables/table_" + str(table_index) + ".tex")
+        for table_index in range(1, 10):
+            te = TableExtractor(DIR+"/tables/table_" + str(table_index) + ".tex")
             tp = TableParser()
 
             tables = te.extract_tables()
@@ -120,16 +96,15 @@ class TestStringMethods(unittest.TestCase):
             #self.assertTrue(len(tables) > 0)
             parsed_table = tp.parse(tables[0])
 
-            f = open("references/cleaned_tables/table_" + str(table_index) + ".json")
+            f = open(DIR+"/references/cleaned_tables/table_" + str(table_index) + ".json")
             reference = json.load(f)
             f.close()
 
             self.assertEqual(reference["<documentId>"]["<tableId>"]["table"]["caption"], parsed_table.caption)
 
     def test_headings(self):
-        for table_index in range(1, 11):
-            if table_index == 5: continue
-            te = TableExtractor("tables/table_" + str(table_index) + ".tex")
+        for table_index in range(1, 10):
+            te = TableExtractor(DIR+"/tables/table_" + str(table_index) + ".tex")
             tp = TableParser()
 
             tables = te.extract_tables()
@@ -138,16 +113,15 @@ class TestStringMethods(unittest.TestCase):
             #self.assertTrue(len(tables) > 0)
             parsed_table = tp.parse(tables[0])
 
-            f = open("references/cleaned_tables/table_" + str(table_index) + ".json")
+            f = open(DIR+"/references/cleaned_tables/table_" + str(table_index) + ".json")
             reference = json.load(f)
             f.close()
 
             self.assertEqual(reference["<documentId>"]["<tableId>"]["table"]["headers"], parsed_table.headings)
 
     def test_data(self):
-        for table_index in range(1, 11):
-            if table_index == 5: continue
-            te = TableExtractor("tables/table_" + str(table_index) + ".tex")
+        for table_index in range(1, 10):
+            te = TableExtractor(DIR+"/tables/table_" + str(table_index) + ".tex")
             tp = TableParser()
 
             tables = te.extract_tables()
@@ -156,7 +130,7 @@ class TestStringMethods(unittest.TestCase):
             #self.assertTrue(len(tables) > 0)
             parsed_table = tp.parse(tables[0])
 
-            f = open("references/cleaned_tables/table_" + str(table_index) + ".json")
+            f = open(DIR+"/references/cleaned_tables/table_" + str(table_index) + ".json")
             reference = json.load(f)
             f.close()
 
@@ -165,7 +139,7 @@ class TestStringMethods(unittest.TestCase):
     def test_raw_data(self):
         for table_index in range(1, 11):
             if table_index == 5: continue
-            te = TableExtractor("tables/table_" + str(table_index) + ".tex")
+            te = TableExtractor(DIR+"/tables/table_" + str(table_index) + ".tex")
             tp = TableParser()
 
             tables = te.extract_tables()
@@ -174,7 +148,7 @@ class TestStringMethods(unittest.TestCase):
             #self.assertTrue(len(tables) > 0)
             parsed_table = tp.parse(tables[0], True)
 
-            f = open("references/raw_tables/table_" + str(table_index) + ".json")
+            f = open(DIR+"/references/raw_tables/table_" + str(table_index) + ".json")
             reference = json.load(f)
             f.close()
 
@@ -182,17 +156,14 @@ class TestStringMethods(unittest.TestCase):
 
 
 class TestTableExtraction(unittest.TestCase):
-    DIR = os.path.dirname(os.path.realpath(__file__))+'/tables/'
     def test_table_extraction(self):
-        tables = sorted([self.DIR + filename for filename in os.listdir(self.DIR) if os.path.isfile(os.path.join(self.DIR, filename))])
-        outputDIR = os.path.dirname(os.path.realpath(__file__))+'/output/'
+        tables = sorted([DIR+'/tables/' + filename for filename in os.listdir(DIR+'/tables/') if os.path.isfile(os.path.join(DIR+'/tables/', filename))])
+        outputDIR = DIR+'/output/'
         output = sorted([outputDIR + filename for filename in os.listdir(outputDIR) if os.path.isfile(os.path.join(outputDIR, filename))])
         extractor = TableExtractor(tables[0])
         with open(output[0]) as output:
             outputText = output.read()
         inputText = extractor.extract_tables()[0]
-        print(inputText)
-        print(outputText)
         self.assertEqual(inputText, outputText)
 
 

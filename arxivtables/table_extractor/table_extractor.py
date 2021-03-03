@@ -13,6 +13,7 @@ class TableExtractor:
         with open(self.input_file) as file:
             soup = TexSoup(file)
         tables = list(soup.find_all('table'))
-        strTables = [str(table) for table in tables]
+        tablesMulti = list(soup.find_all('table*'))
+        strTables = [*[str(table) for table in tables], *[str(table) for table in tablesMulti]]
         return strTables
 
