@@ -1,0 +1,77 @@
+{
+    "<documentId>": {
+        "<tableId>": {
+            "name": "",
+            "date": "",
+            "authors": {
+                "name": "",
+                "otherInfo": "..."
+            },
+            "href": "",
+            "publicationDate": "",
+            "table": {
+                "title": "",
+                "footer": "",
+                "comments": "",
+                "caption": "",
+                "headers": [
+                    "Length of clause",
+                    "Time Complexity",
+                    "Branching factor for $h=1,2,3,4$ w/o $\\alpha$"
+                ],
+                "rows": [
+                    [
+                        "2",
+                        "$\\binom{2}{h}^{\\fracy{\\alpha n}{2}}$",
+                        "1.4143"
+                    ],
+                    [
+                        "3",
+                        "$\\binom{3}{h}^{\\fracy{\\alpha n}{3}}$",
+                        "1.4423, 1.4423"
+                    ],
+                    [
+                        "4",
+                        "$\\binom{4}{h}^{\\fracy{\\alpha n}{4}}$",
+                        "1.4143, 1.5651"
+                    ],
+                    [
+                        "5",
+                        "$\\binom{5}{h}^{\\fracy{\\alpha n}{5}}$",
+                        "1.3798, 1.5849, 1.5849"
+                    ],
+                    [
+                        "6",
+                        "$\\binom{6}{h}^{\\fracy{\\alpha n}{6}}$",
+                        "1.3481, 1.5705, 1.6476"
+                    ],
+                    [
+                        "7",
+                        "$\\binom{7}{h}^{\\fracy{\\alpha n}{7}}$",
+                        "1.3205, 1.5449, 1.6619, 1.6619"
+                    ],
+                    [
+                        "8",
+                        "$\\binom{8}{h}^{\\fracy{\\alpha n}{8}}$",
+                        "1.2969, 1.5167, 1.6540, 1.7008"
+                    ],
+                    [
+                        "9",
+                        "$\\binom{9}{h}^{\\fracy{\\alpha n}{9}}$",
+                        "1.2766, 1.4891, 1.6361, 1.7115"
+                    ],
+                    [
+                        "10",
+                        "$\\binom{10}{h}^{\\fracy{\\alpha n}{10}}$",
+                        "1.2590, 1.4633, 1.6141, 1.7070"
+                    ],
+                    [
+                        "11",
+                        "$\\binom{11}{h}^{\\fracy{\\alpha n}{11}}$",
+                        "1.2436, 1.4396, 1.5908, 1.6942"
+                    ]
+                ]
+            }
+        }
+    }
+}
