@@ -46,45 +46,13 @@ class TestBase(unittest.TestCase):
                 break
 
         self.assertEqual(hasADifferentExtensionThanTex, False)
-
-    def test_check_if_every_table_has_a_begin_table_instruction(self):
-        files = os.listdir(DIR+'/tables/')
-
-        ok = True
-
-        for file in files:
-            if os.path.isdir(DIR+'/tables/' + file):
-                continue
-
-            hasBeginTable = True
-
-            with open(DIR+'/tables/' + file, 'rb') as f:
-                try:
-                    content = f.read()
-
-                    if 'begin{table' not in content.decode("utf-8"):
-                        hasBeginTable = False
-
-                    f.close()
-                except Exception as e:
-                    print(e)
-                    f.close()
-
-            if not hasBeginTable:
-                ok = False
-                break
-
-        self.assertEqual(ok, True)
-
     
     def test_if_there_is_an_input_and_an_output_directory(self):
         files = os.listdir(DIR)
         print(DIR)
         print(files)
         self.assertEqual("tables" in files and "references" in files, True)
-
-
-class TestCleaned(unittest.TestCase):
+        
     def test_caption(self):
         for table_index in range(1, 10):
             te = TableExtractor(DIR+"/tables/table_" + str(table_index) + ".tex")
@@ -119,6 +87,10 @@ class TestCleaned(unittest.TestCase):
 
             self.assertEqual(reference["<documentId>"]["<tableId>"]["table"]["headers"], parsed_table.headings)
 
+
+
+
+class TestCleaned(unittest.TestCase):
     def test_data(self):
         for table_index in range(1, 10):
             te = TableExtractor(DIR+"/tables/table_" + str(table_index) + ".tex")
@@ -136,6 +108,8 @@ class TestCleaned(unittest.TestCase):
 
             self.assertEqual(reference["<documentId>"]["<tableId>"]["table"]["rows"], parsed_table.data)
 
+
+class TestRaw(unittest.TestCase):
     def test_raw_data(self):
         for table_index in range(1, 11):
             if table_index == 5: continue
@@ -153,7 +127,6 @@ class TestCleaned(unittest.TestCase):
             f.close()
 
             self.assertEqual(reference["<documentId>"]["<tableId>"]["table"]["rows"], parsed_table.data)
-
 
 class TestTableExtraction(unittest.TestCase):
     def test_table_extraction(self):
