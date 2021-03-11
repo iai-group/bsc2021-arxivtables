@@ -5,8 +5,6 @@ __version__ = "0.1.0"
 import json
 import unittest
 import os
-import os.path
-from tex2py import tex2py
 from astropy.table import Table
 from arxivtables.table_extractor.table_extractor import TableExtractor
 from arxivtables.table_extractor.table_parser import TableParser
@@ -14,15 +12,20 @@ from arxivtables.table_extractor.table_parser import TableParser
 
 DIR = os.path.dirname(os.path.realpath(__file__))
 
+def GetFilesInDirectory(directory):
+    f = []
+    for (dirpath, dirnames, filenames) in os.walk(directory):
+        f.extend(filenames)
+        break
+    return f
+
 class TestBase(unittest.TestCase):
     def test_table_count(self):
-        countFiles = len([filename for filename in os.listdir(
-            DIR+'/tables/') if os.path.isfile(os.path.join(DIR+'/tables/', filename))])
+        countFiles = len(GetFilesInDirectory(DIR+'/tables/'))
         self.assertEqual(countFiles, 10)
 
     def file_contains_table(self):
-        tables = sorted([DIR+'/tables/' + filename for filename in os.listdir(
-            DIR+'/tables/') if os.path.isfile(os.path.join(DIR+'/tables/', filename))])
+        tables = sorted(GetFilesInDirectory(DIR+'/tables/'))
         data = []
         print(tables)
         for table in tables:
@@ -51,82 +54,168 @@ class TestBase(unittest.TestCase):
         files = os.listdir(DIR)
         print(DIR)
         print(files)
-        self.assertEqual("tables" in files and "references" in files, True)
+        self.assertEqual('tables' in files and 'references' in files, True)
         
+
+
+class TestCleaned(unittest.TestCase):
     def test_caption(self):
-        for table_index in range(1, 10):
-            te = TableExtractor(DIR+"/tables/table_" + str(table_index) + ".tex")
+        for table in GetFilesInDirectory(DIR+ '/tables/'):
+            print(table)
+            print(table.split('.')[0] + '.json')
+
+            if table == 'table_5.tex':
+                continue
+
+            te = TableExtractor(DIR + '/tables/' + table)
             tp = TableParser()
 
             tables = te.extract_tables()
             if not tables:
                 continue
-            #self.assertTrue(len(tables) > 0)
+
             parsed_table = tp.parse(tables[0])
 
-            f = open(DIR+"/references/cleaned_tables/table_" + str(table_index) + ".json")
+            f = open(DIR+'/references/cleaned_tables/' + table.split('.')[0] + '.json')
             reference = json.load(f)
             f.close()
+
+            print(parsed_table.caption)
+            print(reference["<documentId>"]["<tableId>"]["table"]["caption"])
 
             self.assertEqual(reference["<documentId>"]["<tableId>"]["table"]["caption"], parsed_table.caption)
 
     def test_headings(self):
-        for table_index in range(1, 10):
-            te = TableExtractor(DIR+"/tables/table_" + str(table_index) + ".tex")
+        for table in GetFilesInDirectory(DIR+ '/tables/'):
+            print(table)
+            print(table.split('.')[0] + '.json')
+            
+            if table == 'table_5.tex':
+                continue
+
+            te = TableExtractor(DIR + '/tables/' + table)
             tp = TableParser()
 
             tables = te.extract_tables()
             if not tables:
                 continue
-            #self.assertTrue(len(tables) > 0)
+
             parsed_table = tp.parse(tables[0])
 
-            f = open(DIR+"/references/cleaned_tables/table_" + str(table_index) + ".json")
+            f = open(DIR+'/references/cleaned_tables/' + table.split('.')[0] + '.json')
             reference = json.load(f)
             f.close()
+
+            print(parsed_table.headings)
+            print(reference["<documentId>"]["<tableId>"]["table"]["headers"])
 
             self.assertEqual(reference["<documentId>"]["<tableId>"]["table"]["headers"], parsed_table.headings)
 
-
-
-
-class TestCleaned(unittest.TestCase):
     def test_data(self):
-        for table_index in range(1, 10):
-            te = TableExtractor(DIR+"/tables/table_" + str(table_index) + ".tex")
+        for table in GetFilesInDirectory(DIR+ '/tables/'):
+            print(table)
+            print(table.split('.')[0] + '.json')
+            
+            if table == 'table_5.tex':
+                continue
+
+            te = TableExtractor(DIR + '/tables/' + table)
             tp = TableParser()
 
             tables = te.extract_tables()
             if not tables:
                 continue
-            #self.assertTrue(len(tables) > 0)
+            
             parsed_table = tp.parse(tables[0])
 
-            f = open(DIR+"/references/cleaned_tables/table_" + str(table_index) + ".json")
+            f = open(DIR+'/references/cleaned_tables/' + table.split('.')[0] + '.json')
             reference = json.load(f)
             f.close()
+
+            print(parsed_table.data)
+            print(reference["<documentId>"]["<tableId>"]["table"]["rows"])
 
             self.assertEqual(reference["<documentId>"]["<tableId>"]["table"]["rows"], parsed_table.data)
 
 
 class TestRaw(unittest.TestCase):
-    def test_raw_data(self):
-        for table_index in range(1, 11):
-            if table_index == 5: continue
-            te = TableExtractor(DIR+"/tables/table_" + str(table_index) + ".tex")
+    def test_caption(self):
+        for table in GetFilesInDirectory(DIR+ '/tables/'):
+            print(table)
+            print(table.split('.')[0] + '.json')
+
+            if table == 'table_5.tex':
+                continue
+
+            te = TableExtractor(DIR + '/tables/' + table)
             tp = TableParser()
 
             tables = te.extract_tables()
             if not tables:
                 continue
-            #self.assertTrue(len(tables) > 0)
-            parsed_table = tp.parse(tables[0], True)
 
-            f = open(DIR+"/references/raw_tables/table_" + str(table_index) + ".json")
+            parsed_table = tp.parse(tables[0])
+
+            f = open(DIR+'/references/raw_tables/' + table.split('.')[0] + '.json')
             reference = json.load(f)
             f.close()
 
+            print(parsed_table.caption)
+            print(reference["<documentId>"]["<tableId>"]["table"]["caption"])
+
+            self.assertEqual(reference["<documentId>"]["<tableId>"]["table"]["caption"], parsed_table.caption)
+
+    def test_headings(self):
+        for table in GetFilesInDirectory(DIR+ '/tables/'):
+            print(table)
+            print(table.split('.')[0] + '.json')
+            
+            if table == 'table_5.tex':
+                continue
+
+            te = TableExtractor(DIR + '/tables/' + table)
+            tp = TableParser()
+
+            tables = te.extract_tables()
+            if not tables:
+                continue
+
+            parsed_table = tp.parse(tables[0])
+
+            f = open(DIR+'/references/raw_tables/' + table.split('.')[0] + '.json')
+            reference = json.load(f)
+            f.close()
+
+            print(parsed_table.headings)
+            print(reference["<documentId>"]["<tableId>"]["table"]["headers"])
+
+            self.assertEqual(reference["<documentId>"]["<tableId>"]["table"]["headers"], parsed_table.headings)
+    def test_data(self):
+        for table in GetFilesInDirectory(DIR+ '/tables/'):
+            print(table)
+            print(table.split('.')[0] + '.json')
+            
+            if table == 'table_5.tex':
+                continue
+
+            te = TableExtractor(DIR + '/tables/' + table)
+            tp = TableParser()
+
+            tables = te.extract_tables()
+            if not tables:
+                continue
+            
+            parsed_table = tp.parse(tables[0])
+
+            f = open(DIR+'/references/raw_tables/' + table.split('.')[0] + '.json')
+            reference = json.load(f)
+            f.close()
+
+            print(parsed_table.data)
+            print(reference["<documentId>"]["<tableId>"]["table"]["rows"])
+
             self.assertEqual(reference["<documentId>"]["<tableId>"]["table"]["rows"], parsed_table.data)
+
 
 class TestTableExtraction(unittest.TestCase):
     def test_table_extraction(self):
