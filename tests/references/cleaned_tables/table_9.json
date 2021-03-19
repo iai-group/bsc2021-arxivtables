@@ -14,7 +14,7 @@
         "title": "",
         "footer": "",
         "comments": "",
-        "caption": "Performance of conversational agents using real vs. simulated users, in terms of Reward and Success Rate.  We show the relative ordering of agents (A--C), with evaluation scores in parentheses.",
+        "caption": "Performance of conversational agents using real vs. simulated users, in terms of Reward and Success Rate.  We show the relative ordering of agents (A–C), with evaluation scores in parentheses.",
         "headers":   ["Method", "Reward", "Success Rate"],
         "rows": [
           ["Real users" , "A (8.88) > B (7.56) > C (6.04)","B (0.864) > A (0.833) > C (0.727)"],

@@ -2,54 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1de5e25f-3a40-4f4d-8181-4ef8be3a070d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tests/references/cleaned_tables/table_1.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/references/cleaned_tables/table_2.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/references/cleaned_tables/table_3.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/references/raw_tables/table_1.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/references/raw_tables/table_10.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/references/raw_tables/table_2.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/references/raw_tables/table_3.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/references/raw_tables/table_4.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/references/raw_tables/table_5.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/references/raw_tables/table_6.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/references/raw_tables/table_7.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/references/raw_tables/table_8.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/references/raw_tables/table_9.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/bsc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/bsc.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/arxivtables/table_extractor/table_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/arxivtables/table_extractor/table_parser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/references/table_1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/references/table_10.json" beforeDir="false" afterPath="$PROJECT_DIR$/tests/references/cleaned_tables/table_10.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/references/table_2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/references/table_3.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/references/table_4.json" beforeDir="false" afterPath="$PROJECT_DIR$/tests/references/cleaned_tables/table_4.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/references/table_5.json" beforeDir="false" afterPath="$PROJECT_DIR$/tests/references/cleaned_tables/table_5.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/references/table_6.json" beforeDir="false" afterPath="$PROJECT_DIR$/tests/references/cleaned_tables/table_6.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/references/table_7.json" beforeDir="false" afterPath="$PROJECT_DIR$/tests/references/cleaned_tables/table_7.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/references/table_8.json" beforeDir="false" afterPath="$PROJECT_DIR$/tests/references/cleaned_tables/table_8.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/references/table_9.json" beforeDir="false" afterPath="$PROJECT_DIR$/tests/references/cleaned_tables/table_9.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test.py" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tests/test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1429">
-              <caret line="174" column="44" selection-start-line="174" selection-start-column="44" selection-end-line="174" selection-end-column="44" />
-              <folding>
-                <element signature="e#93#104#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -142,6 +103,7 @@
     <option name="width" value="1440" />
     <option name="height" value="821" />
   </component>
+  <component name="ProjectId" id="1pwThw1RRCF0X7nqaRzgPOjDxAL" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -167,9 +129,14 @@
       </pane>
     </panes>
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -181,19 +148,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Python tests.Unittests for test.TestStringMethods.test_raw_data">
+  <component name="RunManager" selected="Python.run_tables">
     <configuration name="generate_json" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="bsc" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -206,6 +161,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/generate_json.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -215,18 +171,26 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for test.TestStringMethods.test_caption" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="run_tables" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="bsc" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test.TestStringMethods.test_caption&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run_tables.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
     <configuration name="Unittests for test.TestStringMethods.test_data" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
@@ -238,22 +202,9 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;test.TestStringMethods.test_data&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests for test.TestStringMethods.test_headings" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="bsc" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test.TestStringMethods.test_headings&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -266,21 +217,38 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;test.TestStringMethods.test_raw_data&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Unittests in test.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="bsc" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.run_tables" />
+        <item itemvalue="Python tests.Unittests in test.py" />
         <item itemvalue="Python tests.Unittests for test.TestStringMethods.test_raw_data" />
         <item itemvalue="Python.generate_json" />
         <item itemvalue="Python tests.Unittests for test.TestStringMethods.test_data" />
-        <item itemvalue="Python tests.Unittests for test.TestStringMethods.test_headings" />
-        <item itemvalue="Python tests.Unittests for test.TestStringMethods.test_caption" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -291,6 +259,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1611604351872</updated>
+      <workItem from="1616093280531" duration="445000" />
+      <workItem from="1616093740669" duration="242000" />
+      <workItem from="1616142463836" duration="1885000" />
     </task>
     <servers />
   </component>
@@ -366,6 +337,14 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/bsc$Unittests_for_test_TestStringMethods_test_raw_data.coverage" NAME="Unittests for test.TestStringMethods.test_raw_data Coverage Results" MODIFIED="1616093871988" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/bsc$Unittests_in_test_py.coverage" NAME="Unittests in test.py Coverage Results" MODIFIED="1616142853990" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/bsc$run_tables.coverage" NAME="run_tables Coverage Results" MODIFIED="1616142962681" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/tests/new_references/table_3.json">
