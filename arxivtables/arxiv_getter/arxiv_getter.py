@@ -5,6 +5,8 @@ __version__ = "0.1.0"
 import requests
 import xmltodict
 import json
+import os
+import tarfile
 
 
 class ArxivGetter:
@@ -19,7 +21,17 @@ class ArxivGetter:
         with open('results.json', 'w') as f:
             json.dump(asJson["feed"]["entry"], f, indent=2)
 
-    def download(self):
+    def getPaperById(self, id):
+        result = requests.get(
+            "https://arxiv.org/e-print/"+id, stream="true")
+        if result.status_code == 200:
+            os.mkdir("downloads") if "downloads" not in os.listdir(".") else True
+            os.mkdir("downloads/"+id) if id not in os.listdir("downloads/") else True
+            with open("downloads/"+id+"/"+id+".tar.gz", "wb") as f:
+                f.write(result.raw.read())
+        tar = tarfile.open("downloads/"+id+"/"+id+".tar.gz", "r:gz")
+        tar.extractall("downloads/"+id+"/")
+        tar.close()
         return 0
 
     def addToDatabase(self):
