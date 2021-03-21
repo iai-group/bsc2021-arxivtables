@@ -1,6 +1,6 @@
-__author__ = "Rebeca Pop"
-__maintainer__ = "Rebeca Pop, David Ramsay"
-__version__ = "0.1.0"
+__author__ = 'Rebeca Pop'
+__maintainer__ = 'Rebeca Pop, David Ramsay'
+__version__ = '0.1.0'
 
 import json
 import unittest
@@ -12,7 +12,7 @@ from arxivtables.table_extractor.table_parser import TableParser
 DIR = os.path.dirname(os.path.realpath(__file__))
 
 
-def GetFilesInDirectory(directory):
+def get_files_in_directory(directory):
     f = []
     for (dirpath, dirnames, filenames) in os.walk(directory):
         f.extend(filenames)
@@ -22,34 +22,34 @@ def GetFilesInDirectory(directory):
 
 class TestBase(unittest.TestCase):
     def test_table_count(self):
-        countFiles = len(GetFilesInDirectory(DIR + '/tables/'))
-        self.assertEqual(countFiles, 10)
+        count_files = len(get_files_in_directory(DIR + '/tables/'))
+        self.assertEqual(count_files, 10)
 
     def file_contains_table(self):
-        tables = sorted(GetFilesInDirectory(DIR + '/tables/'))
+        tables = sorted(get_files_in_directory(DIR + '/tables/'))
         data = []
         print(tables)
         for table in tables:
-            tData = ' '
             with open(table, 'rb') as t:
                 try:
-                    tData = Table.read(t, format="ascii.latex")
+                    t_data = Table.read(t, format='ascii.latex')
                 except Exception as e:
                     print(e)
                     continue
                 t.close()
-                data.append(tData)
+                data.append(t_data)
+        self.assertTrue(1 == 1)
 
     def test_files_has_tex_extension(self):
         files = os.listdir(DIR)
-        hasADifferentExtensionThanTex = False
+        has_a_different_extension_than_tex = False
 
         for file in files:
             if os.path.isfile(DIR + '/tables/' + file) and not file.endswith('.tex'):
-                hasADifferentExtensionThanTex = True
+                has_a_different_extension_than_tex = True
                 break
 
-        self.assertEqual(hasADifferentExtensionThanTex, False)
+        self.assertEqual(has_a_different_extension_than_tex, False)
 
     def test_if_there_is_an_input_and_an_output_directory(self):
         files = os.listdir(DIR)
@@ -71,50 +71,51 @@ def get_parsed_table_and_reference(table, variant):
     except Exception:
         raise Exception
 
+
 class TestCleaned(unittest.TestCase):
     def test_caption(self):
-        for table in GetFilesInDirectory(DIR + '/tables/'):
+        for table in get_files_in_directory(DIR + '/tables/'):
             if table == 'table_5.tex':
                 continue
-            parsed_table, reference = get_parsed_table_and_reference(table, "cleaned")
-            self.assertEqual(reference["<documentId>"]["<tableId>"]["table"]["caption"], parsed_table.caption)
+            parsed_table, reference = get_parsed_table_and_reference(table, 'cleaned')
+            self.assertEqual(reference['<documentId>']['<tableId>']['table']['caption'], parsed_table.caption)
 
     def test_headings(self):
-        for table in GetFilesInDirectory(DIR + '/tables/'):
+        for table in get_files_in_directory(DIR + '/tables/'):
             if table == 'table_5.tex':
                 continue
-            parsed_table, reference = get_parsed_table_and_reference(table, "cleaned")
-            self.assertEqual(reference["<documentId>"]["<tableId>"]["table"]["headers"], parsed_table.headings)
+            parsed_table, reference = get_parsed_table_and_reference(table, 'cleaned')
+            self.assertEqual(reference['<documentId>']['<tableId>']['table']['headers'], parsed_table.headings)
 
     def test_data(self):
-        for table in GetFilesInDirectory(DIR + '/tables/'):
+        for table in get_files_in_directory(DIR + '/tables/'):
             if table == 'table_5.tex':
                 continue
-            parsed_table, reference = get_parsed_table_and_reference(table, "cleaned")
-            self.assertEqual(reference["<documentId>"]["<tableId>"]["table"]["rows"], parsed_table.data)
+            parsed_table, reference = get_parsed_table_and_reference(table, 'cleaned')
+            self.assertEqual(reference['<documentId>']['<tableId>']['table']['rows'], parsed_table.data)
 
 
 class TestRaw(unittest.TestCase):
     def test_caption(self):
-        for table in GetFilesInDirectory(DIR + '/tables/'):
+        for table in get_files_in_directory(DIR + '/tables/'):
             if table == 'table_5.tex':
                 continue
-            parsed_table, reference = get_parsed_table_and_reference(table, "raw")
-            self.assertEqual(reference["<documentId>"]["<tableId>"]["table"]["caption"], parsed_table.caption)
+            parsed_table, reference = get_parsed_table_and_reference(table, 'raw')
+            self.assertEqual(reference['<documentId>']['<tableId>']['table']['caption'], parsed_table.caption)
 
     def test_headings(self):
-        for table in GetFilesInDirectory(DIR + '/tables/'):
+        for table in get_files_in_directory(DIR + '/tables/'):
             if table == 'table_5.tex':
                 continue
-            parsed_table, reference = get_parsed_table_and_reference(table, "raw")
-            self.assertEqual(reference["<documentId>"]["<tableId>"]["table"]["headers"], parsed_table.headings)
+            parsed_table, reference = get_parsed_table_and_reference(table, 'raw')
+            self.assertEqual(reference['<documentId>']['<tableId>']['table']['headers'], parsed_table.headings)
 
     def test_data(self):
-        for table in GetFilesInDirectory(DIR + '/tables/'):
+        for table in get_files_in_directory(DIR + '/tables/'):
             if table == 'table_5.tex':
                 continue
-            parsed_table, reference = get_parsed_table_and_reference(table, "raw")
-            self.assertEqual(reference["<documentId>"]["<tableId>"]["table"]["rows"], parsed_table.data)
+            parsed_table, reference = get_parsed_table_and_reference(table, 'raw')
+            self.assertEqual(reference['<documentId>']['<tableId>']['table']['rows'], parsed_table.data)
 
 
 class TestTableExtraction(unittest.TestCase):
@@ -125,14 +126,14 @@ class TestTableExtraction(unittest.TestCase):
     def test_table_extraction(self):
         tables = sorted([DIR + '/tables/' + filename for filename in os.listdir(DIR + '/tables/') if
                          os.path.isfile(os.path.join(DIR + '/tables/', filename))])
-        outputDIR = DIR + '/output/'
-        output = sorted([outputDIR + filename for filename in os.listdir(outputDIR) if
-                         os.path.isfile(os.path.join(outputDIR, filename))])
+        output_dir = DIR + '/output/'
+        output = sorted([output_dir + filename for filename in os.listdir(output_dir) if
+                         os.path.isfile(os.path.join(output_dir, filename))])
         extractor = TableExtractor(tables[0])
         with open(output[0]) as output:
-            outputText = output.read()
-        inputText = extractor.extract_tables()[0]
-        self.assertEqual(inputText, outputText)
+            output_text = output.read()
+        input_text = extractor.extract_tables()[0]
+        self.assertEqual(input_text, output_text)
 
 
 if __name__ == '__main__':
