@@ -12,6 +12,13 @@ import tarfile
 
 
 class ArxivGetter:
+    """Module that contains classes to handle arXiv papers downloading and extracting
+
+    Usage example:
+
+    ag = ArxivGetter()\n
+    paper = ag.get_paper_by_id('2103.10359')\n
+    """
     def __init__(self):
         self.name = 'ArxivGetter'
 
@@ -23,11 +30,17 @@ class ArxivGetter:
         with open('results.json', 'w') as f:
             json.dump(as_json['feed']['entry'], f, indent=2)
 
-    def get_paper_by_id(self, paper_id):
+    def get_paper_by_id(self, paper_id: str):
         """Retrieve .tar.gz source from arXiv given a specific paper ID, extract to downloads directory.
 
-        :param paper_id:
-        :return: Location on disk
+        Args:
+            paper_id: String of paper ID from arXiv.org.
+
+        Returns:
+            String of where extracted files are on the disk.
+
+        Raises:
+
         """
         result = requests.get(
             'https://arxiv.org/e-print/' + paper_id, stream='true')
@@ -37,7 +50,6 @@ class ArxivGetter:
             with open('downloads/' + paper_id + '/' + paper_id + '.tar.gz', 'wb') as f:
                 f.write(result.raw.read())
             tar = tarfile.open('downloads/' + paper_id + '/' + paper_id + '.tar.gz', 'r:gz')
-            tar.extractall('downloads/' + paper_id + '/')
             tar.extractall('downloads/' + paper_id + '/')
             tar.close()
 

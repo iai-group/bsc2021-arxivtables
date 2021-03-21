@@ -5,7 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/arxivtables/arxiv_getter/arxiv_getter.py" beforeDir="false" afterPath="$PROJECT_DIR$/arxivtables/arxiv_getter/arxiv_getter.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run_tables.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_tables.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -272,7 +271,7 @@
       <workItem from="1616142463836" duration="5285000" />
       <workItem from="1616248139119" duration="606000" />
       <workItem from="1616252524214" duration="4215000" />
-      <workItem from="1616321240644" duration="3021000" />
+      <workItem from="1616321240644" duration="6348000" />
     </task>
     <servers />
   </component>
