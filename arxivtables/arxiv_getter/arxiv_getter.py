@@ -12,29 +12,19 @@ import tarfile
 
 
 class ArxivGetter:
-    """Module that contains classes to handle arXiv papers downloading and extracting
+    """Module that contains classes to handle arXiv paper download and extract
 
     Usage example:
-
-    ag = ArxivGetter()\n
-    paper = ag.get_paper_by_id('2103.10359')\n
+    ag = ArxivGetter('2103.10359')\n
+    paper = ag.get_paper()\n
     """
-    def __init__(self):
-        self.name = 'ArxivGetter'
+    def __init__(self, paper_id: str):
+        self.paper_id = paper_id
 
-    def get_latest_papers(self):
-        result = requests.get(
-            'http://export.arxiv.org/api/query?search_query=computer')
-        as_json = xmltodict.parse(result.text)
-
-        with open('results.json', 'w') as f:
-            json.dump(as_json['feed']['entry'], f, indent=2)
-
-    def get_paper_by_id(self, paper_id: str):
+    def get_paper(self):
         """Retrieve .tar.gz source from arXiv given a specific paper ID, extract to downloads directory.
 
-        Args:
-            paper_id: String of paper ID from arXiv.org.
+        Args: None
 
         Returns:
             String of where extracted files are on the disk.
@@ -43,31 +33,53 @@ class ArxivGetter:
 
         """
         result = requests.get(
-            'https://arxiv.org/e-print/' + paper_id, stream='true')
+            'https://arxiv.org/e-print/' + self.paper_id, stream='true')
         if result.status_code == 200:
             os.mkdir('downloads') if 'downloads' not in os.listdir('.') else True
-            os.mkdir('downloads/' + paper_id) if paper_id not in os.listdir('downloads/') else True
-            with open('downloads/' + paper_id + '/' + paper_id + '.tar.gz', 'wb') as f:
+            os.mkdir('downloads/' + self.paper_id) if self.paper_id not in os.listdir('downloads/') else True
+            with open('downloads/' + self.paper_id + '/' + self.paper_id + '.tar.gz', 'wb') as f:
                 f.write(result.raw.read())
-            tar = tarfile.open('downloads/' + paper_id + '/' + paper_id + '.tar.gz', 'r:gz')
-            tar.extractall('downloads/' + paper_id + '/')
+            tar = tarfile.open('downloads/' + self.paper_id + '/' + self.paper_id + '.tar.gz', 'r:gz')
+            tar.extractall('downloads/' + self.paper_id + '/')
             tar.close()
-
         print('extracted')
-        # SPLIT TO NEW FUNCTION
-        time.sleep(5)
-        for (dirpath, dirnames, filenames) in os.walk('downloads/' + paper_id):
-            print(dirpath, dirnames, filenames)
-            for filename in filenames:
-                os.remove(dirpath+'/'+filename)
-            try:
-                os.rmdir(dirpath)
-            except Exception as e:
-                print(e)
+        if self.paper_id in os.listdir('downloads'):
+            return 'downloads/' + self.paper_id
+        else:
+            return False
+
+    def delete(self):
+        """Delete all files related to  paper of 'paper_id'.
+
+        Args: None
+
+        Returns:
+            Boolean.  True if all files delete, false if not.
+
+        Raises:
+            FileNotFoundError
+        """
         try:
-            os.rmdir('downloads/' + paper_id) if paper_id in os.listdir('downloads/') else True
+            if self.paper_id not in os.listdir('downloads'):
+                return False
+            for (dirpath, dirnames, filenames) in os.walk('downloads/' +  self.paper_id):
+                for filename in filenames:
+                    os.remove(dirpath+'/'+filename)
+                try:
+                    os.rmdir(dirpath)
+                except FileNotFoundError:
+                    print("File not found")
+                    return False
+                except Exception as e:
+                    print(e)
+                os.rmdir('downloads/' + self.paper_id) if self.paper_id in os.listdir('downloads/') else True
+            return True
+        except FileNotFoundError:
+            print("File not found")
+            return False
         except Exception as e:
             print(e)
+
 
     def add_to_database(self):
         return 0
