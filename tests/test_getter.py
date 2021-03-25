@@ -13,14 +13,11 @@ class TestGetter(unittest.TestCase):
 
     def test_delete_file_exist(self):
         deleted = self.ag.delete()
-        self.assertEqual(deleted, True)
+        self.assertTrue(deleted)
 
     def test_delete_file_not_exist(self):
         deleted = self.ag.delete()
-        self.assertEqual(deleted, False)
-
-    def test_something(self):
-        self.assertEqual(True, True)
+        self.assertFalse(deleted)
 
 
 if __name__ == '__main__':
