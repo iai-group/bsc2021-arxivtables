@@ -129,4 +129,8 @@ dmypy.json
 .pyre/
 
 # output files
+
 .prettierrc
+
+.idea/
+.vscode/
