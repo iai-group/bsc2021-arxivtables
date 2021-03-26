@@ -2,38 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1de5e25f-3a40-4f4d-8181-4ef8be3a070d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tests/tests_table_extraction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/bsc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/bsc.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/tests_data_extraction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_getter.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_getter.py" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tests/tests_data_extraction.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="27" lean-forward="true" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
-              <folding>
-                <element signature="e#93#104#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="Python Unit Test" />
       </list>
     </option>
   </component>
@@ -57,11 +38,19 @@
     </replaceStrings>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="issue28/work-on-tests" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/arxivtables/table_extractor/table_extractor..py" />
+        <option value="$PROJECT_DIR$/arxivtables/table_extractor/__init__.py" />
         <option value="$PROJECT_DIR$/arxivtables/table_extractor/tables.tex" />
         <option value="$PROJECT_DIR$/tests/tables/table_9.tex" />
         <option value="$PROJECT_DIR$/tests/tables/table_8.tex" />
@@ -86,6 +75,10 @@
         <option value="$PROJECT_DIR$/tests/references/raw_tables/table.json" />
         <option value="$PROJECT_DIR$/tests/generate_json.py" />
         <option value="$PROJECT_DIR$/tests/tables/table_7.tex" />
+        <option value="$PROJECT_DIR$/tests/test.py" />
+        <option value="$PROJECT_DIR$/arxivtables/table_extractor/parsed_table.py" />
+        <option value="$PROJECT_DIR$/arxivtables/table_extractor/table_extractor.py" />
+        <option value="$PROJECT_DIR$/arxivtables/table_extractor/table_parser.py" />
         <option value="$PROJECT_DIR$/tests/references/cleaned_tables/table_1.json" />
         <option value="$PROJECT_DIR$/tests/references/cleaned_tables/table_2.json" />
         <option value="$PROJECT_DIR$/tests/references/cleaned_tables/table_3.json" />
@@ -106,13 +99,6 @@
         <option value="$PROJECT_DIR$/tests/references/raw_tables/table_8.json" />
         <option value="$PROJECT_DIR$/tests/references/raw_tables/table_9.json" />
         <option value="$PROJECT_DIR$/tests/references/raw_tables/table_10.json" />
-        <option value="$PROJECT_DIR$/tests/test.py" />
-        <option value="$PROJECT_DIR$/arxivtables/arxiv_getter/arxiv_getter.py" />
-        <option value="$PROJECT_DIR$/arxivtables/table_extractor/parsed_table.py" />
-        <option value="$PROJECT_DIR$/arxivtables/table_extractor/table_extractor.py" />
-        <option value="$PROJECT_DIR$/arxivtables/table_extractor/table_parser.py" />
-        <option value="$PROJECT_DIR$/tests/tests_table_extraction.py" />
-        <option value="$PROJECT_DIR$/tests/tests_data_extraction.py" />
       </list>
     </option>
   </component>
@@ -122,7 +108,9 @@
     <option name="height" value="821" />
   </component>
   <component name="ProjectId" id="1pwThw1RRCF0X7nqaRzgPOjDxAL" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -135,34 +123,6 @@
             <path>
               <item name="bsc" type="b2602c69:ProjectViewProjectNode" />
               <item name="bsc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bsc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bsc" type="462c0819:PsiDirectoryNode" />
-              <item name="arxivtables" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bsc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bsc" type="462c0819:PsiDirectoryNode" />
-              <item name="arxivtables" type="462c0819:PsiDirectoryNode" />
-              <item name="arxiv_getter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bsc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bsc" type="462c0819:PsiDirectoryNode" />
-              <item name="arxivtables" type="462c0819:PsiDirectoryNode" />
-              <item name="table_extractor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bsc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bsc" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bsc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bsc" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="references" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bsc" type="b2602c69:ProjectViewProjectNode" />
@@ -180,9 +140,23 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../rfids/rfids-ms-server" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -194,19 +168,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Python tests.Unittests for tests_table_extraction.TestBase">
+  <component name="RunManager" selected="Python tests.Unittests in test_getter.py">
     <configuration name="run_tables" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="bsc" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -229,49 +191,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for tests_table_extraction.TestBase" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="bsc" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests_table_extraction.TestBase&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests for tests.tests_data_extraction.TestCleaned" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="bsc" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.tests_data_extraction.TestCleaned&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests for tests.tests_data_extraction.TestRaw" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="bsc" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.tests_data_extraction.TestRaw&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests in tests_data_extraction.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for test.TestBase" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="bsc" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -282,21 +202,66 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/tests_data_extraction.py&quot;" />
+      <option name="_new_target" value="&quot;test.TestBase&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for test.TestStringMethods.test_raw_data" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="bsc" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test.TestStringMethods.test_raw_data&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in test_getter.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="bsc" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_getter.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in test.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="bsc" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests for tests_table_extraction.TestBase" />
-        <item itemvalue="Python tests.Unittests for tests.tests_data_extraction.TestRaw" />
-        <item itemvalue="Python tests.Unittests for tests.tests_data_extraction.TestCleaned" />
+        <item itemvalue="Python tests.Unittests in test_getter.py" />
         <item itemvalue="Python.run_tables" />
-        <item itemvalue="Python tests.Unittests in tests_data_extraction.py" />
+        <item itemvalue="Python tests.Unittests for test.TestBase" />
+        <item itemvalue="Python tests.Unittests in test.py" />
+        <item itemvalue="Python tests.Unittests for test.TestStringMethods.test_raw_data" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -309,11 +274,44 @@
       <updated>1611604351872</updated>
       <workItem from="1616093280531" duration="445000" />
       <workItem from="1616093740669" duration="242000" />
-      <workItem from="1616142463836" duration="1885000" />
+      <workItem from="1616142463836" duration="5285000" />
+      <workItem from="1616248139119" duration="606000" />
+      <workItem from="1616252524214" duration="4215000" />
+      <workItem from="1616321240644" duration="7212000" />
+      <workItem from="1616349474206" duration="595000" />
+      <workItem from="1616414974363" duration="2304000" />
+      <workItem from="1616519244218" duration="4121000" />
+      <workItem from="1616539287511" duration="147000" />
+      <workItem from="1616600155752" duration="1563000" />
+      <workItem from="1616697178762" duration="1306000" />
+      <workItem from="1616700458250" duration="613000" />
+      <workItem from="1616705456778" duration="12000" />
+      <workItem from="1616708878606" duration="256000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
+    <history-entry file="Unittests_for_test_TestStringMethods_test_headings - 2021.03.02 at 19h 27m 55s.xml">
+      <configuration name="Unittests for test.TestStringMethods.test_headings" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_TestStringMethods_test_headings - 2021.03.02 at 19h 29m 43s.xml">
+      <configuration name="Unittests for test.TestStringMethods.test_headings" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_TestStringMethods_test_headings - 2021.03.02 at 19h 29m 52s.xml">
+      <configuration name="Unittests for test.TestStringMethods.test_headings" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_TestStringMethods_test_headings - 2021.03.02 at 19h 30m 37s.xml">
+      <configuration name="Unittests for test.TestStringMethods.test_headings" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_TestStringMethods_test_headings - 2021.03.02 at 19h 30m 55s.xml">
+      <configuration name="Unittests for test.TestStringMethods.test_headings" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_TestStringMethods_test_headings - 2021.03.02 at 19h 31m 13s.xml">
+      <configuration name="Unittests for test.TestStringMethods.test_headings" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_TestStringMethods_test_caption - 2021.03.02 at 19h 33m 15s.xml">
+      <configuration name="Unittests for test.TestStringMethods.test_caption" configurationId="tests" />
+    </history-entry>
     <history-entry file="Unittests_for_test_TestStringMethods_test_headings - 2021.03.02 at 19h 33m 28s.xml">
       <configuration name="Unittests for test.TestStringMethods.test_headings" configurationId="tests" />
     </history-entry>
@@ -323,31 +321,9 @@
     <history-entry file="Unittests_for_test_TestStringMethods_test_raw_data - 2021.03.02 at 19h 50m 43s.xml">
       <configuration name="Unittests for test.TestStringMethods.test_raw_data" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_TestCleaned - 2021.03.23 at 18h 28m 21s.xml">
-      <configuration name="Unittests for test.TestCleaned" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_test_TestRaw - 2021.03.23 at 18h 28m 27s.xml">
-      <configuration name="Unittests for test.TestRaw" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_test_TestRaw - 2021.03.23 at 18h 29m 23s.xml">
-      <configuration name="Unittests for test.TestRaw" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_test_TestCleaned - 2021.03.23 at 18h 29m 31s.xml">
-      <configuration name="Unittests for test.TestCleaned" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_test_TestCleaned - 2021.03.23 at 18h 31m 04s.xml">
-      <configuration name="Unittests for test.TestCleaned" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_test_TestRaw - 2021.03.23 at 18h 31m 15s.xml">
-      <configuration name="Unittests for test.TestRaw" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_tests_table_extraction_TestBase - 2021.03.23 at 18h 52m 41s.xml">
-      <configuration name="Unittests for tests_table_extraction.TestBase" configurationId="tests" />
-    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="821" extended-state="1" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.5514223" visible="true" weight="0.15715292" />
@@ -367,22 +343,141 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.5514223" visible="true" weight="0.15715292" />
+      <window_info id="Structure" order="2" sideWeight="0.44857767" side_tool="true" weight="0.20718816" />
+      <window_info anchor="bottom" id="Terminal" order="0" weight="0.32409638" />
+      <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="2" />
+      <window_info anchor="bottom" id="Message" order="3" />
+      <window_info anchor="bottom" id="Find" order="4" weight="0.32784638" />
+      <window_info anchor="bottom" id="Version Control" order="5" weight="0.32916668" />
+      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.29355282" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/bsc$Unittests_for_test_TestStringMethods_test_raw_data.coverage" NAME="Unittests for test.TestStringMethods.test_raw_data Coverage Results" MODIFIED="1616093871988" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/bsc$Unittests_in_test_py.coverage" NAME="Unittests in test.py Coverage Results" MODIFIED="1616142853990" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/bsc$run_tables.coverage" NAME="run_tables Coverage Results" MODIFIED="1616142962681" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/bsc$Unittests_in_test_getter_py.coverage" NAME="Unittests in test_getter.py Coverage Results" MODIFIED="1616709122552" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/bsc$Unittests_in_test_py.coverage" NAME="Unittests in test.py Coverage Results" MODIFIED="1616144922077" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/bsc$Unittests_for_test_TestBase.coverage" NAME="Unittests for test.TestBase Coverage Results" MODIFIED="1616277328819" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/bsc$run_tables.coverage" NAME="run_tables Coverage Results" MODIFIED="1616323145958" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tests/new_references/table_4.json" />
-    <entry file="file://$PROJECT_DIR$/tests/new_references/table_1.json" />
-    <entry file="file://$PROJECT_DIR$/tests/references/raw_tables/table.json" />
-    <entry file="file://$PROJECT_DIR$/tests/generate_json.py" />
+    <entry file="file://$PROJECT_DIR$/tests/new_references/table_3.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="14" selection-start-line="4" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/new_references/table_2.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="23" selection-start-line="4" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/new_references/table_4.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-57">
+          <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/new_references/table_1.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="27" lean-forward="true" selection-start-line="3" selection-start-column="6" selection-end-line="28" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/references/raw_tables/table.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="11" lean-forward="true" selection-end-line="16" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/generate_json.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#70#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/arxivtables/table_extractor/parsed_table.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="27" column="27" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/arxivtables/table_extractor/table_extractor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="52" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/arxivtables/table_extractor/table_parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="606">
+          <caret line="59" column="85" selection-start-line="59" selection-start-column="85" selection-end-line="59" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/arxivtables/table_extractor/test_multiple_tables.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#93#163#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tests/output/table_6.txt">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/output/table_1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/output/table_2.txt">
       <provider selected="true" editor-type-id="text-editor" />
@@ -638,65 +733,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/output/table_1.txt">
+    <entry file="file://$PROJECT_DIR$/tests/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/arxivtables/arxiv_getter/arxiv_getter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/arxivtables/table_extractor/parsed_table.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="24" lean-forward="true" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/arxivtables/table_extractor/table_extractor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/arxivtables/table_extractor/table_parser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="24" column="55" lean-forward="true" selection-start-line="24" selection-start-column="55" selection-end-line="24" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/arxivtables/table_extractor/test_multiple_tables.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="39" lean-forward="true" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
-          <folding>
-            <element signature="e#93#163#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/tests_table_extraction.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="28" column="45" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/tests_data_extraction.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="27" lean-forward="true" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+        <state relative-caret-position="1429">
+          <caret line="174" column="44" selection-start-line="174" selection-start-column="44" selection-end-line="174" selection-end-column="44" />
           <folding>
             <element signature="e#93#104#0" expanded="true" />
           </folding>
