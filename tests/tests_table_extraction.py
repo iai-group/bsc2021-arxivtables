@@ -13,7 +13,7 @@ class TestTableExtraction(unittest.TestCase):
     def test_table_extraction(self):
         tables = sorted([DIR + '/tables/' + filename for filename in os.listdir(DIR + '/tables/') if
                          os.path.isfile(os.path.join(DIR + '/tables/', filename))])
-        output_dir = DIR + '/output/'
+        output_dir = DIR + '/references/output/'
         output = sorted([output_dir + filename for filename in os.listdir(output_dir) if
                          os.path.isfile(os.path.join(output_dir, filename))])
         extractor = TableExtractor(tables[0])

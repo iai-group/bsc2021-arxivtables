@@ -9,12 +9,17 @@ import os
 
 DIR = os.path.dirname(os.path.realpath(__file__))+'/tests/tables/'
 
-if not os.path.exists(os.path.dirname(os.path.realpath(__file__)) + '/output/'):
-    os.makedirs(os.path.dirname(os.path.realpath(__file__)) + '/output/')
+if not os.path.exists(os.path.dirname(os.path.realpath(__file__)) + '/tests/references/output/'):
+    os.makedirs(os.path.dirname(os.path.realpath(__file__)) + '/tests/references/output/')
 
-tables = sorted([DIR + filename for filename in os.listdir(
+tables = sorted([filename for filename in os.listdir(
     DIR) if os.path.isfile(os.path.join(DIR, filename))])
 
+print(tables)
 
-extractor = TableExtractor(tables[0])
-print(extractor.extract_tables())
+for table in tables:
+    with open('tests/references/output/' + table.split('.')[0] + '.txt', 'w') as f:
+        extractor = TableExtractor('tests/tables/' + table)
+        extracted = extractor.extract_tables()
+        for item in extracted:
+            f.write(item)
