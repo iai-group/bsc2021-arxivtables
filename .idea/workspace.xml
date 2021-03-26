@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1de5e25f-3a40-4f4d-8181-4ef8be3a070d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_getter.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_getter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run_tables.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_tables.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/tests_table_extraction.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/tests_table_extraction.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +170,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in test_getter.py">
+  <component name="RunManager" selected="Python tests.Unittests for tests_table_extraction.TestTableExtraction.test_table_extraction">
     <configuration name="run_tables" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="bsc" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -191,7 +193,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for test.TestBase" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for tests_data_extraction.TestRaw.test_data" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="bsc" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -202,11 +204,11 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test.TestBase&quot;" />
+      <option name="_new_target" value="&quot;tests_data_extraction.TestRaw.test_data&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for test.TestStringMethods.test_raw_data" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for tests_table_extraction.TestBase" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="bsc" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -217,11 +219,11 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test.TestStringMethods.test_raw_data&quot;" />
+      <option name="_new_target" value="&quot;tests_table_extraction.TestBase&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests in test_getter.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for tests_table_extraction.TestTableExtraction" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="bsc" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -232,11 +234,11 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_getter.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <option name="_new_target" value="&quot;tests_table_extraction.TestTableExtraction&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests in test.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for tests_table_extraction.TestTableExtraction.test_table_extraction" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="bsc" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -247,17 +249,17 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <option name="_new_target" value="&quot;tests_table_extraction.TestTableExtraction.test_table_extraction&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests in test_getter.py" />
+        <item itemvalue="Python tests.Unittests for tests_table_extraction.TestTableExtraction.test_table_extraction" />
         <item itemvalue="Python.run_tables" />
-        <item itemvalue="Python tests.Unittests for test.TestBase" />
-        <item itemvalue="Python tests.Unittests in test.py" />
-        <item itemvalue="Python tests.Unittests for test.TestStringMethods.test_raw_data" />
+        <item itemvalue="Python tests.Unittests for tests_table_extraction.TestTableExtraction" />
+        <item itemvalue="Python tests.Unittests for tests_data_extraction.TestRaw.test_data" />
+        <item itemvalue="Python tests.Unittests for tests_table_extraction.TestBase" />
       </list>
     </recent_temporary>
   </component>
@@ -274,19 +276,8 @@
       <updated>1611604351872</updated>
       <workItem from="1616093280531" duration="445000" />
       <workItem from="1616093740669" duration="242000" />
-      <workItem from="1616142463836" duration="5285000" />
-      <workItem from="1616248139119" duration="606000" />
-      <workItem from="1616252524214" duration="4215000" />
-      <workItem from="1616321240644" duration="7212000" />
-      <workItem from="1616349474206" duration="595000" />
-      <workItem from="1616414974363" duration="2304000" />
-      <workItem from="1616519244218" duration="4121000" />
-      <workItem from="1616539287511" duration="147000" />
-      <workItem from="1616600155752" duration="1563000" />
-      <workItem from="1616697178762" duration="1306000" />
-      <workItem from="1616700458250" duration="613000" />
-      <workItem from="1616705456778" duration="12000" />
-      <workItem from="1616708878606" duration="256000" />
+      <workItem from="1616142463836" duration="1885000" />
+      <workItem from="1616746980643" duration="1222000" />
     </task>
     <servers />
   </component>
@@ -378,19 +369,15 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
-  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/bsc$Unittests_for_test_TestStringMethods_test_raw_data.coverage" NAME="Unittests for test.TestStringMethods.test_raw_data Coverage Results" MODIFIED="1616093871988" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/bsc$Unittests_in_test_getter_py.coverage" NAME="Unittests in test_getter.py Coverage Results" MODIFIED="1616709122552" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/bsc$Unittests_for_tests_table_extraction_TestTableExtraction_test_table_extraction.coverage" NAME="Unittests for tests_table_extraction.TestTableExtraction.test_table_extraction Coverage Results" MODIFIED="1616748356899" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/bsc$Unittests_for_tests_data_extraction_TestRaw_test_data.coverage" NAME="Unittests for tests_data_extraction.TestRaw.test_data Coverage Results" MODIFIED="1616709637481" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/bsc$Unittests_in_test_py.coverage" NAME="Unittests in test.py Coverage Results" MODIFIED="1616144922077" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/bsc$Unittests_for_test_TestBase.coverage" NAME="Unittests for test.TestBase Coverage Results" MODIFIED="1616277328819" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/bsc$run_tables.coverage" NAME="run_tables Coverage Results" MODIFIED="1616323145958" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/bsc$Unittests_for_tests_table_extraction_TestTableExtraction.coverage" NAME="Unittests for tests_table_extraction.TestTableExtraction Coverage Results" MODIFIED="1616747871448" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/bsc$run_tables.coverage" NAME="run_tables Coverage Results" MODIFIED="1616748292265" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/tests/new_references/table_3.json">

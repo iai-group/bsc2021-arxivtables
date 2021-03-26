@@ -1,0 +1,18 @@
+\begin{table}
+	\small
+	\caption{Experiments parameters}
+	\label{parameters}
+	\centering
+	%\ra{1.2}
+	%\small
+	\begin{tabular}{@{}ll@{}}
+		\textbf{Parameter} & \textbf{Set of values}\\
+		\hline
+		Number of procs. (M100)& $\{32, 64, 128, 256, 512\}$ \\
+		Number of procs. (Zeus)& $\{36, 72, 144, 288, 576\}$ \\
+		Stream Lenght (M100) & $16\cdot10^9$ \\
+		Stream Lenght (Zeus) & $18\cdot10^9$ \\
+		User $\alpha$ & $0.001$ \\
+		Number of buckets & $512$ \\
+	\end{tabular}
+\end{table}

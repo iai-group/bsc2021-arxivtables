@@ -1,42 +1,23 @@
 import os
 import unittest
-from astropy.table import Table
-from tests.tests_data_extraction import GetFilesInDirectory, DIR
+from arxivtables.table_extractor.table_extractor import TableExtractor
+
+DIR = os.path.dirname(os.path.realpath(__file__))
 
 
-class TestBase(unittest.TestCase):
-    def test_table_count(self):
-        countFiles = len(GetFilesInDirectory(DIR + '/tables/'))
-        self.assertEqual(countFiles, 10)
+class TestTableExtraction(unittest.TestCase):
+    """
+    NEEDS UPDATING!  Directory tests/output does not exist?
+    """
 
-    def file_contains_table(self):
-        tables = sorted(GetFilesInDirectory(DIR + '/tables/'))
-        data = []
-        print(tables)
-        for table in tables:
-            tData = ' '
-            with open(table, 'rb') as t:
-                try:
-                    tData = Table.read(t, format="ascii.latex")
-                except Exception as e:
-                    print(e)
-                    continue
-                t.close()
-                data.append(tData)
-
-    def test_files_has_tex_extension(self):
-        files = os.listdir(DIR)
-        hasADifferentExtensionThanTex = False
-
-        for file in files:
-            if os.path.isfile(DIR + '/tables/' + file) and not file.endswith('.tex'):
-                hasADifferentExtensionThanTex = True
-                break
-
-        self.assertEqual(hasADifferentExtensionThanTex, False)
-
-    def test_if_there_is_an_input_and_an_output_directory(self):
-        files = os.listdir(DIR)
-        print(DIR)
-        print(files)
-        self.assertEqual('tables' in files and 'references' in files, True)
+    def test_table_extraction(self):
+        tables = sorted([DIR + '/tables/' + filename for filename in os.listdir(DIR + '/tables/') if
+                         os.path.isfile(os.path.join(DIR + '/tables/', filename))])
+        output_dir = DIR + '/references/output/'
+        output = sorted([output_dir + filename for filename in os.listdir(output_dir) if
+                         os.path.isfile(os.path.join(output_dir, filename))])
+        extractor = TableExtractor(tables[0])
+        with open(output[0]) as output:
+            output_text = output.read()
+        input_text = extractor.extract_tables()[0]
+        self.assertEqual(input_text, output_text)
