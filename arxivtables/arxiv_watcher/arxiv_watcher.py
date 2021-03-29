@@ -1,5 +1,6 @@
-import xml.etree.ElementTree as ET
+from xml.etree.ElementTree import fromstring
 import requests
+from datetime import datetime
 
 
 class ArxivWatcher:
@@ -7,36 +8,45 @@ class ArxivWatcher:
         self.previosuly_loaded_ids = self.read_previously_loaded_ids()
 
     def read_previously_loaded_ids(self):
-        with open('previously_loaded_ids.txt', 'r') as f:
+        with open('C:\\Users\\David\\repos\\school\\bsc\\previously_loaded_ids.txt', 'r') as f:
             ids = f.readlines()
-        return ids
+        return [id[:-1] for id in ids]
 
-    def get_latest_papers(self):
-        result = requests.get(
-            'http://export.arxiv.org/api/query?search_query=all:all&sortBy=submittedDate&sortOrder=descending&max_results=100')
+    def get_latest_paper_ids(self):
+        """Retrieve list of latest submissions on arXiv.org, return in
+
+                Args: None
+
+                Returns:
+                    String of where extracted files are on the disk.
+
+                Raises:
+
+                """
+        base_url = 'http://export.arxiv.org/api/query?'
+        query = 'search_query=all:all&sortBy=submittedDate&sortOrder=descending&max_results=500'
+        result = requests.get(base_url + query)
         if result.status_code == 200:
             string_xml = result.content
-            tree = ET.fromstring(string_xml)
+            tree = fromstring(string_xml)
             for child in tree[len(tree):0:-1]:
                 if child.tag == "{http://www.w3.org/2005/Atom}entry":
                     for c in child:
-                        if c.tag == "{http://www.w3.org/2005/Atom}id": entryId = c.text
-                        if c.tag == "{http://www.w3.org/2005/Atom}title": entryTitle = c.text
-                        if c.tag == "{http://www.w3.org/2005/Atom}published": entryPublished = c.text
-                    if entryId not in self.previosuly_loaded_ids:
-                        with open('previously_loaded_ids.txt', 'a') as f:
-                            f.write(entryId + '\n')
-                    print("{}: {} published on {}".format(entryId, entryTitle, entryPublished))
-                    print()
-
-            with open('response.xml', 'wb') as f:
-                f.write(result.content)
+                        if c.tag == "{http://www.w3.org/2005/Atom}id": entry_id = c.text
+                        entry_url = entry_id
+                        entry_id = entry_id.split('/')[-1].split('v')[0]
+                        if c.tag == "{http://www.w3.org/2005/Atom}title": entry_title = c.text
+                        if c.tag == "{http://www.w3.org/2005/Atom}published": entry_published = c.text
+                    if (entry_id) not in self.previosuly_loaded_ids:
+                        with open('C:\\Users\\David\\repos\\school\\bsc\\previously_loaded_ids.txt', 'a') as f:
+                            f.write(entry_id)
+                            f.write('\n')
+                        with open('C:\\Users\\David\\repos\\school\\bsc\\' + str(datetime.date(datetime.now())).replace('-', '') + '.txt', 'a') as f:
+                            f.write(entry_id)
+                            f.write('\n')
         else:
             print("Status code: " + result.status_code)
 
-
-a = ArxivWatcher()
-
-print(a.previosuly_loaded_ids)
-
-a.get_latest_papers()
+        with open(str(datetime.date(datetime.now())).replace('-', '') + '.txt', 'r') as f:
+            ids = f.readlines()
+        return [id[:-1] for id in ids]

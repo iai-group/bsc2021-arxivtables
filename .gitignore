@@ -132,5 +132,9 @@ dmypy.json
 
 .prettierrc
 
+# editor configs
 .idea/
 .vscode/
+
+# .tgz source files
+downloads/
