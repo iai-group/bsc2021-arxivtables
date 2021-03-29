@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1de5e25f-3a40-4f4d-8181-4ef8be3a070d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/20210327.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20210328.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/arxivtables/arxiv_watcher/20210328.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/previously_loaded_ids.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/arxivtables/arxiv_getter/arxiv_getter.py" beforeDir="false" afterPath="$PROJECT_DIR$/arxivtables/arxiv_getter/arxiv_getter.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/arxivtables/arxiv_watcher/arxiv_watcher.py" beforeDir="false" afterPath="$PROJECT_DIR$/arxivtables/arxiv_watcher/arxiv_watcher.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/arxivtables/arxiv_watcher/previously_loaded_ids.txt" beforeDir="false" afterPath="$PROJECT_DIR$/arxivtables/arxiv_watcher/previously_loaded_ids.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/arxivtables/arxiv_watcher/response.xml" beforeDir="false" afterPath="$PROJECT_DIR$/arxivtables/arxiv_watcher/response.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run_tables.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_tables.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -335,7 +326,7 @@
       <workItem from="1616093740669" duration="242000" />
       <workItem from="1616142463836" duration="1885000" />
       <workItem from="1616746980643" duration="1222000" />
-      <workItem from="1616932992509" duration="18101000" />
+      <workItem from="1616932992509" duration="18642000" />
     </task>
     <servers />
   </component>
@@ -437,7 +428,7 @@
     <SUITE FILE_PATH="coverage/bsc$Unittests_in_tests_table_extraction_py.coverage" NAME="Unittests in tests_table_extraction.py Coverage Results" MODIFIED="1616940480256" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/bsc$Unittests_for_test_getter_TestGetter_test_delete_file_exist.coverage" NAME="Unittests for test_getter.TestGetter.test_delete_file_exist Coverage Results" MODIFIED="1616759295995" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/bsc$Unittests_for_tests_table_extraction_TestTableExtraction.coverage" NAME="Unittests for tests_table_extraction.TestTableExtraction Coverage Results" MODIFIED="1616759372717" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/bsc$run_tables.coverage" NAME="run_tables Coverage Results" MODIFIED="1617046686062" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/bsc$run_tables.coverage" NAME="run_tables Coverage Results" MODIFIED="1617047303159" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/bsc$Unittests_in_tests_data_extraction_py.coverage" NAME="Unittests in tests_data_extraction.py Coverage Results" MODIFIED="1616940473827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/bsc$arxiv_watcher.coverage" NAME="arxiv_watcher Coverage Results" MODIFIED="1616946190513" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/arxivtables/arxiv_watcher" />
   </component>
