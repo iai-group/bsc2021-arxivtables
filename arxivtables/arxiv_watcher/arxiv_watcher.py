@@ -10,7 +10,7 @@ class ArxivWatcher:
         self.previosuly_loaded_ids = self.read_previously_loaded_ids()
 
     def read_previously_loaded_ids(self):
-        with open(base_dir + '\\logs\\downloader\\previously_loaded_ids.txt', 'r') as f:
+        with open(os.path.join(base_dir, 'logs/downloader/') + 'previously_loaded_ids.txt', 'r') as f:
             ids = f.readlines()
         return [id[:-1] for id in ids]
 
@@ -40,15 +40,15 @@ class ArxivWatcher:
                         if c.tag == "{http://www.w3.org/2005/Atom}title": entry_title = c.text
                         if c.tag == "{http://www.w3.org/2005/Atom}published": entry_published = c.text
                     if (entry_id) not in self.previosuly_loaded_ids:
-                        with open(base_dir + '\\logs\\downloader\\previously_loaded_ids.txt', 'a') as f:
+                        with open(os.path.join(base_dir, 'logs/downloader/') + 'previously_loaded_ids.txt', 'a') as f:
                             f.write(entry_id)
                             f.write('\n')
-                        with open(base_dir + '\\logs\\downloader\\' + str(datetime.date(datetime.now())).replace('-', '') + '.txt', 'a') as f:
+                        with open(os.path.join(base_dir, 'logs/downloader/') + str(datetime.date(datetime.now())).replace('-', '') + '.txt', 'a') as f:
                             f.write(entry_id)
                             f.write('\n')
         else:
             print("Status code: " + result.status_code)
 
-        with open(base_dir + '\\logs\\downloader\\' + str(datetime.date(datetime.now())).replace('-', '') + '.txt', 'r') as f:
+        with open(os.path.join(base_dir, 'logs/downloader/') + str(datetime.date(datetime.now())).replace('-', '') + '.txt', 'r') as f:
             ids = f.readlines()
-        return [id[:-1] for id in ids]
+        return [pid[:-1] for pid in ids]

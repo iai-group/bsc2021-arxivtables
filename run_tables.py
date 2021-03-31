@@ -10,7 +10,8 @@ aw = ArxivWatcher()
 
 paper_ids = aw.get_latest_paper_ids()
 
-for id in paper_ids:
+for index, id in enumerate(paper_ids):
+    print('[Item {} of {}]'.format(index+1, len(paper_ids)))
     ag = ArxivGetter(id)
     print(ag.paper_id)
     ag.get_paper()
