@@ -41,10 +41,6 @@ class ArxivGetter:
             with open('downloads/{}/{}/{}/{}.tar.gz'.format(self.year, self.month, self.id ,self.paper_id), 'wb') as f:
                 f.write(result.raw.read())
             print('Downloaded and saved {}.tar.gz'.format(self.paper_id))
-        #     tar = tarfile.open('downloads/' + self.paper_id + '/' + self.paper_id + '.tar.gz', 'r:gz')
-        #     tar.extractall('downloads/' + self.paper_id + '/')
-        #     tar.close()
-        # print('extracted')
         if self.paper_id in os.listdir('downloads'):
             return 'downloads/' + self.paper_id
         else:

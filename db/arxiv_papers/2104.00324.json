@@ -1,0 +1,507 @@
+{
+  "id": "2104.00324",
+  "title": "STMTrack: Template-free Visual Tracking with Space-time Memory Networks",
+  "dateFetched": "2021-04-02",
+  "authors": [
+    "Zhihong Fu",
+    "Qingjie Liu",
+    "Zehua Fu",
+    "Yunhong Wang"
+  ],
+  "href": "2104.00324",
+  "publicationDate": "2021-04-01T08:10:56Z",
+  "tables": [
+    {
+      "caption": "Ablation study on the GOT-10k benchmark.  Here the variable share denotes whether the network should share the backbone between the memory and the query branch, and the variable fb_label represents whether the network should use foreground-background label maps in the memory branch input.",
+      "headers": [
+        "share",
+        "fb_label",
+        "AO",
+        "SR_0.5",
+        "SR_0.75"
+      ],
+      "rows": [
+        [
+          "",
+          "-",
+          "0.591",
+          "0.662",
+          "0.507"
+        ],
+        [
+          "-",
+          "-",
+          "0.568",
+          "0.638",
+          "0.480"
+        ],
+        [
+          "",
+          "",
+          "0.620",
+          "0.713",
+          "0.538"
+        ],
+        [
+          "-",
+          "",
+          "red0.642",
+          "red0.737",
+          "red0.579"
+        ]
+      ]
+    },
+    {
+      "caption": "The same ablation study as tab:ablation_study_backbone_sharing on OTB-2015, TrackingNet, and LaSOT. The tracker is evaluated by success (AUC) metric.",
+      "headers": [
+        "share",
+        "fb_label",
+        "OTB-2015",
+        "TrackingNet",
+        "LaSOT"
+      ],
+      "rows": [
+        [
+          "",
+          "",
+          "0.702",
+          "79.7",
+          "0.593"
+        ],
+        [
+          "-",
+          "",
+          "red0.719",
+          "red80.3",
+          "red0.606"
+        ]
+      ]
+    },
+    {
+      "caption": "The performance on GOT-10k with different number of reference frames in training. Here AO is the average overlap metric.",
+      "headers": [
+        "#",
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "rows": [
+        [
+          "AO",
+          "0.629",
+          "0.624",
+          "red0.642",
+          "0.627"
+        ]
+      ]
+    },
+    {
+      "caption": "The performance in terms of success (AUC) metric on TrackingNet with different number of reference frames in the inference phase.",
+      "headers": [
+        "#",
+        "1",
+        "2",
+        "4",
+        "6",
+        "8",
+        "ALL"
+      ],
+      "rows": [
+        [
+          "Success",
+          "79.1",
+          "79.3",
+          "80.2",
+          "red80.3",
+          "80.2",
+          "79.8"
+        ],
+        [
+          "FPS",
+          "43.0",
+          "26.6",
+          "29.3",
+          "28.6",
+          "22.7",
+          "6.5"
+        ]
+      ]
+    },
+    {
+      "caption": "A success (AUC) performance list on OTB-2015 for a comprehensive comparison of our tracker with competitive trackers published in recent years. The best three results are highlighted in redred, blueblue, and greengreen, respectively. Trackers are ranked from top to bottom and left to right according the Success values.",
+      "headers": [
+        "Tracker",
+        "Success",
+        "Tracker_1",
+        "Success_1"
+      ],
+      "rows": [
+        [
+          "Ours",
+          "red0.719",
+          "SiamRPN++ <cit.>",
+          "0.696"
+        ],
+        [
+          "DROL <cit.>",
+          "blue0.715",
+          "KYS <cit.>",
+          "0.695"
+        ],
+        [
+          "RPT <cit.>",
+          "blue0.715",
+          "MCCT <cit.>",
+          "0.695"
+        ],
+        [
+          "CGACD <cit.>",
+          "green0.713",
+          "GFS-DCF <cit.>",
+          "0.693"
+        ],
+        [
+          "SiamAttn <cit.>",
+          "0.712",
+          "ASRCF <cit.>",
+          "0.692"
+        ],
+        [
+          "DCFST <cit.>",
+          "0.709",
+          "PGNet <cit.>",
+          "0.691"
+        ],
+        [
+          "UPDT <cit.>",
+          "0.702",
+          "RPCF <cit.>",
+          "0.69"
+        ],
+        [
+          "DRT <cit.>",
+          "0.699",
+          "SPM <cit.>",
+          "0.687"
+        ],
+        [
+          "SiamCAR <cit.>",
+          "0.697",
+          "DiMP-50 <cit.>",
+          "0.684"
+        ],
+        [
+          "PrDiMP-50 <cit.>",
+          "0.696",
+          "Ocean <cit.>",
+          "0.684"
+        ],
+        [
+          "SiamBAN <cit.>",
+          "0.696",
+          "SiamFC++ <cit.>",
+          "0.683"
+        ]
+      ]
+    },
+    {
+      "caption": "A performance comparison of our tracker with other competitive approaches on the test split of TrackingNet. Trackers are ranked from top to bottom according the Suc. values. Suc., Prec., and Norm. Prec. are abbreviations for success (AUC), precision, and normalized precision, respectively. The best three results are highlighted in redred, blueblue, and greengreen, respectively.",
+      "headers": [
+        "Tracker",
+        "Suc.",
+        "Prec.",
+        "Norm. Prec."
+      ],
+      "rows": [
+        [
+          "Ours",
+          "red80.3",
+          "red76.7",
+          "red85.1"
+        ],
+        [
+          "PrDiMP-50 <cit.>",
+          "blue75.8",
+          "70.4",
+          "81.6"
+        ],
+        [
+          "FCOS-MAML <cit.>",
+          "green75.7",
+          "-",
+          "blue82.2"
+        ],
+        [
+          "SiamFC++ <cit.>",
+          "75.4",
+          "green70.5",
+          "80.0"
+        ],
+        [
+          "SiamAttn <cit.>",
+          "75.2",
+          "-",
+          "green81.7"
+        ],
+        [
+          "DCFST-50 <cit.>",
+          "75.2",
+          "70.0",
+          "80.9"
+        ],
+        [
+          "DROL <cit.>",
+          "74.6",
+          "blue70.8",
+          "green81.7"
+        ],
+        [
+          "KYS <cit.>",
+          "74.0",
+          "68.8",
+          "80.0"
+        ],
+        [
+          "DiMP-50 <cit.>",
+          "74.0",
+          "68.7",
+          "80.1"
+        ],
+        [
+          "SiamRPN++ <cit.>",
+          "73.3",
+          "69.4",
+          "80.0"
+        ],
+        [
+          "D3S <cit.>",
+          "72.8",
+          "66.4",
+          "76.8"
+        ],
+        [
+          "CGACD <cit.>",
+          "71.1",
+          "69.3",
+          "80.0"
+        ],
+        [
+          "GlobalTrack <cit.>",
+          "70.4",
+          "65.6",
+          "75.4"
+        ],
+        [
+          "ATOM <cit.>",
+          "70.3",
+          "64.8",
+          "77.1"
+        ]
+      ]
+    },
+    {
+      "caption": "A performance comparison of our tracker with other competitive approaches on the test split of GOT-10k in terms of average overlap (AO) and success rates (SR) at threshold 0.5 and 0.75. The best three results are highlighted in redred, blueblue, and greengreen, respectively. Trackers are ranked from top to bottom according the AO values.",
+      "headers": [
+        "Tracker",
+        "AO",
+        "SR_0.5",
+        "SR_0.75",
+        "FPS"
+      ],
+      "rows": [
+        [
+          "Ours",
+          "red0.642",
+          "green0.737",
+          "red0.575",
+          "37"
+        ],
+        [
+          "KYS <cit.>",
+          "blue0.636",
+          "red0.751",
+          "green0.515",
+          "20"
+        ],
+        [
+          "PrDiMP-50 <cit.>",
+          "green0.634",
+          "blue0.738",
+          "blue0.543",
+          "30"
+        ],
+        [
+          "RPT <cit.>",
+          "0.624",
+          "0.730",
+          "0.504",
+          "20"
+        ],
+        [
+          "Ocean <cit.>",
+          "0.611",
+          "0.721",
+          "-",
+          "58"
+        ],
+        [
+          "DiMP-50 <cit.>",
+          "0.611",
+          "0.717",
+          "0.492",
+          "43"
+        ],
+        [
+          "D3S <cit.>",
+          "0.597",
+          "0.676",
+          "0.462",
+          "25"
+        ],
+        [
+          "SiamFC++ <cit.>",
+          "0.595",
+          "0.695",
+          "0.479",
+          "90"
+        ],
+        [
+          "SiamCAR <cit.>",
+          "0.569",
+          "0.670",
+          "0.415",
+          "52"
+        ],
+        [
+          "ATOM <cit.>",
+          "0.556",
+          "0.634",
+          "0.402",
+          "30"
+        ],
+        [
+          "SiamRPN++ <cit.>",
+          "0.517",
+          "0.616",
+          "0.325",
+          "35"
+        ]
+      ]
+    },
+    {
+      "caption": "A comparison of our tracker with state-of-the-art trackers on VOT2018. The best results are highlighted in redred, blueblue, and greengreen, respectively. Trackers are ranked from top to bottom according the EAO scores. The arrows after the metrics mean that the bigger(\u2191) or the smaller(\u2193) is the better.",
+      "headers": [
+        "Tracker",
+        "EAO\u2191",
+        "A\u2191",
+        "R\u2193"
+      ],
+      "rows": [
+        [
+          "Ours",
+          "0.447",
+          "0.590",
+          "0.159"
+        ],
+        [
+          "D3S <cit.>",
+          "red0.489",
+          "red0.640",
+          "green0.150"
+        ],
+        [
+          "Ocean <cit.>",
+          "red0.489",
+          "0.592",
+          "red0.117"
+        ],
+        [
+          "SiamAttn <cit.>",
+          "blue0.470",
+          "green0.630",
+          "0.160"
+        ],
+        [
+          "KYS <cit.>",
+          "green0.462",
+          "0.609",
+          "blue0.143"
+        ],
+        [
+          "SiamBAN <cit.>",
+          "0.452",
+          "0.597",
+          "0.178"
+        ],
+        [
+          "PGNet <cit.>",
+          "0.447",
+          "0.618",
+          "0.192"
+        ],
+        [
+          "PrDiMP-50 <cit.>",
+          "0.442",
+          "0.618",
+          "0.165"
+        ],
+        [
+          "DiMP-50 <cit.>",
+          "0.440",
+          "0.597",
+          "0.153"
+        ],
+        [
+          "Siam R-CNN <cit.>",
+          "0.408",
+          "0.609",
+          "0.220"
+        ],
+        [
+          "SiamFC++ <cit.>",
+          "0.426",
+          "0.587",
+          "0.183"
+        ],
+        [
+          "SiamRPN++ <cit.>",
+          "0.414",
+          "0.600",
+          "0.234"
+        ],
+        [
+          "FCOS-MAML <cit.>",
+          "0.392",
+          "blue0.635",
+          "0.220"
+        ]
+      ]
+    },
+    {
+      "caption": "A comparison of our tracker with other competitive approaches on UAV123 in terms of success (AUC) metric. The best three results are highlighted in redred, blueblue, and greengreen, respectively.",
+      "headers": [
+        "",
+        "Ours",
+        "DiMP-50\u00a0<cit.>",
+        "ATOM\u00a0<cit.>",
+        "SiamBAN\u00a0<cit.>",
+        "SiamCAR\u00a0<cit.>",
+        "SiamRPN++\u00a0<cit.>",
+        "UPDT\u00a0<cit.>"
+      ],
+      "rows": [
+        [
+          "Success",
+          "blue0.647",
+          "red0.654",
+          "green0.643",
+          "0.631",
+          "0.614",
+          "0.613",
+          "0.545"
+        ]
+      ]
+    }
+  ]
+}
