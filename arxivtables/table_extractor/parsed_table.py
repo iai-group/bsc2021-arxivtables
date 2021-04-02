@@ -23,13 +23,10 @@ class ParsedTable:
 
     def toJSON(self) -> str:
         table_dict = {
-            "title": "",
-            "footer": "",
-            "comments": "",
             "caption": self.caption,
             "headers": self.headings,
             "rows": self.data
         }
-        return json.dumps(table_dict, indent=4)
+        return table_dict
 
 
