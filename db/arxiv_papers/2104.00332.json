@@ -1,7 +1,7 @@
 {
   "id": "2104.00332",
   "title": "UC2: Universal Cross-lingual Cross-modal Vision-and-Language\n  Pre-training",
-  "dateFetched": "2021-04-02",
+  "dateFetched": "2021-04-03",
   "authors": [
     "Mingyang Zhou",
     "Luowei Zhou",
@@ -11,7 +11,7 @@
     "Zhou Yu",
     "Jingjing Liu"
   ],
-  "href": "2104.00332",
+  "href": "http://arxiv.org/abs/2104.00332v1",
   "publicationDate": "2021-04-01T08:30:53Z",
   "tables": []
 }

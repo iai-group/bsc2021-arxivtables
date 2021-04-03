@@ -1,0 +1,14 @@
+{
+  "id": "2103.15420",
+  "title": "SafeDrop: Detecting Memory Deallocation Bugs of Rust Programs via Static\n  Data-Flow Analysis",
+  "dateFetched": "2021-04-03",
+  "authors": [
+    "Mohan Cui",
+    "Chengjun Chen",
+    "Hui Xu",
+    "Yangfan Zhou"
+  ],
+  "href": "http://arxiv.org/abs/2103.15420v1",
+  "publicationDate": "2021-03-29T08:33:42Z",
+  "tables": []
+}

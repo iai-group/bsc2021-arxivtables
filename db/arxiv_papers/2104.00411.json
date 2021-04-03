@@ -1,7 +1,7 @@
 {
   "id": "2104.00411",
   "title": "Explaining COVID-19 and Thoracic Pathology Model Predictions by\n  Identifying Informative Input Features",
-  "dateFetched": "2021-04-02",
+  "dateFetched": "2021-04-03",
   "authors": [
     "Ashkan Khakzar",
     "Yang Zhang",
@@ -12,117 +12,7 @@
     "Seong Tae Kim",
     "Nassir Navab"
   ],
-  "href": "2104.00411",
+  "href": "http://arxiv.org/abs/2104.00411v1",
   "publicationDate": "2021-04-01T11:42:39Z",
-  "tables": [
-    {
-      "caption": "Mean IOU on NIH ChestX-ray8 (all pathologies) for various methods",
-      "headers": [
-        "GradCAM<cit.>",
-        "InteGrad<cit.>",
-        "LRP<cit.>",
-        "Gradients<cit.>",
-        "IBA",
-        "Inverse IBA",
-        "Multi-layer IBA"
-      ],
-      "rows": [
-        [
-          "0.077",
-          "0.076",
-          "0.025",
-          "0.114",
-          "0.114",
-          "0.088",
-          "0.189"
-        ]
-      ]
-    },
-    {
-      "caption": "Mean IOU on BrixIA for each detector and for various attribution methods",
-      "headers": [
-        "col0",
-        "GradCAM",
-        "InteGrad",
-        "LRP",
-        "Gradients",
-        "IBA",
-        "Inverse IBA",
-        "Multi-layer IBA"
-      ],
-      "rows": [
-        [
-          "Detector 0/1",
-          "0.11",
-          "0.176",
-          "0.0",
-          "0.04",
-          "0.145",
-          "0.194",
-          "0.171"
-        ],
-        [
-          "Detector 2",
-          "0.0",
-          "0.13",
-          "0.0",
-          "0.019",
-          "0.13",
-          "0.245",
-          "0.257"
-        ],
-        [
-          "Detector 3",
-          "0.011",
-          "0.14",
-          "0.0",
-          "0.052",
-          "0.222",
-          "0.243",
-          "0.257"
-        ]
-      ]
-    },
-    {
-      "caption": "Mean IOU on NIH ChestX-ray8 dataset for BCE and Weighted BCE models, reported for all the pathologies in NIH Chest X-ray8 using Inverse IBA",
-      "headers": [
-        "col0",
-        "Atelec.",
-        "Cardio.",
-        "Effusion",
-        "Infiltrate.",
-        "Mass",
-        "Nodule",
-        "Pneumo.",
-        "Pn. thorax",
-        "Mean"
-      ],
-      "rows": [
-        [
-          "BCE",
-          "0.016",
-          "0.071",
-          "0.004",
-          "0.001",
-          "0.102",
-          "0.011",
-          "0.0",
-          "0.003",
-          "0.024"
-        ],
-        [
-          "W. BCE",
-          "0.073",
-          "0.131",
-          "0.032",
-          "0.058",
-          "0.097",
-          "0.02",
-          "0.066",
-          "0.016",
-          "0.065"
-        ]
-      ]
-    }
-  ]
+  "tables": []
 }

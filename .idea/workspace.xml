@@ -2,20 +2,60 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1de5e25f-3a40-4f4d-8181-4ef8be3a070d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/bsc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/bsc.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/arxivtables/arxiv_getter/arxiv_getter.py" beforeDir="false" afterPath="$PROJECT_DIR$/arxivtables/arxiv_getter/arxiv_getter.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/arxivtables/arxiv_watcher/arxiv_watcher.py" beforeDir="false" afterPath="$PROJECT_DIR$/arxivtables/arxiv_watcher/arxiv_watcher.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/arxivtables/table_extractor/parsed_table.py" beforeDir="false" afterPath="$PROJECT_DIR$/arxivtables/table_extractor/parsed_table.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/arxivtables/table_extractor/table_extractor.py" beforeDir="false" afterPath="$PROJECT_DIR$/arxivtables/table_extractor/table_extractor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/downloader/20210327.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/downloader/20210328.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/downloader/20210329.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/downloader/20210331.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/arxiv_papers/2104.00324.json" beforeDir="false" afterPath="$PROJECT_DIR$/db/arxiv_papers/2104.00324.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/arxiv_papers/2104.00331.json" beforeDir="false" afterPath="$PROJECT_DIR$/db/arxiv_papers/2104.00331.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/arxiv_papers/2104.00332.json" beforeDir="false" afterPath="$PROJECT_DIR$/db/arxiv_papers/2104.00332.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/arxiv_papers/2104.00335.json" beforeDir="false" afterPath="$PROJECT_DIR$/db/arxiv_papers/2104.00335.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/arxiv_papers/2104.00348.json" beforeDir="false" afterPath="$PROJECT_DIR$/db/arxiv_papers/2104.00348.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/arxiv_papers/2104.00358.json" beforeDir="false" afterPath="$PROJECT_DIR$/db/arxiv_papers/2104.00358.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/arxiv_papers/2104.00363.json" beforeDir="false" afterPath="$PROJECT_DIR$/db/arxiv_papers/2104.00363.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/arxiv_papers/2104.00368.json" beforeDir="false" afterPath="$PROJECT_DIR$/db/arxiv_papers/2104.00368.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/arxiv_papers/2104.00371.json" beforeDir="false" afterPath="$PROJECT_DIR$/db/arxiv_papers/2104.00371.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/arxiv_papers/2104.00388.json" beforeDir="false" afterPath="$PROJECT_DIR$/db/arxiv_papers/2104.00388.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/arxiv_papers/2104.00390.json" beforeDir="false" afterPath="$PROJECT_DIR$/db/arxiv_papers/2104.00390.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/arxiv_papers/2104.00402.json" beforeDir="false" afterPath="$PROJECT_DIR$/db/arxiv_papers/2104.00402.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/arxiv_papers/2104.00404.json" beforeDir="false" afterPath="$PROJECT_DIR$/db/arxiv_papers/2104.00404.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/arxiv_papers/2104.00408.json" beforeDir="false" afterPath="$PROJECT_DIR$/db/arxiv_papers/2104.00408.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/arxiv_papers/2104.00411.json" beforeDir="false" afterPath="$PROJECT_DIR$/db/arxiv_papers/2104.00411.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/arxiv_papers/2104.00412.json" beforeDir="false" afterPath="$PROJECT_DIR$/db/arxiv_papers/2104.00412.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/arxiv_papers/2104.00418.json" beforeDir="false" afterPath="$PROJECT_DIR$/db/arxiv_papers/2104.00418.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/arxiv_papers/2104.00419.json" beforeDir="false" afterPath="$PROJECT_DIR$/db/arxiv_papers/2104.00419.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/arxiv_papers/2104.00421.json" beforeDir="false" afterPath="$PROJECT_DIR$/db/arxiv_papers/2104.00421.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/arxiv_papers/2104.00422.json" beforeDir="false" afterPath="$PROJECT_DIR$/db/arxiv_papers/2104.00422.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/arxiv_papers/2104.00424.json" beforeDir="false" afterPath="$PROJECT_DIR$/db/arxiv_papers/2104.00424.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/arxiv_papers/2104.00427.json" beforeDir="false" afterPath="$PROJECT_DIR$/db/arxiv_papers/2104.00427.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/arxiv_papers/2104.00434.json" beforeDir="false" afterPath="$PROJECT_DIR$/db/arxiv_papers/2104.00434.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/arxiv_papers/2104.00437.json" beforeDir="false" afterPath="$PROJECT_DIR$/db/arxiv_papers/2104.00437.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/arxiv_papers/2104.00439.json" beforeDir="false" afterPath="$PROJECT_DIR$/db/arxiv_papers/2104.00439.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/arxiv_papers/2104.00446.json" beforeDir="false" afterPath="$PROJECT_DIR$/db/arxiv_papers/2104.00446.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/arxiv_papers/2104.00449.json" beforeDir="false" afterPath="$PROJECT_DIR$/db/arxiv_papers/2104.00449.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/arxiv_papers/2104.00456.json" beforeDir="false" afterPath="$PROJECT_DIR$/db/arxiv_papers/2104.00456.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/arxiv_papers/2104.00467.json" beforeDir="false" afterPath="$PROJECT_DIR$/db/arxiv_papers/2104.00467.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/arxiv_papers/2104.00472.json" beforeDir="false" afterPath="$PROJECT_DIR$/db/arxiv_papers/2104.00472.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/arxiv_papers/2104.00473.json" beforeDir="false" afterPath="$PROJECT_DIR$/db/arxiv_papers/2104.00473.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/arxiv_papers/2104.00494.json" beforeDir="false" afterPath="$PROJECT_DIR$/db/arxiv_papers/2104.00494.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/arxiv_papers/2104.00501.json" beforeDir="false" afterPath="$PROJECT_DIR$/db/arxiv_papers/2104.00501.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/arxiv_papers/2104.00502.json" beforeDir="false" afterPath="$PROJECT_DIR$/db/arxiv_papers/2104.00502.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/arxiv_papers/2104.00532.json" beforeDir="false" afterPath="$PROJECT_DIR$/db/arxiv_papers/2104.00532.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/arxiv_papers/2104.00553.json" beforeDir="false" afterPath="$PROJECT_DIR$/db/arxiv_papers/2104.00553.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/arxiv_papers/2104.00556.json" beforeDir="false" afterPath="$PROJECT_DIR$/db/arxiv_papers/2104.00556.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/arxiv_papers/2104.00557.json" beforeDir="false" afterPath="$PROJECT_DIR$/db/arxiv_papers/2104.00557.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/arxiv_papers/2104.00574.json" beforeDir="false" afterPath="$PROJECT_DIR$/db/arxiv_papers/2104.00574.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/arxiv_papers/2104.00580.json" beforeDir="false" afterPath="$PROJECT_DIR$/db/arxiv_papers/2104.00580.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/arxiv_papers/2104.00602.json" beforeDir="false" afterPath="$PROJECT_DIR$/db/arxiv_papers/2104.00602.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/arxiv_papers/2104.00609.json" beforeDir="false" afterPath="$PROJECT_DIR$/db/arxiv_papers/2104.00609.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/arxiv_papers/2104.00613.json" beforeDir="false" afterPath="$PROJECT_DIR$/db/arxiv_papers/2104.00613.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/arxiv_papers/2104.00632.json" beforeDir="false" afterPath="$PROJECT_DIR$/db/arxiv_papers/2104.00632.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/arxiv_papers/2104.00638.json" beforeDir="false" afterPath="$PROJECT_DIR$/db/arxiv_papers/2104.00638.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/arxiv_papers/2104.00647.json" beforeDir="false" afterPath="$PROJECT_DIR$/db/arxiv_papers/2104.00647.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/arxiv_papers/2104.00649.json" beforeDir="false" afterPath="$PROJECT_DIR$/db/arxiv_papers/2104.00649.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/arxiv_papers/2104.00662.json" beforeDir="false" afterPath="$PROJECT_DIR$/db/arxiv_papers/2104.00662.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/arxiv_papers/2104.00671.json" beforeDir="false" afterPath="$PROJECT_DIR$/db/arxiv_papers/2104.00671.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/arxiv_papers/2104.00678.json" beforeDir="false" afterPath="$PROJECT_DIR$/db/arxiv_papers/2104.00678.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/downloader/20210402.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/downloader/previously_loaded_ids.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run_tables.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_tables.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/table_representation.json" beforeDir="false" afterPath="$PROJECT_DIR$/table_representation.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +209,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -352,7 +392,8 @@
       <workItem from="1617208671580" duration="4082000" />
       <workItem from="1617229406966" duration="1014000" />
       <workItem from="1617310893701" duration="8086000" />
-      <workItem from="1617353096679" duration="15466000" />
+      <workItem from="1617353096679" duration="21528000" />
+      <workItem from="1617443056171" duration="5925000" />
     </task>
     <servers />
   </component>
@@ -458,7 +499,7 @@
     <SUITE FILE_PATH="coverage/bsc$Unittests_in_tests_data_extraction_py.coverage" NAME="Unittests in tests_data_extraction.py Coverage Results" MODIFIED="1616940473827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/bsc$Unittests_for_tests_table_extraction_TestTableExtraction.coverage" NAME="Unittests for tests_table_extraction.TestTableExtraction Coverage Results" MODIFIED="1616759372717" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/bsc$Unittests_in_test_getter_py.coverage" NAME="Unittests in test_getter.py Coverage Results" MODIFIED="1616940468046" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/bsc2021_arxivtables$run_tables.coverage" NAME="run_tables Coverage Results" MODIFIED="1617370472392" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/bsc2021_arxivtables$run_tables.coverage" NAME="run_tables Coverage Results" MODIFIED="1617456501374" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/tests/new_references/table_3.json">

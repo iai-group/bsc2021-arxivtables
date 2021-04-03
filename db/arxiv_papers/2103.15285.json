@@ -1,0 +1,14 @@
+{
+  "id": "2103.15285",
+  "title": "A cooperative partial snapshot algorithm for checkpoint-rollback\n  recovery of large-scale and dynamic distributed systems and experimental\n  evaluations",
+  "dateFetched": "2021-04-03",
+  "authors": [
+    "Junya Nakamura",
+    "Yonghwan Kim",
+    "Yoshiaki Katayama",
+    "Toshimitsu Masuzawa"
+  ],
+  "href": "http://arxiv.org/abs/2103.15285v1",
+  "publicationDate": "2021-03-29T02:39:39Z",
+  "tables": []
+}

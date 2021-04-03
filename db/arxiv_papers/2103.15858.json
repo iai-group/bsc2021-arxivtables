@@ -1,0 +1,15 @@
+{
+  "id": "2103.15858",
+  "title": "DualNorm-UNet: Incorporating Global and Local Statistics for Robust\n  Medical Image Segmentation",
+  "dateFetched": "2021-04-03",
+  "authors": [
+    "Junfei Xiao",
+    "Lequan Yu",
+    "Lei Xing",
+    "Alan Yuille",
+    "Yuyin Zhou"
+  ],
+  "href": "http://arxiv.org/abs/2103.15858v1",
+  "publicationDate": "2021-03-29T18:09:56Z",
+  "tables": []
+}
