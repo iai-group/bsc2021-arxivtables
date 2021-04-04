@@ -70,9 +70,9 @@ class ArxivWatcher:
                         with open(os.path.join(base_dir, 'logs/downloader/') + str(datetime.date(datetime.now())).replace('-', '') + '.log', 'a') as f:
                             f.write(entry_id)
                             f.write('\n')
-                    Path('db/arxiv_papers').mkdir(parents=True, exist_ok=True)
-                    with open(os.path.join(base_dir, 'db/arxiv_papers/') + entry_id + '.json', 'w') as f:
-                        json.dump(entry, f, indent=2)
+                        Path('db/arxiv_papers').mkdir(parents=True, exist_ok=True)
+                        with open(os.path.join(base_dir, 'db/arxiv_papers/') + entry_id + '.json', 'w') as f:
+                            json.dump(entry, f, indent=2)
         else:
             print("Status code: " + result.status_code)
 
