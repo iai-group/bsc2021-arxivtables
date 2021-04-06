@@ -1,0 +1,44 @@
+{
+  "id": "2104.01434",
+  "title": "Optimal Selection for Good Polynomials of Degree up to Five",
+  "dateFetched": "2021-04-06",
+  "authors": [
+    "Austin Dukes",
+    "Andrea Ferraguti",
+    "Giacomo Micheli"
+  ],
+  "href": "http://arxiv.org/abs/2104.01434v1",
+  "publicationDate": "2021-04-03T15:56:43Z",
+  "tables": [
+    {
+      "caption": "",
+      "headers": [
+        "q",
+        "\ud835\udcaf^1_split(f)",
+        "\u230aq/120\u230b"
+      ],
+      "rows": [
+        [
+          "2^13",
+          "78",
+          "68"
+        ],
+        [
+          "2^15",
+          "278",
+          "273"
+        ],
+        [
+          "2^17",
+          "1088",
+          "1092"
+        ],
+        [
+          "2^19",
+          "4332",
+          "4369"
+        ]
+      ]
+    }
+  ]
+}

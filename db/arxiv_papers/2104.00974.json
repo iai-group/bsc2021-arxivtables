@@ -1,0 +1,297 @@
+{
+  "id": "2104.00974",
+  "title": "A test of cosmic distance duality relation using SPT-SZ galaxy clusters,\n  Type Ia supernovae, and cosmic chronometers",
+  "dateFetched": "2021-04-06",
+  "authors": [
+    "Kamal Bora",
+    "Shantanu Desai"
+  ],
+  "href": "http://arxiv.org/abs/2104.00974v1",
+  "publicationDate": "2021-04-02T10:26:28Z",
+  "tables": [
+    {
+      "caption": "An illustration of the different analyses  used for testing CDDR.",
+      "headers": [
+        "Combination",
+        "Method 1",
+        "Method 2",
+        "Method 3",
+        "Eq.\u00a0<ref>",
+        "Eq.\u00a0<ref>",
+        "Eq.\u00a0<ref>",
+        "Eq.\u00a0<ref>"
+      ],
+      "rows": [
+        [
+          "Case I",
+          "",
+          "\u2013",
+          "\u2013",
+          "",
+          "\u2013",
+          "\u2013",
+          "\u2013"
+        ],
+        [
+          "Case II",
+          "",
+          "\u2013",
+          "\u2013",
+          "\u2013",
+          "",
+          "\u2013",
+          "\u2013"
+        ],
+        [
+          "Case III",
+          "",
+          "\u2013",
+          "\u2013",
+          "\u2013",
+          "\u2013",
+          "",
+          "\u2013"
+        ],
+        [
+          "Case IV",
+          "",
+          "\u2013",
+          "\u2013",
+          "\u2013",
+          "\u2013",
+          "\u2013",
+          ""
+        ],
+        [
+          "Case V",
+          "\u2013",
+          "",
+          "\u2013",
+          "",
+          "\u2013",
+          "\u2013",
+          "\u2013"
+        ],
+        [
+          "Case VI",
+          "\u2013",
+          "",
+          "\u2013",
+          "\u2013",
+          "",
+          "\u2013",
+          "\u2013"
+        ],
+        [
+          "Case VII",
+          "\u2013",
+          "",
+          "\u2013",
+          "\u2013",
+          "\u2013",
+          "",
+          "\u2013"
+        ],
+        [
+          "Case VIII",
+          "\u2013",
+          "",
+          "\u2013",
+          "\u2013",
+          "\u2013",
+          "\u2013",
+          ""
+        ],
+        [
+          "Case IX",
+          "\u2013",
+          "\u2013",
+          "",
+          "",
+          "\u2013",
+          "\u2013",
+          "\u2013"
+        ],
+        [
+          "Case X",
+          "\u2013",
+          "\u2013",
+          "",
+          "\u2013",
+          "",
+          "\u2013",
+          "\u2013"
+        ],
+        [
+          "Case XI",
+          "\u2013",
+          "\u2013",
+          "",
+          "\u2013",
+          "\u2013",
+          "",
+          "\u2013"
+        ],
+        [
+          "Case XII",
+          "\u2013",
+          "\u2013",
+          "",
+          "\u2013",
+          "\u2013",
+          "\u2013",
+          ""
+        ]
+      ]
+    },
+    {
+      "caption": "Constraints on \u03b7_0 from previous studies using different parametric forms as defined in Eq.\u00a0<ref> - Eq.\u00a0<ref> along with our results presented in last three rows. The quoted uncertainties are at 1\u03c3 wherever not mentioned explicitly.",
+      "headers": [
+        "Dataset used",
+        "Eq.\u00a0<ref>",
+        "Eq.\u00a0<ref>",
+        "Eq.\u00a0<ref>",
+        "Eq.\u00a0<ref>",
+        "Reference"
+      ],
+      "rows": [
+        [
+          "Angular Dia Dist+SNe Ia",
+          "-0.28\u00b10.44(2\u03c3)",
+          "-0.43\u00b10.60(2\u03c3)",
+          "-",
+          "-",
+          "\u00a0<cit.>"
+        ],
+        [
+          "Angular Dia Dist+SNe Ia",
+          "-0.15\u00b10.17",
+          "-0.23\u00b10.24",
+          "-",
+          "-",
+          "\u00a0<cit.>"
+        ],
+        [
+          "Angular Dia Dist+SNe Ia",
+          "-0.07\u00b10.19",
+          "-0.11\u00b10.26",
+          "-",
+          "-",
+          "\u00a0<cit.>"
+        ],
+        [
+          "f_gas",
+          "-0.06\u00b10.16",
+          "-0.07\u00b10.24",
+          "-",
+          "-",
+          "\u00a0<cit.>"
+        ],
+        [
+          "f_gas+SNe Ia",
+          "-0.03_-0.65^+1.03",
+          "-0.08_-1.22^+2.28",
+          "-",
+          "-",
+          "\u00a0<cit.>"
+        ],
+        [
+          "Angular Dia Dist+SNe Ia",
+          "-0.23\u00b10.23(2\u03c3)",
+          "-0.35\u00b10.37(2\u03c3)",
+          "-",
+          "-",
+          "\u00a0<cit.>"
+        ],
+        [
+          "Angular Dia Dist+SNe Ia",
+          "0.16_-0.39^+0.56",
+          "-",
+          "-",
+          "-",
+          "\u00a0<cit.>"
+        ],
+        [
+          "Angular Dia Dist+H(z)",
+          "-0.10_-0.13^+0.12",
+          "-0.16_-0.19^+0.18",
+          "-",
+          "-",
+          "\u00a0<cit.>"
+        ],
+        [
+          "f_gas+H(z)",
+          "0.062_-0.15^+0.17",
+          "-0.17_-0.28^+0.34",
+          "-",
+          "-",
+          "\u00a0<cit.>"
+        ],
+        [
+          "Angular Dia Dist+f_gas+SNe Ia+T_CMB",
+          "-0.012\u00b10.022",
+          "-0.02\u00b10.034",
+          "-0.017\u00b10.027",
+          "-0.017\u00b10.026",
+          "\u00a0<cit.>"
+        ],
+        [
+          "Angular Dia Dist+f_gas+SNe Ia+T_CMB",
+          "-0.011\u00b10.021",
+          "-0.015\u00b10.033",
+          "-0.013\u00b10.027",
+          "-0.013\u00b10.028",
+          "\u00a0<cit.>"
+        ],
+        [
+          "Strong Grav. Lensing+SNe Ia+GRBs",
+          "0.00\u00b10.10(2\u03c3)",
+          "-0.36_-0.42^+0.37(2\u03c3)",
+          "-0.10\u00b10.24(2\u03c3)",
+          "-0.16_-0.51^+0.24(2\u03c3)",
+          "\u00a0<cit.>"
+        ],
+        [
+          "Strong Grav. Lensing+SNe Ia+GRBs",
+          "0.15\u00b10.13(2\u03c3)",
+          "-0.18_-0.65^+0.45(2\u03c3)",
+          "0.22_-0.32^+0.40(2\u03c3)",
+          "0.27_-0.38^+0.22(2\u03c3)",
+          "\u00a0<cit.>"
+        ],
+        [
+          "Y_SZ-Y_X+SNe Ia",
+          "0.05\u00b10.07(2\u03c3)",
+          "0.09\u00b10.16(2\u03c3)",
+          "-",
+          "-",
+          "\u00a0<cit.>"
+        ],
+        [
+          "\ud835\udc18_\ud835\udc12\ud835\udc19-\ud835\udc18_\ud835\udc17 ratio+SNe Ia(Method 1)",
+          "0.008\u00b10.05",
+          "0.022\u00b10.11",
+          "0.012\u00b10.07",
+          "0.01\u00b10.07",
+          "This work"
+        ],
+        [
+          "\ud835\udc18_\ud835\udc12\ud835\udc19-\ud835\udc18_\ud835\udc17 ratio+SNe Ia(Method 2)",
+          "-0.096\u00b10.04",
+          "-0.26\u00b10.09",
+          "-0.16\u00b10.06",
+          "-0.18\u00b10.07",
+          "This work"
+        ],
+        [
+          "\ud835\udc18_\ud835\udc12\ud835\udc19-\ud835\udc18_\ud835\udc17 ratio+\ud835\udc07(\ud835\udc33)(\ud835\udc0c\ud835\udc1e\ud835\udc2d\ud835\udc21\ud835\udc28\ud835\udc1d 3)",
+          "-0.094\u00b10.04",
+          "-0.26\u00b10.09",
+          "-0.16\u00b10.06",
+          "-0.18\u00b10.07",
+          "This work"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "id": "2104.01902",
+  "title": "Another Approximation of the First-Passage Time Densities for the\n  Ratcliff Diffusion Decision Model",
+  "dateFetched": "2021-04-06",
+  "authors": [
+    "Kendal Foster",
+    "Henrik Singmann"
+  ],
+  "href": "http://arxiv.org/abs/2104.01902v1",
+  "publicationDate": "2021-04-05T13:29:44Z",
+  "tables": [
+    {
+      "caption": "Parameter space with response times ranging from 0 to 30 seconds, used for determining \u03b4.",
+      "headers": [
+        "Parameter",
+        "Values"
+      ],
+      "rows": [
+        [
+          "t",
+          "0.001, 0.1, 1, 2, 3, 4, 5, 10, 30"
+        ],
+        [
+          "a",
+          "0.25, 0.5, 1, 2.5, 5"
+        ],
+        [
+          "v",
+          "-5, -2, 0, 2, 5"
+        ],
+        [
+          "w",
+          "0.2, 0.5, 0.8"
+        ],
+        [
+          "\u03b7",
+          "0, 0.5, 1, 1.5"
+        ]
+      ]
+    },
+    {
+      "caption": "The parameter space used in the benchmark tests.",
+      "headers": [
+        "Parameter",
+        "Values"
+      ],
+      "rows": [
+        [
+          "t",
+          "0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2.0"
+        ],
+        [
+          "a",
+          "0.5, 1, 1.5, 2, 2.5, 3, 3.5"
+        ],
+        [
+          "v",
+          "-5, -2, 0, 2, 5"
+        ],
+        [
+          "w",
+          "0.3, 0.4, 0.5, 0.6, 0.7"
+        ],
+        [
+          "\u03b7",
+          "0, 1, 2, 3.5"
+        ]
+      ]
+    }
+  ]
+}

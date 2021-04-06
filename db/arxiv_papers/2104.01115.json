@@ -1,0 +1,558 @@
+{
+  "id": "2104.01115",
+  "title": "Local and Global Topics in Text Modeling of Web Pages Nested in Web\n  Sites",
+  "dateFetched": "2021-04-06",
+  "authors": [
+    "Jason Wang",
+    "Robert E. Weiss"
+  ],
+  "href": "http://arxiv.org/abs/2104.01115v1",
+  "publicationDate": "2021-03-30T23:16:46Z",
+  "tables": [
+    {
+      "caption": "Model notation with definitions.",
+      "headers": [
+        "Notation",
+        "Description"
+      ],
+      "rows": [
+        [
+          "i",
+          "Web site index, i=1,\u2026,M"
+        ],
+        [
+          "j",
+          "Web page index, j = 1,\u2026,M_i"
+        ],
+        [
+          "h",
+          "Word index, h = 1,\u2026,N_ij"
+        ],
+        [
+          "M",
+          "Number of web sites"
+        ],
+        [
+          "M_i",
+          "Number of pages in web site i"
+        ],
+        [
+          "N_ij",
+          "Number of words in page j in web site i"
+        ],
+        [
+          "K",
+          "Number of global topics"
+        ],
+        [
+          "L",
+          "Number of local topics"
+        ],
+        [
+          "L_i",
+          "Number of local topics in web site i"
+        ],
+        [
+          "V",
+          "Number of unique words in the vocabulary"
+        ],
+        [
+          "\u03b8_ij",
+          "Page-topic distribution of web site i web page j"
+        ],
+        [
+          "\u03c8_i",
+          "Local topic-word distribution of web site i"
+        ],
+        [
+          "\u03d5_k",
+          "Global topic-word distribution of topic k"
+        ],
+        [
+          "w_ijh",
+          "Word h of page j in web site i"
+        ],
+        [
+          "z_ijh",
+          "Topic choice of the hth word of page j in web site i"
+        ]
+      ]
+    },
+    {
+      "caption": "The ten highest probability words for the most common topic (General) and nine health topics from HALT-LDA for K = 60. Topic labels in the first column are manually labeled and the prevalence is the average probability across all web pages and web sites. Means and 95% credible intervals for the probabilities of the words for the 4 health topics in boldface are plotted in Figure <ref>.",
+      "headers": [
+        "Label",
+        "Prevalence",
+        "1cTop 10 words"
+      ],
+      "rows": [
+        [
+          "General",
+          "5.4%",
+          "inform, provid, contact, pleas, requir, "
+        ],
+        [
+          "\u2013",
+          "\u2013",
+          "\u00a0\u00a0call, need, must, click, may"
+        ],
+        [
+          "Disease prevention",
+          "3.3%",
+          "diseas, prevent, risk, caus, use,"
+        ],
+        [
+          "\u2013",
+          "\u2013",
+          "\u00a0\u00a0includ, year, effect, peopl, also"
+        ],
+        [
+          "Food safety",
+          "2.9%",
+          "food, inspect, establish, permit, environment, "
+        ],
+        [
+          "\u2013",
+          "\u2013",
+          "\u00a0\u00a0safeti, facil, code, oper, applic"
+        ],
+        [
+          "WIC",
+          "2.7%",
+          "wic, breastfeed, infant, women, nutrit, "
+        ],
+        [
+          "\u2013",
+          "\u2013",
+          "\u00a0\u00a0program, children, food, elig, incom"
+        ],
+        [
+          "Vaccinations",
+          "2.0%",
+          "immun, vaccin, adult, children, child,"
+        ],
+        [
+          "\u2013",
+          "\u2013",
+          "\u00a0\u00a0schedul, flu, appoint, clinic, diseas"
+        ],
+        [
+          "Breast cancer",
+          "1.9%",
+          "test, women, clinic, screen, famili, "
+        ],
+        [
+          "\u2013",
+          "\u2013",
+          "\u00a0\u00a0pregnanc, plan, breast, cancer, exam"
+        ],
+        [
+          "Emergency preparedness",
+          "1.8%",
+          "emerg, prepared, disast, respons, plan, "
+        ],
+        [
+          "\u2013",
+          "\u2013",
+          "\u00a0\u00a0prepar, commun, event, famili, local"
+        ],
+        [
+          "Hospital Care",
+          "1.7%",
+          "care, patient, provid, medic, nurs"
+        ],
+        [
+          "\u2013",
+          "\u2013",
+          "\u00a0\u00a0physician, treatment, visit, hospit, includ"
+        ],
+        [
+          "Sexually transmitted disease",
+          "1.5%",
+          "test, std, clinic, treatment, hiv, "
+        ],
+        [
+          "\u2013",
+          "\u2013",
+          "\u00a0\u00a0schedul, educ, immun, fee, sexual"
+        ],
+        [
+          "Family Program",
+          "1.4%",
+          "child, children, famili, parent, program"
+        ],
+        [
+          "\u2013",
+          "\u2013",
+          "\u00a0\u00a0visit, home, babi, help, hand"
+        ]
+      ]
+    },
+    {
+      "caption": "Top five highest probability words in local topics from HALT-LDA for K=60. Most local topics include a geographical name or word among the top five words.",
+      "headers": [
+        "col0",
+        "Location",
+        "State",
+        "Top 5 Words (local topic)"
+      ],
+      "rows": [
+        [
+          "1",
+          "Elkhorn Logan Valley",
+          "Nebraska",
+          "month, nation, awar, elvphd, day"
+        ],
+        [
+          "2",
+          "Sandusky County",
+          "Ohio",
+          "sanduski, ohio, fremont, street, read"
+        ],
+        [
+          "3",
+          "Ford County",
+          "Illinois",
+          "ford, program, illinoi, bird, press"
+        ],
+        [
+          "4",
+          "Loup Basin",
+          "Nebraska",
+          "loupbasin, loup, basin, nebraska, program"
+        ],
+        [
+          "5",
+          "Wayne County",
+          "Missouri",
+          "center, wayn, creat, homestead, back"
+        ],
+        [
+          "6",
+          "Greene County",
+          "Iowa",
+          "green, medic, center, care, therapi"
+        ],
+        [
+          "7",
+          "Bell County",
+          "Texas",
+          "report, inspect, food, retail, octob"
+        ],
+        [
+          "8",
+          "Moniteau County",
+          "Missouri",
+          "moniteau, missouri, center, requir, map"
+        ],
+        [
+          "9",
+          "Williams County",
+          "Ohio",
+          "phasellu, sed, dolor, fusc, odio"
+        ],
+        [
+          "10",
+          "Harrison and Clarksburg",
+          "West Virginia",
+          "alert, harrison, clarksburg, subscrib, archiv"
+        ],
+        [
+          "11",
+          "Oldham County",
+          "Kentucky",
+          "oldham, kentucki, click, local, resourc"
+        ],
+        [
+          "12",
+          "Boyle County",
+          "Kentucky",
+          "boyl, bag, item, bed, home"
+        ],
+        [
+          "13",
+          "Dallas County",
+          "Missouri",
+          "buffalo, routin, dalla, food, inspect"
+        ],
+        [
+          "14",
+          "Shelby County",
+          "Tennessee",
+          "sschd, ohio, shelbycountyhealthdeptorg,"
+        ],
+        [
+          "\u2013",
+          "\u2013",
+          "\u2013",
+          "email, shelbi"
+        ],
+        [
+          "15",
+          "Taney County",
+          "Missouri",
+          "averag, normal, assur, commun, exposur"
+        ],
+        [
+          "16",
+          "Monroe County",
+          "Missouri",
+          "monro, phone, email, map, fax"
+        ],
+        [
+          "17",
+          "Three Rivers District",
+          "Kentucky",
+          "river, three, district, kentucki, local"
+        ],
+        [
+          "18",
+          "Central District",
+          "Nebraska",
+          "central, district, permit, resourc, island"
+        ],
+        [
+          "19",
+          "Levy County",
+          "Florida",
+          "florida, updat, weekli, month, april"
+        ],
+        [
+          "20",
+          "Ozark County",
+          "Missouri",
+          "ozark, contact, info, home, box"
+        ]
+      ]
+    },
+    {
+      "caption": "Global topics from SA1, SA2, SA3, and SA4 are matched to the health topics shown in Table 2 of the main text using the rank based method with the top 10 words.\n\t\tThe 3 highest probability words for the nine health topics in each sensitivity analysis and the main analysis are shown with their respective topic prevalences.",
+      "headers": [
+        "col0",
+        "Main",
+        "SA1",
+        "SA2",
+        "SA3",
+        "SA4"
+      ],
+      "rows": [
+        [
+          "Disease",
+          "diseas (3.3%)",
+          "diseas (3.2%)",
+          "diseas (3.3%)",
+          "diseas (3.5%)",
+          "prevent (3.7%)"
+        ],
+        [
+          "prevention",
+          "prevent",
+          "caus",
+          "peopl",
+          "peopl",
+          "caus"
+        ],
+        [
+          "\u2013",
+          "risk",
+          "peopl",
+          "caus",
+          "caus",
+          "risk"
+        ],
+        [
+          "Food",
+          "food (2.9%)",
+          "food (1.8%)",
+          "food (1.5%)",
+          "food (1.9%)",
+          "food (1.7%)"
+        ],
+        [
+          "safety",
+          "inspect",
+          "establish",
+          "inspect",
+          "establish",
+          "establish"
+        ],
+        [
+          "\u2013",
+          "establish",
+          "permit",
+          "establish",
+          "inspect",
+          "permit"
+        ],
+        [
+          "WIC",
+          "wic (2.7%)",
+          "wic (2.9%)",
+          "wic (2.4%)",
+          "wic (2.7%)",
+          "wic (2.6%)"
+        ],
+        [
+          "\u2013",
+          "breastfeed",
+          "breastfeed",
+          "breastfeed",
+          "breastfeed",
+          "breastfeed"
+        ],
+        [
+          "\u2013",
+          "infant",
+          "infant",
+          "infant",
+          "infant",
+          "infant"
+        ],
+        [
+          "Vaccinations",
+          "immun (2.0%)",
+          "vaccin (2.3%)",
+          "vaccin (2.4%)",
+          "immun (2.3%)",
+          "vaccin (2.2%)"
+        ],
+        [
+          "\u2013",
+          "vaccin",
+          "immun",
+          "immun",
+          "vaccin",
+          "immun"
+        ],
+        [
+          "\u2013",
+          "adult",
+          "adult",
+          "adult",
+          "adult",
+          "adult"
+        ],
+        [
+          "Breast",
+          "test (1.9%)",
+          "screen (0.9%)",
+          "cancer (1.0%)",
+          "screen (1.2%)",
+          "cancer (1.1%)"
+        ],
+        [
+          "cancer",
+          "women",
+          "cancer",
+          "screen",
+          "women",
+          "women"
+        ],
+        [
+          "\u2013",
+          "clinic",
+          "women",
+          "breast",
+          "cancer",
+          "screen"
+        ],
+        [
+          "Emergency",
+          "emerg (1.8%)",
+          "emerg (1.8%)",
+          "emerg (2.1%)",
+          "emerg (1.9%)",
+          "emerg (2.2%)"
+        ],
+        [
+          "preparedness",
+          "prepar",
+          "prepar",
+          "prepar",
+          "prepar",
+          "prepar"
+        ],
+        [
+          "\u2013",
+          "disast",
+          "disast",
+          "disast",
+          "disast",
+          "disast"
+        ],
+        [
+          "Hospital",
+          "care (1.7%)",
+          "care (1.8%)",
+          "care (1.8%)",
+          "care (1.7%)",
+          "care (2.0%)"
+        ],
+        [
+          "care",
+          "patient",
+          "inform",
+          "inform",
+          "priva",
+          "provid"
+        ],
+        [
+          "\u2013",
+          "provid",
+          "priva",
+          "priva",
+          "medic",
+          "patient"
+        ],
+        [
+          "Sexually",
+          "test (1.5%)",
+          "test (1.5%)",
+          "test (0.7%)",
+          "test (0.8%)",
+          "test (1.3%)"
+        ],
+        [
+          "transmitted",
+          "std",
+          "std",
+          "std",
+          "std",
+          "std"
+        ],
+        [
+          "disease",
+          "clinic",
+          "hiv",
+          "hiv",
+          "hiv",
+          "hiv"
+        ],
+        [
+          "Family",
+          "child (1.4%)",
+          "child (1.7%)",
+          "child (1.4%)",
+          "child (1.5%)",
+          "child (1.3%)"
+        ],
+        [
+          "program",
+          "children",
+          "program",
+          "famili",
+          "famili",
+          "famili"
+        ],
+        [
+          "\u2013",
+          "famili",
+          "famili",
+          "children",
+          "program",
+          "parent"
+        ]
+      ]
+    }
+  ]
+}
