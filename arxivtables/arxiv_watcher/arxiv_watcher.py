@@ -40,7 +40,7 @@ class ArxivWatcher:
         with open(os.path.join(base_dir, 'logs/downloader/') + str(datetime.date(datetime.now())).replace('-',
                                                                                                           '') + '.log',
                   'a') as f:
-            f.write('\n')
+            f.write('')
         if result.status_code == 200:
             string_xml = result.content
             tree = fromstring(string_xml)
