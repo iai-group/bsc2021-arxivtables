@@ -1,0 +1,108 @@
+{
+  "id": "2104.00456",
+  "title": "Reconfigurable Intelligent Surfaces for N-LOS Radar Surveillance",
+  "dateFetched": "2021-04-02",
+  "authors": [
+    "Augusto Aubry",
+    "Antonio De Maio",
+    "Massimo Rosamilia"
+  ],
+  "href": "2104.00456",
+  "publicationDate": "2021-04-01T13:16:34Z",
+  "tables": [
+    {
+      "caption": "Simulation Parameters",
+      "headers": [
+        "Parameter",
+        "Value"
+      ],
+      "rows": [
+        [
+          "N,M",
+          "{101, 133, 201}"
+        ],
+        [
+          "d_x, d_y",
+          "\u03bb_0 / 2"
+        ],
+        [
+          "\u03b7_RIS",
+          "0.8"
+        ],
+        [
+          "\u03c3",
+          "0.02\u00a0m^2"
+        ],
+        [
+          "r_1",
+          "1000 m"
+        ],
+        [
+          "f",
+          "10 GHz"
+        ],
+        [
+          "N_p",
+          "{8,16,32, 64, 128}"
+        ],
+        [
+          "\u03c4",
+          "1.5 \u00d7 10^-6 s"
+        ],
+        [
+          "P_t",
+          "26 dBW"
+        ],
+        [
+          "G_t",
+          "38 dB"
+        ],
+        [
+          "G",
+          "4 dB"
+        ],
+        [
+          "L_tot",
+          "6 dB"
+        ],
+        [
+          "F_N",
+          "2.5 dB"
+        ],
+        [
+          "F^R(\u03b8_R,\u03d5_R)",
+          "0 dB"
+        ]
+      ]
+    },
+    {
+      "caption": "Number of Pulses and dwell time assuming an unambiguous range of 10Km",
+      "headers": [
+        "Number of Pulses",
+        "Dwell Time"
+      ],
+      "rows": [
+        [
+          "8",
+          "0.53 ms"
+        ],
+        [
+          "16",
+          "1.07 ms"
+        ],
+        [
+          "32",
+          "2.13 ms"
+        ],
+        [
+          "64",
+          "4.27 ms"
+        ],
+        [
+          "128",
+          "8.54 ms"
+        ]
+      ]
+    }
+  ]
+}
