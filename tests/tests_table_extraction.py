@@ -17,3 +17,15 @@ class TestTableExtraction(unittest.TestCase):
             output_text = output.read()
         input_text = extractor.extract_tables()[0]
         self.assertEqual(input_text, output_text)
+
+    def test_multiple_tables_extraction(self):
+        extractor = TableExtractor("multiple_tables/latex_1.tex")
+        tables = extractor.extract_tables()
+
+        for index in range(len(tables)):
+            with open("references/extracted_tables/latex_1/" + str(index) + ".tex", "r") as f:
+                reference = "".join(f.readlines())
+                self.assertEqual(tables[index], reference)
+
+
+
