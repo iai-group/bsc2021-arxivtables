@@ -2,13 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1de5e25f-3a40-4f4d-8181-4ef8be3a070d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tests/multiple_tables/latex_1.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/references/extracted_tables/latex_1/0.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/references/extracted_tables/latex_1/1.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/bsc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/bsc.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/tests_table_extraction.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/tests_table_extraction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/arxivtables/arxiv_getter/arxiv_getter.py" beforeDir="false" afterPath="$PROJECT_DIR$/arxivtables/arxiv_getter/arxiv_getter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/arxivtables/arxiv_watcher/arxiv_watcher.py" beforeDir="false" afterPath="$PROJECT_DIR$/arxivtables/arxiv_watcher/arxiv_watcher.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/arxivtables/table_extractor/parsed_table.py" beforeDir="false" afterPath="$PROJECT_DIR$/arxivtables/table_extractor/parsed_table.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/arxivtables/table_extractor/table_extractor.py" beforeDir="false" afterPath="$PROJECT_DIR$/arxivtables/table_extractor/table_extractor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/downloader/20210327.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/downloader/20210328.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/downloader/20210329.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/downloader/20210331.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/downloader/previously_loaded_ids.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run_tables.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_tables.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/table_representation.json" beforeDir="false" afterPath="$PROJECT_DIR$/table_representation.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -212,8 +219,9 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/downloads/21/03/17270/2103.17270/Honeycomb.tex" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="HTTP Request" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JSON&#10;HTTP Request" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -228,7 +236,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/tests/multiple_tables" />
+      <recent name="C:\Users\David\repos\school\bsc\logs\downloader" />
+      <recent name="C:\Users\David\repos\school\bsc\logs" />
       <recent name="$PROJECT_DIR$/tests/references/cleaned_tables" />
       <recent name="$PROJECT_DIR$/tests" />
       <recent name="$PROJECT_DIR$" />
@@ -329,18 +338,26 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for test_getter.TestGetter" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="bsc" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/downloads/21/03/17246/2103.17246" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_getter.TestGetter&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/downloads/21/03/17246/2103.17246/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
     <configuration name="Unittests for tests_table_extraction.TestTableExtraction.test_multiple_tables_extraction" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
@@ -375,17 +392,19 @@
     <list>
       <item itemvalue="Python.run_tables" />
       <item itemvalue="Python.arxiv_watcher" />
+      <item itemvalue="Python.test" />
+      <item itemvalue="Python tests.Unittests in tests_data_extraction.py" />
       <item itemvalue="Python tests.Unittests in tests_table_extraction.py" />
-      <item itemvalue="Python tests.Unittests for test_getter.TestGetter" />
-      <item itemvalue="Python tests.Unittests for tests_table_extraction.TestTableExtraction.test_multiple_tables_extraction" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python tests.Unittests for tests_table_extraction.TestTableExtraction.test_multiple_tables_extraction" />
         <item itemvalue="Python tests.Unittests for test_getter.TestGetter" />
         <item itemvalue="Python.run_tables" />
+        <item itemvalue="Python.test" />
         <item itemvalue="Python.arxiv_watcher" />
         <item itemvalue="Python tests.Unittests in tests_table_extraction.py" />
+        <item itemvalue="Python tests.Unittests in tests_data_extraction.py" />
       </list>
     </recent_temporary>
   </component>
@@ -404,7 +423,11 @@
       <workItem from="1616093740669" duration="242000" />
       <workItem from="1616142463836" duration="1885000" />
       <workItem from="1616746980643" duration="1222000" />
-      <workItem from="1616932992509" duration="18642000" />
+      <workItem from="1616932992509" duration="19205000" />
+      <workItem from="1617208671580" duration="4082000" />
+      <workItem from="1617229406966" duration="1014000" />
+      <workItem from="1617310893701" duration="8086000" />
+      <workItem from="1617353096679" duration="15466000" />
     </task>
     <servers />
   </component>
@@ -498,18 +521,20 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/bsc$Unittests_for_test_TestStringMethods_test_raw_data.coverage" NAME="Unittests for test.TestStringMethods.test_raw_data Coverage Results" MODIFIED="1616093871988" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/bsc$Unittests_for_tests_table_extraction_TestTableExtraction_test_table_extraction.coverage" NAME="Unittests for tests_table_extraction.TestTableExtraction.test_table_extraction Coverage Results" MODIFIED="1616759300391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/bsc$Unittests_in_test_getter_py.coverage" NAME="Unittests in test_getter.py Coverage Results" MODIFIED="1616940468046" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/bsc$Unittests_for_tests_data_extraction_TestRaw_test_data.coverage" NAME="Unittests for tests_data_extraction.TestRaw.test_data Coverage Results" MODIFIED="1616709637481" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/bsc$Unittests_in_test_py.coverage" NAME="Unittests in test.py Coverage Results" MODIFIED="1616144922077" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/bsc$Unittests_for_test_TestBase.coverage" NAME="Unittests for test.TestBase Coverage Results" MODIFIED="1616277328819" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/bsc$run_tables.coverage" NAME="run_tables Coverage Results" MODIFIED="1617214118010" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/bsc$Unittests_in_tests_table_extraction_py.coverage" NAME="Unittests in tests_table_extraction.py Coverage Results" MODIFIED="1616940480256" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/bsc$Unittests_for_tests_table_extraction_TestTableExtraction_test_table_extraction.coverage" NAME="Unittests for tests_table_extraction.TestTableExtraction.test_table_extraction Coverage Results" MODIFIED="1616759300391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/bsc$Unittests_in_test_py.coverage" NAME="Unittests in test.py Coverage Results" MODIFIED="1616144922077" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/bsc$Unittests_for_test_getter_TestGetter_test_delete_file_exist.coverage" NAME="Unittests for test_getter.TestGetter.test_delete_file_exist Coverage Results" MODIFIED="1616759295995" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/bsc$Unittests_for_tests_table_extraction_TestTableExtraction.coverage" NAME="Unittests for tests_table_extraction.TestTableExtraction Coverage Results" MODIFIED="1616759372717" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/bsc$run_tables.coverage" NAME="run_tables Coverage Results" MODIFIED="1617047303159" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/bsc$Unittests_in_tests_data_extraction_py.coverage" NAME="Unittests in tests_data_extraction.py Coverage Results" MODIFIED="1616940473827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/bsc$arxiv_watcher.coverage" NAME="arxiv_watcher Coverage Results" MODIFIED="1616946190513" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/arxivtables/arxiv_watcher" />
+    <SUITE FILE_PATH="coverage/bsc$Unittests_for_test_TestStringMethods_test_raw_data.coverage" NAME="Unittests for test.TestStringMethods.test_raw_data Coverage Results" MODIFIED="1616093871988" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/bsc2021_arxivtables$test.coverage" NAME="test Coverage Results" MODIFIED="1617353544519" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/downloads/21/03/17246/2103.17246" />
+    <SUITE FILE_PATH="coverage/bsc$Unittests_for_tests_data_extraction_TestRaw_test_data.coverage" NAME="Unittests for tests_data_extraction.TestRaw.test_data Coverage Results" MODIFIED="1616709637481" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/bsc$Unittests_for_test_TestBase.coverage" NAME="Unittests for test.TestBase Coverage Results" MODIFIED="1616277328819" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/bsc$Unittests_in_tests_data_extraction_py.coverage" NAME="Unittests in tests_data_extraction.py Coverage Results" MODIFIED="1616940473827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/bsc$Unittests_for_tests_table_extraction_TestTableExtraction.coverage" NAME="Unittests for tests_table_extraction.TestTableExtraction Coverage Results" MODIFIED="1616759372717" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/bsc$Unittests_in_test_getter_py.coverage" NAME="Unittests in test_getter.py Coverage Results" MODIFIED="1616940468046" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/bsc2021_arxivtables$run_tables.coverage" NAME="run_tables Coverage Results" MODIFIED="1617370472392" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/tests/references/cleaned_tables/table_10.json">
