@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1de5e25f-3a40-4f4d-8181-4ef8be3a070d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/arxivtables/arxiv_watcher/arxiv_watcher.py" beforeDir="false" afterPath="$PROJECT_DIR$/arxivtables/arxiv_watcher/arxiv_watcher.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -346,6 +344,7 @@
       <workItem from="1617480785963" duration="732000" />
       <workItem from="1617525971227" duration="1076000" />
       <workItem from="1617688501550" duration="2064000" />
+      <workItem from="1617741800661" duration="13000" />
     </task>
     <servers />
   </component>

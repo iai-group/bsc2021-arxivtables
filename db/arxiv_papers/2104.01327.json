@@ -1,0 +1,19 @@
+{
+  "id": "2104.01327",
+  "title": "Zeus: Locality-aware Distributed Transactions",
+  "dateFetched": "2021-04-06",
+  "authors": [
+    "Antonios Katsarakis",
+    "Yijun Ma",
+    "Zhaowei Tan",
+    "Andrew Bainbridge",
+    "Matthew Balkwill",
+    "Aleksandar Dragojevic",
+    "Boris Grot",
+    "Bozidar Radunovic",
+    "Yongguang Zhang"
+  ],
+  "href": "http://arxiv.org/abs/2104.01327v1",
+  "publicationDate": "2021-04-03T07:10:57Z",
+  "tables": []
+}
