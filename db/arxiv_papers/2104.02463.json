@@ -1,0 +1,68 @@
+{
+  "id": "2104.02463",
+  "title": "Towards Soft Circuit Breaking in Service Meshes via Application-agnostic\n  Caching",
+  "dateFetched": "2021-04-07",
+  "authors": [
+    "Lars Larsson",
+    "William T\u00e4rneberg",
+    "Cristian Klein",
+    "Maria Kihl",
+    "Erik Elmroth"
+  ],
+  "href": "2104.02463",
+  "publicationDate": "2021-04-06T12:46:29Z",
+  "tables": [
+    {
+      "caption": "Caching of requests in Hipster Shop, as reported by caches installed in the three components that make inter-service requests over gRPC (see Figure\u00a0<ref>). Note that the total number of requests includes both those that could be cached and those that cannot, see Section\u00a0<ref>.",
+      "headers": [
+        "static-0              ",
+        "254649.67",
+        "0.00",
+        "254649.67_1",
+        "0.00_1"
+      ],
+      "rows": [
+        [
+          "dynamic-adaptive-0.1  ",
+          "256923.67",
+          "207020.33",
+          "49903.33",
+          "0.81"
+        ],
+        [
+          "dynamic-updaterisk-0.1",
+          "257745.0",
+          "203750.33",
+          "53994.67",
+          "0.79"
+        ]
+      ]
+    },
+    {
+      "caption": "Inter-Pod network traffic in Hipster Shop. Note that traffic within individual Pods does not count toward these numbers, only traffic between Pods.",
+      "headers": [
+        "static-0              ",
+        "54328661.67",
+        "27382959.33",
+        "26945701.67",
+        "0.00"
+      ],
+      "rows": [
+        [
+          "dynamic-adaptive-0.1  ",
+          "32335455.67",
+          "16120919.0",
+          "16214536.33",
+          "0.4"
+        ],
+        [
+          "dynamic-updaterisk-0.1",
+          "33305797.67",
+          "16731636.33",
+          "16574161.0",
+          "0.39"
+        ]
+      ]
+    }
+  ]
+}

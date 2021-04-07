@@ -1,13 +1,13 @@
 {
   "id": "2104.00845",
   "title": "TFill: Image Completion via a Transformer-Based Architecture",
-  "dateFetched": "2021-04-06",
+  "dateFetched": "2021-04-07",
   "authors": [
     "Chuanxia Zheng",
     "Tat-Jen Cham",
     "Jianfei Cai"
   ],
-  "href": "http://arxiv.org/abs/2104.00845v1",
+  "href": "2104.00845",
   "publicationDate": "2021-04-02T01:42:01Z",
   "tables": []
 }

@@ -1,7 +1,7 @@
 {
   "id": "2104.01272",
   "title": "Visual Servoing Approach for Autonomous UAV Landing on a Moving Vehicle",
-  "dateFetched": "2021-04-06",
+  "dateFetched": "2021-04-07",
   "authors": [
     "Azarakhsh Keipour",
     "Guilherme A. S. Pereira",
@@ -11,7 +11,7 @@
     "Geetesh Dubey",
     "Sebastian Scherer"
   ],
-  "href": "http://arxiv.org/abs/2104.01272v1",
+  "href": "2104.01272",
   "publicationDate": "2021-04-02T23:11:31Z",
   "tables": []
 }

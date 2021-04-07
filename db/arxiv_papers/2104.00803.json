@@ -1,75 +1,14 @@
 {
   "id": "2104.00803",
   "title": "Global Sensitivity Analysis for Bottleneck Assignment Problems",
-  "dateFetched": "2021-04-06",
+  "dateFetched": "2021-04-07",
   "authors": [
     "Elad Michael",
     "Tony A. Wood",
     "Chris Manzie",
     "Iman Shames"
   ],
-  "href": "http://arxiv.org/abs/2104.00803v1",
+  "href": "2104.00803",
   "publicationDate": "2021-04-01T23:35:29Z",
-  "tables": [
-    {
-      "caption": "Lexicographically Largest Allowable Perturbation Intervals, \u039b^*",
-      "headers": [
-        "(-\u221e, \u221e)",
-        "[-15, \u221e)",
-        "[-1.5,13]"
-      ],
-      "rows": [
-        [
-          "(-\u221e,35.5]",
-          "[-13, \u221e)",
-          "[-17, \u221e)"
-        ],
-        [
-          "(-\u221e, \u221e)",
-          "(-\u221e,1.5]",
-          "(-\u221e, \u221e)"
-        ]
-      ]
-    },
-    {
-      "caption": "Lexicographically Largest Allowable Perturbation Intervals",
-      "headers": [
-        "(-\u221e, \u221e)",
-        "[-15, \u221e)",
-        "(-\u221e,13]"
-      ],
-      "rows": [
-        [
-          "(-\u221e,50]",
-          "[-13, \u221e)",
-          "[-17, \u221e)"
-        ],
-        [
-          "(-\u221e, \u221e)",
-          "(-\u221e,16]",
-          "(-\u221e, \u221e)"
-        ]
-      ]
-    },
-    {
-      "caption": "Sensitivity Results using\u00a0<cit.>",
-      "headers": [
-        "[-13, 13]",
-        "[-13, 13]_1",
-        "[-13,13]"
-      ],
-      "rows": [
-        [
-          "[-13,13]",
-          "[-13, 13]",
-          "[-13, 13]"
-        ],
-        [
-          "[-13, 13]",
-          "[-13,13]",
-          "[-13, 13]"
-        ]
-      ]
-    }
-  ]
+  "tables": []
 }

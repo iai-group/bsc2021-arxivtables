@@ -1,0 +1,17 @@
+{
+  "table_id": "",
+  "table_title": "",
+  "publication_date": "",
+  "authors": {
+    "name": "",
+    "gender": "",
+    "age": ""
+  },
+  "link": "",
+  "table_content": {
+    "header": "",
+    "column_names": [],
+    "additional_info": "",
+    "footer": ""
+  }
+}

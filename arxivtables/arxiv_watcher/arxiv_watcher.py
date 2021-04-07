@@ -1,3 +1,5 @@
+import json
+from pathlib import Path
 from xml.etree.ElementTree import fromstring
 import requests
 from datetime import datetime
@@ -5,9 +7,10 @@ import os
 
 base_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
 
+
 class ArxivWatcher:
     def __init__(self):
-        self.previosuly_loaded_ids = self.read_previously_loaded_ids()
+        self.previously_loaded_ids = self.read_previously_loaded_ids()
 
     def read_previously_loaded_ids(self):
         Path('logs/downloader').mkdir(parents=True, exist_ok=True)
@@ -16,10 +19,7 @@ class ArxivWatcher:
                 ids = f.readlines()
         except:
             ids = []
-        return [id[:-1] for id in ids]
-
-    def initialize_json_file(self, id, authors):
-        return 0
+        return [p_id[:-1] for p_id in ids]
 
     def get_latest_papers(self):
         """Retrieve list of latest submissions on arXiv.org, return in
@@ -33,11 +33,10 @@ class ArxivWatcher:
 
                 """
         base_url = 'http://export.arxiv.org/api/query?'
-        query = 'search_query=all:all&sortBy=submittedDate&sortOrder=descending&max_results=50'
+        query = 'search_query=all:all&sortBy=submittedDate&sortOrder=descending&max_results=500'
         result = requests.get(base_url + query)
-        with open(os.path.join(base_dir, 'logs/downloader/') + str(datetime.date(datetime.now())).replace('-',
-                                                                                                          '') + '.log',
-                  'a') as f:
+        with open('{0}{1}.log'.format(os.path.join(base_dir, 'logs/downloader/'),
+                                      str(datetime.date(datetime.now())).replace('-', '')), 'a') as f:
             f.write('')
         if result.status_code == 200:
             string_xml = result.content
@@ -46,15 +45,15 @@ class ArxivWatcher:
                 if child.tag == "{http://www.w3.org/2005/Atom}entry":
                     entry_authors = []
                     for c in child:
-                        if c.tag == "{http://www.w3.org/2005/Atom}id": entry_id, entry_url = c.text, c.text
+                        if c.tag == "{http://www.w3.org/2005/Atom}p_id": entry_id, entry_url = c.text, c.text
                         entry_url = entry_id
-                        if c.tag == "{http://www.w3.org/2005/Atom}id": entry_id, entry_url = c.text, c.text
+                        if c.tag == "{http://www.w3.org/2005/Atom}p_id": entry_id, entry_url = c.text, c.text
                         entry_id = entry_id.split('/')[-1].split('v')[0]
                         if c.tag == "{http://www.w3.org/2005/Atom}title": entry_title = c.text
                         if c.tag == "{http://www.w3.org/2005/Atom}published": entry_published = c.text
                         if c.tag == "{http://www.w3.org/2005/Atom}author": entry_authors.append(c[0].text)
                     entry = {
-                        "id": entry_id,
+                        "p_id": entry_id,
                         "title": entry_title,
                         "dateFetched": str(datetime.date(datetime.now())),
                         "authors": entry_authors,
@@ -63,11 +62,12 @@ class ArxivWatcher:
                         "tables": []
                     }
 
-                    if (entry_id) not in self.previosuly_loaded_ids:
+                    if entry_id not in self.previously_loaded_ids:
                         with open(os.path.join(base_dir, 'logs/downloader/') + 'previously_loaded_ids.log', 'a') as f:
                             f.write(entry_id)
                             f.write('\n')
-                        with open(os.path.join(base_dir, 'logs/downloader/') + str(datetime.date(datetime.now())).replace('-', '') + '.log', 'a') as f:
+                        with open('{0}{1}.log'.format(os.path.join(base_dir, 'logs/downloader/'),
+                                                      str(datetime.date(datetime.now())).replace('-', '')), 'a') as f:
                             f.write(entry_id)
                             f.write('\n')
                         Path('db/arxiv_papers').mkdir(parents=True, exist_ok=True)
@@ -78,6 +78,7 @@ class ArxivWatcher:
         else:
             print("Status code: " + result.status_code)
 
-        with open(os.path.join(base_dir, 'logs/downloader/') + str(datetime.date(datetime.now())).replace('-', '') + '.log', 'r') as f:
+        with open('{0}{1}.log'.format(os.path.join(base_dir, 'logs/downloader/'),
+                                      str(datetime.date(datetime.now())).replace('-', '')), 'r') as f:
             ids = f.readlines()
         return [pid[:-1] for pid in ids]

@@ -1,14 +1,14 @@
 {
   "id": "2104.01797",
   "title": "Monocular 3D Multi-Person Pose Estimation by Integrating Top-Down and\n  Bottom-Up Networks",
-  "dateFetched": "2021-04-06",
+  "dateFetched": "2021-04-07",
   "authors": [
     "Yu Cheng",
     "Bo Wang",
     "Bo Yang",
     "Robby T. Tan"
   ],
-  "href": "http://arxiv.org/abs/2104.01797v1",
+  "href": "2104.01797",
   "publicationDate": "2021-04-05T07:05:21Z",
   "tables": []
 }

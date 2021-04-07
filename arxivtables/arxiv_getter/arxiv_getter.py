@@ -5,7 +5,7 @@ __version__ = '0.1.0'
 import requests
 from pathlib import Path
 import os
-import tarfile
+import shutil
 
 
 class ArxivGetter:
@@ -58,25 +58,13 @@ class ArxivGetter:
             FileNotFoundError
         """
         try:
-            if self.paper_id not in os.listdir('downloads'):
-                return False
-            for (dirpath, dirnames, filenames) in os.walk('downloads/' +  self.paper_id):
-                for filename in filenames:
-                    os.remove(dirpath+'/'+filename)
-                try:
-                    os.rmdir(dirpath)
-                except FileNotFoundError:
-                    print("File not found")
-                    return False
-                except Exception as e:
-                    print(e)
-                os.rmdir('downloads/' + self.paper_id) if self.paper_id in os.listdir('downloads/') else True
+            print(Path('downloads/{}/{}/{}/{}/'.format(self.year, self.month, self.id, self.paper_id)))
+            shutil.rmtree(Path('downloads/{}/{}/{}/{}/'.format(self.year, self.month, self.id, self.paper_id)), ignore_errors=True)
+            print('deleted')
             return True
-        except FileNotFoundError:
-            print("File not found")
-            return False
         except Exception as e:
             print(e)
+            return False
 
 
     def add_to_database(self):
