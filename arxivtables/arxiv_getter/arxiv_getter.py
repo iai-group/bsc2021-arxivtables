@@ -1,12 +1,9 @@
 __author__ = 'David Ramsay'
 __maintainer__ = 'Rebeca Pop, David Ramsay'
-__version__ = '0.1.0'
 
-import requests
-from pathlib import Path
 import os
 import shutil
-
+import requests
 
 class ArxivGetter:
     """Module that contains classes to handle arXiv paper download and extract
@@ -37,7 +34,8 @@ class ArxivGetter:
         result = requests.get(
             'https://arxiv.org/e-print/' + self.paper_id, stream='true')
         if result.status_code == 200:
-            Path('downloads/{}/{}/{}'.format(self.year, self.month, self.id)).mkdir(parents=True, exist_ok=True)
+            if not os.path.exists('downloads/{}/{}/{}'.format(self.year, self.month, self.id)):
+                os.mkdir('downloads/{}/{}/{}'.format(self.year, self.month, self.id))
             with open('downloads/{}/{}/{}/{}.tar.gz'.format(self.year, self.month, self.id ,self.paper_id), 'wb') as f:
                 f.write(result.raw.read())
             print('Downloaded and saved {}.tar.gz'.format(self.paper_id))
@@ -58,9 +56,7 @@ class ArxivGetter:
             FileNotFoundError
         """
         try:
-            print(Path('downloads/{}/{}/{}/{}/'.format(self.year, self.month, self.id, self.paper_id)))
-            shutil.rmtree(Path('downloads/{}/{}/{}/{}/'.format(self.year, self.month, self.id, self.paper_id)), ignore_errors=True)
-            print('deleted')
+            shutil.rmtree('downloads/{}/{}/{}'.format(self.year, self.month, self.id), ignore_errors=True)
             return True
         except Exception as e:
             print(e)

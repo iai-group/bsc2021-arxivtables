@@ -1,21 +1,23 @@
+__author__ = 'David Ramsay'
+__maintainer__ = 'Rebeca Pop, David Ramsay'
+
+import os
 import json
-from pathlib import Path
-from xml.etree.ElementTree import fromstring
 import requests
 from datetime import datetime
-import os
+from xml.etree.ElementTree import fromstring
 
-base_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
-
+current_date = str(datetime.date(datetime.now())).replace('-', '')
 
 class ArxivWatcher:
     def __init__(self):
         self.previously_loaded_ids = self.read_previously_loaded_ids()
 
     def read_previously_loaded_ids(self):
-        Path('logs/downloader').mkdir(parents=True, exist_ok=True)
+        if not os.path.exists('logs/downloader'):
+            os.mkdir('logs/downloader')
         try:
-            with open(os.path.join(base_dir, 'logs/downloader/') + 'previously_loaded_ids.txt', 'r') as f:
+            with open('logs/downloader/previously_loaded_ids.log', 'r') as f:
                 ids = f.readlines()
         except:
             ids = []
@@ -35,8 +37,7 @@ class ArxivWatcher:
         base_url = 'http://export.arxiv.org/api/query?'
         query = 'search_query=all:all&sortBy=submittedDate&sortOrder=descending&max_results=500'
         result = requests.get(base_url + query)
-        with open('{0}{1}.log'.format(os.path.join(base_dir, 'logs/downloader/'),
-                                      str(datetime.date(datetime.now())).replace('-', '')), 'a') as f:
+        with open('logs/downloader/{}.log'.format(current_date), 'a') as f:
             f.write('')
         if result.status_code == 200:
             string_xml = result.content
@@ -45,9 +46,9 @@ class ArxivWatcher:
                 if child.tag == "{http://www.w3.org/2005/Atom}entry":
                     entry_authors = []
                     for c in child:
-                        if c.tag == "{http://www.w3.org/2005/Atom}p_id": entry_id, entry_url = c.text, c.text
+                        if c.tag == "{http://www.w3.org/2005/Atom}id": entry_id, entry_url = c.text, c.text
                         entry_url = entry_id
-                        if c.tag == "{http://www.w3.org/2005/Atom}p_id": entry_id, entry_url = c.text, c.text
+                        if c.tag == "{http://www.w3.org/2005/Atom}id": entry_id, entry_url = c.text, c.text
                         entry_id = entry_id.split('/')[-1].split('v')[0]
                         if c.tag == "{http://www.w3.org/2005/Atom}title": entry_title = c.text
                         if c.tag == "{http://www.w3.org/2005/Atom}published": entry_published = c.text
@@ -63,22 +64,19 @@ class ArxivWatcher:
                     }
 
                     if entry_id not in self.previously_loaded_ids:
-                        with open(os.path.join(base_dir, 'logs/downloader/') + 'previously_loaded_ids.log', 'a') as f:
+                        with open('logs/downloader/previously_loaded_ids.log', 'a') as f:
                             f.write(entry_id)
                             f.write('\n')
-                        with open('{0}{1}.log'.format(os.path.join(base_dir, 'logs/downloader/'),
-                                                      str(datetime.date(datetime.now())).replace('-', '')), 'a') as f:
+                        with open('logs/downloader/{}.log'.format(current_date), 'a') as f:
                             f.write(entry_id)
                             f.write('\n')
-                        Path('db/arxiv_papers').mkdir(parents=True, exist_ok=True)
-                        with open(os.path.join(base_dir, 'db/arxiv_papers/') + entry_id + '.json', 'w') as f:
+                        if not os.path.exists('db/arxiv_papers'):
+                            os.mkdir('db/arxiv_papers')
+                        with open('db/arxiv_papers/{}.json'.format(entry_id), 'w') as f:
                             json.dump(entry, f, indent=2)
-
-                print(entry_authors)
         else:
             print("Status code: " + result.status_code)
 
-        with open('{0}{1}.log'.format(os.path.join(base_dir, 'logs/downloader/'),
-                                      str(datetime.date(datetime.now())).replace('-', '')), 'r') as f:
+        with open('logs/downloader/{}.log'.format(current_date), 'r') as f:
             ids = f.readlines()
         return [pid[:-1] for pid in ids]

@@ -1,11 +1,9 @@
 __author__ = "David Ramsay"
 __maintainer__ = "Rebeca Pop, David Ramsay"
-__version__ = "0.1.0"
 
-from TexSoup import TexSoup
-import tarfile
 import os
-
+import tarfile
+from TexSoup import TexSoup
 
 class TableExtractor:
     def __init__(self, paper_id):

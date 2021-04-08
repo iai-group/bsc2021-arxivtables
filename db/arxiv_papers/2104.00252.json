@@ -1,7 +1,7 @@
 {
-  "id": "2104.00252",
+  "p_id": "2104.00252",
   "title": "Observational demonstration of a low-cost fast Fourier transform\n  spectrometer with a delay-line-based ramp-compare ADC implemented on FPGA",
-  "dateFetched": "2021-04-07",
+  "dateFetched": "2021-04-08",
   "authors": [
     "Atsushi Nishimura",
     "Takeru Matsumoto",

@@ -1,7 +1,7 @@
 {
-  "id": "2103.17227",
+  "p_id": "2103.17227",
   "title": "Study of thermally poled PET electrets using the pulsed electroacoustic\n  and thermally stimulated depolarization current techniques",
-  "dateFetched": "2021-04-07",
+  "dateFetched": "2021-04-08",
   "authors": [
     "S. E. Parsa",
     "J. C. Ca\u00f1adas",
@@ -11,5 +11,147 @@
   ],
   "href": "2103.17227",
   "publicationDate": "2021-03-31T17:20:36Z",
-  "tables": []
+  "tables": [
+    {
+      "caption": "Experimental parameters employed. The heating and the cooling rates are 2\u00a0^\u2218C/min in all the non-isothermal stages.",
+      "headers": [
+        "Experiment",
+        "Al electrode side",
+        "T_0\u00a0(^\u2218C)",
+        "T_p\u00a0(^\u2218C)",
+        "t_p\u00a0(s)",
+        "T_off\u00a0(^\u2218C)",
+        "T_d\u00a0(^\u2218C) \n "
+      ],
+      "rows": [
+        [
+          "A",
+          "Both",
+          "95",
+          "65",
+          "600",
+          "55",
+          "25"
+        ],
+        [
+          "B",
+          "Both",
+          "140",
+          "95",
+          "0",
+          "80",
+          "25"
+        ],
+        [
+          "C",
+          "Both",
+          "95",
+          "80",
+          "1200",
+          "75",
+          "25"
+        ],
+        [
+          "D",
+          "Minus",
+          "95",
+          "80",
+          "1200",
+          "75",
+          "25"
+        ],
+        [
+          "E",
+          "Plus",
+          "95",
+          "80",
+          "1200",
+          "75",
+          "25"
+        ]
+      ]
+    },
+    {
+      "caption": "Polarization relaxed in TSDC experiments.",
+      "headers": [
+        "Experiment",
+        "\u03b1 (C/m^2)",
+        "\u03c1 or \u03c1_c (C/m^2)",
+        "\u03c1^* (C/m^2)    \n "
+      ],
+      "rows": [
+        [
+          "A",
+          "-2.65 \u00d7 10^-4",
+          "\u2013",
+          "\u2013"
+        ],
+        [
+          "B",
+          "\u2013",
+          "-2.82 \u00d7 10^-5",
+          "\u2013"
+        ],
+        [
+          "C",
+          "\u2013",
+          "-7.27 \u00d7 10^-6",
+          "\u2013"
+        ],
+        [
+          "D",
+          "\u2013",
+          "-9.39 \u00d7 10^-6",
+          "4.23 \u00d7 10^-6"
+        ],
+        [
+          "E",
+          "-1.09 \u00d7 10^-5",
+          "\u2013",
+          "4.48 \u00d7 10^-5"
+        ]
+      ]
+    },
+    {
+      "caption": "Charge per unit area measured in PEA experiments.",
+      "headers": [
+        "Experiment",
+        "img. charge (C/m^2)",
+        "ext. charge (C/m^2)",
+        "macr. dipole (C/m^2)       \n "
+      ],
+      "rows": [
+        [
+          "A",
+          "1.74 \u00d7 10^-4",
+          "\u2013",
+          "\u2013"
+        ],
+        [
+          "B",
+          "4.03 \u00d7 10^-5",
+          "\u2013",
+          "\u2013"
+        ],
+        [
+          "C",
+          "-3.45 \u00d7 10^-5",
+          "5.30 \u00d7 10^-5",
+          "-1.77 \u00d7 10^-5"
+        ],
+        [
+          "D",
+          "-5.55 \u00d7 10^-5",
+          "8.97 \u00d7 10^-5",
+          "\u2013"
+        ],
+        [
+          "E",
+          "-3.52 \u00d7 10^-5",
+          "4.06 \u00d7 10^-5",
+          "\u2013"
+        ]
+      ]
+    }
+  ]
 }

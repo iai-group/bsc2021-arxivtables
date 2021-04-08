@@ -1,14 +1,13 @@
 __author__ = 'David Ramsay'
 __maintainer__ = 'Rebeca Pop, David Ramsay'
-__version__ = '0.1.0'
 
-import json
 import os
+import json
+from pymongo import MongoClient
 from arxivtables.arxiv_getter.arxiv_getter import ArxivGetter
 from arxivtables.arxiv_watcher.arxiv_watcher import ArxivWatcher
 from arxivtables.table_extractor.table_extractor import TableExtractor
 from arxivtables.table_extractor.table_parser import TableParser
-from pymongo import MongoClient
 
 client = MongoClient('localhost', 27017)
 db = client['db']

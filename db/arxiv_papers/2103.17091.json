@@ -1,7 +1,7 @@
 {
-  "id": "2103.17091",
+  "p_id": "2103.17091",
   "title": "Arbitrary Length k-Anonymous Dining-Cryptographers Communication",
-  "dateFetched": "2021-04-07",
+  "dateFetched": "2021-04-08",
   "authors": [
     "David M\u00f6dinger",
     "Alexander He\u00df",
@@ -9,5 +9,43 @@
   ],
   "href": "2103.17091",
   "publicationDate": "2021-03-31T14:03:15Z",
-  "tables": []
+  "tables": [
+    {
+      "caption": "Notations used in this paper.",
+      "headers": [
+        "Term",
+        "Meaning"
+      ],
+      "rows": [
+        [
+          "",
+          "All participants of a group."
+        ],
+        [
+          "",
+          "Application logic to process the message m."
+        ],
+        [
+          "C_r(x).",
+          "Commitment on x, blinded by r."
+        ],
+        [
+          "{X}_i",
+          "Value X encrypted under the public key of i."
+        ],
+        [
+          "x =\u223c\ud835\udcb0(a,b)",
+          "Uniformly chose a random real x\u2208[a,b]."
+        ],
+        [
+          "i =\u223c\ud835\udcb0{a,b}",
+          "Uniformly chose a random integer a\u2264 i\u2264 b."
+        ],
+        [
+          "E = \u223c\ud835\udcb0_n{S}",
+          "Uniformly select n distinct random elements from S."
+        ]
+      ]
+    }
+  ]
 }

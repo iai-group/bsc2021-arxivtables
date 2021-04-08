@@ -1,7 +1,7 @@
 {
-  "id": "2104.01226",
+  "p_id": "2104.01226",
   "title": "Liger for Next Generation Keck AO: Filter Wheel and Pupil Design",
-  "dateFetched": "2021-04-07",
+  "dateFetched": "2021-04-08",
   "authors": [
     "Maren Cosens",
     "Shelley A. Wright",
@@ -20,5 +20,76 @@
   ],
   "href": "2104.01226",
   "publicationDate": "2021-04-02T20:02:41Z",
-  "tables": []
+  "tables": [
+    {
+      "caption": "Additional exposure time needed with a fixed mask to reach the SNR of a 600s integration with an ideal rotating pupil mask.",
+      "headers": [
+        "Mask",
+        "Elevation (^\u2218)",
+        "Additional Exposure Time (s)"
+      ],
+      "rows": [
+        [
+          "44eminscribed circle",
+          "Snow4 20",
+          "Snow4 15"
+        ],
+        [
+          "\u2013",
+          "Snow3 30",
+          "Snow3 15"
+        ],
+        [
+          "\u2013",
+          "Snow2 50",
+          "Snow2 15"
+        ],
+        [
+          "\u2013",
+          "Snow1 80",
+          "Snow1 20"
+        ],
+        [
+          "44emhex",
+          "Snow4 20",
+          "Snow4 15"
+        ],
+        [
+          "\u2013",
+          "Snow3 30",
+          "Snow3 15"
+        ],
+        [
+          "\u2013",
+          "Snow2 50",
+          "Snow2 15"
+        ],
+        [
+          "\u2013",
+          "Snow1 80",
+          "Snow1 35"
+        ],
+        [
+          "44emmatched",
+          "Snow4 20",
+          "Snow4 25"
+        ],
+        [
+          "\u2013",
+          "Snow3 30",
+          "Snow3 15"
+        ],
+        [
+          "\u2013",
+          "Snow2 50",
+          "Snow2 20"
+        ],
+        [
+          "\u2013",
+          "Snow1 80",
+          "Snow1 50"
+        ]
+      ]
+    }
+  ]
 }

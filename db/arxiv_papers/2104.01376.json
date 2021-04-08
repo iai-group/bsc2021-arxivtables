@@ -1,12 +1,132 @@
 {
-  "id": "2104.01376",
+  "p_id": "2104.01376",
   "title": "On Entropy, Enthalpy, and Potential Temperatures in Moist Atmospheres",
-  "dateFetched": "2021-04-07",
+  "dateFetched": "2021-04-08",
   "authors": [
     "Pascal Marquet",
     "Bjorn Stevens"
   ],
   "href": "2104.01376",
   "publicationDate": "2021-04-03T11:16:23Z",
-  "tables": []
+  "tables": [
+    {
+      "caption": "Subscript notation for the specification of particular states.",
+      "headers": [
+        "Subscript",
+        "Description \n "
+      ],
+      "rows": [
+        [
+          "0",
+          "standard values, or quantities evaluated at standard values"
+        ],
+        [
+          "r",
+          "a non-standard reference value"
+        ],
+        [
+          "1,2",
+          "to distinguish different values or states, indexed by j"
+        ],
+        [
+          "v,l,i",
+          "vapor, liquid and solid phases of water"
+        ],
+        [
+          "t",
+          "sum of all phases of water"
+        ],
+        [
+          "\u2217",
+          "value at vapor-liquid (water) saturation"
+        ],
+        [
+          "d",
+          "dry component (q_ = 1-q_ for the two component system)"
+        ],
+        [
+          "e",
+          "equivalent (liquid) reference state (q_ = q_)"
+        ],
+        [
+          "\u2113",
+          "liquid-free reference state (q_ = q_)"
+        ],
+        [
+          "s",
+          "absolute entropy value"
+        ]
+      ]
+    },
+    {
+      "caption": "Thermodynamic constants calculated with dry air composed with a CO2 concentration of 420ppmv",
+      "headers": [
+        "Constant",
+        "Value",
+        "Units \n "
+      ],
+      "rows": [
+        [
+          "T_0",
+          "273.15",
+          ""
+        ],
+        [
+          "P_0",
+          "100000.0",
+          ""
+        ],
+        [
+          "P_,0 = P_ (T_0)",
+          "611.21",
+          ""
+        ],
+        [
+          "",
+          "1004.66",
+          ""
+        ],
+        [
+          "",
+          "1865.01",
+          ""
+        ],
+        [
+          "c_",
+          "4179.57",
+          ""
+        ],
+        [
+          "R_",
+          "287.04",
+          ""
+        ],
+        [
+          "R_",
+          "461.52",
+          ""
+        ],
+        [
+          "s_,0 = s_(T_0,P_0)",
+          "6776.2",
+          ""
+        ],
+        [
+          "s_,0 = s_ (T_0,P_0)",
+          "10319.7",
+          ""
+        ],
+        [
+          "s_,0 = s_ (T_0)",
+          "3516.7",
+          ""
+        ],
+        [
+          "\u2113_,0 = \u2113_ (T_0)",
+          "2500930.0",
+          ""
+        ]
+      ]
+    }
+  ]
 }
