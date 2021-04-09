@@ -1,7 +1,7 @@
 {
-  "id": "2104.01226",
+  "p_id": "2104.01226",
   "title": "Liger for Next Generation Keck AO: Filter Wheel and Pupil Design",
-  "dateFetched": "2021-04-06",
+  "dateFetched": "2021-04-08",
   "authors": [
     "Maren Cosens",
     "Shelley A. Wright",
@@ -18,7 +18,7 @@
     "James Wiley",
     "Sherry Yeh"
   ],
-  "href": "http://arxiv.org/abs/2104.01226v1",
+  "href": "2104.01226",
   "publicationDate": "2021-04-02T20:02:41Z",
   "tables": [
     {

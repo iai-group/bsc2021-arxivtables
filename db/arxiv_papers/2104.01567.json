@@ -1,14 +1,14 @@
 {
-  "id": "2104.01567",
+  "p_id": "2104.01567",
   "title": "MCL@IITK at SemEval-2021 Task 2: Multilingual and Cross-lingual\n  Word-in-Context Disambiguation using Augmented Data, Signals, and\n  Transformers",
-  "dateFetched": "2021-04-06",
+  "dateFetched": "2021-04-08",
   "authors": [
     "Rohan Gupta",
     "Jay Mundra",
     "Deepak Mahajan",
     "Ashutosh Modi"
   ],
-  "href": "http://arxiv.org/abs/2104.01567v1",
+  "href": "2104.01567",
   "publicationDate": "2021-04-04T08:49:28Z",
   "tables": []
 }

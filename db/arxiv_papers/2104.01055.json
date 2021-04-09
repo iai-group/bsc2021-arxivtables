@@ -1,14 +1,14 @@
 {
-  "id": "2104.01055",
+  "p_id": "2104.01055",
   "title": "A Comprehensive and Accurate Energy Model for Arm's Cortex-M0 Processor",
-  "dateFetched": "2021-04-06",
+  "dateFetched": "2021-04-08",
   "authors": [
     "Kyriakos Georgiou",
     "Zbigniew Chamski",
     "Kris Nikov",
     "Kerstin Eder"
   ],
-  "href": "http://arxiv.org/abs/2104.01055v1",
+  "href": "2104.01055",
   "publicationDate": "2021-04-02T14:05:58Z",
   "tables": []
 }

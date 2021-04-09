@@ -1,7 +1,7 @@
 {
-  "id": "2104.01747",
+  "p_id": "2104.01747",
   "title": "Fast Design Space Exploration of Nonlinear Systems: Part I",
-  "dateFetched": "2021-04-06",
+  "dateFetched": "2021-04-08",
   "authors": [
     "Sanjai Narain",
     "Emily Mak",
@@ -11,7 +11,7 @@
     "Niraj K. Jha",
     "Karthik Narayan"
   ],
-  "href": "http://arxiv.org/abs/2104.01747v1",
+  "href": "2104.01747",
   "publicationDate": "2021-04-05T02:59:45Z",
   "tables": []
 }

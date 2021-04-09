@@ -1,14 +1,14 @@
 {
-  "id": "2104.01600",
+  "p_id": "2104.01600",
   "title": "STOPPAGE: Spatio-temporal Data Driven Cloud-Fog-Edge Computing Framework\n  for Pandemic Monitoring and Management",
-  "dateFetched": "2021-04-06",
+  "dateFetched": "2021-04-08",
   "authors": [
     "Shreya Ghosh",
     "Anwesha Mukherjee",
     "Soumya K Ghosh",
     "Rajkumar Buyya"
   ],
-  "href": "http://arxiv.org/abs/2104.01600v1",
+  "href": "2104.01600",
   "publicationDate": "2021-04-04T12:29:31Z",
   "tables": []
 }

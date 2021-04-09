@@ -1,7 +1,7 @@
 {
-  "id": "2104.01050",
+  "p_id": "2104.01050",
   "title": "Crystal, local atomic and electronic structures of\n  YbFe$_2$Zn$_{20-x}$Cd$_x$ ($0 \\leq x \\leq 1.4$): a multi-band system with\n  possible coexistence of light and heavy fermions",
-  "dateFetched": "2021-04-06",
+  "dateFetched": "2021-04-08",
   "authors": [
     "A. Fahl",
     "R. Grossi",
@@ -11,7 +11,7 @@
     "C. Adriano",
     "E. Granado"
   ],
-  "href": "http://arxiv.org/abs/2104.01050v1",
+  "href": "2104.01050",
   "publicationDate": "2021-04-02T13:52:49Z",
   "tables": [
     {

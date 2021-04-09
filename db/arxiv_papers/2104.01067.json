@@ -1,12 +1,12 @@
 {
-  "id": "2104.01067",
+  "p_id": "2104.01067",
   "title": "Multivariate time series models for mixed data",
-  "dateFetched": "2021-04-06",
+  "dateFetched": "2021-04-08",
   "authors": [
     "Zinsou Max Debaly",
     "Lionel Truquet"
   ],
-  "href": "http://arxiv.org/abs/2104.01067v1",
+  "href": "2104.01067",
   "publicationDate": "2021-04-02T14:33:41Z",
   "tables": []
 }

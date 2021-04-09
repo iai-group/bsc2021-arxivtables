@@ -1,7 +1,7 @@
 {
-  "id": "2104.01327",
+  "p_id": "2104.01327",
   "title": "Zeus: Locality-aware Distributed Transactions",
-  "dateFetched": "2021-04-06",
+  "dateFetched": "2021-04-08",
   "authors": [
     "Antonios Katsarakis",
     "Yijun Ma",
@@ -13,7 +13,7 @@
     "Bozidar Radunovic",
     "Yongguang Zhang"
   ],
-  "href": "http://arxiv.org/abs/2104.01327v1",
+  "href": "2104.01327",
   "publicationDate": "2021-04-03T07:10:57Z",
   "tables": []
 }

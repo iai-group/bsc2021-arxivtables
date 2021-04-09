@@ -1,6 +1,5 @@
 __author__ = "Rebeca Pop"
 __maintainer__ = "Rebeca Pop, David Ramsay"
-__version__ = "0.1.0"
 
 from arxivtables.table_extractor.table_extractor import TableExtractor
 from arxivtables.table_extractor.table_parser import TableParser

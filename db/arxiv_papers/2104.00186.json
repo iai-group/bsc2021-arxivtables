@@ -1,7 +1,7 @@
 {
-  "id": "2104.00186",
+  "p_id": "2104.00186",
   "title": "Sub-GMN: The Subgraph Matching Network Model",
-  "dateFetched": "2021-04-06",
+  "dateFetched": "2021-04-08",
   "authors": [
     "Zixun Lan",
     "Limin Yu",
@@ -9,7 +9,7 @@
     "Zili Wu",
     "Fei Ma"
   ],
-  "href": "http://arxiv.org/abs/2104.00186v2",
+  "href": "2104.00186",
   "publicationDate": "2021-04-01T01:31:40Z",
   "tables": [
     {

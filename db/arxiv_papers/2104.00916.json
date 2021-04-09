@@ -1,7 +1,7 @@
 {
-  "id": "2104.00916",
+  "p_id": "2104.00916",
   "title": "Machine learning application to Fermi-LAT data: sharpening all-sky map\n  and emphasizing variable sources",
-  "dateFetched": "2021-04-06",
+  "dateFetched": "2021-04-08",
   "authors": [
     "Shogo Sato",
     "Jun Kataoka",
@@ -13,7 +13,7 @@
     "Yuki Nakamura",
     "Marino Yamamoto"
   ],
-  "href": "http://arxiv.org/abs/2104.00916v1",
+  "href": "2104.00916",
   "publicationDate": "2021-04-02T07:21:06Z",
   "tables": []
 }

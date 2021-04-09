@@ -1,7 +1,7 @@
 {
-  "id": "2104.01157",
+  "p_id": "2104.01157",
   "title": "Real-time visualization of metastable charge regulation pathways in\n  molecularly confined slit geometries",
-  "dateFetched": "2021-04-06",
+  "dateFetched": "2021-04-08",
   "authors": [
     "H. -W. Cheng",
     "J. Dziadkowiec",
@@ -9,7 +9,7 @@
     "A. M. Imre",
     "M. Valtiner"
   ],
-  "href": "http://arxiv.org/abs/2104.01157v1",
+  "href": "2104.01157",
   "publicationDate": "2021-04-02T17:22:16Z",
   "tables": [
     {

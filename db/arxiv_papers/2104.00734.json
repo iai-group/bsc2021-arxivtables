@@ -1,7 +1,7 @@
 {
-  "id": "2104.00734",
+  "p_id": "2104.00734",
   "title": "Multitarget Tracking with Transformers",
-  "dateFetched": "2021-04-06",
+  "dateFetched": "2021-04-08",
   "authors": [
     "Juliano Pinto",
     "Georg Hess",
@@ -10,7 +10,7 @@
     "Lennart Svensson",
     "Henk Wymeersch"
   ],
-  "href": "http://arxiv.org/abs/2104.00734v1",
+  "href": "2104.00734",
   "publicationDate": "2021-04-01T19:14:55Z",
   "tables": []
 }

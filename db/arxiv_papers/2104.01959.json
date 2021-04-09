@@ -1,13 +1,13 @@
 {
-  "id": "2104.01959",
+  "p_id": "2104.01959",
   "title": "Self-Healing First-Order Distributed Optimization",
-  "dateFetched": "2021-04-06",
+  "dateFetched": "2021-04-08",
   "authors": [
     "Israel L. Donato Ridgley",
     "Randy A. Freeman",
     "Kevin M. Lynch"
   ],
-  "href": "http://arxiv.org/abs/2104.01959v1",
+  "href": "2104.01959",
   "publicationDate": "2021-04-05T15:20:02Z",
   "tables": []
 }

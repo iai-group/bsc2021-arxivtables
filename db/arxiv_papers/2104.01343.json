@@ -1,7 +1,7 @@
 {
-  "id": "2104.01343",
+  "p_id": "2104.01343",
   "title": "Alternatives for Testing of Context-Aware Contemporary Software Systems\n  in industrial settings: Results from a Rapid review",
-  "dateFetched": "2021-04-06",
+  "dateFetched": "2021-04-08",
   "authors": [
     "Santiago Matalonga",
     "Domenico Amalfitano",
@@ -9,7 +9,7 @@
     "Ana Rita Fasolino",
     "Guilherme H. Travassos"
   ],
-  "href": "http://arxiv.org/abs/2104.01343v1",
+  "href": "2104.01343",
   "publicationDate": "2021-04-03T08:41:15Z",
   "tables": []
 }

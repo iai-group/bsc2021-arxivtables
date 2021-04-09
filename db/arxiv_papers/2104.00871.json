@@ -1,7 +1,7 @@
 {
-  "id": "2104.00871",
+  "p_id": "2104.00871",
   "title": "A Survey on Semi-parametric Machine Learning Technique for Time Series\n  Forecasting",
-  "dateFetched": "2021-04-06",
+  "dateFetched": "2021-04-08",
   "authors": [
     "Khwaja Mutahir Ahmad",
     "Gang He",
@@ -10,7 +10,7 @@
     "Jay Kumar",
     "Muhammad Asim Saleem"
   ],
-  "href": "http://arxiv.org/abs/2104.00871v1",
+  "href": "2104.00871",
   "publicationDate": "2021-04-02T03:26:20Z",
   "tables": []
 }

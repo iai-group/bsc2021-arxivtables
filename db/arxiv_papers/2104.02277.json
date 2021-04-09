@@ -1,0 +1,128 @@
+{
+  "p_id": "2104.02277",
+  "title": "$x$-[Pd(dmit)$_2$]$_2$ as a quasi-1D, scalene Heisenberg model",
+  "dateFetched": "2021-04-08",
+  "authors": [
+    "E. P. Kenny",
+    "A. C. Jacko",
+    "B. J. Powell"
+  ],
+  "href": "2104.02277",
+  "publicationDate": "2021-04-06T04:03:53Z",
+  "tables": [
+    {
+      "caption": "Our BS-DFT Heisenberg exchange interactions of (the compounds are listed here according to their values of X and n). J_B is much larger than J_r and J_S in all materials. The interlayer exchange coupling, J_z, is very small. See Figure <ref> for the directions of the other couplings in the lattice.",
+      "headers": [
+        "Compound (X-n)",
+        "J_B (K)",
+        "J_r (K)",
+        "J_S (K)",
+        "J_z (K)"
+      ],
+      "rows": [
+        [
+          "Sb-0",
+          "320",
+          "145",
+          "86",
+          "-0.01"
+        ],
+        [
+          "Sb-1",
+          "382",
+          "129",
+          "111",
+          "0.06"
+        ],
+        [
+          "As-0",
+          "370",
+          "110",
+          "116",
+          "-0.02"
+        ],
+        [
+          "As-1",
+          "353",
+          "129",
+          "100",
+          "<0.01"
+        ],
+        [
+          "As-2",
+          "374",
+          "130",
+          "98",
+          "-0.01"
+        ],
+        [
+          "N-0",
+          "352",
+          "131",
+          "143",
+          "0.04"
+        ],
+        [
+          "P-1",
+          "499",
+          "195",
+          "148",
+          "5"
+        ]
+      ]
+    },
+    {
+      "caption": "Calculated N\u00e9el temperatures of based on nearest-neighbor coupling parameters in Table <ref> compared with experimental measurements. `State' refers to the ground state of the compound according to the experimental literature; antiferromagnetic long-range order (AFLO), valence-bond crystal (VBC) or spin-Peierls (SP), and spin liquid (SL).",
+      "headers": [
+        "Compound (X-n)",
+        "Calc. T_N (K)",
+        "Expt. T_N (K)",
+        "State"
+      ],
+      "rows": [
+        [
+          "As-0",
+          "8.7",
+          "35",
+          "AFLO <cit.>"
+        ],
+        [
+          "As-1",
+          "37.0",
+          "23",
+          "AFLO <cit.>"
+        ],
+        [
+          "As-2",
+          "41.0",
+          "18",
+          "AFLO <cit.>"
+        ],
+        [
+          "N-0",
+          "17.0",
+          "12",
+          "AFLO <cit.>"
+        ],
+        [
+          "Sb-0",
+          "70.0",
+          "18",
+          "AFLO <cit.>"
+        ],
+        [
+          "Sb-1",
+          "24.0",
+          "< 0.02",
+          "SL  <cit.>"
+        ],
+        [
+          "P-1",
+          "118.0",
+          "21",
+          "VBC/SP <cit.>"
+        ]
+      ]
+    }
+  ]
+}

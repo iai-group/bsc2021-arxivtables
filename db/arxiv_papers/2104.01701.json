@@ -1,7 +1,7 @@
 {
-  "id": "2104.01701",
+  "p_id": "2104.01701",
   "title": "Neutrino energy reconstruction from semi-inclusive samples",
-  "dateFetched": "2021-04-06",
+  "dateFetched": "2021-04-08",
   "authors": [
     "R. Gonz\u00e1lez-Jim\u00e9nez",
     "M. B. Barbaro",
@@ -14,7 +14,7 @@
     "J. W. Van Orden",
     "J. M. Ud\u00edas"
   ],
-  "href": "http://arxiv.org/abs/2104.01701v1",
+  "href": "2104.01701",
   "publicationDate": "2021-04-04T21:40:41Z",
   "tables": []
 }

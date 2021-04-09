@@ -1,3 +1,6 @@
+__author__ = 'David Ramsay'
+__maintainer__ = 'Rebeca Pop, David Ramsay'
+
 import unittest
 from arxivtables.arxiv_getter.arxiv_getter import ArxivGetter
 

@@ -1,7 +1,7 @@
 {
-  "id": "2104.01429",
+  "p_id": "2104.01429",
   "title": "Graph Contrastive Clustering",
-  "dateFetched": "2021-04-06",
+  "dateFetched": "2021-04-08",
   "authors": [
     "Huasong Zhong",
     "Jianlong Wu",
@@ -12,7 +12,7 @@
     "Zhouchen Lin",
     "Xian-Sheng Hua"
   ],
-  "href": "http://arxiv.org/abs/2104.01429v1",
+  "href": "2104.01429",
   "publicationDate": "2021-04-03T15:32:49Z",
   "tables": []
 }

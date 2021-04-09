@@ -1,0 +1,42 @@
+{
+  "id": "2103.16427",
+  "title": "Investigation of Multiple Resource Theory Design Principles on Robot\n  Teleoperation and Workload Management",
+  "dateFetched": "2021-04-07",
+  "authors": [
+    "Zhao Han",
+    "Adam Norton",
+    "Eric McCann",
+    "Lisa Baraniecki",
+    "Will Ober",
+    "Dave Shane",
+    "Anna Skinner",
+    "Holly A. Yanco"
+  ],
+  "href": "2103.16427",
+  "publicationDate": "2021-03-30T15:23:15Z",
+  "tables": [
+    {
+      "caption": "Adapted NASA-Task Load Index <cit.> Questions",
+      "headers": [
+        "Stress: How stressful the task was"
+      ],
+      "rows": [
+        [
+          "Mental Demand: How taxing the task was on you mentally"
+        ],
+        [
+          "Physical Demand: How taxing the task was on you physically"
+        ],
+        [
+          "Effort: How much effort you think you applied to complete the task"
+        ],
+        [
+          "Frustration: How frustrated you were while completing the task"
+        ],
+        [
+          "* Likert items are coded from 1 (Very Low) to 7 (Very High)."
+        ]
+      ]
+    }
+  ]
+}

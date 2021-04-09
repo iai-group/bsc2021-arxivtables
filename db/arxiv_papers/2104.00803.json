@@ -1,14 +1,14 @@
 {
-  "id": "2104.00803",
+  "p_id": "2104.00803",
   "title": "Global Sensitivity Analysis for Bottleneck Assignment Problems",
-  "dateFetched": "2021-04-06",
+  "dateFetched": "2021-04-08",
   "authors": [
     "Elad Michael",
     "Tony A. Wood",
     "Chris Manzie",
     "Iman Shames"
   ],
-  "href": "http://arxiv.org/abs/2104.00803v1",
+  "href": "2104.00803",
   "publicationDate": "2021-04-01T23:35:29Z",
   "tables": [
     {

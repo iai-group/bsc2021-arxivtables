@@ -1,0 +1,41 @@
+{
+  "p_id": "2104.00278",
+  "title": "Emergent Flows, Irreversibility and Unsteady Effects in Asymmetric and\n  Looped Geometries",
+  "dateFetched": "2021-04-08",
+  "authors": [
+    "Quynh M Nguyen"
+  ],
+  "href": "2104.00278",
+  "publicationDate": "2021-04-01T06:35:50Z",
+  "tables": [
+    {
+      "caption": "The governing equations of fluid flow at different dynamical regimes and kinematic (ir)reversibility",
+      "headers": [
+        "Equations",
+        "Initial-boundary value problem",
+        "Applicability",
+        "Under (u,p) \u21a6 (-u, -p+c(t))"
+      ],
+      "rows": [
+        [
+          "Stokes",
+          "\u2207 p - \u03bc\u2207^2 u = 0 \n  \u2207\u00b7u = 0, \n with boundary conditions ",
+          "Re \u226a 1. The solution is exact near rigid boundaries <cit.>.",
+          "Reversible"
+        ],
+        [
+          "Navier-Stokes",
+          " \u03c1[ \u2202u/\u2202 t + (u\u00b7\u2207) u] =  -\u2207 p + \u03bc\u2207^2 u  \n  \u2207\u00b7u = 0, \n with initial and boundary conditions ",
+          "Re > 1",
+          "Irreversible"
+        ],
+        [
+          "Euler's",
+          " \u2202u/\u2202 t + (u\u00b7\u2207) u  =  -\u2207 p \n \u2207\u00b7u = 0, \n with initial and boundary conditions ",
+          "Re\u226b 1, in free flow regions <cit.>.",
+          "Irreversible"
+        ]
+      ]
+    }
+  ]
+}

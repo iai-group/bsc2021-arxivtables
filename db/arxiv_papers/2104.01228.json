@@ -1,7 +1,7 @@
 {
-  "id": "2104.01228",
+  "p_id": "2104.01228",
   "title": "Liger for Next Generation Keck Adaptive Optics: Opto-Mechanical Dewar\n  for Imaging Camera and Slicer",
-  "dateFetched": "2021-04-06",
+  "dateFetched": "2021-04-08",
   "authors": [
     "James Wiley",
     "Kalp Mathur",
@@ -19,7 +19,7 @@
     "Eric Wang",
     "Sherry Yeh"
   ],
-  "href": "http://arxiv.org/abs/2104.01228v1",
+  "href": "2104.01228",
   "publicationDate": "2021-04-02T20:05:07Z",
   "tables": []
 }

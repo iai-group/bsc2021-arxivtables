@@ -1,13 +1,13 @@
 {
-  "id": "2104.01558",
+  "p_id": "2104.01558",
   "title": "Perspective-corrected Spatial Referring Expression Generation for\n  Human-Robot Interaction",
-  "dateFetched": "2021-04-06",
+  "dateFetched": "2021-04-08",
   "authors": [
     "Mingjiang Liu",
     "Chengli Xiao",
     "Chunlin Chen"
   ],
-  "href": "http://arxiv.org/abs/2104.01558v1",
+  "href": "2104.01558",
   "publicationDate": "2021-04-04T08:00:02Z",
   "tables": []
 }

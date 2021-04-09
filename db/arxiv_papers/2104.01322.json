@@ -1,7 +1,7 @@
 {
-  "id": "2104.01322",
+  "p_id": "2104.01322",
   "title": "Learning the CSI Recovery in FDD Systems",
-  "dateFetched": "2021-04-06",
+  "dateFetched": "2021-04-08",
   "authors": [
     "Wolfgang Utschick",
     "Valentina Rizzello",
@@ -9,7 +9,7 @@
     "Zhengxiang Ma",
     "Leonard Piazzi"
   ],
-  "href": "http://arxiv.org/abs/2104.01322v1",
+  "href": "2104.01322",
   "publicationDate": "2021-04-03T06:35:24Z",
   "tables": [
     {

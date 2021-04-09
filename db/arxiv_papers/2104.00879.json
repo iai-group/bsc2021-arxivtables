@@ -1,7 +1,7 @@
 {
-  "id": "2104.00879",
+  "p_id": "2104.00879",
   "title": "Influence of non-statistical properties in nuclear structure on emission\n  of prompt fission neutrons",
-  "dateFetched": "2021-04-06",
+  "dateFetched": "2021-04-08",
   "authors": [
     "Toshihiko Kawano",
     "Shin Okumura",
@@ -9,7 +9,7 @@
     "Ionel Stetcu",
     "Patrick Talou"
   ],
-  "href": "http://arxiv.org/abs/2104.00879v1",
+  "href": "2104.00879",
   "publicationDate": "2021-04-02T04:21:13Z",
   "tables": []
 }

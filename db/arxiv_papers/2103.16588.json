@@ -1,0 +1,114 @@
+{
+  "id": "2103.16588",
+  "title": "Implementation of Monte-Carlo transport in the general relativistic SpEC\n  code",
+  "dateFetched": "2021-04-07",
+  "authors": [
+    "Francois Foucart",
+    "Matthew D. Duez",
+    "Francois Hebert",
+    "Lawrence E. Kidder",
+    "Harald P. Pfeiffer",
+    "Mark A. Scheel"
+  ],
+  "href": "2103.16588",
+  "publicationDate": "2021-03-30T18:02:49Z",
+  "tables": [
+    {
+      "caption": "Commonly used symbols and notations (we list here symbols used in more than one section)",
+      "headers": [
+        "Symbols",
+        "Interpretation"
+      ],
+      "rows": [
+        [
+          "x^i, p^\u03bc",
+          "Spatial coordinates, 4-momentum"
+        ],
+        [
+          "t",
+          "Time coordinate"
+        ],
+        [
+          "\u03c4",
+          "Proper time in the reference frame of the fluid"
+        ],
+        [
+          "V",
+          "Coordinate volume of a grid cell"
+        ],
+        [
+          "g_\u03bc\u03bd",
+          "Spacetime metric"
+        ],
+        [
+          "g",
+          "Determinant of spacetime metric"
+        ],
+        [
+          "\u03b1, \u03b2^i, \u03b3_ij",
+          "Lapse, Shift, Spatial metric"
+        ],
+        [
+          "\u03c1,T,Y_e, u^\u03bc",
+          "Fluid density, temperature, electron fraction, and 4-velocity"
+        ],
+        [
+          "T_\u03bc\u03bd, fl",
+          "Stress-energy tensor of the fluid"
+        ],
+        [
+          "f(t,x^i,p_i)",
+          "Neutrino distribution function"
+        ],
+        [
+          "\u03bd_e,\u03bd_a,\u03bd_x",
+          "Electron neutrinos, electron antineutrinos, heavy lepton neutrinos (muon and tau [anti]neutrinos grouped together)"
+        ],
+        [
+          "\u03b7,\u03ba_a,\u03ba_s",
+          "Emissivity, Absorption opacity, Scattering opacity as read from NuLib tables"
+        ],
+        [
+          "\u03b7',\u03ba_a',\u03ba_s'",
+          "Emissivity, Absorption opacity, Scattering opacity after implicit Monte-Carlo corrections"
+        ],
+        [
+          "J,H^\u03bc",
+          "Energy density and momentum density of neutrinos in the fluid frame"
+        ],
+        [
+          "n_p",
+          "Total number of Monte-Carlo packets in the simulation"
+        ],
+        [
+          "n_p, target,n_c, target",
+          "Desired number of packets in the simulation (n_p) and within an optically thick cell (n_c)"
+        ],
+        [
+          "N_k",
+          "Number of neutrinos represented by packet `k'"
+        ],
+        [
+          "\u03bd_k",
+          "Fluid-frame energy of individual neutrinos in packet 'k'"
+        ],
+        [
+          "\u0394 t",
+          "Full time step in simulation coordinates"
+        ],
+        [
+          "\u0394 t'",
+          "Full time step in the fluid frame"
+        ],
+        [
+          "\u0394 t_c",
+          "Light-crossing time of a grid cell"
+        ],
+        [
+          "\u0394 t_a,s",
+          "Time to first absorption/scattering event"
+        ]
+      ]
+    }
+  ]
+}

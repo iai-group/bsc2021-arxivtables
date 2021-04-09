@@ -1,14 +1,14 @@
 {
-  "id": "2104.01520",
+  "p_id": "2104.01520",
   "title": "Simple Uncoupled No-Regret Learning Dynamics for Extensive-Form\n  Correlated Equilibrium",
-  "dateFetched": "2021-04-06",
+  "dateFetched": "2021-04-08",
   "authors": [
     "Gabriele Farina",
     "Andrea Celli",
     "Alberto Marchesi",
     "Nicola Gatti"
   ],
-  "href": "http://arxiv.org/abs/2104.01520v1",
+  "href": "2104.01520",
   "publicationDate": "2021-04-04T02:26:26Z",
   "tables": []
 }

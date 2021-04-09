@@ -1,7 +1,7 @@
 {
-  "id": "2104.01630",
+  "p_id": "2104.01630",
   "title": "Accurate Vertical Ionization Energy and Work Function Determinations of\n  Liquid Water and Aqueous Solutions",
-  "dateFetched": "2021-04-06",
+  "dateFetched": "2021-04-08",
   "authors": [
     "Stephan Th\u00fcrmer",
     "Sebastian Malerz",
@@ -13,7 +13,7 @@
     "Bernd Winter",
     "Iain Wilkinson"
   ],
-  "href": "http://arxiv.org/abs/2104.01630v1",
+  "href": "2104.01630",
   "publicationDate": "2021-04-04T15:40:43Z",
   "tables": []
 }

@@ -1,10 +1,9 @@
 __author__ = "David Ramsay"
 __maintainer__ = "Rebeca Pop, David Ramsay"
-__version__ = "0.1.0"
 
-from TexSoup import TexSoup
-import tarfile
 import os
+import tarfile
+from TexSoup import TexSoup
 
 class TableExtractor:
     def __init__(self, paper_id):
@@ -16,7 +15,8 @@ class TableExtractor:
 
     def extract_files(self):
         try:
-            tar = tarfile.open('downloads/{}/{}/{}/{}.tar.gz'.format(self.year, self.month, self.id, self.paper_id), 'r:gz')
+            tar = tarfile.open('downloads/{}/{}/{}/{}.tar.gz'.format(self.year, self.month, self.id, self.paper_id),
+                               'r:gz')
             tar.extractall('downloads/{}/{}/{}/{}'.format(self.year, self.month, self.id, self.paper_id))
             tar.close()
             print('extracted')
@@ -24,20 +24,19 @@ class TableExtractor:
             print(e)
 
     def extract_tables(self):
-        texFiles = []
+        tex_files = []
         for root, dirs, files in os.walk('downloads/{}/{}/{}/{}'.format(self.year, self.month, self.id, self.paper_id)):
             for file in files:
                 if file.endswith('.tex'):
-                    texFiles.append(root + '/' +file)
-        allTables = []
-        for fileFile in texFiles:
-            #with open(self.paper_id) as file:
-            with open(fileFile) as file:
+                    tex_files.append(root + '/' + file)
+        all_tables = []
+        for file_file in tex_files:
+            with open(file_file) as file:
                 soup = TexSoup(file)
             tables = list(soup.find_all('table'))
-            tablesMulti = list(soup.find_all('table*'))
-            strTables = tables + tablesMulti
-            allTables += strTables
-        for index, table in enumerate(allTables):
-            allTables[index] = str(table)
-        return allTables
+            tables_multi = list(soup.find_all('table*'))
+            str_tables = tables + tables_multi
+            all_tables += str_tables
+        for index, table in enumerate(all_tables):
+            all_tables[index] = str(table)
+        return all_tables

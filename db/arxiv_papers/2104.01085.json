@@ -1,14 +1,14 @@
 {
-  "id": "2104.01085",
+  "p_id": "2104.01085",
   "title": "End-to-end learning of keypoint detection and matching for relative pose\n  estimation",
-  "dateFetched": "2021-04-06",
+  "dateFetched": "2021-04-08",
   "authors": [
     "Antoine Fond",
     "Luca Del Pero",
     "Nikola Sivacki",
     "Marco Paladini"
   ],
-  "href": "http://arxiv.org/abs/2104.01085v1",
+  "href": "2104.01085",
   "publicationDate": "2021-04-02T15:16:17Z",
   "tables": [
     {

@@ -1,7 +1,7 @@
 {
-  "id": "2104.01717",
+  "p_id": "2104.01717",
   "title": "Issue Auto-Assignment in Software Projects with Machine Learning\n  Techniques",
-  "dateFetched": "2021-04-06",
+  "dateFetched": "2021-04-08",
   "authors": [
     "Pedro Oliveira",
     "Rossana M. C. Andrade",
@@ -9,7 +9,7 @@
     "Isaac Barreto",
     "Leandro Morais Bueno"
   ],
-  "href": "http://arxiv.org/abs/2104.01717v1",
+  "href": "2104.01717",
   "publicationDate": "2021-04-05T00:02:47Z",
   "tables": []
 }

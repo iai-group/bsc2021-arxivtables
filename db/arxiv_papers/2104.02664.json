@@ -1,0 +1,69 @@
+{
+  "p_id": "2104.02664",
+  "title": "Building the Galilean moons system via pebble accretion and migration: A\n  primordial resonant chain",
+  "dateFetched": "2021-04-08",
+  "authors": [
+    "Gustavo Madeira",
+    "Andr\u00e9 Izidoro",
+    "Silvia M. Giuliatti Winter"
+  ],
+  "href": "2104.02664",
+  "publicationDate": "2021-04-06T16:51:19Z",
+  "tables": [
+    {
+      "caption": "Physical and orbital parameters of the Galilean satellites. From left-to-right the columns are semi-major axis (a), eccentricity (e), inclination (I), mass (M), radius (R), the water-ice mass fraction (ice), and bulk density (d) of the Galilean satellites <cit.>",
+      "headers": [
+        "col0",
+        "a (R_J)",
+        "e (10^-3)",
+        "I (deg)",
+        "M (10^-5\u00a0 M_J)",
+        "R (km)",
+        "% ice",
+        "d (g/cm^3) \n "
+      ],
+      "rows": [
+        [
+          "Io",
+          "5.9",
+          "4.1",
+          "0.04",
+          "4.7",
+          "1822",
+          "0",
+          "3.53"
+        ],
+        [
+          "Europa",
+          "9.4",
+          "10.0",
+          "0.47",
+          "2.53",
+          "1565",
+          "8",
+          "2.99"
+        ],
+        [
+          "Ganymede",
+          "15.0",
+          "1.5",
+          "0.19",
+          "7.8",
+          "2631",
+          "45",
+          "1.94"
+        ],
+        [
+          "Callisto",
+          "26.4",
+          "7.0",
+          "0.28",
+          "5.69",
+          "2410",
+          "56",
+          "1.83            \n "
+        ]
+      ]
+    }
+  ]
+}

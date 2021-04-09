@@ -1,14 +1,14 @@
 {
-  "id": "2104.00868",
+  "p_id": "2104.00868",
   "title": "Inference of Recyclable Objects with Convolutional Neural Networks",
-  "dateFetched": "2021-04-06",
+  "dateFetched": "2021-04-08",
   "authors": [
     "Jaime Caballero",
     "Francisco Vergara",
     "Randal Miranda",
     "Jos\u00e9 Serrac\u00edn"
   ],
-  "href": "http://arxiv.org/abs/2104.00868v1",
+  "href": "2104.00868",
   "publicationDate": "2021-04-02T03:13:46Z",
   "tables": []
 }

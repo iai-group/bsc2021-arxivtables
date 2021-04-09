@@ -1,14 +1,14 @@
 {
-  "id": "2104.01328",
+  "p_id": "2104.01328",
   "title": "Uncertainty for Identifying Open-Set Errors in Visual Object Detection",
-  "dateFetched": "2021-04-06",
+  "dateFetched": "2021-04-08",
   "authors": [
     "Dimity Miller",
     "Niko S\u00fcnderhauf",
     "Michael Milford",
     "Feras Dayoub"
   ],
-  "href": "http://arxiv.org/abs/2104.01328v1",
+  "href": "2104.01328",
   "publicationDate": "2021-04-03T07:12:31Z",
   "tables": []
 }

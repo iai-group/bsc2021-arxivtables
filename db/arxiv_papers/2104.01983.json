@@ -1,7 +1,7 @@
 {
-  "id": "2104.01983",
+  "p_id": "2104.01983",
   "title": "The HI and stellar mass bivariate distribution of centrals and\n  satellites for all, late- and early-type local galaxies",
-  "dateFetched": "2021-04-06",
+  "dateFetched": "2021-04-08",
   "authors": [
     "A. R. Calette",
     "Vladimir Avila-Reese",
@@ -9,7 +9,7 @@
     "Claudia del P. Lagos",
     "Barbara Catinella"
   ],
-  "href": "http://arxiv.org/abs/2104.01983v1",
+  "href": "2104.01983",
   "publicationDate": "2021-04-05T16:16:52Z",
   "tables": [
     {

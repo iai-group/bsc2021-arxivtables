@@ -1,0 +1,40 @@
+{
+  "<documentId>": {
+    "<tableId>": {
+      "name": "",
+      "date": "",
+      "authors": {
+        "name": "",
+        "otherInfo": "..."
+      },
+      "href": "",
+      "publicationDate": "",
+      "table": {
+        "title": "",
+        "footer": "",
+        "comments": "",
+        "caption": "",
+        "headers": [],
+        "rows": []
+      }
+    },
+    "<table2Id>": {
+      "name": "",
+      "date": "",
+      "authors": {
+        "name": "",
+        "otherInfo": "..."
+      },
+      "href": "",
+      "publicationDate": "",
+      "table": {
+        "title": "",
+        "footer": "",
+        "comments": "",
+        "caption": "",
+        "headers": [],
+        "rows": []
+      }
+    }
+  }
+}

@@ -1,13 +1,13 @@
 {
-  "id": "2104.01270",
-  "title": "Demanded Abstract Interpretation",
-  "dateFetched": "2021-04-06",
+  "p_id": "2104.01270",
+  "title": "Demanded Abstract Interpretation (Extended Version)",
+  "dateFetched": "2021-04-08",
   "authors": [
     "Benno Stein",
     "Bor-Yuh Evan Chang",
     "Manu Sridharan"
   ],
-  "href": "http://arxiv.org/abs/2104.01270v1",
+  "href": "2104.01270",
   "publicationDate": "2021-04-02T23:08:47Z",
   "tables": []
 }

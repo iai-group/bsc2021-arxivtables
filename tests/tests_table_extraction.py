@@ -1,3 +1,6 @@
+__author__ = 'Rebeca Pop'
+__maintainer__ = 'Rebeca Pop, David Ramsay'
+
 import os
 import unittest
 from arxivtables.table_extractor.table_extractor import TableExtractor
