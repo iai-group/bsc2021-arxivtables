@@ -13,6 +13,8 @@ from arxivtables.table_extractor.table_parser import TableParser
 
 
 def set_up_mongo():
+    """"Simple
+    """
     client = MongoClient('localhost', 27017)
     db = client['db']
     collection = db['arxiv_papers']
@@ -20,6 +22,18 @@ def set_up_mongo():
 
 
 def run_tables(downloader_date=str(datetime.date(datetime.now())).replace('-', ''), mongo=False):
+    """"Main method that handles fetching, downloading, extracting, and saving arXiv data.
+
+    Args:
+        downloader_date:
+            (optional) Date of log file to run table extraction on, in YYYMMDD format. Defaults to current date
+        mongo:
+            (optional) Boolean flag to signal use of MongoDB. Defaults to False
+    Returns:
+        No return
+    Raises:
+        Exception
+    """
     if mongo:
         client, db, collection_arxiv_papers = set_up_mongo()
 
@@ -51,11 +65,13 @@ def run_tables(downloader_date=str(datetime.date(datetime.now())).replace('-', '
                 paper_dict["tables"].append(parsed.toJSON())
             with open('db/arxiv_papers/' + p_id + '.json', 'w') as j:
                 json.dump(paper_dict, j, indent=2)
-            collection_arxiv_papers.insert_one(paper_dict)
-            print(p_id + " inserted")
+            if mongo:
+                collection_arxiv_papers.insert_one(paper_dict)
+                print(p_id + " inserted")
             paper_dict = None
         except Exception as e:
             print(e)
+            raise e
         ag.delete()
     if mongo:
         client.close()

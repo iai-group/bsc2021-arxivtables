@@ -6,7 +6,7 @@ services:
       context: .
       dockerfile: Dockerfile
     command: -d 20210411 -m
-    # command: -de YYYYMMDD -m
+    # command: -d YYYYMMDD -m
     volumes:
       - "./db:/db"
       - "./logs:/logs"
