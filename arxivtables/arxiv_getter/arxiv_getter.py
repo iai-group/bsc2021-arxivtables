@@ -5,7 +5,6 @@ import os
 import shutil
 import requests
 
-
 class ArxivGetter:
     """Module that contains classes to handle arXiv paper download and extract
 

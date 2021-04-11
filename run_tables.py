@@ -4,7 +4,6 @@ __maintainer__ = 'Rebeca Pop, David Ramsay'
 import os
 import json
 from datetime import datetime
-
 from pymongo import MongoClient
 from arxivtables.arxiv_getter.arxiv_getter import ArxivGetter
 from arxivtables.arxiv_watcher.arxiv_watcher import ArxivWatcher
@@ -13,6 +12,10 @@ from arxivtables.table_extractor.table_parser import TableParser
 import sys
 
 args = sys.argv[1:]
+
+client = MongoClient('localhost', 27017)
+db = client['db']
+collection_arxiv_papers = db['arxiv_papers']
 
 client = MongoClient('localhost', 27017)
 db = client['db']
