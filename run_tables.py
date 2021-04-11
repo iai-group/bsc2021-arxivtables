@@ -3,11 +3,16 @@ __maintainer__ = 'Rebeca Pop, David Ramsay'
 
 import os
 import json
+from datetime import datetime
+
 from pymongo import MongoClient
 from arxivtables.arxiv_getter.arxiv_getter import ArxivGetter
 from arxivtables.arxiv_watcher.arxiv_watcher import ArxivWatcher
 from arxivtables.table_extractor.table_extractor import TableExtractor
 from arxivtables.table_extractor.table_parser import TableParser
+import sys
+
+args = sys.argv[1:]
 
 client = MongoClient('localhost', 27017)
 db = client['db']
@@ -15,7 +20,11 @@ collection_arxiv_papers = db['arxiv_papers']
 
 aw = ArxivWatcher()
 
-paper_ids = aw.get_latest_papers()
+if len(sys.argv) == 1:
+    paper_ids = aw.get_latest_papers(str(datetime.date(datetime.now())).replace('-', ''))
+else:
+    with open('logs/downloader/{}.log'.format(sys.argv[1])) as file:
+        paper_ids = [item[:-1] for item in file.readlines()]
 
 for index, p_id in enumerate(paper_ids):
     print('[Item {} of {}]'.format(index + 1, len(paper_ids)))

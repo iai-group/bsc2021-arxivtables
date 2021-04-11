@@ -1,0 +1,87 @@
+{
+  "p_id": "2104.03789",
+  "title": "A surrogate model for gravitational waveforms of spin-aligned binary\n  black holes with eccentricities",
+  "dateFetched": "2021-04-10",
+  "authors": [
+    "Qianyun Yun",
+    "Wen-Biao Han",
+    "Xingyu Zhong",
+    "Carlos A. Benavides-Gallego"
+  ],
+  "href": "2104.03789",
+  "publicationDate": "2021-04-08T14:14:23Z",
+  "tables": [
+    {
+      "caption": "The number of used SEOBNRE waveforms in each segment is listed in the table. A total of 26796 SEOBNRE waveforms are used to construct the non-spinning surrogate model.",
+      "headers": [
+        "ecc range",
+        "Training  data"
+      ],
+      "rows": [
+        [
+          "0-0.1",
+          "3366"
+        ],
+        [
+          "0.1-0.15",
+          "3366"
+        ],
+        [
+          "0.15-0.2",
+          "3366"
+        ],
+        [
+          "0.2-0.225",
+          "3366"
+        ],
+        [
+          "0.225-0.25",
+          "3366"
+        ],
+        [
+          "0.25-0.275",
+          "6666"
+        ],
+        [
+          "0.275-0.30",
+          "6666"
+        ]
+      ]
+    },
+    {
+      "caption": "The number of the phase and amplitude we selected as the basis in each segment.",
+      "headers": [
+        "ecc range",
+        "amp",
+        "phase"
+      ],
+      "rows": [
+        [
+          "0-0.1",
+          "341",
+          "192"
+        ],
+        [
+          "0.1-0.15",
+          "367",
+          "247"
+        ],
+        [
+          "0.15-0.2",
+          "403",
+          "292"
+        ],
+        [
+          "0.2-0.225",
+          "342",
+          "250"
+        ],
+        [
+          "0.225-0.25",
+          "341",
+          "265"
+        ]
+      ]
+    }
+  ]
+}

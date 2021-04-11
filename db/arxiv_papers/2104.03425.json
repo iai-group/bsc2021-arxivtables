@@ -1,0 +1,76 @@
+{
+  "p_id": "2104.03425",
+  "title": "Maximal and minimal dynamic Petri net slicing",
+  "dateFetched": "2021-04-10",
+  "authors": [
+    "Marisa Llorens",
+    "Javier Oliver",
+    "Josep Silva",
+    "Salvador Tamarit"
+  ],
+  "href": "2104.03425",
+  "publicationDate": "2021-04-07T23:01:26Z",
+  "tables": [
+    {
+      "caption": "Empirical evaluation of the five slicing algorithms: performance and efficiency statistics.",
+      "headers": [
+        "2|l|Performance and efficiency",
+        "LM",
+        "Lm",
+        "RC",
+        "RS",
+        "Y"
+      ],
+      "rows": [
+        [
+          "2|l|num_places",
+          "48%",
+          "88%",
+          "50%",
+          "50%",
+          "76%"
+        ],
+        [
+          "2|l|num_tokens",
+          "9%",
+          "38%",
+          "6%",
+          "10%",
+          "9%"
+        ],
+        [
+          "2|l|num_arcs",
+          "48%",
+          "88%",
+          "50%",
+          "50%",
+          "77%"
+        ],
+        [
+          "2|l|num_transitions",
+          "48%",
+          "88%",
+          "47%",
+          "50%",
+          "77%"
+        ],
+        [
+          "2|l|Size (w.r.t. the original net)",
+          "78%",
+          "53%",
+          "84%",
+          "80%",
+          "50%"
+        ],
+        [
+          "2|l|Time (runtime in milliseconds)",
+          "10.77",
+          "774.95",
+          "7.11",
+          "7.03",
+          "14.39"
+        ]
+      ]
+    }
+  ]
+}

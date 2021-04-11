@@ -5,6 +5,7 @@ import os
 import shutil
 import requests
 
+
 class ArxivGetter:
     """Module that contains classes to handle arXiv paper download and extract
 
@@ -14,6 +15,7 @@ class ArxivGetter:
     ag = ArxivGetter('2103.10359')\n
     paper = ag.get_paper()\n
     """
+
     def __init__(self, paper_id: str):
         self.paper_id = paper_id
         self.split_paper_id = self.paper_id.split('.')
@@ -26,21 +28,23 @@ class ArxivGetter:
         Args: None
 
         Returns:
-            String of where extracted files are on the disk.
+            String of where extracted file is on the disk.
 
         Raises:
 
         """
-        result = requests.get(
-            'https://arxiv.org/e-print/' + self.paper_id, stream='true')
-        if result.status_code == 200:
-            if not os.path.exists('downloads/{}/{}/{}'.format(self.year, self.month, self.id)):
-                os.mkdir('downloads/{}/{}/{}'.format(self.year, self.month, self.id))
-            with open('downloads/{}/{}/{}/{}.tar.gz'.format(self.year, self.month, self.id ,self.paper_id), 'wb') as f:
-                f.write(result.raw.read())
-            print('Downloaded and saved {}.tar.gz'.format(self.paper_id))
-        if self.paper_id in os.listdir('downloads'):
-            return 'downloads/' + self.paper_id
+        if not os.path.exists('downloads/{}/{}/{}/{}.tar.gz'.format(self.year, self.month, self.id, self.paper_id)):
+            result = requests.get(
+                'https://arxiv.org/e-print/' + self.paper_id, stream='true')
+            if result.status_code == 200:
+                if not os.path.exists('downloads/{}/{}/{}'.format(self.year, self.month, self.id)):
+                    os.mkdir('downloads/{}/{}/{}'.format(self.year, self.month, self.id))
+                with open('downloads/{}/{}/{}/{}.tar.gz'.format(self.year, self.month, self.id, self.paper_id),
+                          'wb') as f:
+                    f.write(result.raw.read())
+                print('Downloaded and saved {}.tar.gz'.format(self.paper_id))
+        if '{}.tar.gz'.format(self.paper_id) in os.listdir('downloads/{}/{}/{}'.format(self.year, self.month, self.id)):
+            return 'downloads/{}/{}/{}/{}.tar.gz'.format(self.year, self.month, self.id, self.paper_id)
         else:
             return False
 
@@ -61,7 +65,6 @@ class ArxivGetter:
         except Exception as e:
             print(e)
             return False
-
 
     def add_to_database(self):
         return 0

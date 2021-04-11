@@ -1,0 +1,43 @@
+{
+  "p_id": "2104.03800",
+  "title": "Beaming Displays",
+  "dateFetched": "2021-04-10",
+  "authors": [
+    "Yuta Itoh",
+    "Takumi Kaminokado",
+    "Kaan Aksit"
+  ],
+  "href": "2104.03800",
+  "publicationDate": "2021-04-08T14:24:39Z",
+  "tables": [
+    {
+      "caption": "Comparison of Augmented Reality Displays",
+      "headers": [
+        "col0",
+        "Intrusiveness",
+        "physical volume",
+        "local computational resources",
+        "power demand",
+        "Acceptable duration for use? \n "
+      ],
+      "rows": [
+        [
+          "2D Display",
+          "\u2013",
+          "\u2013",
+          "\u2013",
+          "\u2013",
+          "\u2013"
+        ],
+        [
+          "3D displays with glasses <cit.>",
+          "moderate",
+          "yes",
+          "low",
+          "low",
+          "\n "
+        ]
+      ]
+    }
+  ]
+}

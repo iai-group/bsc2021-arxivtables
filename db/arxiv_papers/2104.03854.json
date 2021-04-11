@@ -1,0 +1,37 @@
+{
+  "p_id": "2104.03854",
+  "title": "Towards End-to-End Neural Face Authentication in the Wild -- Quantifying\n  and Compensating for Directional Lighting Effects",
+  "dateFetched": "2021-04-10",
+  "authors": [
+    "Viktor Varkarakis",
+    "Wang Yao",
+    "Peter Corcoran"
+  ],
+  "href": "2104.03854",
+  "publicationDate": "2021-04-08T15:58:09Z",
+  "tables": [
+    {
+      "caption": "Summary Information of Face Data-sets with Illumination Variations. (The number of Pose Variations in this table is referred with regards to the Illumination Variation)",
+      "headers": [
+        "Face Data-sets",
+        "#IDs",
+        "#Illumination Variations",
+        "#Pose  Variations"
+      ],
+      "rows": [
+        [
+          "AR <cit.>",
+          "126",
+          "3",
+          "1"
+        ],
+        [
+          "Postech01 <cit.>",
+          "103",
+          "4",
+          "1"
+        ]
+      ]
+    }
+  ]
+}
