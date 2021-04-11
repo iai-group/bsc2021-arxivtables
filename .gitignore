@@ -136,5 +136,8 @@ dmypy.json
 .vscode/
 
 # .tgz source files
-downloads/
+downloads
 arxiv-data
+db
+logs
+

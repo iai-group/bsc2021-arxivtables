@@ -1,0 +1,22 @@
+version: '3.5'
+services:
+  table_extractor:
+    image: arxiv_test
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: -d 20210411 -m
+    # command: -de YYYYMMDD -m
+    volumes:
+      - "./db:/db"
+      - "./logs:/logs"
+      - "./downloads:/downloads"
+    depends_on:
+      - database
+  database:
+
+    image: mongo
+    ports:
+      - 27017:27017
+    volumes:
+    - "./arxiv-data:/data/db"
