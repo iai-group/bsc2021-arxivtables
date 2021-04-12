@@ -32,7 +32,10 @@ class TableExtractor:
         all_tables = []
         for file_file in tex_files:
             with open(file_file) as file:
-                soup = TexSoup(file)
+                try:
+                    soup = TexSoup(file)
+                except Exception:
+                    continue
             tables = list(soup.find_all('table'))
             tables_multi = list(soup.find_all('table*'))
             str_tables = tables + tables_multi

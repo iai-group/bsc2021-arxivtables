@@ -12,30 +12,35 @@ from arxivtables.table_extractor.table_extractor import TableExtractor
 from arxivtables.table_extractor.table_parser import TableParser
 
 
-def set_up_mongo():
+def set_up_mongo(url='localhost'):
     """"Simple
     """
-    client = MongoClient('localhost', 27017)
+    client = MongoClient(url, 27017)
     db = client['db']
     collection = db['arxiv_papers']
     return client, db, collection
 
 
-def run_tables(downloader_date=str(datetime.date(datetime.now())).replace('-', ''), mongo=False):
+def run_tables(downloader_date=str(datetime.date(datetime.now())).replace('-', ''), mongo=False, url='localhost'):
     """"Main method that handles fetching, downloading, extracting, and saving arXiv data.
 
     Args:
         downloader_date:
-            (optional) Date of log file to run table extraction on, in YYYMMDD format. Defaults to current date
+            (optional) Date of log file to run table extraction on, in YYYMMDD format.
+            Defaults to current date.
         mongo:
-            (optional) Boolean flag to signal use of MongoDB. Defaults to False
+            (optional) Boolean flag to signal use of MongoDB.
+            Defaults to False.
+        url:
+            If using MongoDB, supply url.  Likely 'database' (if using Docker) or 'localhost' (if running local).
+            Defaults to 'localhost'.
     Returns:
         No return
     Raises:
         Exception
     """
     if mongo:
-        client, db, collection_arxiv_papers = set_up_mongo()
+        client, db, collection_arxiv_papers = set_up_mongo(url)
 
     aw = ArxivWatcher()
 
@@ -61,17 +66,19 @@ def run_tables(downloader_date=str(datetime.date(datetime.now())).replace('-', '
             with open('db/arxiv_papers/' + p_id + '.json') as j:
                 paper_dict = json.load(j)
             for table in tables:
-                parsed = tp.parse(table)
-                paper_dict["tables"].append(parsed.toJSON())
+                try:
+                    parsed = tp.parse(table)
+                    paper_dict["tables"].append(parsed.toJSON())
+                except Exception as e:
+                    print(e)
             with open('db/arxiv_papers/' + p_id + '.json', 'w') as j:
                 json.dump(paper_dict, j, indent=2)
             if mongo:
-                collection_arxiv_papers.insert_one(paper_dict)
+                collection_arxiv_papers.replace_one({'p_id': p_id}, paper_dict, upsert=True)
                 print(p_id + " inserted")
             paper_dict = None
         except Exception as e:
             print(e)
-            raise e
         ag.delete()
     if mongo:
         client.close()

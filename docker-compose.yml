@@ -5,17 +5,16 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    command: -d 20210411 -m
-    # command: -d YYYYMMDD -m
+    command: -m -u database
+    # command: -d YYYYMMDD -m -u localhost|database
     volumes:
       - "./db:/db"
       - "./logs:/logs"
       - "./downloads:/downloads"
-    depends_on:
+    depends_on:git s
       - database
   database:
-
-    image: mongo
+    image: mongo:4.4.4
     ports:
       - 27017:27017
     volumes:

@@ -73,8 +73,8 @@ class ArxivWatcher:
                             f.write('\n')
                         if not os.path.exists('db/arxiv_papers'):
                             os.mkdir('db/arxiv_papers')
-                        with open('db/arxiv_papers/{}.json'.format(entry_id), 'w') as f:
-                            json.dump(entry, f, indent=2)
+                    with open('db/arxiv_papers/{}.json'.format(entry_id), 'w') as f:
+                        json.dump(entry, f, indent=2)
         else:
             print("Status code: " + result.status_code)
 

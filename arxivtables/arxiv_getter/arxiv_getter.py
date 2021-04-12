@@ -30,14 +30,14 @@ class ArxivGetter:
             String of where extracted file is on the disk.
 
         Raises:
-
+            None
         """
         if not os.path.exists('downloads/{}/{}/{}/{}.tar.gz'.format(self.year, self.month, self.id, self.paper_id)):
             result = requests.get(
                 'https://arxiv.org/e-print/' + self.paper_id, stream='true')
             if result.status_code == 200:
                 if not os.path.exists('downloads/{}/{}/{}'.format(self.year, self.month, self.id)):
-                    os.mkdir('downloads/{}/{}/{}'.format(self.year, self.month, self.id))
+                    os.makedirs('downloads/{}/{}/{}'.format(self.year, self.month, self.id), exist_ok=True)
                 with open('downloads/{}/{}/{}/{}.tar.gz'.format(self.year, self.month, self.id, self.paper_id),
                           'wb') as f:
                     f.write(result.raw.read())
@@ -59,7 +59,7 @@ class ArxivGetter:
             FileNotFoundError
         """
         try:
-            shutil.rmtree('downloads/{}/{}/{}'.format(self.year, self.month, self.id), ignore_errors=True)
+            shutil.rmtree('downloads/{}/{}/{}/{}'.format(self.year, self.month, self.id, self.paper_id), ignore_errors=True)
             return True
         except Exception as e:
             print(e)
