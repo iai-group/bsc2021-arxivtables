@@ -13,7 +13,18 @@ from arxivtables.table_extractor.table_parser import TableParser
 
 
 def set_up_mongo(url='localhost'):
-    """"Simple
+    """"Simple MongoDB client setup
+
+    Args:
+        url:
+            (optional) String of MongoDB url.
+            Defaults to 'localhost'
+    Returns:
+        client: MongoDB client
+        db: MongoDB client db
+        collection: MongoDB client db collection
+    Raises:
+        None
     """
     client = MongoClient(url, 27017)
     db = client['db']

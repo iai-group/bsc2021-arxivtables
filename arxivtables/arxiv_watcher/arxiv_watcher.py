@@ -48,8 +48,6 @@ class ArxivWatcher:
                     entry_authors = []
                     for c in child:
                         if c.tag == "{http://www.w3.org/2005/Atom}id": entry_id, entry_url = c.text, c.text
-                        entry_url = entry_id
-                        if c.tag == "{http://www.w3.org/2005/Atom}id": entry_id, entry_url = c.text, c.text
                         entry_id = entry_id.split('/')[-1].split('v')[0]
                         if c.tag == "{http://www.w3.org/2005/Atom}title": entry_title = c.text
                         if c.tag == "{http://www.w3.org/2005/Atom}published": entry_published = c.text
