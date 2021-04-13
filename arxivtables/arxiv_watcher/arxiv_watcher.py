@@ -9,6 +9,7 @@ from xml.etree.ElementTree import fromstring
 
 current_date = str(datetime.date(datetime.now())).replace('-', '')
 
+
 class ArxivWatcher:
     def __init__(self):
         self.previously_loaded_ids = self.read_previously_loaded_ids()
@@ -33,7 +34,7 @@ class ArxivWatcher:
 
                 Raises:
 
-                """
+            """
         base_url = 'http://export.arxiv.org/api/query?'
         query = 'search_query=all:all&sortBy=submittedDate&sortOrder=descending&max_results=500'
         result = requests.get(base_url + query)
@@ -72,11 +73,25 @@ class ArxivWatcher:
                             f.write('\n')
                         if not os.path.exists('db/arxiv_papers'):
                             os.mkdir('db/arxiv_papers')
-                        with open('db/arxiv_papers/{}.json'.format(entry_id), 'w') as f:
-                            json.dump(entry, f, indent=2)
+                    with open('db/arxiv_papers/{}.json'.format(entry_id), 'w') as f:
+                        json.dump(entry, f, indent=2)
         else:
             print("Status code: " + result.status_code)
 
-        with open('logs/downloader/{}.log'.format(current_date), 'r') as f:
-            ids = f.readlines()
-        return [pid[:-1] for pid in ids]
+    def get_ids_from_log(self, date=current_date):
+        """
+                        Args:
+                            date - Date string in YYYMMDD format
+
+                        Returns:
+                            Array of stings representing ID
+
+                        Raises:
+                            FileNotFoundError
+                    """
+        try:
+            with open('logs/downloader/{}.log'.format(date), 'r') as f:
+                ids = f.readlines()
+            return [pid[:-1] for pid in ids]
+        except FileNotFoundError:
+            raise FileNotFoundError
