@@ -94,12 +94,5 @@ def run_tables(downloader_date=str(datetime.date(datetime.now())).replace('-', '
     if mongo:
         client.close()
 
-    for jsonFile in os.listdir('db/arxiv_papers/'):
-        with open('db/arxiv_papers/' + jsonFile) as jf:
-            jf = json.load(jf)
-            if len(jf["tables"]) > 0:
-                print(jsonFile)
-
-
 if __name__ == '__main__':
     argh.dispatch_command(run_tables)
