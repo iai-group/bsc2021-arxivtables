@@ -7,14 +7,22 @@ import requests
 from datetime import datetime
 from xml.etree.ElementTree import fromstring
 
-current_date = str(datetime.date(datetime.now())).replace('-', '')
-
 
 class ArxivWatcher:
     def __init__(self):
         self.previously_loaded_ids = self.read_previously_loaded_ids()
+        self.current_date = str(datetime.date(datetime.now())).replace('-', '')
 
     def read_previously_loaded_ids(self):
+        """Read previously loaded IDs from the log file
+
+            Args: None
+
+            Returns:
+                IDs of papers previously loaded as list of strings
+
+            Raises: Nothing
+        """
         if not os.path.exists('logs/downloader'):
             os.mkdir('logs/downloader')
         try:
@@ -38,7 +46,7 @@ class ArxivWatcher:
         base_url = 'http://export.arxiv.org/api/query?'
         query = 'search_query=all:all&sortBy=submittedDate&sortOrder=descending&max_results=500'
         result = requests.get(base_url + query)
-        with open('logs/downloader/{}.log'.format(current_date), 'a') as f:
+        with open('logs/downloader/{}.log'.format(self.current_date), 'a') as f:
             f.write('')
         if result.status_code == 200:
             string_xml = result.content
@@ -66,7 +74,7 @@ class ArxivWatcher:
                         with open('logs/downloader/previously_loaded_ids.log', 'a') as f:
                             f.write(entry_id)
                             f.write('\n')
-                        with open('logs/downloader/{}.log'.format(current_date), 'a') as f:
+                        with open('logs/downloader/{}.log'.format(self.current_date), 'a') as f:
                             f.write(entry_id)
                             f.write('\n')
                         if not os.path.exists('db/arxiv_papers'):
@@ -76,17 +84,19 @@ class ArxivWatcher:
         else:
             print("Status code: " + result.status_code)
 
-    def get_ids_from_log(self, date=current_date):
+    def get_ids_from_log(self, date=None):
         """
-                        Args:
-                            date - Date string in YYYMMDD format
+            Args:
+                date - Date string in YYYMMDD format
 
-                        Returns:
-                            Array of stings representing ID
+            Returns:
+                Array of stings representing ID
 
-                        Raises:
-                            FileNotFoundError
-                    """
+            Raises:
+                FileNotFoundError
+        """
+        if date is None:
+            date = self.current_date
         try:
             with open('logs/downloader/{}.log'.format(date), 'r') as f:
                 ids = f.readlines()
