@@ -4,6 +4,7 @@ __maintainer__ = 'Rebeca Pop, David Ramsay'
 import os
 import json
 import argh
+import yaml
 from datetime import datetime
 from pymongo import MongoClient
 from arxivtables.arxiv_getter.arxiv_getter import ArxivGetter
@@ -11,14 +12,19 @@ from arxivtables.arxiv_watcher.arxiv_watcher import ArxivWatcher
 from arxivtables.table_extractor.table_extractor import TableExtractor
 from arxivtables.table_extractor.table_parser import TableParser
 
+with open("config.yml", "r") as ymlfile:
+    cfg = yaml.load(ymlfile)
 
-def set_up_mongo(url='localhost'):
+date = cfg["other"]["date"]["date"] if cfg["other"]["date"]["use_date"] else str(datetime.date(datetime.now())).replace(
+    '-', '')
+
+
+def set_up_mongo(url):
     """"Simple MongoDB client setup
 
     Args:
         url:
-            (optional) String of MongoDB url.
-            Defaults to 'localhost'
+            String of MongoDB url.
     Returns:
         client: MongoDB client
         db: MongoDB client db
@@ -32,7 +38,7 @@ def set_up_mongo(url='localhost'):
     return client, db, collection
 
 
-def run_tables(downloader_date=str(datetime.date(datetime.now())).replace('-', ''), mongo=False, url='localhost'):
+def run_tables(downloader_date=date, mongo=cfg["mongodb"]["use_mongo"], url=cfg["mongodb"]["url"]):
     """"Main method that handles fetching, downloading, extracting, and saving arXiv data.
 
     Args:
@@ -93,6 +99,7 @@ def run_tables(downloader_date=str(datetime.date(datetime.now())).replace('-', '
         ag.delete()
     if mongo:
         client.close()
+
 
 if __name__ == '__main__':
     argh.dispatch_command(run_tables)

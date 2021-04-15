@@ -1,0 +1,7 @@
+other:
+  date:
+    use_date: no # yes | no
+    date: # format=YYYMMDD
+mongodb:
+  use_mongo: yes # yes | no
+  url: mongo # mongo | localhost | custom url
