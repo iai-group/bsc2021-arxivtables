@@ -7,7 +7,7 @@ if __name__ == "__main__":
     paper_id = input("Please input the Arxiv paper ID: ")
 
     try:
-       with open("db/arxiv_papers/" + paper_id + ".json", "r") as f:
+        with open("db/arxiv_papers/" + paper_id + ".json", "r") as f:
             paper_dict = json.load(f)
 
         tables = paper_dict["tables"]

@@ -23,6 +23,7 @@ pytest==6.2.3
 pytest-cov==2.5.1
 PyYAML==5.4.1
 requests==2.25.1
+tabulate==0.8.9
 tex2py==0.0.5
 TexSoup==0.1.4
 toml==0.10.2
