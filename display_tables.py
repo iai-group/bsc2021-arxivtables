@@ -28,4 +28,3 @@ if __name__ == "__main__":
 
     except FileNotFoundError:
         print("The requested paper ID was not found in the database.")
-            f.close()
