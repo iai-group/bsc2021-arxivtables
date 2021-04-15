@@ -1,11 +1,10 @@
 {
-    "id": "<documentId>",
+    "p_id": "<documentId>",
     "title": "",
     "dateFetched": "",
     "authors": [
         "name1",
-        "name2",
-        ...
+        "name2"
     ],
     "href": "",
     "publicationDate": "",

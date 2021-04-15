@@ -5,13 +5,11 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    command: -m -u database
-    # command: -d YYYYMMDD -m -u localhost|database
     volumes:
       - "./db:/db"
       - "./logs:/logs"
       - "./downloads:/downloads"
-    depends_on:git s
+    depends_on:
       - database
   database:
     image: mongo:4.4.4
