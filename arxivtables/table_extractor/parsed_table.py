@@ -4,11 +4,10 @@ __maintainer__ = 'Rebeca Pop, David Ramsay'
 
 class ParsedTable:
 
-    def __init__(self, caption : str, headings, data):
+    def __init__(self, caption: str, headings, data):
         self.__caption = caption
         self.__headings = headings
         self.__data = data
-
 
     @property
     def caption(self):
@@ -29,5 +28,3 @@ class ParsedTable:
             "rows": self.data
         }
         return table_dict
-
-
