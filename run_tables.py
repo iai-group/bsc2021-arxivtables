@@ -20,7 +20,7 @@ date = cfg["other"]["date"]["date"] if cfg["other"]["date"]["use_date"] else str
 
 
 def set_up_mongo(url):
-    """"Simple MongoDB client setup
+    """Simple MongoDB client setup
 
     Args:
         url:
