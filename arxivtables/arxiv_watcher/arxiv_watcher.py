@@ -44,7 +44,11 @@ class ArxivWatcher:
 
             """
         base_url = 'http://export.arxiv.org/api/query?'
-        query = 'search_query=all:all&sortBy=submittedDate&sortOrder=descending&max_results=500'
+        query = \
+            'search_query=all:all&' \
+            'sortBy=submittedDate&' \
+            'sortOrder=descending&' \
+            'max_results=500'
         result = requests.get(base_url + query)
         with open('logs/downloader/{}.log'.format(self.current_date), 'a') as f:
             f.write('')
@@ -55,11 +59,15 @@ class ArxivWatcher:
                 if child.tag == "{http://www.w3.org/2005/Atom}entry":
                     entry_authors = []
                     for c in child:
-                        if c.tag == "{http://www.w3.org/2005/Atom}id": entry_id, entry_url = c.text, c.text
+                        if c.tag == "{http://www.w3.org/2005/Atom}id":
+                            entry_id, entry_url = c.text, c.text
                         entry_id = entry_id.split('/')[-1].split('v')[0]
-                        if c.tag == "{http://www.w3.org/2005/Atom}title": entry_title = c.text
-                        if c.tag == "{http://www.w3.org/2005/Atom}published": entry_published = c.text
-                        if c.tag == "{http://www.w3.org/2005/Atom}author": entry_authors.append(c[0].text)
+                        if c.tag == "{http://www.w3.org/2005/Atom}title":
+                            entry_title = c.text
+                        if c.tag == "{http://www.w3.org/2005/Atom}published":
+                            entry_published = c.text
+                        if c.tag == "{http://www.w3.org/2005/Atom}author":
+                            entry_authors.append(c[0].text)
                     entry = {
                         "p_id": entry_id,
                         "title": entry_title,
@@ -71,15 +79,22 @@ class ArxivWatcher:
                     }
 
                     if entry_id not in self.previously_loaded_ids:
-                        with open('logs/downloader/previously_loaded_ids.log', 'a') as f:
+                        with open(
+                                'logs/downloader/previously_loaded_ids.log',
+                                'a'
+                        ) as f:
                             f.write(entry_id)
                             f.write('\n')
-                        with open('logs/downloader/{}.log'.format(self.current_date), 'a') as f:
+                        with open('logs/downloader/{}.log'.format(
+                                self.current_date), 'a') as f:
                             f.write(entry_id)
                             f.write('\n')
-                        if not os.path.exists('db/arxiv_papers/{}/{}'.format(entry_id[0:2], entry_id[2:4])):
-                            os.mkdir('db/arxiv_papers{}/{}'.format(entry_id[0:2], entry_id[2:4]))
-                    with open('db/arxiv_papers/{}/{}/{}.json'.format(entry_id[0:2], entry_id[2:4], entry_id), 'w') as f:
+                        if not os.path.exists('db/arxiv_papers/{}/{}'.format(
+                                entry_id[0:2], entry_id[2:4])):
+                            os.mkdir('db/arxiv_papers{}/{}'.format(
+                                entry_id[0:2], entry_id[2:4]))
+                    with open('db/arxiv_papers/{}/{}/{}.json'.format(
+                            entry_id[0:2], entry_id[2:4], entry_id), 'w') as f:
                         json.dump(entry, f, indent=2)
         else:
             print("Status code: " + result.status_code)

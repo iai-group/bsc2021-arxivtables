@@ -10,14 +10,17 @@ class TableExtractor:
         self.name = 'Table Extractor for {}'.format(paper_id.split('/')[-1])
         self.paper_id = paper_id
         self.split_paper_id = self.paper_id.split('.')
-        self.immutable = (self.split_paper_id[0][0:2], self.split_paper_id[0][2:], self.split_paper_id[1])
+        self.immutable = (self.split_paper_id[0][0:2],
+                          self.split_paper_id[0][2:], self.split_paper_id[1])
         self.year, self.month, self.id = self.immutable
 
     def extract_files(self):
         try:
-            tar = tarfile.open('downloads/{}/{}/{}/{}.tar.gz'.format(self.year, self.month, self.id, self.paper_id),
+            tar = tarfile.open('downloads/{}/{}/{}/{}.tar.gz'.format(
+                self.year, self.month, self.id, self.paper_id),
                                'r:gz')
-            tar.extractall('downloads/{}/{}/{}/{}'.format(self.year, self.month, self.id, self.paper_id))
+            tar.extractall('downloads/{}/{}/{}/{}'.format(
+                self.year, self.month, self.id, self.paper_id))
             tar.close()
             print('extracted')
         except Exception as e:
@@ -25,7 +28,8 @@ class TableExtractor:
 
     def extract_tables(self):
         tex_files = []
-        for root, dirs, files in os.walk('downloads/{}/{}/{}/{}'.format(self.year, self.month, self.id, self.paper_id)):
+        for root, dirs, files in os.walk('downloads/{}/{}/{}/{}'.format(
+                self.year, self.month, self.id, self.paper_id)):
             for file in files:
                 if file.endswith('.tex'):
                     tex_files.append(root + '/' + file)

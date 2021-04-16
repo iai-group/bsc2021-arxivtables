@@ -18,11 +18,13 @@ class ArxivGetter:
     def __init__(self, paper_id: str):
         self.paper_id = paper_id
         self.split_paper_id = self.paper_id.split('.')
-        self.immutable = (self.split_paper_id[0][0:2], self.split_paper_id[0][2:], self.split_paper_id[1])
+        self.immutable = (self.split_paper_id[0][0:2],
+                          self.split_paper_id[0][2:], self.split_paper_id[1])
         self.year, self.month, self.id = self.immutable
 
     def get_paper(self):
-        """Retrieve .tar.gz source from arXiv given a specific paper ID, place to downloads directory.
+        """Retrieve .tar.gz source from arXiv given a specific paper ID,
+        place to downloads directory.
 
         Args: None
 
@@ -32,18 +34,24 @@ class ArxivGetter:
         Raises:
             None
         """
-        if not os.path.exists('downloads/{}/{}/{}/{}.tar.gz'.format(self.year, self.month, self.id, self.paper_id)):
+        if not os.path.exists('downloads/{}/{}/{}/{}.tar.gz'.format(
+                self.year, self.month, self.id, self.paper_id)):
             result = requests.get(
                 'https://arxiv.org/e-print/' + self.paper_id, stream='true')
             if result.status_code == 200:
-                if not os.path.exists('downloads/{}/{}/{}'.format(self.year, self.month, self.id)):
-                    os.makedirs('downloads/{}/{}/{}'.format(self.year, self.month, self.id), exist_ok=True)
-                with open('downloads/{}/{}/{}/{}.tar.gz'.format(self.year, self.month, self.id, self.paper_id),
+                if not os.path.exists('downloads/{}/{}/{}'.format(
+                        self.year, self.month, self.id)):
+                    os.makedirs('downloads/{}/{}/{}'.format(
+                        self.year, self.month, self.id), exist_ok=True)
+                with open('downloads/{}/{}/{}/{}.tar.gz'.format(
+                        self.year, self.month, self.id, self.paper_id),
                           'wb') as f:
                     f.write(result.raw.read())
                 print('Downloaded and saved {}.tar.gz'.format(self.paper_id))
-        if '{}.tar.gz'.format(self.paper_id) in os.listdir('downloads/{}/{}/{}'.format(self.year, self.month, self.id)):
-            return 'downloads/{}/{}/{}/{}.tar.gz'.format(self.year, self.month, self.id, self.paper_id)
+        if '{}.tar.gz'.format(self.paper_id) in os.listdir(
+                'downloads/{}/{}/{}'.format(self.year, self.month, self.id)):
+            return 'downloads/{}/{}/{}/{}.tar.gz'.format(
+                self.year, self.month, self.id, self.paper_id)
         else:
             return False
 
@@ -59,7 +67,9 @@ class ArxivGetter:
             FileNotFoundError
         """
         try:
-            shutil.rmtree('downloads/{}/{}/{}/{}'.format(self.year, self.month, self.id, self.paper_id), ignore_errors=True)
+            shutil.rmtree('downloads/{}/{}/{}/{}'.format(
+                self.year, self.month, self.id, self.paper_id),
+                ignore_errors=True)
             return True
         except Exception as e:
             print(e)

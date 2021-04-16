@@ -20,7 +20,8 @@ class TableParser:
             caption = ""
         else:
             caption_str = str(caption_source)
-            caption = caption_str[caption_str.find("{") + 1: len(caption_str) - 1]
+            caption = caption_str[
+                      caption_str.find("{") + 1: len(caption_str) - 1]
 
             if not is_raw:
                 caption = self.__sanitize_latex_text(caption).strip()
@@ -55,15 +56,18 @@ class TableParser:
         if toprule_pos == -1 or midrule_pos == -1 or botrule_pos == -1:
             return latex_source
 
-        old_heading = latex_source[toprule_pos + len("\\toprule") + 1:midrule_pos - 2]
+        old_heading = latex_source[
+                      toprule_pos + len("\\toprule") + 1:midrule_pos - 2]
         heading = old_heading.replace("&\n", "&")
 
 
 
-        old_rows = latex_source[midrule_pos + len("\\midrule") + 1:botrule_pos - 2]
+        old_rows = latex_source[
+                   midrule_pos + len("\\midrule") + 1:botrule_pos - 2]
         rows = old_rows.replace("&\n", "&")
 
-        return latex_source.replace(old_heading, heading).replace(old_rows, rows)
+        return latex_source.replace(
+            old_heading, heading).replace(old_rows, rows)
 
     def __sanitize_latex_text_list(self, strlist : list):
         result_list = []
