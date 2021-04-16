@@ -80,7 +80,7 @@ def run_tables(downloader_date=date, mongo=cfg["mongodb"]["use_mongo"], url=cfg[
             tp = TableParser()
             parsed = None
             paper_dict = None
-            with open('db/arxiv_papers/' + p_id + '.json') as j:
+            with open('db/arxiv_papers/{}/{}/{}.json'.format(p_id[0:2], p_id[2:4], p_id)) as j:
                 paper_dict = json.load(j)
             for table in tables:
                 try:
@@ -88,7 +88,7 @@ def run_tables(downloader_date=date, mongo=cfg["mongodb"]["use_mongo"], url=cfg[
                     paper_dict["tables"].append(parsed.toJSON())
                 except Exception as e:
                     print(e)
-            with open('db/arxiv_papers/' + p_id + '.json', 'w') as j:
+            with open('db/arxiv_papers/{}/{}/{}.json'.format(p_id[0:2], p_id[2:4], p_id), 'w') as j:
                 json.dump(paper_dict, j, indent=2)
             if mongo:
                 collection_arxiv_papers.replace_one({'p_id': p_id}, paper_dict, upsert=True)
