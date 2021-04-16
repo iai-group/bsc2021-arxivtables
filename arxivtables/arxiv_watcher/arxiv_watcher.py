@@ -77,9 +77,9 @@ class ArxivWatcher:
                         with open('logs/downloader/{}.log'.format(self.current_date), 'a') as f:
                             f.write(entry_id)
                             f.write('\n')
-                        if not os.path.exists('db/arxiv_papers'):
-                            os.mkdir('db/arxiv_papers')
-                    with open('db/arxiv_papers/{}.json'.format(entry_id), 'w') as f:
+                        if not os.path.exists('db/arxiv_papers/{}/{}'.format(entry_id[0:2], entry_id[2:4])):
+                            os.mkdir('db/arxiv_papers{}/{}'.format(entry_id[0:2], entry_id[2:4]))
+                    with open('db/arxiv_papers/{}/{}/{}.json'.format(entry_id[0:2], entry_id[2:4], entry_id), 'w') as f:
                         json.dump(entry, f, indent=2)
         else:
             print("Status code: " + result.status_code)
