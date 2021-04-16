@@ -4,4 +4,4 @@ other:
     date: # format=YYYMMDD
 mongodb:
   use_mongo: yes # yes | no
-  url: mongo # mongo | localhost | custom url
+  url: database # database | localhost | custom url
