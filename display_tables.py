@@ -15,7 +15,8 @@ if __name__ == "__main__":
             print("There are not any tables in the specified paper.")
         else:
             try:
-                table_id = int(input("Please enter the table ID (0 - " + str(len(tables) - 1) + "): "))
+                table_id = int(input("Please enter the table ID (0 - " + str(
+                    len(tables) - 1) + "): "))
                 table = tables[table_id]
 
                 if "caption" in table and table["caption"]:

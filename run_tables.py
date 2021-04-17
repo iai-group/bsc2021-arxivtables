@@ -15,8 +15,10 @@ from arxivtables.table_extractor.table_parser import TableParser
 with open("config.yml", "r") as ymlfile:
     cfg = yaml.load(ymlfile)
 
-date = cfg["other"]["date"]["date"] if cfg["other"]["date"]["use_date"] else str(datetime.date(datetime.now())).replace(
-    '-', '')
+if cfg["other"]["date"]["use_date"]:
+    date = cfg["other"]["date"]["date"]
+else:
+    date = str(datetime.date(datetime.now())).replace('-', '')
 
 
 def set_up_mongo(url):
@@ -38,18 +40,24 @@ def set_up_mongo(url):
     return client, db, collection
 
 
-def run_tables(downloader_date=date, mongo=cfg["mongodb"]["use_mongo"], url=cfg["mongodb"]["url"]):
-    """"Main method that handles fetching, downloading, extracting, and saving arXiv data.
+def run_tables(
+        downloader_date=date, mongo=cfg["mongodb"]["use_mongo"],
+        url=cfg["mongodb"]["url"]
+        ):
+    """
+    Main method that handles fetching, downloading, extracting, and saving
+    arXiv data.
 
     Args:
         downloader_date:
-            (optional) Date of log file to run table extraction on, in YYYMMDD format.
+            (optional) Date of log file to run table extraction, YYYMMDD format.
             Defaults to current date.
         mongo:
             (optional) Boolean flag to signal use of MongoDB.
             Defaults to False.
         url:
-            If using MongoDB, supply url.  Likely 'database' (if using Docker) or 'localhost' (if running local).
+            If using MongoDB, supply url.
+            Likely 'database' or 'localhost'.
             Defaults to 'localhost'.
     Returns:
         No return
@@ -80,7 +88,11 @@ def run_tables(downloader_date=date, mongo=cfg["mongodb"]["use_mongo"], url=cfg[
             tp = TableParser()
             parsed = None
             paper_dict = None
-            with open('db/arxiv_papers/{}/{}/{}.json'.format(p_id[0:2], p_id[2:4], p_id)) as j:
+            with open(
+                    'db/arxiv_papers/{}/{}/{}.json'.format(
+                            p_id[0:2], p_id[2:4], p_id
+                    )
+            ) as j:
                 paper_dict = json.load(j)
             for table in tables:
                 try:
@@ -88,10 +100,16 @@ def run_tables(downloader_date=date, mongo=cfg["mongodb"]["use_mongo"], url=cfg[
                     paper_dict["tables"].append(parsed.toJSON())
                 except Exception as e:
                     print(e)
-            with open('db/arxiv_papers/{}/{}/{}.json'.format(p_id[0:2], p_id[2:4], p_id), 'w') as j:
+            with open(
+                    'db/arxiv_papers/{}/{}/{}.json'.format(
+                            p_id[0:2], p_id[2:4], p_id
+                    ), 'w'
+            ) as j:
                 json.dump(paper_dict, j, indent=2)
             if mongo:
-                collection_arxiv_papers.replace_one({'p_id': p_id}, paper_dict, upsert=True)
+                collection_arxiv_papers.replace_one(
+                    {'p_id': p_id}, paper_dict, upsert=True
+                )
                 print(p_id + " inserted")
             paper_dict = None
         except Exception as e:
