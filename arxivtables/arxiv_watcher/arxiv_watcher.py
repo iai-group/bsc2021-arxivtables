@@ -42,7 +42,7 @@ class ArxivWatcher:
 
                 Raises:
 
-            """
+        """
         base_url = 'http://export.arxiv.org/api/query?'
         query = \
             'search_query=all:all&' \
@@ -50,7 +50,8 @@ class ArxivWatcher:
             'sortOrder=descending&' \
             'max_results=500'
         result = requests.get(base_url + query)
-        with open('logs/downloader/{}.log'.format(self.current_date), 'a') as f:
+        with open('logs/downloader/{}.log'.format(
+                self.current_date), 'a') as f:
             f.write('')
         if result.status_code == 200:
             string_xml = result.content
