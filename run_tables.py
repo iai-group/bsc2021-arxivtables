@@ -69,7 +69,8 @@ def run_tables(
 
     aw = ArxivWatcher()
 
-    if downloader_date == str(datetime.date(datetime.now())).replace('-', ''):
+    if downloader_date == str(datetime.date(datetime.now()))\
+            .replace('-', ''):
         aw.get_latest_papers()
 
     paper_ids = aw.get_ids_from_log(downloader_date)
