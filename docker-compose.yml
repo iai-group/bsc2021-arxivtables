@@ -1,7 +1,7 @@
 version: '3.5'
 services:
   table_extractor:
-    image: arxiv_test
+    image: table_extractor:latest
     build:
       context: .
       dockerfile: Dockerfile
