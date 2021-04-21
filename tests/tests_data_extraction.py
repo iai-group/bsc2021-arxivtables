@@ -24,7 +24,8 @@ def get_parsed_table_and_reference(table, variant):
         tp = TableParser()
         tables = te.extract_tables()
         parsed_table = tp.parse(tables[0], variant == "raw")
-        f = open(DIR + '/references/' + variant + '_tables/' + table.split('.')[0] + '.json')
+        f = open(DIR + '/references/' + variant + '_tables/' +
+                 table.split('.')[0] + '.json')
         reference = json.load(f)
         f.close()
         return parsed_table, reference
@@ -37,22 +38,28 @@ class TestCleaned(unittest.TestCase):
         for table in get_file_in_directory(DIR + '/tables/'):
             if table == 'table_5.tex':
                 continue
-            parsed_table, reference = get_parsed_table_and_reference(table, "cleaned")
-            self.assertEqual(reference["<documentId>"]["<tableId>"]["table"]["caption"], parsed_table.caption)
+            parsed_table, reference = \
+                get_parsed_table_and_reference(table, "cleaned")
+            self.assertEqual(reference["<documentId>"]["<tableId>"]["table"]
+                             ["caption"], parsed_table.caption)
 
     def test_headings(self):
         for table in get_file_in_directory(DIR + '/tables/'):
             if table == 'table_5.tex':
                 continue
-            parsed_table, reference = get_parsed_table_and_reference(table, "cleaned")
-            self.assertEqual(reference["<documentId>"]["<tableId>"]["table"]["headers"], parsed_table.headings)
+            parsed_table, reference = \
+                get_parsed_table_and_reference(table, "cleaned")
+            self.assertEqual(reference["<documentId>"]["<tableId>"]["table"]
+                             ["headers"], parsed_table.headings)
 
     def test_data(self):
         for table in get_file_in_directory(DIR + '/tables/'):
             if table == 'table_5.tex':
                 continue
-            parsed_table, reference = get_parsed_table_and_reference(table, "cleaned")
-            self.assertEqual(reference["<documentId>"]["<tableId>"]["table"]["rows"], parsed_table.data)
+            parsed_table, reference = \
+                get_parsed_table_and_reference(table, "cleaned")
+            self.assertEqual(reference["<documentId>"]["<tableId>"]["table"]
+                             ["rows"], parsed_table.data)
 
 
 class TestRaw(unittest.TestCase):
@@ -60,20 +67,26 @@ class TestRaw(unittest.TestCase):
         for table in get_file_in_directory(DIR + '/tables/'):
             if table == 'table_5.tex':
                 continue
-            parsed_table, reference = get_parsed_table_and_reference(table, "raw")
-            self.assertEqual(reference["<documentId>"]["<tableId>"]["table"]["caption"], parsed_table.caption)
+            parsed_table, reference = \
+                get_parsed_table_and_reference(table, "raw")
+            self.assertEqual(reference["<documentId>"]["<tableId>"]["table"]
+                             ["caption"], parsed_table.caption)
 
     def test_headings(self):
         for table in get_file_in_directory(DIR + '/tables/'):
             if table == 'table_5.tex':
                 continue
-            parsed_table, reference = get_parsed_table_and_reference(table, "raw")
-            self.assertEqual(reference["<documentId>"]["<tableId>"]["table"]["headers"], parsed_table.headings)
+            parsed_table, reference = \
+                get_parsed_table_and_reference(table, "raw")
+            self.assertEqual(reference["<documentId>"]["<tableId>"]["table"]
+                             ["headers"], parsed_table.headings)
 
     def test_data(self):
         for table in get_file_in_directory(DIR + '/tables/'):
             if table == 'table_5.tex':
                 continue
-            parsed_table, reference = get_parsed_table_and_reference(table, "raw")
-            self.assertEqual(reference["<documentId>"]["<tableId>"]["table"]["rows"], parsed_table.data)
+            parsed_table, reference = \
+                get_parsed_table_and_reference(table, "raw")
+            self.assertEqual(reference["<documentId>"]["<tableId>"]["table"]
+                             ["rows"], parsed_table.data)
 
