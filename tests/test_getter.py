@@ -12,7 +12,7 @@ class TestGetter(unittest.TestCase):
 
     def test_get(self):
         path = self.ag.get_paper()
-        self.assertEqual(path, 'downloads/2103.10359')
+        self.assertEqual(path, 'downloads/21/03/10359/2103.10359.tar.gz')
 
     def test_delete_file_exist(self):
         deleted = self.ag.delete()

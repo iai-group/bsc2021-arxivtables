@@ -1,11 +1,11 @@
 import json
+import argh
 from tabulate import tabulate
 
 
-if __name__ == "__main__":
-
-    paper_id = input("Please input the Arxiv paper ID: ")
-
+def display_tables(paper_id = None, table_id = None):
+    if not paper_id:
+        paper_id = input("Please input the Arxiv paper ID: ")
     try:
         with open("db/arxiv_papers/" + paper_id + ".json", "r") as f:
             paper_dict = json.load(f)
@@ -15,8 +15,18 @@ if __name__ == "__main__":
             print("There are not any tables in the specified paper.")
         else:
             try:
-                table_id = int(input("Please enter the table ID (0 - " + str(
-                    len(tables) - 1) + "): "))
+                if not table_id:
+                    print("The current paper contains the following tables:")
+                    for index in range(len(tables)):
+                        caption = "[No caption found]"
+                        if "caption" in tables[index] \
+                                and tables[index]["caption"]:
+                            caption = tables[index]["caption"]
+                        print(index, ":", caption)
+                    table_id = int(input("Please enter the table ID (0 - " +
+                                         str(len(tables) - 1) + "): "))
+                else:
+                    table_id = int(table_id)
                 table = tables[table_id]
 
                 if "caption" in table and table["caption"]:
@@ -29,3 +39,7 @@ if __name__ == "__main__":
 
     except FileNotFoundError:
         print("The requested paper ID was not found in the database.")
+
+
+if __name__ == "__main__":
+    argh.dispatch_command(display_tables)
