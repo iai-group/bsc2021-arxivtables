@@ -1,0 +1,205 @@
+\begin{table}[ht!]
+\renewcommand{\arraystretch}{1.5}
+\centering
+\caption{Enumeration of characteristics of $M=2$ Fock space in Jordan-Wigner
+representation. First column: Base-2 qubit occupation string (i.e., qubit
+computational
+basis state). Second column: Base-10 qubit occupation string (i.e.,
+base-10 index for vector and matrix quantities). 
+Third column: Slater determinantal
+configuration represented by this qubit computational basis state.
+Fourth column: number of
+$\alpha$ electrons in this configuration (always a proper eigenstate).
+Fifth column: number of
+$\beta$ electrons in this configuration (always a proper eigenstate).
+Sixth column: is this configuration a valid configuration state function (CSF),
+i.e., a proper eigenstate of $\hat S^2$?
+Seventh column: if yes to the previous question, $S$ eigenvalue for this
+simultaneous Slater determinant/CSF ($S=0$ - singlet, $S=1$ -
+doublet, $S=2$ - triplet, \ldots).}
+\label{tab:dets}
+\begin{tabular}{rrcrrrr}
+\hline 
+\hline 
+Base 2 & Base 10 & Determinant & $N_{\alpha}$ & $N_{\beta}$ &
+Is CSF? & $S$ \\
+\hline
+$|0000\rangle$ & $|\# 0\rangle$ & 
+\raisebox{6pt}{{\Qcircuit @R=0.6em @C=0.7em @! {
+ & \qw
+ & \qw
+ & \qw \\
+ & \qw
+ & \qw
+ & \qw \\
+}}}
+& 0 & 0 & Y & 0 \\
+\hline 
+$|0001\rangle$ & $|\# 1\rangle$ & 
+\raisebox{6pt}{{\Qcircuit @R=0.3em @C=0.45em @! {
+ & \qw
+ & \qw
+ & \qw \\
+ & \ctrl{0}
+ & \qw
+ & \qw \\
+}}}
+& 1 & 0 & Y & 1 \\
+\hline 
+$|0010\rangle$ & $|\# 2\rangle$ & 
+\raisebox{6pt}{{\Qcircuit @R=0.3em @C=0.3em @! {
+ & \qw
+ & \qw
+ & \qw \\
+ & \qw
+ & \ctrlo{0}
+ & \qw \\
+}}}
+& 0 & 1 & Y & 1 \\
+\hline 
+$|0011\rangle$ & $|\# 3\rangle$ & 
+\raisebox{6pt}{{\Qcircuit @R=0.3em @C=0.3em @! {
+ & \qw
+ & \qw
+ & \qw \\
+ & \ctrl{0}
+ & \ctrlo{0}
+ & \qw \\
+}}}
+& 1 & 1 & Y & 0 \\
+\hline 
+$|0100\rangle$ & $|\# 4\rangle$ & 
+\raisebox{6pt}{{\Qcircuit @R=0.3em @C=0.45em @! {
+ & \ctrl{0}
+ & \qw
+ & \qw \\
+ & \qw
+ & \qw
+ & \qw \\
+}}}
+& 1 & 0 & Y & 1 \\
+\hline 
+$|0101\rangle$ & $|\# 5\rangle$ & 
+\raisebox{6pt}{{\Qcircuit @R=0.3em @C=0.45em @! {
+ & \ctrl{0}
+ & \qw
+ & \qw \\
+ & \ctrl{0}
+ & \qw
+ & \qw \\
+}}}
+& 2 & 0 & Y & 2 \\
+\hline 
+$|0110\rangle$ & $|\# 6\rangle$ & 
+\raisebox{6pt}{{\Qcircuit @R=0.3em @C=0.3em @! {
+ & \ctrl{0}
+ & \qw
+ & \qw \\
+ & \qw
+ & \ctrlo{0}
+ & \qw \\
+}}}
+& 1 & 1 & N &   \\
+\hline 
+$|0111\rangle$ & $|\# 7\rangle$ & 
+\raisebox{6pt}{{\Qcircuit @R=0.3em @C=0.3em @! {
+ & \ctrl{0}
+ & \qw
+ & \qw \\
+ & \ctrl{0}
+ & \ctrlo{0}
+ & \qw \\
+}}}
+& 2 & 1 & Y & 1 \\
+\hline 
+$|1000\rangle$ & $|\# 8\rangle$ & 
+\raisebox{6pt}{{\Qcircuit @R=0.3em @C=0.3em @! {
+ & \qw
+ & \ctrlo{0}
+ & \qw \\
+ & \qw
+ & \qw
+ & \qw \\
+}}}
+& 0 & 1 & Y & 1 \\
+\hline 
+$|1001\rangle$ & $|\# 9\rangle$ & 
+\raisebox{6pt}{{\Qcircuit @R=0.3em @C=0.3em @! {
+ & \qw
+ & \ctrlo{0}
+ & \qw \\
+ & \ctrl{0}
+ & \qw
+ & \qw \\
+}}}
+& 1 & 1 & N &   \\
+\hline 
+$|1010\rangle$ & $|\#10\rangle$ & 
+\raisebox{6pt}{{\Qcircuit @R=0.3em @C=0.3em @! {
+ & \qw
+ & \ctrlo{0}
+ & \qw \\
+ & \qw
+ & \ctrlo{0}
+ & \qw \\
+}}}
+& 0 & 2 & Y & 2 \\
+\hline 
+$|1011\rangle$ & $|\#11\rangle$ & 
+\raisebox{6pt}{{\Qcircuit @R=0.3em @C=0.3em @! {
+ & \qw
+ & \ctrlo{0}
+ & \qw \\
+ & \ctrl{0}
+ & \ctrlo{0}
+ & \qw \\
+}}}
+& 1 & 2 & Y & 1 \\
+\hline 
+$|1100\rangle$ & $|\#12\rangle$ & 
+\raisebox{6pt}{{\Qcircuit @R=0.3em @C=0.3em @! {
+ & \ctrl{0}
+ & \ctrlo{0}
+ & \qw \\
+ & \qw
+ & \qw
+ & \qw \\
+}}}
+& 1 & 1 & Y & 0 \\
+\hline 
+$|1101\rangle$ & $|\#13\rangle$ & 
+\raisebox{6pt}{{\Qcircuit @R=0.3em @C=0.3em @! {
+ & \ctrl{0}
+ & \ctrlo{0}
+ & \qw \\
+ & \ctrl{0}
+ & \qw
+ & \qw \\
+}}}
+& 2 & 1 & Y & 1 \\
+\hline 
+$|1110\rangle$ & $|\#14\rangle$ & 
+\raisebox{6pt}{{\Qcircuit @R=0.3em @C=0.3em @! {
+ & \ctrl{0}
+ & \ctrlo{0}
+ & \qw \\
+ & \qw
+ & \ctrlo{0}
+ & \qw \\
+}}}
+& 1 & 2 & Y & 1 \\
+\hline 
+$|1111\rangle$ & $|\#15\rangle$ & 
+\raisebox{6pt}{{\Qcircuit @R=0.3em @C=0.3em @! {
+ & \ctrl{0}
+ & \ctrlo{0}
+ & \qw \\
+ & \ctrl{0}
+ & \ctrlo{0}
+ & \qw \\
+}}}
+& 2 & 2 & Y & 0 \\
+\hline 
+\hline 
+\end{tabular}
+\end{table}

@@ -21,7 +21,7 @@ class ParsedTable:
     def data(self):
         return self.__data
 
-    def toJSON(self) -> str:
+    def toJSON(self) -> dict:
         table_dict = {
             "caption": self.caption,
             "headers": self.headings,
