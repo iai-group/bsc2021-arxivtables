@@ -19,18 +19,17 @@ def get_file_in_directory(directory):
 
 
 def get_parsed_table_and_reference(table, variant):
-    try:
-        te = TableExtractor(DIR + '/tables/' + table)
-        tp = TableParser()
-        tables = te.extract_tables()
-        parsed_table = tp.parse(tables[0], variant == "raw")
-        f = open(DIR + '/references/' + variant + '_tables/' +
-                 table.split('.')[0] + '.json')
+    with open(DIR + '/tables/' + table) as f:
+        table_data = f.read()
+
+    tp = TableParser()
+    parsed_table = tp.parse(table_data, variant == "raw")
+
+    with open(DIR + '/references/' + variant + '_tables/' +
+              table.split('.')[0] + '.json') as f:
         reference = json.load(f)
-        f.close()
-        return parsed_table, reference
-    except Exception:
-        raise Exception
+
+    return parsed_table, reference
 
 
 class TestCleaned(unittest.TestCase):
@@ -38,7 +37,7 @@ class TestCleaned(unittest.TestCase):
         for table in get_file_in_directory(DIR + '/tables/'):
             if table == 'table_5.tex':
                 continue
-            parsed_table, reference =
+            parsed_table, reference = \
                 get_parsed_table_and_reference(table, "cleaned")
             self.assertEqual(reference["<documentId>"]["<tableId>"]["table"]
                              ["caption"], parsed_table.caption)
@@ -47,7 +46,7 @@ class TestCleaned(unittest.TestCase):
         for table in get_file_in_directory(DIR + '/tables/'):
             if table == 'table_5.tex':
                 continue
-            parsed_table, reference =
+            parsed_table, reference = \
                 get_parsed_table_and_reference(table, "cleaned")
             self.assertEqual(reference["<documentId>"]["<tableId>"]["table"]
                              ["headers"], parsed_table.headings)
@@ -56,7 +55,7 @@ class TestCleaned(unittest.TestCase):
         for table in get_file_in_directory(DIR + '/tables/'):
             if table == 'table_5.tex':
                 continue
-            parsed_table, reference =
+            parsed_table, reference = \
                 get_parsed_table_and_reference(table, "cleaned")
             self.assertEqual(reference["<documentId>"]["<tableId>"]["table"]
                              ["rows"], parsed_table.data)
@@ -67,7 +66,7 @@ class TestRaw(unittest.TestCase):
         for table in get_file_in_directory(DIR + '/tables/'):
             if table == 'table_5.tex':
                 continue
-            parsed_table, reference =
+            parsed_table, reference = \
                 get_parsed_table_and_reference(table, "raw")
             self.assertEqual(reference["<documentId>"]["<tableId>"]["table"]
                              ["caption"], parsed_table.caption)
@@ -76,7 +75,7 @@ class TestRaw(unittest.TestCase):
         for table in get_file_in_directory(DIR + '/tables/'):
             if table == 'table_5.tex':
                 continue
-            parsed_table, reference =
+            parsed_table, reference = \
                 get_parsed_table_and_reference(table, "raw")
             self.assertEqual(reference["<documentId>"]["<tableId>"]["table"]
                              ["headers"], parsed_table.headings)
@@ -85,7 +84,7 @@ class TestRaw(unittest.TestCase):
         for table in get_file_in_directory(DIR + '/tables/'):
             if table == 'table_5.tex':
                 continue
-            parsed_table, reference =
+            parsed_table, reference = \
                 get_parsed_table_and_reference(table, "raw")
             self.assertEqual(reference["<documentId>"]["<tableId>"]["table"]
                              ["rows"], parsed_table.data)
