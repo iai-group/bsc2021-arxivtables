@@ -35,17 +35,14 @@ def get_parsed_table_and_reference(table, variant):
 class TestCleaned(unittest.TestCase):
     def test_caption(self):
         for table in get_file_in_directory(DIR + '/tables/'):
-            if table == 'table_5.tex':
-                continue
             parsed_table, reference = \
                 get_parsed_table_and_reference(table, "cleaned")
+
             self.assertEqual(reference["<documentId>"]["<tableId>"]["table"]
                              ["caption"], parsed_table.caption)
 
     def test_headings(self):
         for table in get_file_in_directory(DIR + '/tables/'):
-            if table == 'table_5.tex':
-                continue
             parsed_table, reference = \
                 get_parsed_table_and_reference(table, "cleaned")
             self.assertEqual(reference["<documentId>"]["<tableId>"]["table"]
@@ -53,8 +50,6 @@ class TestCleaned(unittest.TestCase):
 
     def test_data(self):
         for table in get_file_in_directory(DIR + '/tables/'):
-            if table == 'table_5.tex':
-                continue
             parsed_table, reference = \
                 get_parsed_table_and_reference(table, "cleaned")
             self.assertEqual(reference["<documentId>"]["<tableId>"]["table"]
@@ -64,8 +59,6 @@ class TestCleaned(unittest.TestCase):
 class TestRaw(unittest.TestCase):
     def test_caption(self):
         for table in get_file_in_directory(DIR + '/tables/'):
-            if table == 'table_5.tex':
-                continue
             parsed_table, reference = \
                 get_parsed_table_and_reference(table, "raw")
             self.assertEqual(reference["<documentId>"]["<tableId>"]["table"]
@@ -73,8 +66,6 @@ class TestRaw(unittest.TestCase):
 
     def test_headings(self):
         for table in get_file_in_directory(DIR + '/tables/'):
-            if table == 'table_5.tex':
-                continue
             parsed_table, reference = \
                 get_parsed_table_and_reference(table, "raw")
             self.assertEqual(reference["<documentId>"]["<tableId>"]["table"]
@@ -82,8 +73,6 @@ class TestRaw(unittest.TestCase):
 
     def test_data(self):
         for table in get_file_in_directory(DIR + '/tables/'):
-            if table == 'table_5.tex':
-                continue
             parsed_table, reference = \
                 get_parsed_table_and_reference(table, "raw")
             self.assertEqual(reference["<documentId>"]["<tableId>"]["table"]
