@@ -11,7 +11,7 @@ def find_results_with_tables(url='localhost', date='YYYY-MM-DD'):
         collection = db['arxiv_papers']
         for x in collection.find({
                                     'dateFetched': date, "$where":
-                """this.tables.length > 1"""
+                "this.tables.length > 0"
                                 },{"p_id"}):
             print(x["p_id"])
     except Exception as e:
