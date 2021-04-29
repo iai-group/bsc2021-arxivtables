@@ -1,3 +1,5 @@
+__author__ = 'Rebeca Pop'
+
 import json
 import argh
 from tabulate import tabulate
