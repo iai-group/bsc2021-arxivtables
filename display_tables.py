@@ -5,11 +5,13 @@ import argh
 from tabulate import tabulate
 
 
-def display_tables(paper_id = None, table_id = None):
+def display_tables(paper_id=None, table_id=None):
     if not paper_id:
         paper_id = input("Please input the Arxiv paper ID: ")
     try:
-        with open("db/arxiv_papers/" + paper_id + ".json", "r") as f:
+        YY = paper_id[:2]
+        MM = paper_id[2:4]
+        with open("db/arxiv_papers/{}/{}/{}.json".format(YY, MM, paper_id), "r") as f:
             paper_dict = json.load(f)
 
         tables = paper_dict["tables"]
@@ -25,8 +27,12 @@ def display_tables(paper_id = None, table_id = None):
                                 and tables[index]["caption"]:
                             caption = tables[index]["caption"]
                         print(index, ":", caption)
-                    table_id = int(input("Please enter the table ID (0 - " +
-                                         str(len(tables) - 1) + "): "))
+                    table_id = int(
+                        input(
+                            "Please enter the table ID (0 - " +
+                            str(len(tables) - 1) + "): "
+                            )
+                        )
                 else:
                     table_id = int(table_id)
                 table = tables[table_id]
