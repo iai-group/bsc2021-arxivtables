@@ -101,12 +101,13 @@ def run_tables(
                     paper_dict["tables"].append(parsed.toJSON())
                 except Exception as e:
                     print(e)
+            print(paper_dict)
             with open(
                     'db/arxiv_papers/{}/{}/{}.json'.format(
                             p_id[0:2], p_id[2:4], p_id
                     ), 'w'
             ) as j:
-                json.dump(paper_dict, j, indent=2)
+                j.write(json.dumps(paper_dict, indent=2))
             if mongo:
                 collection_arxiv_papers.replace_one(
                     {'p_id': p_id}, paper_dict, upsert=True
