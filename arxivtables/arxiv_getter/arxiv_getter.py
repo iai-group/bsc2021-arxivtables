@@ -67,7 +67,7 @@ class ArxivGetter:
             FileNotFoundError
         """
         try:
-            shutil.rmtree('downloads/{}/{}/{}'.format(
+            shutil.rmtree('downloads/{}/{}/{}/{}'.format(
                 self.year, self.month, self.id, self.paper_id))
             return True
         except Exception as e:
