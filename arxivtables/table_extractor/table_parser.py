@@ -1,7 +1,9 @@
 __author__ = "Rebeca Pop"
 __maintainer__ = "Rebeca Pop, David Ramsay"
 
-from tex2py import tex2py
+import re
+
+from tex2py import tex2py, TreeOfContents
 from astropy.io import ascii
 from pylatexenc.latex2text import LatexNodes2Text
 from arxivtables.table_extractor.parsed_table import ParsedTable
@@ -13,8 +15,8 @@ class TableParser:
 
     def parse(self, latex_source : str, is_raw : bool = False) -> ParsedTable:
         latex_source = self.__sanitize_table_lines(latex_source)
+        latex_source = self.parse_multicolumn(latex_source)
         content = tex2py(latex_source)
-
         caption_source = content.source.find("caption")
         if not caption_source:
             caption = ""
@@ -40,6 +42,28 @@ class TableParser:
             data.append(row_items)
 
         return ParsedTable(caption, headings, data)
+
+    def parse_multicolumn(self, data_in: str) -> str:
+        multicolumn_pattern = r'\\multicolumn{([0-9])}{([|clr|])}{(.*?)}'
+        empty_segment = ' & '
+        split_src = data_in.splitlines()
+
+        for line in split_src:
+            index = split_src.index(line)
+            result = re.findall(multicolumn_pattern, line)
+            if result:
+                for r in result:
+                    (columns, alignment, text) = r
+                    new_line = text + empty_segment * (int(columns) - 1)
+                    line = line.replace(
+                        '\\multicolumn{' + columns + '}{' + alignment + '}{'
+                                                                        '' + text + '}',
+                        new_line
+                    )
+                    split_src[index] = line
+
+        data_in = "\n".join(split_src)
+        return data_in
 
     def __sanitize_table_lines(self, latex_source : str) -> str:
         lines = latex_source.split("\n")

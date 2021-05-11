@@ -25,8 +25,10 @@ def get_parsed_table_and_reference(table, variant):
     tp = TableParser()
     parsed_table = tp.parse(table_data, variant == "raw")
 
-    with open(DIR + '/references/' + variant + '_tables/' +
-              table.split('.')[0] + '.json') as f:
+    with open(
+            DIR + '/references/' + variant + '_tables/' +
+            table.split('.')[0] + '.json'
+            ) as f:
         reference = json.load(f)
 
     return parsed_table, reference
@@ -38,22 +40,28 @@ class TestCleaned(unittest.TestCase):
             parsed_table, reference = \
                 get_parsed_table_and_reference(table, "cleaned")
 
-            self.assertEqual(reference["<documentId>"]["<tableId>"]["table"]
-                             ["caption"], parsed_table.caption)
+            self.assertEqual(
+                reference["<documentId>"]["<tableId>"]["table"]
+                ["caption"], parsed_table.caption
+                )
 
     def test_headings(self):
         for table in get_file_in_directory(DIR + '/tables/'):
             parsed_table, reference = \
                 get_parsed_table_and_reference(table, "cleaned")
-            self.assertEqual(reference["<documentId>"]["<tableId>"]["table"]
-                             ["headers"], parsed_table.headings)
+            self.assertEqual(
+                reference["<documentId>"]["<tableId>"]["table"]
+                ["headers"], parsed_table.headings
+                )
 
     def test_data(self):
         for table in get_file_in_directory(DIR + '/tables/'):
             parsed_table, reference = \
                 get_parsed_table_and_reference(table, "cleaned")
-            self.assertEqual(reference["<documentId>"]["<tableId>"]["table"]
-                             ["rows"], parsed_table.data)
+            self.assertEqual(
+                reference["<documentId>"]["<tableId>"]["table"]
+                ["rows"], parsed_table.data
+                )
 
 
 class TestRaw(unittest.TestCase):
@@ -61,19 +69,57 @@ class TestRaw(unittest.TestCase):
         for table in get_file_in_directory(DIR + '/tables/'):
             parsed_table, reference = \
                 get_parsed_table_and_reference(table, "raw")
-            self.assertEqual(reference["<documentId>"]["<tableId>"]["table"]
-                             ["caption"], parsed_table.caption)
+            self.assertEqual(
+                reference["<documentId>"]["<tableId>"]["table"]
+                ["caption"], parsed_table.caption
+                )
 
     def test_headings(self):
         for table in get_file_in_directory(DIR + '/tables/'):
             parsed_table, reference = \
                 get_parsed_table_and_reference(table, "raw")
-            self.assertEqual(reference["<documentId>"]["<tableId>"]["table"]
-                             ["headers"], parsed_table.headings)
+            self.assertEqual(
+                reference["<documentId>"]["<tableId>"]["table"]
+                ["headers"], parsed_table.headings
+                )
 
     def test_data(self):
         for table in get_file_in_directory(DIR + '/tables/'):
             parsed_table, reference = \
                 get_parsed_table_and_reference(table, "raw")
-            self.assertEqual(reference["<documentId>"]["<tableId>"]["table"]
-                             ["rows"], parsed_table.data)
+            self.assertEqual(
+                reference["<documentId>"]["<tableId>"]["table"]
+                ["rows"], parsed_table.data
+                )
+
+
+class TestMulticolumn(unittest.TestCase):
+    def test_caption(self):
+        for table in get_file_in_directory(DIR + '/tables/multicolumn/'):
+            parsed_table, reference = \
+                get_parsed_table_and_reference('multicolumn/' + table,
+                                               "multicolumn")
+            self.assertEqual(
+                reference["<documentId>"]["<tableId>"]["table"]
+                ["caption"], parsed_table.caption
+            )
+
+    def test_headings(self):
+        for table in get_file_in_directory(DIR + '/tables/multicolumn/'):
+            parsed_table, reference = \
+                get_parsed_table_and_reference('multicolumn/' + table,
+                                               "multicolumn")
+            self.assertEqual(
+                reference["<documentId>"]["<tableId>"]["table"]
+                ["headers"], parsed_table.headings
+            )
+
+    def test_data(self):
+        for table in get_file_in_directory(DIR + '/tables/multicolumn/'):
+            parsed_table, reference = \
+                get_parsed_table_and_reference('multicolumn/' + table, \
+                                                            "multicolumn")
+            self.assertEqual(
+                reference["<documentId>"]["<tableId>"]["table"]
+                ["rows"], parsed_table.data
+            )
