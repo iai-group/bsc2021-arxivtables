@@ -1,0 +1,27 @@
+{
+    "<documentId>": {
+        "<tableId>": {
+            "name": "",
+            "date": "",
+            "authors": {
+                "name": "",
+                "otherInfo": "..."
+            },
+            "href": "",
+            "publicationDate": "",
+            "table": {
+                "title": "",
+                "footer": "",
+                "comments": "",
+                "caption": "Different training methods on Real-split and CityFlow.",
+                "headers": ["Method", "Real-split", "col2", "CityFlow", "_1"],
+                "rows": [
+                    ["–", "mAP(%)", "Rank 1(%)", "mAP(%)", "Rank 1(%)"],
+                    ["Baseline + Multiple Head", "84.5", "89.0", "41.9", "65.6"],
+                    ["Baseline + Multiple Head + SupCon", "85.7", "90.9", "-", "-"],
+                    ["Baseline + Multiple Head + SupCon + MALW", "88.1", "92.5", "49.5", "58.2"]
+                ]
+            }
+        }
+    }
+}

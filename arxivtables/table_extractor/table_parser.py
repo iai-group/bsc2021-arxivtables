@@ -3,7 +3,7 @@ __maintainer__ = "Rebeca Pop, David Ramsay"
 
 import re
 
-from tex2py import tex2py, TreeOfContents
+from tex2py import tex2py
 from astropy.io import ascii
 from pylatexenc.latex2text import LatexNodes2Text
 from arxivtables.table_extractor.parsed_table import ParsedTable
@@ -60,6 +60,8 @@ class TableParser:
                                                                         '' + text + '}',
                         new_line
                     )
+
+                    print(new_line)
                     split_src[index] = line
 
         data_in = "\n".join(split_src)

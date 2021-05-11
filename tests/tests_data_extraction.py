@@ -19,7 +19,7 @@ def get_file_in_directory(directory):
 
 
 def get_parsed_table_and_reference(table, variant):
-    with open(DIR + '/tables/' + table) as f:
+    with open(DIR + '/tables/' + table, encoding="utf8") as f:
         table_data = f.read()
 
     tp = TableParser()
@@ -27,7 +27,7 @@ def get_parsed_table_and_reference(table, variant):
 
     with open(
             DIR + '/references/' + variant + '_tables/' +
-            table.split('.')[0] + '.json'
+            table.split('.')[0] + '.json', encoding="utf8"
             ) as f:
         reference = json.load(f)
 
@@ -119,6 +119,8 @@ class TestMulticolumn(unittest.TestCase):
             parsed_table, reference = \
                 get_parsed_table_and_reference('multicolumn/' + table, \
                                                             "multicolumn")
+            print(parsed_table)
+            print(reference)
             self.assertEqual(
                 reference["<documentId>"]["<tableId>"]["table"]
                 ["rows"], parsed_table.data
