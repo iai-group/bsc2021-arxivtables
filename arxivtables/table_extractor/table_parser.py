@@ -2,7 +2,6 @@ __author__ = "Rebeca Pop"
 __maintainer__ = "Rebeca Pop, David Ramsay"
 
 import re
-
 from tex2py import tex2py
 from astropy.io import ascii
 from pylatexenc.latex2text import LatexNodes2Text
@@ -13,7 +12,7 @@ class TableParser:
     def __init__(self):
         self.name = 'TableParser'
 
-    def parse(self, latex_source : str, is_raw : bool = False) -> ParsedTable:
+    def parse(self, latex_source: str, is_raw: bool = False) -> ParsedTable:
         latex_source = self.__sanitize_table_lines(latex_source)
         latex_source = self.parse_multicolumn(latex_source)
         content = tex2py(latex_source)
@@ -56,18 +55,18 @@ class TableParser:
                     (columns, alignment, text) = r
                     new_line = text + empty_segment * (int(columns) - 1)
                     line = line.replace(
-                        '\\multicolumn{' + columns + '}{' + alignment + '}{'
-                                                                        '' + text + '}',
-                        new_line
-                    )
+                        '\\multicolumn{' + columns + '}' \
+                        '{' + alignment + '}' \
+                        '{' + text + '}',
+                        new_line)
 
                     print(new_line)
                     split_src[index] = line
 
-        data_in = "\n".join(split_src)
-        return data_in
+        data_out = "\n".join(split_src)
+        return data_out
 
-    def __sanitize_table_lines(self, latex_source : str) -> str:
+    def __sanitize_table_lines(self, latex_source: str) -> str:
         lines = latex_source.split("\n")
         new_source = ""
         for l in lines:
@@ -86,8 +85,6 @@ class TableParser:
                       toprule_pos + len("\\toprule") + 1:midrule_pos - 2]
         heading = old_heading.replace("&\n", "&")
 
-
-
         old_rows = latex_source[
                    midrule_pos + len("\\midrule") + 1:botrule_pos - 2]
         rows = old_rows.replace("&\n", "&")
@@ -95,12 +92,11 @@ class TableParser:
         return latex_source.replace(
             old_heading, heading).replace(old_rows, rows)
 
-    def __sanitize_latex_text_list(self, strlist : list):
+    def __sanitize_latex_text_list(self, strlist: list):
         result_list = []
         for x in strlist:
             result_list.append(self.__sanitize_latex_text(str(x)))
         return result_list
 
-
-    def __sanitize_latex_text(self, latex_source : str) -> str:
+    def __sanitize_latex_text(self, latex_source: str) -> str:
         return LatexNodes2Text().latex_to_text(latex_source)
