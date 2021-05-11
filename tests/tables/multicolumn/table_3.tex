@@ -1,0 +1,17 @@
+\begin{table}[]
+	\centering
+	\begin{tabular}{l|cc|cc}
+		\hline
+		Method & \multicolumn{2}{c}{Real-split} & \multicolumn{2}{c}{CityFlow}\\
+		& mAP(\%)  & Rank 1(\%) & mAP(\%) & Rank 1(\%) \\
+		\hline\hline
+		Baseline + Multiple Head & 84.5 & 89.0  & 41.9 & 65.6  \\
+		\hline
+		Baseline + Multiple Head + SupCon & 85.7   & 90.9 & - & -  \\
+		\hline
+		Baseline + Multiple Head + SupCon + MALW & 88.1  & 92.5 & 49.5 & 58.2  \\
+		\hline
+	\end{tabular}
+	\caption{Different training methods on Real-split and CityFlow.}
+	\label{tab:method}
+\end{table}

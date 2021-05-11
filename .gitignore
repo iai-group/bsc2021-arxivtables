@@ -141,3 +141,6 @@ arxiv-data
 db
 logs
 
+# small testing scripts
+mc_test.py
+multirow.tex
