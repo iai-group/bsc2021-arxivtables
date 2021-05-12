@@ -143,4 +143,6 @@ logs
 
 # small testing scripts
 mc_test.py
-multirow.tex
+multicolumn.tex
+#mr_test.py
+#multirow.tex
