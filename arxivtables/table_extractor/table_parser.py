@@ -43,7 +43,8 @@ class TableParser:
         return ParsedTable(caption, headings, data)
 
     def parse_multicolumn(self, data_in: str) -> str:
-        multicolumn_pattern = r'\\multicolumn{([0-9])}{([|clr|])}{(.*?)}'
+        multicolumn_pattern = r'\\multicolumn{([0-9])}' \
+                              r'{([|clr|])}{(.*?)}'
         empty_segment = ' & '
         split_src = data_in.splitlines()
 
@@ -53,7 +54,8 @@ class TableParser:
             if result:
                 for r in result:
                     (columns, alignment, text) = r
-                    new_line = text + empty_segment * (int(columns) - 1)
+                    new_line = text + \
+                               empty_segment * (int(columns) - 1)
                     line = line.replace(
                         '\\multicolumn{' + columns + '}' \
                         '{' + alignment + '}' \
