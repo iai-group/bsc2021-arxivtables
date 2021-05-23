@@ -11,6 +11,7 @@ from arxivtables.arxiv_getter.arxiv_getter import ArxivGetter
 from arxivtables.arxiv_watcher.arxiv_watcher import ArxivWatcher
 from arxivtables.table_extractor.table_extractor import TableExtractor
 from arxivtables.table_extractor.table_parser import TableParser
+import proto.proto.tables_pb2 as table_proto
 
 with open("config.yml", "r") as ymlfile:
     cfg = yaml.load(ymlfile)
@@ -66,7 +67,7 @@ def run_tables(
     """
     if mongo:
         client, db, collection_arxiv_papers = set_up_mongo(url)
-
+    tables_proto = table_proto.Paper()
     aw = ArxivWatcher()
 
     if downloader_date == str(datetime.date(datetime.now()))\
@@ -90,11 +91,11 @@ def run_tables(
             parsed = None
             paper_dict = None
             with open(
-                    'db/arxiv_papers/{}/{}/{}.json'.format(
+                    'db/arxiv_papers/{}/{}/{}'.format(
                             p_id[0:2], p_id[2:4], p_id
-                    )
+                    ), 'rb'
             ) as j:
-                paper_dict = json.load(j)
+                paper_dict = tables_proto.ParseFromString(j.read())
             for table in tables:
                 try:
                     parsed = tp.parse(table)

@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+message Paper {
+  string p_id = 1;
+  string title = 2;
+  string dateFetched = 3;
+  repeated string authors = 4;
+  string href = 5;
+  string publicationDate = 6;
+  repeated Table tables = 7;
+}
+
+message Table {
+  string caption = 1;
+  repeated string headers = 2;
+  repeated Row rows = 3;
+}
+
+message Row {
+  repeated string items = 1;
+}
+

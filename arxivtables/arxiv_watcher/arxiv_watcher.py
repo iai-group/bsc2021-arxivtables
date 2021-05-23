@@ -6,6 +6,7 @@ import json
 import requests
 from datetime import datetime
 from xml.etree.ElementTree import fromstring
+import proto.proto.tables_pb2 as table_proto
 
 
 class ArxivWatcher:
@@ -48,12 +49,13 @@ class ArxivWatcher:
             'search_query=all:all&' \
             'sortBy=submittedDate&' \
             'sortOrder=descending&' \
-            'max_results=500'
+            'max_results=1'
         result = requests.get(base_url + query)
         with open('logs/downloader/{}.log'.format(
                 self.current_date), 'a') as f:
             f.write('')
         if result.status_code == 200:
+            paper = table_proto.Paper()
             string_xml = result.content
             tree = fromstring(string_xml)
             for child in tree[len(tree):0:-1]:
@@ -94,9 +96,16 @@ class ArxivWatcher:
                                 entry_id[0:2], entry_id[2:4])):
                             os.makedirs('db/arxiv_papers/{}/{}'.format(
                                 entry_id[0:2], entry_id[2:4]), exist_ok=True)
-                    with open('db/arxiv_papers/{}/{}/{}.json'.format(
-                            entry_id[0:2], entry_id[2:4], entry_id), 'w') as f:
-                        json.dump(entry, f, indent=2)
+                    paper.p_id = entry_id
+                    paper.title = entry_title
+                    paper.dateFetched = str(datetime.date(datetime.now()))
+                    for author in entry_authors:
+                        paper.authors.append(author)
+                    paper.href = entry_url
+                    paper.publicationDate = entry_published
+                    with open('db/arxiv_papers/{}/{}/{}'.format(
+                            entry_id[0:2], entry_id[2:4], entry_id), 'wb') as f:
+                        f.write(paper.SerializeToString())
         else:
             print("Status code: " + result.status_code)
 
