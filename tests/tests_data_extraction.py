@@ -119,8 +119,6 @@ class TestMulticolumn(unittest.TestCase):
             parsed_table, reference = \
                 get_parsed_table_and_reference('multicolumn/' + table, \
                                                             "multicolumn")
-            print(parsed_table)
-            print(reference)
             self.assertEqual(
                 reference["<documentId>"]["<tableId>"]["table"]
                 ["rows"], parsed_table.data

@@ -89,31 +89,31 @@ def run_tables(
                 continue
             tp = TableParser()
             parsed = None
-            paper_dict = None
+            paper_dict = table_proto.Paper()
             with open(
                     'db/arxiv_papers/{}/{}/{}'.format(
                             p_id[0:2], p_id[2:4], p_id
                     ), 'rb'
             ) as j:
-                paper_dict = tables_proto.ParseFromString(j.read())
+                paper_dict.ParseFromString(j.read())
             for table in tables:
                 try:
+                    parsed = table_proto.Table()
                     parsed = tp.parse(table)
-                    paper_dict["tables"].append(parsed.toJSON())
+                    paper_dict.tables.append(parsed)
                 except Exception as e:
                     print(e)
-            print(paper_dict)
             with open(
-                    'db/arxiv_papers/{}/{}/{}.json'.format(
+                    'db/arxiv_papers/{}/{}/{}'.format(
                             p_id[0:2], p_id[2:4], p_id
-                    ), 'w'
+                    ), 'wb'
             ) as j:
-                j.write(json.dumps(paper_dict, indent=2))
-            if mongo:
-                collection_arxiv_papers.replace_one(
-                    {'p_id': p_id}, paper_dict, upsert=True
-                )
-                print(p_id + " inserted")
+                j.write(paper_dict.SerializeToString())
+            #if mongo:
+            #    collection_arxiv_papers.replace_one(
+            #        {'p_id': p_id}, paper_dict, upsert=True
+            #    )
+            #    print(p_id + " inserted")
             paper_dict = None
         except Exception as e:
             print(e)

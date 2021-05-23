@@ -22,7 +22,7 @@ class TableExtractor:
             tar.extractall('downloads/{}/{}/{}/{}'.format(
                 self.year, self.month, self.id, self.paper_id))
             tar.close()
-            print('extracted')
+            print('Extracted')
         except Exception as e:
             print(e)
 

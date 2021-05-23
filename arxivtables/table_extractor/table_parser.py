@@ -5,14 +5,15 @@ import re
 from tex2py import tex2py
 from astropy.io import ascii
 from pylatexenc.latex2text import LatexNodes2Text
-from arxivtables.table_extractor.parsed_table import ParsedTable
+import proto.proto.tables_pb2 as table_proto
 
 
 class TableParser:
     def __init__(self):
         self.name = 'TableParser'
 
-    def parse(self, latex_source: str, is_raw: bool = False) -> ParsedTable:
+    def parse(self, latex_source: str, is_raw: bool = False) -> table_proto.Table:
+        table = table_proto.Table()
         latex_source = self.__sanitize_table_lines(latex_source)
         latex_source = self.parse_multicolumn(latex_source)
         content = tex2py(latex_source)
@@ -33,14 +34,19 @@ class TableParser:
         if not is_raw:
             headings = self.__sanitize_latex_text_list(headings)
 
-        data = []
         for row in astro_table:
+            newRow = table_proto.Row()
             row_items = list(map(str, list(row)))
             if not is_raw:
                 row_items = self.__sanitize_latex_text_list(row_items)
-            data.append(row_items)
-
-        return ParsedTable(caption, headings, data)
+            for item in row_items:
+                newRow.items.append(item)
+            table.rows.append(newRow)
+        
+        table.caption = caption
+        for heading in headings:
+            table.headers.append(heading)
+        return table
 
     def parse_multicolumn(self, data_in: str) -> str:
         multicolumn_pattern = r'\\multicolumn{([0-9])}{([|clr|])}{(.*?)}'
@@ -60,7 +66,6 @@ class TableParser:
                         '{' + text + '}',
                         new_line)
 
-                    print(new_line)
                     split_src[index] = line
 
         data_out = "\n".join(split_src)

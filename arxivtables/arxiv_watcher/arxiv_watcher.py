@@ -49,7 +49,7 @@ class ArxivWatcher:
             'search_query=all:all&' \
             'sortBy=submittedDate&' \
             'sortOrder=descending&' \
-            'max_results=1'
+            'max_results=500'
         result = requests.get(base_url + query)
         with open('logs/downloader/{}.log'.format(
                 self.current_date), 'a') as f:
