@@ -2,11 +2,10 @@ __author__ = 'David Ramsay'
 __maintainer__ = 'Rebeca Pop, David Ramsay'
 
 import os
-import json
 import requests
 from datetime import datetime
 from xml.etree.ElementTree import fromstring
-import proto.proto.tables_pb2 as table_proto
+import proto.tables_pb2 as table_proto
 
 
 class ArxivWatcher:

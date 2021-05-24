@@ -5,7 +5,7 @@ import re
 from tex2py import tex2py
 from astropy.io import ascii
 from pylatexenc.latex2text import LatexNodes2Text
-import proto.proto.tables_pb2 as table_proto
+import proto.tables_pb2 as table_proto
 
 
 class TableParser:

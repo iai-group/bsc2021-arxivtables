@@ -1,8 +1,6 @@
 __author__ = 'David Ramsay'
 __maintainer__ = 'Rebeca Pop, David Ramsay'
 
-import os
-import json
 import argh
 import yaml
 from datetime import datetime
@@ -11,7 +9,7 @@ from arxivtables.arxiv_getter.arxiv_getter import ArxivGetter
 from arxivtables.arxiv_watcher.arxiv_watcher import ArxivWatcher
 from arxivtables.table_extractor.table_extractor import TableExtractor
 from arxivtables.table_extractor.table_parser import TableParser
-import proto.proto.tables_pb2 as table_proto
+import proto.tables_pb2 as table_proto
 
 with open("config.yml", "r") as ymlfile:
     cfg = yaml.load(ymlfile)
@@ -67,7 +65,6 @@ def run_tables(
     """
     if mongo:
         client, db, collection_arxiv_papers = set_up_mongo(url)
-    tables_proto = table_proto.Paper()
     aw = ArxivWatcher()
 
     if downloader_date == str(datetime.date(datetime.now()))\
